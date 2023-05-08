@@ -5,7 +5,70 @@
     <title>Data Lovers</title>
     <link rel="stylesheet" href="style.css" />
   </head>
+
+  <header>
+    <img class="logorm" src="./imagenes/logorm.png" alt="Logo Rick and Morty">
+  </header>
+
   <body>
+
+    <section class="container" id="container"> <!--1.CONTENEDOR PRINCIPAL-->
+    
+    <div class="imagenP1rm"> <!--1.1IMAGEN DE PORTADA-->
+      <img class="portadarm" src="./imagenes/portadarm.png" alt="Imagen Rick and Morty">
+    </div>
+    
+    <div class="infoportada"> <!--1.2EMPIEZA SECCIÓN CON TODOS LOS ELEMENTOS DE INICIO-->
+      <div class="imagenP2rm"> <!--1.2.1-->
+        <img class="nombrerm" src="./imagenes/nombrerm.png" alt="Nombre Rick and Morty">
+      </div>
+      <div class="buscador"> <!--1.2.2-->
+        <label>Busca tus personajes</label>
+        <br>
+        <input type="search" placeholder="Buscar" id="buscador">
+        <button class="botonBuscar">VAMOS</button>
+      </div>
+      <div class="botones"> <!--1.2.3-->
+        <button class="botonGrande" id="botonMultiversos">MULTIVERSOS</button>
+        <button class="botonGrande" id="botonTodos">TODOS</button>
+      </div>
+      <div class="frase"> <!--1.2.4-->
+        <h1>!!Wubba Lubba Dub Dub!!</h1>
+      </div>
+    </div>
+    </section>
+
+    <!--2.SECCIÓN DOS-->
+    <section id="seccion2">
+      <div class="tituloPersonajes" >
+        <br>
+        <br>
+        <br>
+        <h1>PERSONAJES</h1><br>
+        <h3>Más de 400 personajes que ni siquiera recordabas</h3>
+        <br>
+      </div>
+    
+      <div class="buscador2">
+        <input type="search" placeholder="Busca tu personaje" id="buscadorDos">
+        <button class="botonBuscar" id="botonBuscador">BUSCAR</button>
+        <button class="botonBuscar" id="botonInicio">INICIO</button> <br>
+        <div id="resultado" class="resultado">
+
+        </div>
+      </div>
+      
+    <!--EMPIEZA NUESTRA DATA-->
+
+    <div id="personajes" class="wrapper">
+
+    </div>
+  </div>    
+
+
+
+    </section>
+
     <div id="root"></div>
     <script src="main.js" type="module"></script>
   </body>
