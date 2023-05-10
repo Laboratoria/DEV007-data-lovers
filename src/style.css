@@ -1,7 +1,10 @@
-body {
-  background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgNIwB0Ky68lgRI1rlfrwsqWKJOuChaxK6kwCFpfLv4Ad7rouT3sKfBV6g7-rhZeQOBJlkAbLVWv6y0Us5B9v_yTbRmT_SRJJ9NH-m3t54pas7b20YzAyNo7HFAubEGwrFmQBfXTwTJD8NiBR4mv7h1gD53EhwN1aJPfdYpQRd1bV5fs2bdBKwNLgh6/s320/2.png');
+
+body{
+  background-image: url('https://nicasnews.com/wp-content/uploads/2016/08/20160805-3.jpg');
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: 20% -300%;
+
 }
 
 .clase-barrasuperior {
