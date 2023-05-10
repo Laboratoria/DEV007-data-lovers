@@ -7,93 +7,82 @@ body{
 
 }
 
-  .clase-barrasuperior {
-    
-    position: absolute;
-    width: 1393px;
-    height: 93px;
-    left: 17px;
-    top: 56px;
+.clase-barrasuperior {
 
-    background: #FAC84A;
-    border-radius: 10px;
+  position: absolute;
+  width: 1393px;
+  height: 93px;
+  left: 17px;
+  top: 56px;
+
+  background: #FAC84A;
+  border-radius: 10px;
 
   display: flex;
   align-items: center;
   margin-left: 100px;
 }
-.img-aros{
+
+.img-aros {
   margin-left: 40px;
 }
 
-  .clase-input-buscador-nombre{
-    margin-left: 50px;
-    margin-right: 250px;
-    background: #F4F1E8;
-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-border-radius: 10px;
-font-size: x-large;
-  }
-
-  .clase-input-buscador-nombre:hover {
-    transform: traslate(0, -6px);
-    box-shadow: 10px -10px 25px 0 rgba(28, 214, 247, 0.938),
-      10px -10px 25px 0 rgba(240, 14, 210, 0.938);
-  }
-  
-
-  .clase-botondeportes{
-    margin-right: 20px;
-width: 262px;
-height: 43px;
-left: 812px;
-top: 82px;
-
-background: #F4F1E8;
-border-radius: 10px;
-font-family: Verdana, Geneva, Tahoma, sans-serif;
-font-size: large;
-  }
-
-
-
-  .clase-botonpais{
-    margin-left: 20px;
-    width: 262px;
-    height: 43px;
-    left: 1102px;
-    top: 82px;
-    
-    background: #F4F1E8;
-    border-radius: 10px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: large;
-  } 
-
-  .contenido{
-    flex-direction:row ;
-  }
-.imagen-principal{
-  
-  margin-left: 100px;
-  margin-right: 100px;
-
-position: absolute;
-width: 872px;
-height: 460px;
-left: 40px;
-top: 226px;
+.clase-input-buscador-nombre {
+  margin-left: 50px;
+  margin-right: 250px;
+  background: #F4F1E8;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  font-size: x-large;
 }
 
-.parrafo{
+.clase-input-buscador-nombre::after {
+  content: "";
+  width: 400px;
+  height: 400px;
   position: absolute;
-width: 370px;
-height: 348px;
-left: calc(50% - 370px/2 + 432px);
-top: 260px;
+  top: 0;
+  left: 0;
+  background-color: magenta;
+  background-image: linear-gradient(225deg,
+      rgb(0, 255, 76)0%,
+      rgb(0, 217, 255)50%,
+      rgba(255, 0, 255, 0.774)100%);
+  z-index: -100;
+  transition: transform 0.5s ease;
+}
 
-font-weight: 400;
-font-size: 24px;
-line-height: 29px;
-text-align: justify;
+.clase-input-buscador-nombre:hover {
+  transform: traslate(0, -6px);
+  box-shadow: 10px -10px 25px 0 rgba(28, 214, 247, 0.938),
+    10px -10px 25px 0 rgba(240, 14, 210, 0.938);
+}
+
+.clase-input-buscador-nombre:hover::after {
+  transform: rotate(150deg);
+}
+
+
+.clase-botondeportes {
+  margin-right: 20px;
+  width: 262px;
+  height: 43px;
+  left: 812px;
+  top: 82px;
+  font-size: x-large;
+  background: #F4F1E8;
+  border-radius: 10px;
+}
+
+
+
+.clase-botonpais {
+  margin-left: 20px;
+  width: 262px;
+  height: 43px;
+  left: 1102px;
+  top: 82px;
+  font-size: x-large;
+  background: #F4F1E8;
+  border-radius: 10px;
 }
