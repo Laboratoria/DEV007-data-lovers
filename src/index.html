@@ -1,64 +1,102 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Data Lovers</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <header>
-      <img src="./images-data/titulo.png" alt="title" class="logo">
-        <!---  <h1 id="title" class="title">STUDIOS GHIBLI</h1><p>movies</p> ---->
-          <p>
-            <ul class="button">
-              <li id="inicio" class="inicio"><a href="#inicio">PAGINA DE INICIO</a></li>
-              <li id="producciones" class="producciones"><a href="#producciones">PRODUCCIONES</a></li>
-              <li id="nosotros" class="nosotros"><a href="#nosotros">SOBRE NOSOTROS</a></li>
-              <li id="acerca-de" class="acerca"><a href="#acerca de">ACERCA DE</a></li>
-            </ul>
-          </p>     
-    </header>
-    <div id="inicio">
-      <h2>STUDIOS GHIBLI</h2>
-      <label>Búsqueda:</label><input type="search" class="search" name="Search" placeholder="Nombre, Autor, Personaje...">
-      <input type="submit" class="boton" id="btn" value="Click Aquí">
-      <p class="sobre">«Dime, ¿cuáles son los límites? Los límites son tres: el cielo, la imaginación y tú misma.»</P>
-      <img src="images-data/portada.jpg" class="portada" alt="portada-ghibli">
+
+<head>
+  <meta charset="utf-8">
+  <title>Ghibli movies</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header>
+    <img src="./images-data/titulo.png" href="" alt="Studio Ghibli movies" id="tituloStudioGhibliMovies">
+    <nav>
+      <ul>
+        <li><a href="#">Página de inicio</a></li>
+        <li><a href="#">Producciones</a></li>
+        <li><a href="#">Más detalles</a></li>
+      </ul>
+    </nav>
+  </header>
+  <img src="./images-data/TransparenciaMiyazaki.jpg" alt="encabezado" class="encabezado">
+  <div id="barra-de-busqueda">
+    <input type="text" id="inputBuscar" placeholder="Buscar">
     </div>
-    <div id="producciones">
-      <h3>PRODUCCIONES</h3>
-      <img src="./images-data/castillo-ambulante.jpg" class="pro1" id="castle" alt="castillo-ambulante">
-      <img src="./images-data/castillo-cielo-ghibli-1579597095.jpg" class="pro2" id="cielo" alt="castillo-cielo">
-      <img src="./images-data/ghibli-vecino-totoro-miyazaki-netflix-1579597040.jpg" class="pro3" id="tototro" alt="totoro-vecino">
-      <img src="./images-data/kikis-delivery-service-ghibli-1579597096.jpg" class="pro4" alt="kikis-delivery">
-      <img src="./images-data/mi-vecino-totoro-1579597095.jpg" class="pro5" alt="totoro-foto">
-      <img src="./images-data/pom-poko-ghibli-1579597095.jpg" class="pro6" alt="pom-poko">
-      <img src="./images-data/porco-rosso-ghibli-1579597097.jpg" class="pro7" alt="porco-rosso">
-      <img src="./images-data/princesa-mononoke-ghibli-1579597095.jpg" class="pro8" alt="momoke">
-      <img src="./images-data/tumba-luciernagas-ghibli-1579597095.jpg" class="pro9" alt="luciernagas">
-    </div>                                                          
-    <div id="nosotros">
-      <h3>SOBRE NOSOTROS</h3>
-      <p>Como si faltaran razones para visitar Japón, Ghibli Park, el primer parque temático de Studio Ghibli, ya abrió sus puertas al público y podrás visitarlo en tu próximo viaje a la isla nipona. Sus instalaciones se extienden por tres enormes secciones que sumergen a los visitantes en los mundos fantásticos que han salido de la mente maestra de Hayao Miyazaki.Goro Miyazaki, hijo de Hayao Miyazaki -fundador del estudio y galardonado director de cine-, es quien ha trabajado arduamente en el proyecto, por supuesto, siguiendo los consejos e instrucciones de su padre, pues se dice que Hayao Miyazaki ha tenido gran influencia en la realización del recinto y ha pedido en repetidas ocasiones no talar árboles en el área donde se está construyendo el parque.</p>
-      <img src="images-data/ghibli-vecino-totoro-miyazaki-netflix-1579597040.jpg" alt="">
+    <input type="submit" class="boton" id="btn" value="Buscar">
+  <!-- 
+<ul id="box-search">
+    <li><a href="#">Totoro</a></li>
+</ul>  -->
+  <!-- 
+<div id="cover-ctn-search"></div>
+contenedos de busqieda -->
+  <!-- <div id="introduccion">
+      <div>
     </div>
-    <div id="acerca de">
-      <h3>ACERCA DE</h3>
-      <p>Las películas del Studio Ghibli son mágicas y los valores que transmiten y cómo se tratan las convierten en indispensables de todo amante del cine de animación. Aunque a mucha gente les puedan parecer una frikada porque asocian su estilo a los típicos animes, ¡nada de eso! Os aseguramos que las películas de Ghibli gustan a casi todo el mundo. Las razones por las que ver estas películas son muchas: muestran a personajes femeninos fuertes, tratan historias cotidianas desde un punto de vista mágico, hablan sobre la infancia, la naturaleza o el amor, y algunas de las frases de sus personajes son simplemente geniales.</p>
-      <img src="images-data/mi-vecino-totoro-1579597095.jpg" alt="">
-    </div>
+  </div>-->
+  <br>
+  <br>
+  <p class="introduccion"> Studio Ghibli sorprende al mundo con largometrajes únicos, llenos de meticulosos detalles y
+    mensajes significativos para nuestra sociedad.
+    Este estudio de animación japonesa expone una visión diferente del anime, con un dibujo mucho más artesanal y
+    auténtico. Sus películas promueven la protección del medio ambiente, transmiten un mensaje antibelicista y
+    reivindica el protagonismo de los personajes femeninos y de su fuerza interior, todo eso combinado con esa peculiar
+    fantasía única de Ghibli que baña cada una de sus animaciones, la cual es tomada de las leyendas y mitos propios del
+    folclore nipón.</p>
+  <img src="./images-data/descarga.jpg" alt="Studio Ghibli Logo" class="logo">
+  <div class="producciones">
+    <br>
+    <h1>Producciones</h1>
+    <br>
+    <h3>Haz clic en cada una de las portadas y revive la magia de estas maravillosas animaciones</h3>
+    <p>Ordenar por</p>
+    <br>
+    <br>
+
+    <img class="img-normalizada" id="posterCastleInTheSky" src="" alt="">
+    <img class="img-normalizada" id="posterMyNeighborTotoro" src="" alt="">
+    <img class="img-normalizada" id="posterKikisDeliveryService" src="" alt="">
+    <img class="img-normalizada" id="posterGraveOfTheFireflies" src="" alt="">
+    <img class="img-normalizada" id="posterOnlyYesterday" src="" alt="">
+    <img class="img-normalizada" id="posterPorcoRosso" src="" alt="">
+    <img class="img-normalizada" id="posterPomPoko" src="" alt="">
+    <img class="img-normalizada" id="posterWhisperOfTheHeart" src="" alt="">
+    <img class="img-normalizada" id="posterPrincessMononoke" src="" alt="">
+    <img class="img-normalizada" id="posterMyNeighborsTheYamadas" src="" alt="">
+    <img class="img-normalizada" id="posterSpiritedAway" src="" alt="">
+    <img class="img-normalizada" id="posterTheCatReturns" src="" alt="">
+    <img class="img-normalizada" id="posterHowlsMovingCastle" src="" alt="">
+    <img class="img-normalizada" id="posterTalesFromEarthsea" src="" alt="">
+    <img class="img-normalizada" id="posterPonyoOnTheCliffByTheSea" src="" alt="">
+    <img class="img-normalizada" id="posterTheSecretWorldOfArrietty" src="" alt="">
+    <img class="img-normalizada" id="posterFromUpOnPoppyHill" src="" alt="">
+    <img class="img-normalizada" id="posterTheWindRises" src="" alt="">
+    <img class="img-normalizada" id="posterTheTaleOfThePrincessKaguya" src="" alt="">
+    <img class="img-normalizada" id="posterWhenMarnieWasThere" src="" alt="">
+
+  </div>
+  <div class="mas-detalles">
+    <br>
+    <p> Sigue las redes sociales oficiales para no perderte ninguna novedad </p>
+    <br>
+    <img src="./images-data/SocialMedia.png" alt="Redes-Sociales" id="redesSociales">
+    <br>
+    <br>
+
     <div>
-      <p>«Nada de lo que sucede se olvida, incluso si ya no lo recuerdas.»</p>
-      <img src="images-data/tumba-luciernagas-ghibli-1579597095.jpg" alt="">
+      <img class="flores" src="./images-data/flores.jpg" alt="flores">
+
     </div>
-
-    <div id="root"></div>
-    <footer>
-      <p>STUDIO GHIBLLI</p>
-      <P>Copyright 2023. Todos los Derechos son Reservados.</P>
-      <p>Desarrollado por Sandy y Lauri.</p>
-    </footer>
-    <script src="main.js" type="module"></script>
   </body>
-</html>
 
+
+
+
+<footer class="footer">
+<p>«Dime, ¿cuáles son los límites? Los límites son tres: el cielo, la imaginación y tú misma.»</P>
+<img src="./images-data/totoroazul.png" alt="">
+<br>
+<br>
+</footer>
+<script src="main.js" type="module"></script>
+</html>
