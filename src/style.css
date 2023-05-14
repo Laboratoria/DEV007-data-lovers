@@ -17,10 +17,12 @@ header {
 
 nav {
   float: right;
+  overflow: hidden;
 }
 
 nav ul {
   list-style: none;
+  
 }
 
 nav ul li {
@@ -38,7 +40,7 @@ nav ul li a {
 }
 
 nav ul li:hover {
-  background: #eca023;
+  background: #d7c1d5;
 }
 
 .encabezado {
@@ -108,18 +110,27 @@ nav ul li:hover {
   margin: 20px;
 }
 .mas-detalles{
-  background-color: #FFFFFF;
+  background-color: #F3F3F3;
   padding: 10px;
   font-size: 18px;
   text-align: center;
 }
-#redesSociales{
-  width: 25%;
+#facebook {
+  width: 40px;
+  margin-bottom: 3%;
+  margin-right: 5%;
+}
+#instagram {
+  width: 39px;
+  margin-bottom: 3%;
+  margin-right: 5%;
+}
+#twitter {
+  width: 45px;
   margin-bottom: 3%;
 }
 .flores{
-  width: 1394px;
-  height: 600px;
+  width: 100%;
 }
 .footer{
   width: 100%;
