@@ -1,0 +1,15 @@
+
+.mostrar {
+    width: 13%;
+    overflow: hidden;
+    place-items: center;
+}
+.mostrar div {
+    transition: transform 0.4s;
+    object-fit: cover;
+
+}
+.mostrar:hover div {
+    transform: scale(1.6);
+}
+
