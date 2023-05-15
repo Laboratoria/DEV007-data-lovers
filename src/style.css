@@ -2,7 +2,7 @@ body {
   margin: 0;
 }
 
-#tituloStudioGhibliMovies {
+.tituloStudioGhibliMovies {
   margin-top: 1.7%;
   height: 77%;
   float: left;
@@ -30,6 +30,8 @@ nav ul li {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-size: 150%;
   padding: 40px;
+  font-family: 'Handlee', cursive;
+
 }
 
 nav ul li a {
@@ -78,19 +80,34 @@ nav ul li:hover {
 }
 #btn{
 }
+.intro {
+  display: flex;
+  align-items: center; /* Centra verticalmente */
+  justify-content: center; /* Centra horizontalmente */
+  height: 200px; /* Altura del contenedor */
+  /* width: 60%;
+  margin-left: 7%;
+  margin-bottom: 2%;
+  margin-top: 0; */
+  
+}
 .introduccion {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   text-align: center;
   display: inline-block;
   width: 60%;
-  margin-left: 7%;
+  /* margin-left: 7%;
   margin-bottom: 2%;
+  margin-top: 0; */
   
 }
+.espacio {
+width: 30px;
+}
 .logo{
-  width: 15%;
-  margin-right: 7%;
-  margin-left: 5%;
+  height: 200px;
+  /* margin-right: 7%;
+  margin-left: 5%; */
 }
 
 .producciones{
@@ -101,6 +118,8 @@ nav ul li:hover {
   font-size: 18px;
   background-color: #64959a;
   text-align: center;
+  font-family: 'Handlee', cursive;
+
 }
 .img-normalizada{
 	width: 250px;
@@ -138,4 +157,25 @@ nav ul li:hover {
   text-align: center;
   font-size: 18px;
   padding-top: 2%;
+}
+ #backgroundCastleInTheSky {
+  background-image: url("https://www.ghibli.jp/gallery/laputa040.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 10px;
+  font-size: 18px;
+  max-width: 100%;
+  position:relative;
+  z-index:1;
+}
+
+#backgroundCastleInTheSky::after {
+  content:"";
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background:rgba(174, 168, 168, 0.6);
+  z-index:-1;
 }

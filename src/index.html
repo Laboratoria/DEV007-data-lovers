@@ -5,12 +5,15 @@
   <meta charset="utf-8">
   <title>Ghibli movies</title>
   <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Handlee&display=swap" rel="stylesheet">
 </head>
 
 <body>
   <header>
-    <img src="./images-data/titulo.png" href="" alt="Studio Ghibli movies" id="tituloStudioGhibliMovies">
-    <nav>
+    <img src="./images-data/titulo.png" href="" alt="Studio Ghibli movies" class="tituloStudioGhibliMovies">
+    <nav class="navegacion">
       <ul>
         <li><a href="#">Página de inicio</a></li>
         <li><a href="#">Producciones</a></li>
@@ -21,8 +24,8 @@
   <img src="./images-data/TransparenciaMiyazaki.jpg" alt="encabezado" class="encabezado">
   <div id="barra-de-busqueda">
     <input type="text" id="inputBuscar" placeholder="Buscar">
-    </div>
-    <input type="submit" class="boton" id="btn" value="Buscar">
+  </div>
+  <input type="submit" class="boton" id="btn" value="Buscar">
   <!-- 
 <ul id="box-search">
     <li><a href="#">Totoro</a></li>
@@ -33,17 +36,19 @@ contenedos de busqieda -->
   <!-- <div id="introduccion">
       <div>
     </div>
-  </div>-->
-  <br>
-  <br>
-  <p class="introduccion"> Studio Ghibli sorprende al mundo con largometrajes únicos, llenos de meticulosos detalles y
-    mensajes significativos para nuestra sociedad.
-    Este estudio de animación japonesa expone una visión diferente del anime, con un dibujo mucho más artesanal y
-    auténtico. Sus películas promueven la protección del medio ambiente, transmiten un mensaje antibelicista y
-    reivindica el protagonismo de los personajes femeninos y de su fuerza interior, todo eso combinado con esa peculiar
-    fantasía única de Ghibli que baña cada una de sus animaciones, la cual es tomada de las leyendas y mitos propios del
-    folclore nipón.</p>
-  <img src="./images-data/descarga.jpg" alt="Studio Ghibli Logo" class="logo">
+  </div> -->
+  <div class="intro">
+    <p class="introduccion"> Studio Ghibli sorprende al mundo con largometrajes únicos, llenos de meticulosos detalles y
+      mensajes significativos para nuestra sociedad.
+      Este estudio de animación japonesa expone una visión diferente del anime, con un dibujo mucho más artesanal y
+      auténtico. Sus películas promueven la protección del medio ambiente, transmiten un mensaje antibelicista y
+      reivindica el protagonismo de los personajes femeninos y de su fuerza interior, todo eso combinado con esa
+      peculiar
+      fantasía única de Ghibli que baña cada una de sus animaciones, la cual es tomada de las leyendas y mitos propios
+      del folclore nipón.</p>
+    <div class="espacio"></div>
+    <img src="./images-data/descarga.jpg" alt="Studio Ghibli Logo" class="logo">
+  </div>
   <div class="producciones">
     <br>
     <h1>Producciones</h1>
@@ -53,7 +58,8 @@ contenedos de busqieda -->
     <br>
     <br>
 
-    <img class="img-normalizada" id="posterCastleInTheSky" src="" alt="">
+    <img class="img-normalizada" img onclick="window.location.href='castleInTheSky.html'" id="posterCastleInTheSky"
+      src="" alt="">
     <img class="img-normalizada" id="posterMyNeighborTotoro" src="" alt="">
     <img class="img-normalizada" id="posterKikisDeliveryService" src="" alt="">
     <img class="img-normalizada" id="posterGraveOfTheFireflies" src="" alt="">
@@ -80,9 +86,12 @@ contenedos de busqieda -->
     <br>
     <p> Sigue las redes sociales oficiales para no perderte ninguna novedad </p>
     <br>
-    <img onclick="window.location.href='https://www.facebook.com/GhibliUSA'" src="./images-data/facebook.png" alt="facebook" id="facebook">
-    <img onclick="window.location.href='https://www.instagram.com/ghibliusa/'"src="./images-data/instagram.png" alt="instagram" id="instagram">  
-    <img onclick="window.location.href='https://twitter.com/JP_GHIBLI'"src="./images-data/twitter.png" alt="twitter" id="twitter">
+    <img onclick="window.location.href='https://www.facebook.com/GhibliUSA'" src="./images-data/facebook.png"
+      alt="facebook" id="facebook">
+    <img onclick="window.location.href='https://www.instagram.com/ghibliusa/'" src="./images-data/instagram.png"
+      alt="instagram" id="instagram">
+    <img onclick="window.location.href='https://twitter.com/JP_GHIBLI'" src="./images-data/twitter.png" alt="twitter"
+      id="twitter">
     <br>
     <br>
 
@@ -90,16 +99,17 @@ contenedos de busqieda -->
       <img class="flores" src="./images-data/flores.jpg" alt="flores">
 
     </div>
-  </body>
+</body>
 
 
 
 
 <footer class="footer">
-<p>«Dime, ¿cuáles son los límites? Los límites son tres: el cielo, la imaginación y tú misma.»</P>
-<img src="./images-data/totoroazul.png" alt="">
-<br>
-<br>
+  <p>«Dime, ¿cuáles son los límites? Los límites son tres: el cielo, la imaginación y tú misma.»</P>
+  <img src="./images-data/totoroazul.png" alt="">
+  <br>
+  <br>
 </footer>
 <script src="main.js" type="module"></script>
+
 </html>
