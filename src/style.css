@@ -1,7 +1,7 @@
 .homePage {  /* estilo class homepage */
   display: flex;
   justify-content: flex-end;
-  background-image: url("./img/homepage1.jpg");
+  background-image: url("./img/backgroundhomepage.JPG");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
