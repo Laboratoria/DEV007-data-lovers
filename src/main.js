@@ -10,6 +10,7 @@ const contenidoCard = document.querySelector(".contenidoCard");
 
 
 
+
 data.pokemon.forEach((pokemones) => {
   contenidoCard.innerHTML += `
   <button class= "mostrar">  
