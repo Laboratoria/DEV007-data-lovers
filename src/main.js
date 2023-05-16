@@ -6,27 +6,31 @@ import data from './data/pokemon/pokemon.js';
 //console.log(data.pokemon);
 
 const contenidoCard = document.querySelector(".contenidoCard");
-//const informaCard = document.getElementById("info");
-const showCard = document.querySelectorAll("#showCard");
+//const informaCard = document.getElementById("informacion");
 
 
 document.getElementById("pokedexBtn").onclick = function () {
   document.getElementById("homePageStart").style.display = "none";
-  document.getElementById("contenidoCard").style.display = "block";
+  document.getElementById("contenido").style.display = "block";
 };
 
-data.pokemon.forEach((i,idx) => {
+
+data.pokemon.forEach((pokemones) => {   
   contenidoCard.innerHTML += `
-    <button class= "todo" id="${showCard}">
+  <button class= "mostrar">  
+    <div class="card-imag">
+     <img src="${pokemones.img}" class= "imagen" alt="">
+    </div>
+
     <div class= "card-contenido">
-    <p class="numeroPokemon" >${i.num}</p>
-    <h3>${i.name}</h3>
-    <div class="power">
-    ${i.type}
+     <p class="numeroPokemon" >${pokemones.num}</p>
+     <h3>${pokemones.name}</h3>
+      <div class="poder">
+       <p>tipo: ${pokemones.type}</p>
+        <div class= "generacion">
+         <p>${pokemones.generation.num} - ${pokemones.generation.name}</p>        
+        </div>
+      </div>
     </div>
-    </div>
-    <div class="card-img">
-    <img src="${i.img}" class= "imagen" alt="">
-    </div>
-    </button>`;
+  </button>`;
 })
