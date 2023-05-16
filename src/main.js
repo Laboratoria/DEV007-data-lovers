@@ -10,6 +10,11 @@ const contenidoCard = document.querySelector(".contenidoCard");
 const showCard = document.querySelectorAll("#showCard");
 
 
+document.getElementById("pokedexBtn").onclick = function () {
+  document.getElementById("homePageStart").style.display = "none";
+  document.getElementById("contenidoCard").style.display = "block";
+};
+
 data.pokemon.forEach((i,idx) => {
   contenidoCard.innerHTML += `
     <button class= "todo" id="${showCard}">

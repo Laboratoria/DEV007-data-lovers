@@ -1,4 +1,6 @@
-.homePage {
+.homePage {  /* estilo class homepage */
+  display: flex;
+  justify-content: flex-end;
   background-image: url("./img/homepage1.jpg");
   background-position: center;
   background-size: cover;
@@ -8,4 +10,42 @@
   position: fixed;
   top: 0;
   left: 0;
+}
+
+.buttons{   /* estilo de los buttons homepage */
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+  height: 45%;
+  width: 50%;
+  align-self: flex-end;
+  }
+
+button#resumeBtn{  /* estilo button resumen */
+  height: 20%;
+  background-color: yellow;
+  opacity: 90%;
+  border: 1px solid yellow;
+  border-radius: 25px;
+  margin-right: 25%;
+  margin-left: 25%;
+  font-size: 250%;
+  font-weight: bold;
+  font-family: revert;
+  color: black;
+}
+
+
+button#pokedexBtn{
+  height: 20%;
+  background-color: red;
+  opacity: 90%;
+  border: 1px solid red;
+  border-radius: 25px;
+  margin-right: 25%;
+  margin-left: 25%;
+  font-size: 250%;
+  font-weight: bold;
+  font-family: revert;
+  color: white;
 }
