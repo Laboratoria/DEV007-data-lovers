@@ -1,0 +1,17 @@
+
+
+body {
+    background:linear-gradient(to right,white 0%, white 25%,black 25%, black 28%, rgb(251, 59, 59) 28%, rgb(251, 59, 59) 100%) ;
+    font-family: monospace; 
+    }
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tarjetapokemon {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid black;
+}
