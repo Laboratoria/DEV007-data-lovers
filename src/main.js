@@ -9,9 +9,13 @@ const contenidoCard = document.querySelector(".contenidoCard");
 //const informaCard = document.getElementById("informacion");
 
 
+document.getElementById("pokedexBtn").onclick = function () {
+  document.getElementById("homePageStart").style.display = "none";
+  document.getElementById("contenido").style.display = "block";
+};
 
 
-data.pokemon.forEach((pokemones) => {
+data.pokemon.forEach((pokemones) => {   
   contenidoCard.innerHTML += `
   <button class= "mostrar">  
     <div class="card-imag">
