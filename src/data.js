@@ -1,25 +1,13 @@
-// estas funciones son de ejemplo
+import data from './data/athletes/athletes.js'
+export const dataForAthletes = data.athletes;
+export const athletes = () => {
+  return 'athletes';
+};
 
-function filter(data, propiedad){
-  return data.filter(athletes =>{
-    athletes.sport === propiedad
-  });
-  }
-  
-  export const dataAthletes = (data, propiedad) => {
-    return 'data.propiedad';
-  
-  };
-  
-  export const name = () => {
-    return 'name';
-  }
-  
-
-//export const example = () => {
-  //return 'example';
-//};
-
-//export const anotherExample = () => {
-  //return 'OMG';
-//};
+export const dataAthletes = () => {
+  return 'OMG';
+};
+import main from './main/function/main.js'
+export const main = () => {
+  return 'OMG';
+};
