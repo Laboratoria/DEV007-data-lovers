@@ -9,7 +9,7 @@ const contenidoCard = document.querySelector(".contenidoCard");
 //const informaCard = document.getElementById("informacion");
 
 
-document.getElementById("pokedexBtn").onclick = function () {
+document.getElementById("pokedexBtn").onclick = function () {      //funcion del botón pokedex//
   document.getElementById("homePageStart").style.display = "none";
   document.getElementById("contenido").style.display = "block";
 };
