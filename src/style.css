@@ -22,7 +22,7 @@ nav {
 
 nav ul {
   list-style: none;
-  
+
 }
 
 nav ul li {
@@ -60,36 +60,42 @@ nav ul li:hover {
   display: block;
   /* Para que la barra de búsqueda se centre la convertimos en un bloque */
   padding: 1.3%;
-  font-size: 18px; 
+  font-size: 18px;
   border-radius: 110px;
 
 }
+
 .boton {
   display: block;
   position: absolute;
   top: 90%;
   padding: 0.7%;
   width: 7%;
-  font-size: 14px; 
+  font-size: 14px;
   background-color: #696763;
   color: #FFFFFF;
   margin-left: 50%;
   border-radius: 110px;
 
 }
-#btn{
-}
+
+#btn {}
+
 .intro {
   display: flex;
-  align-items: center; /* Centra verticalmente */
-  justify-content: center; /* Centra horizontalmente */
-  height: 200px; /* Altura del contenedor */
+  align-items: center;
+  /* Centra verticalmente */
+  justify-content: center;
+  /* Centra horizontalmente */
+  height: 200px;
+  /* Altura del contenedor */
   /* width: 60%;
   margin-left: 7%;
   margin-bottom: 2%;
   margin-top: 0; */
-  
+
 }
+
 .introduccion {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   text-align: center;
@@ -98,18 +104,20 @@ nav ul li:hover {
   /* margin-left: 7%;
   margin-bottom: 2%;
   margin-top: 0; */
-  
+
 }
+
 .espacio {
-width: 30px;
+  width: 30px;
 }
-.logo{
+
+.logo {
   height: 200px;
   /* margin-right: 7%;
   margin-left: 5%; */
 }
 
-.producciones{
+.producciones {
   width: 100%;
   height: 100%;
   margin: auto;
@@ -119,41 +127,86 @@ width: 30px;
   text-align: center;
   font-family: 'Bubbler One', sans-serif;
 }
-.img-normalizada{
-	width: 250px;
-	height: 340px;
+
+.img-normalizada {
+  width: 250px;
+  height: 340px;
   object-fit: cover;
   border-radius: 10%;
   margin: 20px;
 }
-.mas-detalles{
+
+.container {
+  position: relative;
+  display: inline-block;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 250px;
+  height: 340px;
+  background-color: rgba(0, 0, 0, 0.5);
+  /* Color de fondo semi-transparente */
+  color: #fff;
+  /* Color del texto */
+  opacity: 0; 
+  /* Oculta el texto inicialmente */
+  transition: opacity 0.3s ease;
+  /* Transición suave al mostrar/ocultar */
+  border-radius: 10%;
+  margin: 20px;
+font-size: 30px;
+
+}
+
+.container:hover .overlay {
+  opacity: 1;
+  /* Muestra el texto al pasar el mouse sobre la imagen */
+}
+
+.overlay p {
+  text-align: center;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.mas-detalles {
   background-color: #F3F3F3;
   padding: 10px;
   font-size: 18px;
   text-align: center;
 }
+
 #facebook {
   width: 40px;
   margin-bottom: 3%;
   margin-right: 5%;
 }
+
 #instagram {
   width: 39px;
   margin-bottom: 3%;
   margin-right: 5%;
 }
+
 #twitter {
   width: 45px;
   margin-bottom: 3%;
 }
-.flores{
+
+.flores {
   width: 100%;
 }
-.footer{
+
+.footer {
   width: 100%;
   background-color: #cdd4d6;
   text-align: center;
   font-size: 18px;
   padding-top: 2%;
 }
-
