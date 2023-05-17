@@ -1,13 +1,24 @@
 import data from './data/athletes/athletes.js'
-export const dataForAthletes = data.athletes;
-export const athletes = () => {
-  return 'athletes';
-};
 
-export const dataAthletes = () => {
-  return 'OMG';
-};
-import main from './main/function/main.js'
-export const main = () => {
-  return 'OMG';
-};
+
+/*import athletesData from './athletes.js'
+console.log (dataForAthletes)
+
+document.getElementById('intro')
+
+export const contenedor = document.getElementById('contenedor')
+export const botonDeportes = document.getElementById('botonDeportes')
+export const botonPais = document.getElementById('botonPais')
+
+document.getElementById(boton - pais)
+
+export function dataAthletesFilter (data, propiedad) {
+  return data.athletes.filter(athletes => {
+    athletes.sport === propiedad
+  })
+}
+
+export { dataAthletesFilter }
+const dataAthletesFilterSport = () => {
+return 'propiedad'= dataAthletesFilter
+}*/

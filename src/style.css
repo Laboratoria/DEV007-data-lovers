@@ -1,17 +1,34 @@
-
-body{
+main{
   background-image: url('https://nicasnews.com/wp-content/uploads/2016/08/20160805-3.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 20% -300%;
-  display: flex;
   align-items: center;
  
 }
+.contenedorDeCartas{
+padding: 20px;
+  width: 1250px;
+  height: 100%;
+  border: 10px solid;
+  background-color: #fff;
+  border-color: #40d948;
+  border-radius: 20px 20px 0px 0px;
 
+
+}
+
+.imagen-principal {
+  display: flex;
+ 
+ width: 872px;
+ height: 460px;
+ left: 100px;
+ top: 160px;
+}
 .clase-barrasuperior {
 
-  position: absolute;
+
   width: 1440px;
   height: 98px;
   left: 0px;
@@ -44,7 +61,7 @@ filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   content: "";
   width: 400px;
   height: 400px;
-  position: absolute;
+ 
   top: 0;
   left: 0;
   background-color: rgba(229, 255, 0, 0.911);
@@ -82,7 +99,7 @@ filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   content: "";
   width: 400px;
   height: 400px;
-  position: absolute;
+ 
   top: 0;
   left: 0;
 }
@@ -129,21 +146,8 @@ filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 
 }
 
-
-
-
-
-.imagen-principal {
-  display: flex;
-  position: absolute;
-
- width: 872px;
- height: 460px;
- left: 100px;
- top: 160px;
-}
 .img-rio2016{
-  position: absolute;
+  
   width: 320px;
   height: 93px;
   left: 1050px;
@@ -153,7 +157,7 @@ filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   
 }
 .parrafo {
-  position: absolute;
+  
   width: 470px;
   height: 348px;
   left: calc(45% - 370px/2 + 432px);
@@ -172,3 +176,5 @@ border: 1px solid rgb(17, 0, 255);
 font-style: normal;
 
 }
+
+
