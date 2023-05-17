@@ -86,6 +86,25 @@ button#pokedexBtn{   /* estilo button pokedex */
   color: white;
 }
 
+.resumePage {
+  display: flex;
+  background-image: url("./img/backgroundresumepage.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.resumePage img{
+  width: 50%;
+  height: 50%;
+  margin-top: 15%;
+  margin-left: 25%;
+}
 
 .card-imag {
     width: 160px;

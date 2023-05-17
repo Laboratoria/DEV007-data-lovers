@@ -14,6 +14,11 @@ document.getElementById("pokedexBtn").onclick = function () {      //funcion del
   document.getElementById("contenido").style.display = "block";
 };
 
+document.getElementById("resumeBtn").onclick = function () {      //funcion del botón pokeresumen//
+  document.getElementById("homePageStart").style.display = "none";
+  document.getElementById("resumePageStart").style.display = "block";
+};
+
 
 data.pokemon.forEach((pokemones) => {   
   contenidoCard.innerHTML += `
