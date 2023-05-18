@@ -9,9 +9,14 @@ const contenidoCard = document.querySelector(".contenidoCard");
 //const informaCard = document.getElementById("informacion");
 
 
-document.getElementById("pokedexBtn").onclick = function () {
+document.getElementById("pokedexBtn").onclick = function () {      //funcion del botón pokedex//
   document.getElementById("homePageStart").style.display = "none";
   document.getElementById("contenido").style.display = "block";
+};
+
+document.getElementById("resumeBtn").onclick = function () {      //funcion del botón pokeresumen//
+  document.getElementById("homePageStart").style.display = "none";
+  document.getElementById("resumePageStart").style.display = "block";
 };
 
 
