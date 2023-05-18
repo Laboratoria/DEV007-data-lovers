@@ -7,10 +7,11 @@ import { example } from './data.js';
 //
 
 // traer json de la carpeta src/ghibli y guardarlo en una variable
-import data from './data/ghibli/ghibli.js';
-console.log(data.films[0].poster);
+import Ghibli from './data/ghibli/ghibli.js';
+// alert("studio");
 
 // inyectar los poster en el html
+/*
 const poster0 = document.getElementById('posterCastleInTheSky');
 poster0.src = data.films[0].poster;
 const poster1 = document.getElementById('posterMyNeighborTotoro');
@@ -51,3 +52,43 @@ const poster18 = document.getElementById('posterTheTaleOfThePrincessKaguya');
 poster18.src = data.films[18].poster;
 const poster19 = document.getElementById('posterWhenMarnieWasThere');
 poster19.src = data.films[19].poster;
+*/
+
+let searchInput = document.getElementById("searchInput");
+let searchButton = document.getElementById("searchButton");
+let searchResult = document.getElementById("searchResult");
+let sortBy = document.getElementById("sortBy");
+let sortOrder = document.getElementById("sortOrder");
+let sortResult = document.getElementById("sortResult");
+
+
+//funciones
+searchButton.addEventListener("click", function(){
+    let result = filterData(Ghibli.films, searchInput.value)
+
+    let data = result.map(imagen => {
+        return `<img class="img-normalizada" id="${imagen.id}" src="${imagen.poster}" alt="">`
+    })
+    searchResult.innerHTML = data;
+    })
+
+function filterData(data, condition){
+    let filtrado = data.filter(function(f){
+        return f.title.toLowerCase().includes(condition.toLowerCase())
+    })
+    return filtrado;
+};
+
+function sortData(data, sortBy, sortOrder){
+    let result = data.sort(function(a, b){
+        if(sortBy == "title"){
+            if(sortOrder == "az"){
+                return a.title.toLowerCase().localCompare(b.title.toLowerCase())
+            } 
+            else {
+                return b.title.toLowerCase().localCompare(a.title.toLowerCase())
+            }
+        }
+    })
+    sortResult.innerHTML = sortData;
+};
