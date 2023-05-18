@@ -1,5 +1,21 @@
 import data from './data/athletes/athletes.js'
+export { dataAthletesFilter }
+const dataAthletesFilterSport = () => {
+return 'propiedad'= dataAthletesFilter
+}export { dataAthletesFilter }
+const dataAthletesFilterTeam = () => {
+return 'propiedad'= dataAthletesFilter
+}
+export { dataAthletesFilter }
+const dataAthletesFilterName= () => {
+return 'propiedad'= dataAthletesFilter
+}
 
+export filterSport(data, deporte){
+  const deportes= data.filter(deportes=>deportes.sport===deporte)
+  return deportes
+
+}
 
 /*import athletesData from './athletes.js'
 console.log (dataForAthletes)
@@ -18,7 +34,4 @@ export function dataAthletesFilter (data, propiedad) {
   })
 }
 
-export { dataAthletesFilter }
-const dataAthletesFilterSport = () => {
-return 'propiedad'= dataAthletesFilter
-}*/
+*/

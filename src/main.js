@@ -1,42 +1,27 @@
-//import { dataAthletesData, dataAthletesFilter } from "./data.js"
+import { filterSport } from './data.js'
 import data from './data/athletes/athletes.js'
-//console.log (data.athletes[0].name)
- 
+
 const contenedor = document.getElementById('contenedor')
 const athletes = data.athletes
-//console.log(athletes)
 
-data.athletes.forEach((i) => {
-console.log(i)
+function mostrarDeportes(athletes)
+const botonDeportes = document.getElementById('botonDeportes')
+const botonPais = document.getElementById('botonPais')
+botonDeportes.addEventListener('click', e => {
+  const valueOption = e.target.value
+  const resultadosFiltro = filterSport(athletes, valueOption)
+  mostrarDeportes(resultadosFiltro)
+})
+
+data.athletes.forEach(i => {
+  console.log(i)
   contenedor.innerHTML += `<div class= datosAtletas>
   <p>Name: ${i.name}</p>
   <p>Sport: ${i.sport}</p>
   <p>Team: ${i.team}</p>
   <p>Medal: ${i.medal}</p>
   </div>`
-});
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+})
 
 /*const dataAthletes = () => {
   // Obtener referencias al elemento del DOM donde salen los resultados
