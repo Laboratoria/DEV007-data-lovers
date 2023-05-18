@@ -51,31 +51,88 @@ button#pokedexBtn{
 }
 
 .card-imag {
-    width: 160px;
+    width: 100%;          /*ancho de la imagen*/
     height: 120px;
     
     background-color: rgb(219, 215, 215);
     border-radius: 10px;
-    transform: 
+    /*transform: 
     rotate(1deg) skew(1deg, -1deg);         /*se va graduando cuanto quieres que este inclinada la carta*/
-    transition:
+    /*transition:
     translate 0.25s,
-    box-shadow 0.25s;
-    
-
+    box-shadow 0.25s;*/
 }
-.card-imag:hover {
+
+/*.card-imag:hover {
     translate: 0 -30px;                     /*para medir cuanto de elevara la imagen con el efecto*/
-    box-shadow:
+    /*box-shadow:
     5px 3px rgb(217 220 242 / 75%),
-    10px 6px rgb(44 217 255 / 50%),
+    10px 6px rgba(15, 176, 245, 0.5),
     15px 9px rgb(126 255 178 / 25%);
-}
-.mostrar {
-    cursor: pointer;
-    align-items: center;
-    display: inline-block;
-    border-radius: 10px;
-    border: 5px solid rgb(160, 158, 158);
+}*/
+
+
+.contenidoCard {
+  
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-image: url(img/fondolista.png);
+  background-position: center;
+  width: 100vw;
+  /*top: 0;  /*no respeta arriba*/
+  /*left: 0;  /*no respeta izquierda*/
+
+  
 }
 
+.mostrar {
+  width: 200px;
+  height: 250px;
+  perspective: 800px;
+  margin: 20px;
+  border: 6px solid rgb(160, 158, 158); 
+  border-radius: 10px;
+  align-items: center;
+  cursor: pointer;
+
+
+}
+
+.card__inner {
+  position: relative;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: transform 0.5s;
+}
+.mostrar:hover .card__inner {
+  transform: rotateY(-180deg);
+}
+.card__side {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  grid-template-rows: 115px 1fr;
+  backface-visibility: hidden;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+}
+.card__side--back {
+  transform: rotateY(180deg);
+  background:rgb(26, 25, 25);
+  color: white;
+  
+}
+
+.input {
+  padding: 1%;
+  width: 40%;
+  /*display: flex;
+  flex-direction:column;*/ 
+  background-color: white;
+  
+}
+.resistencia {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
