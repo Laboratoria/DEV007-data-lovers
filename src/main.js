@@ -10,44 +10,116 @@ import { example } from './data.js';
 import data from './data/ghibli/ghibli.js';
 console.log(data.films[0].poster);
 
-// inyectar los poster en el html
-const poster0 = document.getElementById('posterCastleInTheSky');
-poster0.src = data.films[0].poster;
-const poster1 = document.getElementById('posterMyNeighborTotoro');
-poster1.src = data.films[1].poster;
-const poster2 = document.getElementById('posterKikisDeliveryService');
-poster2.src = data.films[2].poster;
-const poster3 = document.getElementById('posterGraveOfTheFireflies');
-poster3.src = data.films[3].poster;
-const poster4 = document.getElementById('posterOnlyYesterday');
-poster4.src = data.films[4].poster;
-const poster5 = document.getElementById('posterPorcoRosso');
-poster5.src = data.films[5].poster;
-const poster6 = document.getElementById('posterPomPoko');
-poster6.src = data.films[6].poster;
-const poster7 = document.getElementById('posterWhisperOfTheHeart');
-poster7.src = data.films[7].poster;
-const poster8 = document.getElementById('posterPrincessMononoke');
-poster8.src = data.films[8].poster;
-const poster9 = document.getElementById('posterMyNeighborsTheYamadas');
-poster9.src = data.films[9].poster;
-const poster10 = document.getElementById('posterSpiritedAway');
-poster10.src = data.films[10].poster;
-const poster11 = document.getElementById('posterTheCatReturns');
-poster11.src = data.films[11].poster;
-const poster12 = document.getElementById('posterHowlsMovingCastle');
-poster12.src = data.films[12].poster;
-const poster13 = document.getElementById('posterTalesFromEarthsea');
-poster13.src = data.films[13].poster;
-const poster14 = document.getElementById('posterPonyoOnTheCliffByTheSea');
-poster14.src = data.films[14].poster;
-const poster15 = document.getElementById('posterTheSecretWorldOfArrietty');
-poster15.src = data.films[15].poster;
-const poster16 = document.getElementById('posterFromUpOnPoppyHill');
-poster16.src = data.films[16].poster;
-const poster17 = document.getElementById('posterTheWindRises');
-poster17.src = data.films[17].poster;
-const poster18 = document.getElementById('posterTheTaleOfThePrincessKaguya');
-poster18.src = data.films[18].poster;
-const poster19 = document.getElementById('posterWhenMarnieWasThere');
-poster19.src = data.films[19].poster;
+var listaPeliculas = data.films;
+
+//borrar el tercer elemento de la lista peliculas
+//  listaPeliculas.splice(2, 0)
+
+//ordenar los elementos de la lista peliculas por orden alfabetico
+// listaPeliculas.sort(function (a, b) {
+//     if (a.rt_score > b.rt_score) {
+//         return 1;
+//     }
+//     if (a.rt_score < b.rt_score) {
+//         return -1;
+//     }
+//     return 0;
+// });
+
+
+function poster(id, titulo, imagen) {
+    var poster = `<div class="container">
+    <img class="img-normalizada" id="${id}" src="${imagen}" alt="poster">
+    <div class="overlay" onclick="window.location.href='castleInTheSky.html'">
+    <p>${titulo}</p>
+    </div>
+    </div>`;
+    return poster;
+}
+
+var posters = [];
+
+for (const pelicula of listaPeliculas) {
+    posters.push(poster(pelicula.id, pelicula.title, pelicula.poster));
+}
+
+console.log(posters.join(''));
+// var poster = `<div class="container">
+// <img class="img-normalizada" id="posterCastleInTheSky" src="" alt="poster">
+// <div class="overlay" onclick="window.location.href='castleInTheSky.html'">
+// <p>El castillo en el cielo</p>
+// </div>
+// </div>`;
+
+const escenario = document.getElementById('escenario');
+escenario.innerHTML = posters.join('');
+
+
+
+
+
+//agregar un escuchador para la lista despegable que tiene el id ordenar 
+const ordenar = document.getElementById('ordenar');
+ordenar.addEventListener('change', function () {
+    //obtener el valor seleccionado
+    const valor = ordenar.value;
+    console.log(valor);
+    //obtener el elemento con id escenario
+    const escenario = document.getElementById('escenario');
+    //limpiar el escenario
+    escenario.innerHTML = '';
+    //ordenar la lista de peliculas
+    if (valor == 'az') {
+        listaPeliculas.sort(function (a, b) {
+            if (a.title > b.title) {
+                return 1;
+            }
+            if (a.title < b.title) {
+                return -1;
+            }
+            return 0;
+        });
+    } else if (valor == 'za') {
+        listaPeliculas.sort(function (a, b) {
+            if (a.title < b.title  ) {
+                return 1;
+            }
+            if (a.title > b.title  ) {
+                return -1;
+            }
+            return 0;
+        });
+    }
+    else if (valor == 'ano') {
+        listaPeliculas.sort(function (a, b) {
+            if (a.release_date > b.release_date) {
+                return 1;
+            }
+            if (a.release_date < b.release_date) {
+                return -1;
+            }
+            return 0;
+        });
+        
+    }
+    else if (valor == 'puntaje') {
+        listaPeliculas.sort(function (a, b) {
+            if (a.rt_score > b.rt_score) {
+                return 1;
+            }
+            if (a.rt_score < b.rt_score) {
+                return -1;
+            }
+            return 0;
+        });
+    }
+
+    //crear una lista de posters
+    var posters = [];
+    for (const pelicula of listaPeliculas) {
+        posters.push(poster(pelicula.id, pelicula.title, pelicula.poster));
+    }
+    //agregar la lista de posters al escenario
+    escenario.innerHTML = posters.join('');
+}
+);
