@@ -1,17 +1,7 @@
-import { filterSport } from './data.js'
 import data from './data/athletes/athletes.js'
 
 const contenedor = document.getElementById('contenedor')
 const athletes = data.athletes
-
-function mostrarDeportes(athletes)
-const botonDeportes = document.getElementById('botonDeportes')
-const botonPais = document.getElementById('botonPais')
-botonDeportes.addEventListener('click', e => {
-  const valueOption = e.target.value
-  const resultadosFiltro = filterSport(athletes, valueOption)
-  mostrarDeportes(resultadosFiltro)
-})
 
 data.athletes.forEach(i => {
   console.log(i)
@@ -22,6 +12,34 @@ data.athletes.forEach(i => {
   <p>Medal: ${i.medal}</p>
   </div>`
 })
+
+/*import { filterSport } from './data.js'
+import data from './data/athletes/athletes.js'
+
+const contenedor = document.getElementById('contenedor')
+const athletes = data.athletes
+
+const botonDeportes = document.getElementById('botonDeportes')
+const botonPais = document.getElementById('botonPais')
+botonDeportes.addEventListener('click', (e) => {
+  const valueOption = 'Taekwondo'
+  const atletasFiltrados = filterSport(athletes, valueOption)
+  mosrarAtletas(atletasFiltrados)
+})
+
+function mosrarAtletas (athletes) {
+  athletes.forEach(i => {
+    console.log(i)
+    contenedor.innerHTML += `<div class= datosAtletas>
+        <p>Name: ${i.name}</p>
+        <p>Sport: ${i.sport}</p>
+        <p>Team: ${i.team}</p>
+        <p>Medal: ${i.medal}</p>
+        </div>`
+  })
+}
+
+mosrarAtletas(athletes)
 
 /*const dataAthletes = () => {
   // Obtener referencias al elemento del DOM donde salen los resultados
@@ -66,3 +84,12 @@ botonPais.addEventListener('click', function () {
  const buscarNombres = document.getElementById(data.buscarNombre)
  buscador-por-nombre.addEventListener("click", function()
 };*/
+/*el
+function mostrarDeportes(athletes)
+const botonDeportes = document.getElementById('botonDeportes')
+const botonPais = document.getElementById('botonPais')
+botonDeportes.addEventListener('click', e => {
+  const valueOption = e.target.value
+  const resultadosFiltro = filterSport(athletes, valueOption)
+  mostrarDeportes(resultadosFiltro)
+})*/
