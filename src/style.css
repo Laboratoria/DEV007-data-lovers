@@ -4,6 +4,8 @@ body{
   padding: 0;
  }
 
+ /*ESTILOS HOMEPAGE*/
+
 .homePage {  /* estilo class homepage */
   display: flex;
   flex-direction: column;
@@ -90,9 +92,11 @@ button#pokedexBtn{   /* estilo button pokedex */
   color: white;
 }
 
+/*ESTILOS RESUMEPAGE*/
+
 .resumePage {
   display: flex;
-  background-image: url("./img/backgroundresumepage.jpg");
+  background-image: url("./img/fondolista.png");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -104,11 +108,49 @@ button#pokedexBtn{   /* estilo button pokedex */
 }
 
 .resumePage img{
-  width: 50%;
-  height: 50%;
-  margin-top: 15%;
-  margin-left: 25%;
+  margin: 3% 10% 8%;
 }
+
+.header{
+  display: flex;
+  flex-direction: row;
+  height: 15%;
+  margin-top: 1%;
+  background-color: red;
+}
+
+.header img{
+  width: 25%;
+  height: 10vw;
+  margin-top: -1%;
+  margin-left: 2%;
+
+}
+
+#homePageButton{
+  width: 20%;
+  height: 8vh;
+  align-self: center;
+  font-family: revert;
+  font-size: xx-large;
+  border: 2px solid black;
+  border-radius: 50px;
+}
+
+.bottomResumePage{
+  display: flex;
+  flex-direction: row;
+  height: 70%
+}
+
+.video{
+  margin-top: 5%;
+  margin-left: 15%;
+  border: 5px solid #1e90ff;
+  border-radius: 25px;
+}
+
+/*ESTILOS POKEDEX*/
 
 .card-imag {
     width: 100%;          /*ancho de la imagen*/
