@@ -11,7 +11,7 @@
 </head>
 
 <body>
-  <header>
+  <header> <!-- Sección de encabezado/barra de navegación  -->
     <img src="./images-data/titulo.png" href="" alt="Studio Ghibli movies" class="tituloStudioGhibliMovies">
     <nav class="navegacion">
       <ul>
@@ -21,23 +21,26 @@
       </ul>
     </nav>
   </header>
-  <img src="./images-data/TransparenciaMiyazaki.jpg" alt="encabezado" class="encabezado">
+
+  <img src="./images-data/TransparenciaMiyazaki.jpg" alt="encabezado"
+    class="encabezado"><!-- Sección de barra de búsqueda -->
   <div id="barra-de-busqueda">
-    <input type="text" id="inputBuscar" placeholder="Buscar">
+    <input type="text" id="searchInput" placeholder="Buscar">
   </div>
-  <input type="submit" class="boton" id="btn" value="Buscar">
+  <input type="submit" class="boton" id="searchButton" value="Buscar">
   <!-- 
-<ul id="box-search">
-    <li><a href="#">Totoro</a></li>
-</ul>  -->
+    <ul id="box-search">
+      <li><a href="#">Totoro</a></li>
+    </ul>  -->
   <!-- 
-<div id="cover-ctn-search"></div>
-contenedos de busqieda -->
+      <div id="cover-ctn-search"></div>
+      contenedos de busqieda -->
   <!-- <div id="introduccion">
-      <div>
-    </div>
-  </div> -->
-  <div class="intro">
+        <div>
+        </div>
+      </div> -->
+
+  <div class="intro"> <!-- Sección de introducción -->
     <p class="introduccion"> Studio Ghibli sorprende al mundo con largometrajes únicos, llenos de meticulosos detalles y
       mensajes significativos para nuestra sociedad.
       Este estudio de animación japonesa expone una visión diferente del anime, con un dibujo mucho más artesanal y
@@ -49,29 +52,36 @@ contenedos de busqieda -->
     <div class="espacio"></div>
     <img src="./images-data/descarga.jpg" alt="Studio Ghibli Logo" class="logo">
   </div>
-  <div class="producciones">
+  <div id="searchResult">
+  </div>
+
+  <div class="producciones"> <!-- Sección de producciones/películas -->
     <br>
     <h1>Producciones</h1>
-    <br>
     <h3>Haz clic en cada una de las portadas y revive la magia de estas maravillosas animaciones</h3>
-    <!-- agregar lista despegable con las opciones A-Z y Z-A, Ano y puntaje -->
+    <br>
+    <label for="">Ordenar por:</label><!-- label permite dar un título o descripción a un campo de formulario -->
+    <!-- agregamos lista despegable para ordenar de A-Z y Z-A, por Año y por puntaje -->
     <select id="ordenar">
-      <option value="az">A-Z</option>
-      <option value="za">Z-A</option>
-      <option value="ano">Año</option>
+      <option value="az">Título de A a Z</option>
+      <option value="za">Título de Z a A</option>
+      <option value="año">Año</option>
       <option value="puntaje">Puntaje</option>
     </select>
     <br>
     <br>
+
+    <!-- Creamos el div "escenario" para guardar todas las peliculas -->
     <div id="escenario">
     </div>
-
+    <!-- Creamos el div "overlay" para poder cubrir las imágenes cuando pasamos el mouse por encima  -->
     <div class="overlay">
     </div>
     <br>
     <br>
   </div>
-  <div class="mas-detalles">
+
+  <div class="mas-detalles"><!-- Sección de más detalles, donde agregamos los enlaces a las redes sociales -->
     <br>
     <p> Sigue las redes sociales oficiales para no perderte ninguna novedad </p>
     <br>
@@ -81,24 +91,18 @@ contenedos de busqieda -->
       alt="instagram" id="instagram">
     <img onclick="window.location.href='https://twitter.com/JP_GHIBLI'" src="./images-data/twitter.png" alt="twitter"
       id="twitter">
+  </div>
+  <div>
+    <img class="flores" src="./images-data/flores.jpg" alt="flores">
+  </div>
+  <footer class="footer">
+    <p>«Dime, ¿cuáles son los límites? Los límites son tres: el cielo, la imaginación y tú misma.»</P>
+    <img src="./images-data/totoroazul.png" alt="">
     <br>
     <br>
-
-    <div>
-      <img class="flores" src="./images-data/flores.jpg" alt="flores">
-
-    </div>
+  </footer>
+  <script src="main.js" type="module"></script> <!-- El enlace a JS va antes del cierre del body-->
 </body>
 
-
-
-
-<footer class="footer">
-  <p>«Dime, ¿cuáles son los límites? Los límites son tres: el cielo, la imaginación y tú misma.»</P>
-  <img src="./images-data/totoroazul.png" alt="">
-  <br>
-  <br>
-</footer>
-<script src="main.js" type="module"></script>
 
 </html>

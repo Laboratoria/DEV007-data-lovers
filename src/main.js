@@ -4,74 +4,43 @@ import { example } from './data.js';
 // import data from './data/rickandmorty/rickandmorty.js';
 
 //console.log(example, data);
-//
 
-// traer json de la carpeta src/ghibli y guardarlo en una variable
+// traemos la data y la guardamos en una variable
 import data from './data/ghibli/ghibli.js';
-console.log(data.films[0].poster);
-
 var listaPeliculas = data.films;
 
-//borrar el tercer elemento de la lista peliculas
-//  listaPeliculas.splice(2, 0)
-
-//ordenar los elementos de la lista peliculas por orden alfabetico
-// listaPeliculas.sort(function (a, b) {
-//     if (a.rt_score > b.rt_score) {
-//         return 1;
-//     }
-//     if (a.rt_score < b.rt_score) {
-//         return -1;
-//     }
-//     return 0;
-// });
-
-
-function poster(id, titulo, imagen) {
+// Ahora con JS tomamos la data y la mostramos en HTML:
+function movie(id, titulo, imagenPoster) { // La funcion 'movie' recibe 3 parámetros: id, título e imagen. Esta función genera un string en HTML 
     var poster = `<div class="container">
-    <img class="img-normalizada" id="${id}" src="${imagen}" alt="poster">
+    <img class="img-normalizada" id="${id}" src="${imagenPoster}" alt="poster"> 
     <div class="overlay" onclick="window.location.href='castleInTheSky.html'">
     <p>${titulo}</p>
     </div>
-    </div>`;
-    return poster;
+    </div>`; //Usamos "${}" para que se agregue el dato(valor) que corresponda en cada caso.
+    return poster; // Y finalmente tenemos en pantalla la imagen del poster con el título de la película. 
+}
+var posters = []; // aquí vamos a crear una lista para los posters
+for (const pelicula of listaPeliculas) { // recorremos la lista de películas y por cada película creamos un poster
+    // ahora agregamos cada poster a la lista de posters
+    posters.push(movie(pelicula.id, pelicula.title, pelicula.poster)); // el .push agrega uno o más elementos al final de un array existente 
 }
 
-var posters = [];
+// ahora agregamos la lista de posters al div escenario
+const escenario = document.getElementById('escenario'); // aquí seleccionamos el id escenario y lo guardamos en una variable
+escenario.innerHTML = posters.join(''); // aquí agregamos la lista de posters al escenario
 
-for (const pelicula of listaPeliculas) {
-    posters.push(poster(pelicula.id, pelicula.title, pelicula.poster));
-}
-
-console.log(posters.join(''));
-// var poster = `<div class="container">
-// <img class="img-normalizada" id="posterCastleInTheSky" src="" alt="poster">
-// <div class="overlay" onclick="window.location.href='castleInTheSky.html'">
-// <p>El castillo en el cielo</p>
-// </div>
-// </div>`;
-
-const escenario = document.getElementById('escenario');
-escenario.innerHTML = posters.join('');
-
-
-
-
-
-//agregar un escuchador para la lista despegable que tiene el id ordenar 
-const ordenar = document.getElementById('ordenar');
-ordenar.addEventListener('change', function () {
+///////////////// Para que funcione el Ordenar por: ///////////////////////
+//agregamos un escuchador para la lista despegable que tiene el id ordenar (el 'ordenar por')
+const ordenarPor = document.getElementById('ordenar');
+ordenarPor.addEventListener('change', function () { // el 'change' se pone por defecto para la lista despegable 
     //obtener el valor seleccionado
-    const valor = ordenar.value;
-    console.log(valor);
-    //obtener el elemento con id escenario
-    const escenario = document.getElementById('escenario');
-    //limpiar el escenario
-    escenario.innerHTML = '';
-    //ordenar la lista de peliculas
+    const valor = ordenar.value; // primero escucha si es az, za, año o puntaje del html 
+    const escenario = document.getElementById('escenario'); // segundo, obtiene el id 'escenario' que encuentra en el html
+    escenario.innerHTML = ''; // y tercero, limpia el escenario para que se pueda actualizar el nuevo contenido dinámico.
+    //y ahora ordena la lista de películas dependiendo de lo que se seleccione:
     if (valor == 'az') {
-        listaPeliculas.sort(function (a, b) {
-            if (a.title > b.title) {
+        listaPeliculas.sort(function (a, b) { //.sort organiza los elementos del arreglo según el valor.
+            if (a.title > b.title) { // el 'title' lo tomo de la data
                 return 1;
             }
             if (a.title < b.title) {
@@ -81,7 +50,7 @@ ordenar.addEventListener('change', function () {
         });
     } else if (valor == 'za') {
         listaPeliculas.sort(function (a, b) {
-            if (a.title < b.title  ) {
+            if (a.title < b.title  ) { // el 'title' lo tomo de la data
                 return 1;
             }
             if (a.title > b.title  ) {
@@ -90,9 +59,9 @@ ordenar.addEventListener('change', function () {
             return 0;
         });
     }
-    else if (valor == 'ano') {
+    else if (valor == 'año') {
         listaPeliculas.sort(function (a, b) {
-            if (a.release_date > b.release_date) {
+            if (a.release_date > b.release_date) { // el 'release_date' lo tomo de la data
                 return 1;
             }
             if (a.release_date < b.release_date) {
@@ -104,7 +73,7 @@ ordenar.addEventListener('change', function () {
     }
     else if (valor == 'puntaje') {
         listaPeliculas.sort(function (a, b) {
-            if (a.rt_score > b.rt_score) {
+            if (a.rt_score > b.rt_score) { // el 'rt_score' lo tomo de la data
                 return 1;
             }
             if (a.rt_score < b.rt_score) {
@@ -113,13 +82,34 @@ ordenar.addEventListener('change', function () {
             return 0;
         });
     }
-
-    //crear una lista de posters
-    var posters = [];
-    for (const pelicula of listaPeliculas) {
-        posters.push(poster(pelicula.id, pelicula.title, pelicula.poster));
+// Ahora se hace una nueva lista de posters ordenada segun lo indicado en el ordenar por:
+    var posters = []; 
+    for (const pelicula of listaPeliculas) { // Esta listaPeliculas ya viene ordenada según lo seleccionado en el ordenar por 
+        posters.push(movie(pelicula.id, pelicula.title, pelicula.poster)); // se agrega el poster a la página  
     }
-    //agregar la lista de posters al escenario
-    escenario.innerHTML = posters.join('');
+    escenario.innerHTML = posters.join(''); // se agrega la lista de posters al escenario
 }
 );
+
+///////////////// Para que funcione el Buscar: ///////////////////////
+let searchInput = document.getElementById("searchInput");
+let searchButton = document.getElementById("searchButton");
+let searchResult = document.getElementById("searchResult");
+
+
+//funciones
+searchButton.addEventListener("click", function(){
+    let result = filterData(Ghibli.films, searchInput.value)
+
+    let data = result.map(imagen => {
+        return `<img class="img-normalizada" id="${imagen.id}" src="${imagen.poster}" alt="">`
+    })
+    searchResult.innerHTML = data;
+    })
+
+function filterData(data, condition){
+    let filtrado = data.filter(function(f){
+        return f.title.toLowerCase().includes(condition.toLowerCase())
+    })
+    return filtrado;
+};
