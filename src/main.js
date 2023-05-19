@@ -1,95 +1,65 @@
 import data from './data/athletes/athletes.js'
 
-const contenedor = document.getElementById('contenedor')
-const athletes = data.athletes
-
-data.athletes.forEach(i => {
-  console.log(i)
-  contenedor.innerHTML += `<div class= datosAtletas>
-  <p>Name: ${i.name}</p>
-  <p>Sport: ${i.sport}</p>
-  <p>Team: ${i.team}</p>
-  <p>Medal: ${i.medal}</p>
-  </div>`
-})
-
-/*import { filterSport } from './data.js'
-import data from './data/athletes/athletes.js'
-
-const contenedor = document.getElementById('contenedor')
-const athletes = data.athletes
-
-const botonDeportes = document.getElementById('botonDeportes')
-const botonPais = document.getElementById('botonPais')
-botonDeportes.addEventListener('click', (e) => {
-  const valueOption = 'Taekwondo'
-  const atletasFiltrados = filterSport(athletes, valueOption)
-  mosrarAtletas(atletasFiltrados)
-})
-
-function mosrarAtletas (athletes) {
-  athletes.forEach(i => {
-    console.log(i)
-    contenedor.innerHTML += `<div class= datosAtletas>
-        <p>Name: ${i.name}</p>
-        <p>Sport: ${i.sport}</p>
-        <p>Team: ${i.team}</p>
-        <p>Medal: ${i.medal}</p>
-        </div>`
-  })
-}
-
-mosrarAtletas(athletes)
-
-/*const dataAthletes = () => {
-  // Obtener referencias al elemento del DOM donde salen los resultados
+//funcion para mostrar la data
+function mostrarAtletas () {
   const contenedor = document.getElementById('contenedor')
-console.log(data.athletes.name)
-  // sacar el arreglo de atletas de los datos importados
-  const athletes = data.athletes.name
+  const athletes = data.athletes.slice(0 - 50)
 
-
-  // Crear el HTML para mostrar todos los atletas
-  const athletesHTML = athletes.map(athlete => {
-    return `<div class= datosAtletas>
-            <p>Name: ${athlete.name}</p>
-            <p>Sport: ${athlete.sport}</p>
-            <p>Team: ${athlete.team}</p>
-            <p>Medal: ${athlete.medal}</p>
-          </div>`
+  athletes.forEach(i => {
+    //console.log(i)
+    contenedor.innerHTML += `<div class= datosAtletas>
+                           <p>Name: ${i.name}</p>
+                           <p>Sport: ${i.sport}</p>
+                           <p>Team: ${i.team}</p>
+                           <p>Medal: ${i.medal}</p>
+                           </div>`
   })
-
-  // Inserta el HTML en el contenedor
-  resultsContainer.innerHTML = athletesHTML.join('')
 }
 
-botonPais.addEventListener('click', function () {
-  contenedor.innerHTML = ''
-  team.forEach(team => {
-    contenedor.innerHTML=(
-      <div class='contenedor-pais'>
-        <h2>${data.athletes.team}</h2>`;
-      </div>
-    )
-  })
+//traer a los botones principales
+const botonPrincipalDeportes = document.getElementById('botonDeportes')
+const botonPrincipalPaises = document.getElementById('botonPais')
+const contenidoGeneral = document.getElementById('contenidoGeneral')
+
+//funcionalidad a los botones principales
+botonPrincipalDeportes.addEventListener('click', () => {
+  contenidoGeneral.innerHTML = ''
+  mostrarAtletas()
 })
 
-(data.athletes).forEach((name) => {
-    const element = data.athletes[name];
-    console.log([data.athletes]);
-  });
- for (let i = 0; i < data.athletes.length; i++){
- console.log([data.athletes[i].name]);}
- const name= document.getElementById(data.athletes)
- const buscarNombres = document.getElementById(data.buscarNombre)
- buscador-por-nombre.addEventListener("click", function()
-};*/
-/*el
-function mostrarDeportes(athletes)
-const botonDeportes = document.getElementById('botonDeportes')
-const botonPais = document.getElementById('botonPais')
-botonDeportes.addEventListener('click', e => {
-  const valueOption = e.target.value
-  const resultadosFiltro = filterSport(athletes, valueOption)
-  mostrarDeportes(resultadosFiltro)
-})*/
+botonPrincipalPaises.addEventListener('click', () => {
+  contenidoGeneral.innerHTML = ''
+  filtrarPaises()
+})
+
+//filtrar por deportes
+function filtrarDeportes () {
+  const contenedorDeportes = document.getElementById('contenedorDeportes')
+  const deportesUnicos = new Set()
+
+  data.athletes.forEach(i => {
+    deportesUnicos.add(i.sport)
+  })
+
+  deportesUnicos.forEach(deporte => {
+    contenedorDeportes.innerHTML += `<div class="cartasDeportes">
+    <button class= "clase-botondeportes"> ${deporte}</button>
+  </div>`
+  })
+}
+
+//filtrar por paises
+function filtrarPaises () {
+  const contenedorPaises = document.getElementById('contenedorPaises')
+  const paisesUnicos = new Set()
+
+  data.athletes.forEach(i => {
+    paisesUnicos.add(i.team)
+  })
+
+  paisesUnicos.forEach(equipo => {
+    contenedorPaises.innerHTML += `<div class="cartasPaises">
+    <button class="clase-botonpais"> ${equipo}</button>
+  </div>`
+  })
+}
