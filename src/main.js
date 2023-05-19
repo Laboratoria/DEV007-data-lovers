@@ -12,7 +12,7 @@ allPokemons.forEach(pokemon => {
     <img src="${pokemon.img}">
     `     
 
-    console.log(pokemon)
+    console.log(pokemon);
     contenedor.appendChild(tarjetas);
 }); 
 
