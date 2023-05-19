@@ -4,14 +4,28 @@ body {
     background:linear-gradient(to right,white 0%, white 25%,black 25%, black 28%, rgb(251, 59, 59) 28%, rgb(251, 59, 59) 100%) ;
     font-family: monospace; 
     }
-.container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.buscador{
+    
 }
 
-.tarjetapokemon {
-    flex: 1;
-    padding: 10px;
-    border: 1px solid black;
+.container {
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin-bottom: 25px;
+    align-content: space-between;
+}
+
+.tarjetaPokemon {
+    
+    flex: 100;
+    
+    padding: 25px;
+    padding: center;
+    border: 10px solid rgb(255, 208, 0);
+    border-radius: 25px;
+    border-style:ridge;
+    margin-inline-end: 18px;
 }
