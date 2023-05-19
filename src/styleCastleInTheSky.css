@@ -1,8 +1,9 @@
+/* CSS para las páginas de las películas */
 body {
   margin: 0;
 }
 
-.tituloStudioGhibliMovies {
+.tituloStudioGhibliMovies {/* Estilo para la sección de encabezado/barra de navegación */
   margin-top: 1.7%;
   height: 77%;
   float: left;
@@ -45,7 +46,7 @@ nav ul li:hover {
   background: #d7c1d5;
 }
 
-#backgroundCastleInTheSky {
+#backgroundCastleInTheSky {  /* Estilo para la sección de la película */
   background-image: url("https://www.ghibli.jp/gallery/laputa036.jpg");
   background-size: cover;
   background-position: center;

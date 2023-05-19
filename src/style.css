@@ -1,8 +1,9 @@
+/* CSS para la página de index.html */
 body {
   margin: 0;
 }
 
-.tituloStudioGhibliMovies {
+.tituloStudioGhibliMovies { /* Estilo para la sección de encabezado/barra de navegación */
   margin-top: 1.7%;
   height: 77%;
   float: left;
@@ -44,7 +45,7 @@ nav ul li:hover {
   background: #d7c1d5;
 }
 
-.encabezado {
+.encabezado {  /* Estilo para la sección de la barra de búsqueda */
   width: 100%;
 }
 
@@ -81,7 +82,7 @@ nav ul li:hover {
 
 #btn {}
 
-.intro {
+.intro { /* Estilo para la sección de introducción */ 
   display: flex;
   align-items: center;
   /* Centra verticalmente */
@@ -96,7 +97,7 @@ nav ul li:hover {
 
 }
 
-.introduccion {
+.introduccion { 
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   text-align: center;
   display: inline-block;
@@ -117,7 +118,7 @@ nav ul li:hover {
   margin-left: 5%; */
 }
 
-.producciones {
+.producciones { /* Estilo para la sección de producciones/películas */
   width: 100%;
   height: 100%;
   margin: auto;
@@ -175,7 +176,7 @@ font-size: 30px;
   transform: translate(-50%, -50%);
 }
 
-.mas-detalles {
+.mas-detalles { /* Estilo para la sección de más detalles */
   background-color: #F3F3F3;
   padding: 10px;
   font-size: 18px;
