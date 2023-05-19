@@ -5,13 +5,13 @@ import data from './data/pokemon/pokemon.js';
 
 //console.log(data.pokemon);
 
-const contenidoCard = document.querySelector(".contenidoCard");
+const contenidoCard = document.querySelector(".adentro");
 //const informaCard = document.getElementById("informacion");
 
 
 document.getElementById("pokedexBtn").onclick = function () {      //funcion del botón pokedex//
   document.getElementById("homePageStart").style.display = "none";
-  document.getElementById("contenido").style.display = "block";
+  document.getElementById("contenido").style.display = "flex";
 };
 
 document.getElementById("resumeBtn").onclick = function () {      //funcion del botón pokeresumen//

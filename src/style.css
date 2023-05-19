@@ -1,4 +1,8 @@
 
+body{
+  margin: 0;
+  padding: 0;
+ }
 
 .homePage {  /* estilo class homepage */
   display: flex;
@@ -112,34 +116,32 @@ button#pokedexBtn{   /* estilo button pokedex */
     
     background-color: rgb(219, 215, 215);
     border-radius: 10px;
-    /*transform: 
-    rotate(1deg) skew(1deg, -1deg);         /*se va graduando cuanto quieres que este inclinada la carta*/
-    /*transition:
-    translate 0.25s,
-    box-shadow 0.25s;*/
+    
 }
 
-/*.card-imag:hover {
-    translate: 0 -30px;                     /*para medir cuanto de elevara la imagen con el efecto*/
-    /*box-shadow:
-    5px 3px rgb(217 220 242 / 75%),
-    10px 6px rgba(15, 176, 245, 0.5),
-    15px 9px rgb(126 255 178 / 25%);
-}*/
 
 
 .contenidoCard {
-  
-  display: flex;
-  flex-wrap: wrap;
   justify-content: center;
   background-image: url(img/fondolista.png);
   background-position: center;
+  background-size: cover; 
+  background-repeat: no-repeat;
   width: 100vw;
-  /*top: 0;  /*no respeta arriba*/
-  /*left: 0;  /*no respeta izquierda*/
-
+  height: 100vh;
+  align-items: center;
   
+}
+
+.adentro{      /*katy*/
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20%;
+  background-color: bisque;
+  width: 80%;
+  height: 70vh;
+  overflow-y: scroll;
+  justify-content: center;
+ 
 }
 
 .mostrar {
@@ -151,7 +153,6 @@ button#pokedexBtn{   /* estilo button pokedex */
   border-radius: 10px;
   align-items: center;
   cursor: pointer;
-
 
 }
 
@@ -192,3 +193,4 @@ button#pokedexBtn{   /* estilo button pokedex */
   flex-direction: column;
   justify-content: center;
 }
+
