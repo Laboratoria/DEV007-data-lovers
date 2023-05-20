@@ -4,9 +4,9 @@ import data from './data/athletes/athletes.js'
 function mostrarAtletas () {
   const contenedor = document.getElementById('contenedor')
   const athletes = data.athletes.slice(0 - 50)
-
   athletes.forEach(i => {
     //console.log(i)
+    //limita la cantidad de athletes a mostrar
     contenedor.innerHTML += `<div class= datosAtletas>
                            <p>Name: ${i.name}</p>
                            <p>Sport: ${i.sport}</p>
@@ -23,11 +23,19 @@ const contenidoGeneral = document.getElementById('contenidoGeneral')
 const contenedorDeportes = document.getElementById('contenedorDeportes')
 const contenedorPaises = document.getElementById('contenedorPaises')
 const contenedor = document.getElementById('contenedor')
+
 //funcionalidad a los botones principales
+
 botonPrincipalDeportes.addEventListener('click', () => {
   contenidoGeneral.innerHTML = ''
-  contenedorPaises.innerHTML = ''
-  mostrarAtletas()
+  contenedor.innerHTML = ''
+  filtrarDeportes()
+  const botonesDeportes = document.getElementsByClassName('cartasDeportes')
+  for (let i = 0; i < botonesDeportes.length; i++) {
+    botonesDeportes[i].addEventListener('click', function (e) {
+      console.log(e.target.textContent)
+    })
+  }
 })
 
 botonPrincipalPaises.addEventListener('click', () => {
@@ -35,9 +43,9 @@ botonPrincipalPaises.addEventListener('click', () => {
   contenedorDeportes.innerHTML = ''
   contenedor.innerHTML = ''
   filtrarPaises()
-  const botonesPais= document.getElementsByClassName("cartasPaises")
-  for(let i=0; i<botonesPais.length; i++){
-    botonesPais[i].addEventListener('click', function(e){
+  const botonesPais = document.getElementsByClassName('cartasPaises')
+  for (let i = 0; i < botonesPais.length; i++) {
+    botonesPais[i].addEventListener('click', function (e) {
       console.log(e.target.textContent)
     })
   }
@@ -60,7 +68,6 @@ function filtrarDeportes () {
 
 //filtrar por paises
 function filtrarPaises () {
-
   const paisesUnicos = new Set()
 
   data.athletes.forEach(i => {
