@@ -1,7 +1,7 @@
 import data from './data/athletes/athletes.js'
 
 //constante que almacena la data
-const athletes = data.athletes
+const athletes = data.athletes;
 
 //funcion para mostrar la data
 function mostrarAtletas () {
@@ -54,43 +54,32 @@ botonPrincipalPaises.addEventListener('click', () => {
   const botonesPais = document.getElementsByClassName('cartasPaises')
   for (let i = 0; i < botonesPais.length; i++) {
     botonesPais[i].addEventListener('click', function (e) {
-      const equipo = e.target.textContent //obtener el pais cuando le hacen
-    
-      filtrarAtletasPorPais(equipo)
+      const pais = e.target.getAttribute('data-pais') //obtener el pais cuando le hacen
+      
+      filtrarAtletasPorPais(pais);//pasar pais como argumento en la llamada a la funcion 
     })
   } 
 })
 
 //funcion para filtrar atletas por pais
-function filtrarAtletasPorPais(equipo) {
-  const atletasFiltrados = athletes.filter(atleta => atleta.team === equipo);
-  
-  console.log(atletasFiltrados);
+function filtrarAtletasPorPais(pais) {
+  const atletasFiltrados = athletes.filter(atleta => atleta.team === pais);
+console.log(atletasFiltrados)
+
+  contenedorPaises.innerHTML = ""; // Limpiar el contenido existente antes de agregar los atletas filtrados
+  contenedorAtletasPorPais.innerHTML = "";
 
 atletasFiltrados.forEach(atleta => {
-  contenedorAtletasPorPais.innerHTML += `<div >
+  
+  contenedorAtletasPorPais.innerHTML += `<div class= datosAtletas >
                                           <p>Name: ${atleta.name}</p>
                                           <p>Sport: ${atleta.sport}</p>
                                           <p>Team: ${atleta.team}</p>
                                           <p>Medal: ${atleta.medal}</p>
-                                        </div>`;
+                                          </div>`;
 });
+
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -119,8 +108,8 @@ function filtrarPaises () {
   })
 
   paisesUnicos.forEach(equipo => {
-    contenedorPaises.innerHTML += `<div class="cartasPaises">
-    <button class="clase-botonpais"> ${equipo}</button>
+    contenedorPaises.innerHTML +=  `<div class="cartasPaises">
+    <button class="clase-botonpais" data-pais="${equipo}">${equipo}</button>
   </div>`
   })
 }

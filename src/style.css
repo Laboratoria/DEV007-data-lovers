@@ -101,6 +101,7 @@ main {
  }
 
 .contenidoGeneral {
+  margin-left: 10%;
   display: flex;
   flex-direction: row;
 }
@@ -130,7 +131,7 @@ main {
   align-items: center;
   align-content: center;
 
-  margin-top: 5%;
+  
   margin-left: 3%;
   margin-bottom: 5%;
   padding: 20px;
@@ -151,6 +152,7 @@ main {
   border-color: rgba(15, 182, 132, 0.945);
   border-radius: 10px;
   margin: 2%;
+  margin-left: 7%;
 
 }
 
@@ -176,31 +178,14 @@ main {
 }
 
 
-
-
-.caja-botones {
-  padding-left: 50px;
-}
-
-.contenedor-pais {
-  border: 1px solid rgb(17, 0, 255);
-  font-style: normal;
-
-}
-
 .cartasDeportes {
-
   display: inline-block;
-  margin: 3%;
-  color: aqua;
+  margin: 2%;
+  margin-left: 5%;
 }
 
 .cartasPaises {
   display: inline-block;
-  margin: 3%;
-}
-
-.cartasPaises {
- display: inline-block;
- margin: 3%;
+  margin: 2%;
+  margin-left: 5%;
 }
