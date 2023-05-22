@@ -172,30 +172,31 @@ button#pokedexBtn{   /* estilo button pokedex */
   width: 100vw;
   height: 100vh;
   align-items: center;
-  
 }
 
-.adentro{      /*katy*/
+.adentro{                               /*contenedor de las cartas*/
   display: grid;
   grid-template-columns: 20% 20% 20% 20%;
-  background-color: bisque;
-  width: 80%;
-  height: 70vh;
+  background-color: white;
+  width: 80%;                            /*ancho del contenedor blanco*/
+  height: 80vh;
   overflow-y: scroll;
   justify-content: center;
- 
+  gap: 25px;                             /*separar las cartas*/
+  border-radius: 20px;
+  border: 9px solid rgb(1, 1, 240);
 }
 
 .mostrar {
   width: 200px;
-  height: 250px;
+  height: 270px;                        /*largo de la tarjeta*/
   perspective: 800px;
-  margin: 20px;
+  margin: 30px;
   border: 6px solid rgb(160, 158, 158); 
   border-radius: 10px;
   align-items: center;
   cursor: pointer;
-
+  
 }
 
 .card__inner {
