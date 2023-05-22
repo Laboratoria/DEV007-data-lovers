@@ -80,3 +80,20 @@ function filtrarPaises () {
   </div>`
   })
 }
+
+
+
+//funcion filtrar por cada deporte 
+function filtrarPorDeportes () {
+  const deporteUnico= new Set()
+
+  data.athletes.sport.forEach(i => {
+    deporteUnico.add(i.sport)
+  })
+
+  deporteUnico.forEach(equipo => {
+    contenedorCartasDeportes.innerHTML += `<div class="equipo">
+    <button class="filtrarPorDeporte"> ${equipo}</button>
+  </div>`
+  })
+}
