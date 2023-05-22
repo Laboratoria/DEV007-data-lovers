@@ -16,7 +16,7 @@ export default {
       "event": "Rowing Men's Coxless Pairs",
       "medal": "Bronze"
     },
-    {
+    { 
       "name": "Patimat Abakarova",
       "gender": "F",
       "height": "165",
