@@ -134,9 +134,9 @@ function filtrarAtletasPorDeporte(deporte) {
 
   contenedorDeportes.innerHTML = ""; // Limpiar el contenido existente antes de agregar los atletas filtrados
   contenedorAtletasPorDeporte.innerHTML = "";
-
-atletasFiltradosPorDeporte.forEach(atleta => {
   
+//generar dinamicamente las tarjetas de cada atleta 
+atletasFiltradosPorDeporte.forEach(atleta => {
   contenedorAtletasPorDeporte.innerHTML += `<div class= datosAtletas >
                                           <p>Name: ${atleta.name}</p>
                                           <p>Sport: ${atleta.sport}</p>
