@@ -1,5 +1,5 @@
 import data from './data/athletes/athletes.js'
-import{filtrarPaises}from './data.js';
+import { filtrarPaises, filtrarDeportes } from './data.js'
 //constante que almacena la data
 const athletes = data.athletes
 
@@ -32,10 +32,10 @@ const contenedorAtletasPorDeporte = document.getElementById(
   'contenedorAtletasPorDeporte'
 )
 
-//filtrar por PAISES
+//filtrar por PAISES**separado de data
 function mostrarPaises () {
-const paisesUnicos = filtrarPaises (data)
-  
+  const paisesUnicos = filtrarPaises(data)
+
   paisesUnicos.forEach(equipo => {
     contenedorPaises.innerHTML += `<div class="cartasPaises">
     <button class="clase-botonpais" data-pais="${equipo}">${equipo}</button>
@@ -50,7 +50,7 @@ botonPrincipalPaises.addEventListener('click', () => {
   contenedor.innerHTML = ''
   contenedorAtletasPorDeporte.innerHTML = ''
   contenedorAtletasPorPais.innerHTML = ''
- mostrarPaises()
+  mostrarPaises()
 
   // funcionalidad para cada boton por PAIS
   const botonesPais = document.getElementsByClassName('cartasPaises')
@@ -82,12 +82,8 @@ function filtrarAtletasPorPais (pais) {
 }
 
 //filtrar por DEPORTES
-function filtrarDeportes () {
-  const deportesUnicos = new Set()
-
-  data.athletes.forEach(i => {
-    deportesUnicos.add(i.sport)
-  })
+function mostrarDeportes () {
+  const deportesUnicos = filtrarDeportes(data)
 
   deportesUnicos.forEach(deporte => {
     contenedorDeportes.innerHTML += `<div class="cartasDeportes">
@@ -103,7 +99,7 @@ botonPrincipalDeportes.addEventListener('click', () => {
   contenedor.innerHTML = ''
   contenedorAtletasPorPais.innerHTML = ''
   contenedorAtletasPorDeporte.innerHTML = ''
-  filtrarDeportes()
+  mostrarDeportes()
 
   //funcionalidad por cada boton por DEPORTE
   const botonesDeportes = document.getElementsByClassName('cartasDeportes')
