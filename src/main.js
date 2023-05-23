@@ -19,6 +19,11 @@ document.getElementById("resumeBtn").onclick = function () {      //funcion del 
   document.getElementById("resumePageStart").style.display = "block";
 };
 
+document.getElementById("pokedexResumePageBtn").onclick = function () {    //funcion del boton pokedex en la resumePage
+  document.getElementById("resumePageStart").style.display = "none";
+  document.getElementById("contenido").style.display = "flex";
+};
+
 
 data.pokemon.forEach((pokemones) => {   
   contenidoCard.innerHTML += `

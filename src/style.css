@@ -111,15 +111,16 @@ button#pokedexBtn{   /* estilo button pokedex */
   margin: 3% 10% 8%;
 }
 
-.header{
+.headerResumePage{
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
   height: 15%;
   margin-top: 1%;
   background-color: red;
 }
 
-.header img{
+.headerResumePage img{
   width: 25%;
   height: 10vw;
   margin-top: -1%;
@@ -127,9 +128,10 @@ button#pokedexBtn{   /* estilo button pokedex */
 
 }
 
-#homePageButton{
+#pokedexResumePageBtn{
   width: 20%;
   height: 8vh;
+  margin-right: 5%;
   align-self: center;
   font-family: revert;
   font-size: xx-large;
