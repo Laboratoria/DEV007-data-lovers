@@ -1,7 +1,7 @@
 import data from './data/athletes/athletes.js'
 
 //constante que almacena la data
-const athletes = data.athletes
+const athletes = data.athletes;
 
 //funcion para mostrar la data
 function mostrarAtletas () {
@@ -26,40 +26,25 @@ const contenidoGeneral = document.getElementById('contenidoGeneral')
 const contenedorDeportes = document.getElementById('contenedorDeportes')
 const contenedorPaises = document.getElementById('contenedorPaises')
 const contenedor = document.getElementById('contenedor')
-const contenedorAtletasPorPais = document.getElementById(
-  'contenedorAtletasPorPais'
-)
-const contenerdorAtletasPorDeporte = document.getElementById(
-  'contenerdorAtletasPorDeporte'
-)
 const contenedorAtletasPorPais = document.getElementById ('contenedorAtletasPorPais')
 const contenedorAtletasPorDeporte = document.getElementById ('contenedorAtletasPorDeporte')
 
 
 
-//funcionalidad a  boton principal deportes
-botonPrincipalDeportes.addEventListener('click', () => {
-  contenidoGeneral.innerHTML = ''
-  contenedorPaises.innerHTML = ''
-  contenedor.innerHTML = ''
-  filtrarDeportes()
-  const botonesDeportes = document.getElementsByClassName('cartasDeportes')
-  for (let i = 0; i < botonesDeportes.length; i++) {
-    botonesDeportes[i].addEventListener('click', function (e) {
-      console.log(e.target.textContent)
-    })
-  }
-})
-  // funcionalidad para cada boton por pais
-  const botonesDeporte = document.getElementsByClassName('cartasDeportes')
-  for (let i = 0; i < botonesDeporte.length; i++) {
-    botonesPais[i].addEventListener('click', function (e) {
-      const deporte = e.target.getAttribute('data-deporte') //obtener el pais cuando le hacen
+//filtrar por PAISES
+function filtrarPaises () {
+  const paisesUnicos = new Set()
 
-      filtrarAtletasPorDeporte(deporte) //pasar pais como argumento en la llamada a la funcion
-    })
-  }
-})
+  data.athletes.forEach(i => {
+    paisesUnicos.add(i.team)
+  })
+
+  paisesUnicos.forEach(equipo => {
+    contenedorPaises.innerHTML +=  `<div class="cartasPaises">
+    <button class="clase-botonpais" data-pais="${equipo}">${equipo}</button>
+  </div>`
+  })
+}
 
 //funcionalidad a  boton principal PAISES
 botonPrincipalPaises.addEventListener('click', () => {
@@ -70,36 +55,37 @@ botonPrincipalPaises.addEventListener('click', () => {
   contenedorAtletasPorPais.innerHTML ='';
   filtrarPaises()
 
-  // funcionalidad para cada boton por pais
+// funcionalidad para cada boton por PAIS 
   const botonesPais = document.getElementsByClassName('cartasPaises')
   for (let i = 0; i < botonesPais.length; i++) {
     botonesPais[i].addEventListener('click', function (e) {
-      const pais = e.target.getAttribute('data-pais') //obtener el pais cuando le hacen
-
-      filtrarAtletasPorPais(pais) //pasar pais como argumento en la llamada a la funcion
+      const pais = e.target.getAttribute('data-pais') //obtener el pais cuando le hacen click 
+      
+      filtrarAtletasPorPais(pais);//pasar pais como argumento en la llamada a la funcion 
     })
-  }
+  } 
 })
 
-//funcion para filtrar atletas por pais
-function filtrarAtletasPorPais (pais) {
-  const atletasFiltrados = athletes.filter(atleta => atleta.team === pais)
-  console.log(atletasFiltrados)
+//funcion para filtrar atletas por PAIS
+function filtrarAtletasPorPais(pais) {
+const atletasFiltrados = athletes.filter(atleta => atleta.team === pais);
+console.log (atletasFiltrados)
+contenedorPaises.innerHTML = ""; // Limpiar el contenido existente antes de agregar los atletas filtrados
+contenedorAtletasPorPais.innerHTML = "";
 
-  contenedorPaises.innerHTML = '' // Limpiar el contenido existente antes de agregar los atletas filtrados
-  contenedorAtletasPorPais.innerHTML = ''
-
-  atletasFiltrados.forEach(atleta => {
-    contenedorAtletasPorPais.innerHTML += `<div class= datosAtletas >
+//Generar dinamicamente las tarjetas de cada atleta 
+atletasFiltrados.forEach(atleta => {
+  contenedorAtletasPorPais.innerHTML +=   `<div class= datosAtletas >
                                           <p>Name: ${atleta.name}</p>
                                           <p>Sport: ${atleta.sport}</p>
                                           <p>Team: ${atleta.team}</p>
                                           <p>Medal: ${atleta.medal}</p>
-                                          </div>`
-  })
+                                          </div>`;
+})
+
 }
 
-//filtrar por deportes
+//filtrar por DEPORTES
 function filtrarDeportes () {
   const deportesUnicos = new Set()
 
@@ -109,39 +95,48 @@ function filtrarDeportes () {
 
   deportesUnicos.forEach(deporte => {
     contenedorDeportes.innerHTML += `<div class="cartasDeportes">
-    <button class= "clase-botondeportes"> ${deporte}">${deporte}</button>
+    <button class= "clase-botondeportes" data-deporte="${deporte}"> ${deporte}</button>
   </div>`
   })
 }
 
-//filtrar por paises
-function filtrarPaises () {
-  const paisesUnicos = new Set()
 
-  data.athletes.forEach(i => {
-    paisesUnicos.add(i.team)
-  })
+//funcionalidad a  boton principal DEPORTES
+botonPrincipalDeportes.addEventListener('click', () => {
+  contenidoGeneral.innerHTML = '';
+  contenedorPaises.innerHTML ='';
+  contenedor.innerHTML = '';
+  contenedorAtletasPorPais. innerHTML ='';
+  contenedorAtletasPorDeporte.innerHTML ='';
+  filtrarDeportes()
 
-  paisesUnicos.forEach(equipo => {
-    contenedorPaises.innerHTML += `<div class="cartasPaises">
-    <button class="clase-botonpais" data-pais="${equipo}">${equipo}</button>
-  </div>`
-  })
-}
-//funcion para filtrar atletas por pais
-function filtrarAtletasPorDeporte (deporte) {
-  const atletasFiltrados = athletes.filter(atleta => atleta.sport === deporte)
-  console.log(atletasFiltrados)
+  //funcionalidad por cada boton por DEPORTE
+  const botonesDeportes = document.getElementsByClassName('cartasDeportes')
+  for (let i = 0; i < botonesDeportes.length; i++) {
+    botonesDeportes[i].addEventListener('click', function (e) {
+      const deporte = e.target.getAttribute('data-deporte') //obtener el DEPORTE cuando le hacen click
+      
+      filtrarAtletasPorDeporte(deporte);//pasar deporte como argumento en la llamada a la funcion  
+    })
+  }
+})
 
-  contenedorDeportes.innerHTML = '' // Limpiar el contenido existente antes de agregar los atletas filtrados
-  contenedorAtletasPorPais.innerHTML = ''
+//funcion para filtrar atletas por DEPORTE
+function filtrarAtletasPorDeporte(deporte) {
+  const atletasFiltradosPorDeporte = athletes.filter(atleta => atleta.sport === deporte);
+  
 
-  atletasFiltrados.forEach(atleta => {
-    contenerdorAtletasPorDeporte.innerHTML += `<div class= datosAtletas >
+  contenedorDeportes.innerHTML = ""; // Limpiar el contenido existente antes de agregar los atletas filtrados
+  contenedorAtletasPorDeporte.innerHTML = "";
+  
+//generar dinamicamente las tarjetas de cada atleta 
+atletasFiltradosPorDeporte.forEach(atleta => {
+  contenedorAtletasPorDeporte.innerHTML += `<div class= datosAtletas >
                                           <p>Name: ${atleta.name}</p>
                                           <p>Sport: ${atleta.sport}</p>
                                           <p>Team: ${atleta.team}</p>
                                           <p>Medal: ${atleta.medal}</p>
-                                          </div>`
-  })
+                                          </div>`;
+});
+
 }
