@@ -6,26 +6,36 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <nav class="menu">
-      <img src="images/sol.png">
+    <header>
+   
+    <img class="tarot"src="images/tarotlogo.png" width="50px" height="50px">
       <!-- se pone en horizontal con css\-->  
-      <ul> 
-        <li> Home </li>
-        <li> Gallery </li>
-        <li> Quick lecture </li>
-      </ul>
+    <ul > 
 
-      <form>
-        <input type="search" class="searchOnMenu" name="q" placeholder="Search card">
-        <input type="submit" value="Go!">
-      </form>
-    </nav>
+        <button class="header_buttons"> Home </button>
+        <button class="header_buttons"> Gallery </button>
+        <button class="header_buttons"> Quick lecture </button>
+    </ul>
+
+
+    <form>
+
+        <input type="search" class="header_search" placeholder="Search card">
+        <input type="submit" class="header_search_go" value="Go!">
+
+    </form>
+
+
+
+  </header>
+
+  <main>
     <div id="banner">
-      <img src="images/astrología.png">
+      <!--<img src="images/astrología.png">-->
         <button class="buttonSearch" type="button">Find out more</button>
     </div>
     <div id="">
-      <img src="images/sol.png">
+      <img class=""src="images/sol.png"> <!--Hay que añadirle una clase a las imagenes por si solas ya que si las dejamos como img en el css nos va a alterar todas al tratar de modificarlas-->
     </div>
     <div class="containerBody">
       <div class="card">
@@ -70,7 +80,7 @@
     </div>
     
     <div id="root"></div>
-
+  </main>
     <footer><p>Copyright 2023©</p></footer>
     <script src="main.js" type="module"></script>
     <script src="data.js" type="module"></script>
