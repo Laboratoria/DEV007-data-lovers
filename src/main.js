@@ -8,7 +8,7 @@ function mostrarAtletas () {
   const contenedor = document.getElementById('contenedor')
 
   athletes.forEach(i => {
-    //console.log(i)
+    
     //limita la cantidad de athletes a mostrar
     contenedor.innerHTML += `<div class= datosAtletas>
                            <p>Name: ${i.name}</p>
@@ -32,6 +32,10 @@ const contenedorAtletasPorPais = document.getElementById(
 const contenerdorAtletasPorDeporte = document.getElementById(
   'contenerdorAtletasPorDeporte'
 )
+const contenedorAtletasPorPais = document.getElementById ('contenedorAtletasPorPais')
+const contenedorAtletasPorDeporte = document.getElementById ('contenedorAtletasPorDeporte')
+
+
 
 //funcionalidad a  boton principal deportes
 botonPrincipalDeportes.addEventListener('click', () => {
@@ -46,7 +50,7 @@ botonPrincipalDeportes.addEventListener('click', () => {
     })
   }
 })
-// funcionalidad para cada boton por pais
+  // funcionalidad para cada boton por pais
   const botonesDeporte = document.getElementsByClassName('cartasDeportes')
   for (let i = 0; i < botonesDeporte.length; i++) {
     botonesPais[i].addEventListener('click', function (e) {
@@ -57,11 +61,13 @@ botonPrincipalDeportes.addEventListener('click', () => {
   }
 })
 
-//funcionalidad a  boton principal paises
+//funcionalidad a  boton principal PAISES
 botonPrincipalPaises.addEventListener('click', () => {
-  contenidoGeneral.innerHTML = ''
-  contenedorDeportes.innerHTML = ''
-  contenedor.innerHTML = ''
+  contenidoGeneral.innerHTML = '';
+  contenedorDeportes.innerHTML = '';
+  contenedor.innerHTML = '';
+  contenedorAtletasPorDeporte.innerHTML ='';
+  contenedorAtletasPorPais.innerHTML ='';
   filtrarPaises()
 
   // funcionalidad para cada boton por pais
@@ -103,7 +109,7 @@ function filtrarDeportes () {
 
   deportesUnicos.forEach(deporte => {
     contenedorDeportes.innerHTML += `<div class="cartasDeportes">
-    <button class="clase-boton" data-pais="${equipo}">${equipo}</button>
+    <button class= "clase-botondeportes"> ${deporte}">${deporte}</button>
   </div>`
   })
 }
