@@ -88,9 +88,6 @@ atletasFiltrados.forEach(atleta => {
 
 
 
-
-
-
 //filtrar por DEPORTES
 function filtrarDeportes () {
   const deportesUnicos = new Set()
