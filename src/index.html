@@ -6,7 +6,83 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <header>
+   
+    <img class="tarot"src="images/tarotlogo.png" width="50px" height="50px">
+      <!-- se pone en horizontal con css\-->  
+    <ul > 
+
+        <button class="header_buttons"> Home </button>
+        <button class="header_buttons"> Gallery </button>
+        <button class="header_buttons"> Quick lecture </button>
+    </ul>
+
+
+    <form>
+
+        <input type="search" class="header_search" placeholder="Search card">
+        <input type="submit" class="header_search_go" value="Go!">
+
+    </form>
+
+
+
+  </header>
+
+  <main>
+    <div id="banner">
+      <!--<img src="images/astrología.png">-->
+        <button class="buttonSearch" type="button">Find out more</button>
+    </div>
+    <div id="">
+      <img class=""src="images/sol.png"> <!--Hay que añadirle una clase a las imagenes por si solas ya que si las dejamos como img en el css nos va a alterar todas al tratar de modificarlas-->
+    </div>
+    <div class="containerBody">
+      <div class="card">
+        <figure>
+          <img src="images/tarot.png">
+        </figure>
+        <div class="contentCard">
+          <h3>¿Did you know?</h3>
+          <p>No se sabe con exactitud quien fusionó los Arcanos Mayores con los Menores, pero se cree que surgió de la cultura gitana.</p>
+          <a href="https://es.wikipedia.org/wiki/Tarot_(adivinaci%C3%B3n)">Read more</a>
+          </div>
+      </div>
+      <div class="card">
+        <figure>
+          <img src="images/the-tower.png">
+        </figure>
+        <div class="contentCard">
+          <h3>The meaning</h3>
+          <p>No se sabe con exactitud quien fusionó los Arcanos Mayores con los Menores, pero se cree que surgió de la cultura gitana.</p>
+          <a href="https://www.monografias.com/trabajos34/curso-tarot/curso-tarot">Read more</a>
+          </div>
+      </div>
+      <div class="card">
+        <figure>
+          <img src="images/lectura-tarot.png">
+        </figure>
+        <div class="contentCard">
+          <h3>Learn how to read</h3>
+          <p>No se sabe con exactitud quien fusionó los Arcanos Mayores con los Menores, pero se cree que surgió de la cultura gitana.</p>
+          <a href="https://www.lanacion.com.ar/horoscopo/como-leer-las-cartas-del-tarot-guia-simplificada-nid07102022/#:~:text=El%20tarot%20es%20una%20disciplina,a%20ciertas%20preguntas%20del%20consultante.">Read more</a>
+          </div>
+      </div>
+    </div>
+
+    <div id="">
+      <img src="images/sol.png">
+    </div>
+
+    <div id="banner">
+      <img src="images/astrología.png">
+        <button class="buttonSearch" type="button">Complete gallery</button>
+    </div>
+    
     <div id="root"></div>
+  </main>
+    <footer><p>Copyright 2023©</p></footer>
     <script src="main.js" type="module"></script>
+    <script src="data.js" type="module"></script>
   </body>
 </html>
