@@ -6,7 +6,7 @@ import data from './data/pokemon/pokemon.js';
 //console.log(data.pokemon);
 
 const contenidoCard = document.querySelector(".adentro");
-//const informaCard = document.getElementById("informacion");
+
 
 
 document.getElementById("pokedexBtn").onclick = function () {      //funcion del botón pokedex//
@@ -41,13 +41,13 @@ data.pokemon.forEach((pokemones) => {
         </div>
           <div class= "card__side card__side--back">
              <div class= "card__body">
-             <label for="input-altura" class="label">ALTURA</label>
+               <label for="input-altura" class="label">ALTURA</label>
                <input type="texto" class="input" placeholder="${pokemones.size.height}"><br>
-             <label for="input-altura" class="label">PESO</label>
+               <label for="input-peso" class="label">PESO</label>
                <input type="texto" class="input" placeholder="${pokemones.size.weight}">
-               <div class = "resistencia"
-                 <p>${pokemones.resistant}</p>
-               </div>
+                 <div class = "resistencia"
+                   <p>${pokemones.resistant}</p>
+                 </div>
               </div>
           </div>      
       </div>

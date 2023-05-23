@@ -107,8 +107,8 @@ button#pokedexBtn{   /* estilo button pokedex */
   left: 0;
 }
 
-.resumePage img{
-  margin: 3% 10% 8%;
+.resumePage img{                   
+  margin: 3% 10% 8%;                 /*tamaño del pikachu*/
 }
 
 .header{
@@ -185,13 +185,14 @@ button#pokedexBtn{   /* estilo button pokedex */
   gap: 25px;                             /*separar las cartas*/
   border-radius: 20px;
   border: 9px solid rgb(1, 1, 240);
+  
 }
 
 .mostrar {
   width: 200px;
-  height: 270px;                        /*largo de la tarjeta*/
+  height: 270px;                          /*largo de la tarjeta*/
   perspective: 800px;
-  margin: 30px;
+  margin: 20px;                           /*espacio entre cada fila*/
   border: 6px solid rgb(160, 158, 158); 
   border-radius: 10px;
   align-items: center;
@@ -199,16 +200,17 @@ button#pokedexBtn{   /* estilo button pokedex */
   
 }
 
-.card__inner {
+.card__inner {                   /* para hacer que gire las cards*/
   position: relative;
   height: 100%;
   transform-style: preserve-3d;
   transition: transform 0.5s;
+  
 }
-.mostrar:hover .card__inner {
+.mostrar:hover .card__inner {       /* para hacer que gire las cards*/
   transform: rotateY(-180deg);
 }
-.card__side {
+.card__side {                       /* para hacer que gire las cards*/
   position: absolute;
   inset: 0;
   display: grid;
@@ -216,14 +218,14 @@ button#pokedexBtn{   /* estilo button pokedex */
   backface-visibility: hidden;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
 }
-.card__side--back {
+.card__side--back {                    /* para hacer que gire las cards*/
   transform: rotateY(180deg);
   background:rgb(26, 25, 25);
   color: white;
   
 }
 
-.input {
+.input {                      /*clase input del main.js que ontine el peso y altura del pokemon*/
   padding: 1%;
   width: 40%;
   /*display: flex;
@@ -231,9 +233,78 @@ button#pokedexBtn{   /* estilo button pokedex */
   background-color: white;
   
 }
-.resistencia {
+/*.resistencia {
   display: flex;
-  flex-direction: column;
+  flex-direction:column;
   justify-content: center;
+}*/
+
+.headerPokedex {
+  display: flex;
+  flex-direction: row;
+  height: 15%;
+  margin-top: 1%;
+  background-color: red;
 }
 
+.headerPokedex img{
+  width: 25%;
+  height: 10vw;
+  margin-top: -1%;
+  margin-left: 2%;
+
+}
+
+
+.buscar {
+  /*width: 100%;*/
+  /*min-height: 100vh;*/
+  padding: 1%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: red;    /* fondo de prueba borrar/no funciona si se borra el width y min-height*/
+  
+}
+.search-bar {
+/*width: 100%;*/
+/*max-width: 700px;*/
+background: white;          /*color de fondo del "contenedor" del input y el boton*/
+display: flex;
+align-items: center;
+border-radius: 60px;
+padding: 2px 8px;           /* largo y ancho del contenedor*/
+
+}
+/*.search-button img{
+  width: 3em;
+  height: 3em;
+}*/
+.search-bar input{
+  background: transparent;
+  flex: 0.3;                    /*ancho del input hacia la derecha*/
+  /*border: 0;*/
+  outline: none;
+  padding: 3px 1px;              /*largo y ancho del input*/
+  font-size: 15px;                  /*tamaño del imput*/
+  color: #5d5c64;                 /*color de letra del imput al escribir*/
+}
+.search-bar button img{
+width: 20px;                       /*ancho de la img del boton*/
+height: 20px;
+}
+::placeholder{
+  color: #a9a8c0;             /*color letra del placeholder*/
+}
+  
+.search-bar button{
+  border: 0;                        /*quitarle el borde*/
+  border-radius: 50%;
+  width: 40px;                      /*ancho del boton*/
+  height: 40px;
+  background: #58629b;           /*fondo del boton*/
+  cursor: pointer;
+}
+/*.pageListaPoke img{                   
+  margin: 3% 10% 8%;                 /*tamaño de las img*/
+/*}*/
