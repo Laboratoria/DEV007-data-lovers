@@ -80,7 +80,26 @@ nav ul li:hover {
 
 }
 
-#btn {}
+/*/////////////////////////RESPONSIVO///////////////////////////////*/
+@media screen and (min-width:480px) {
+  .buscar:hover > .buscar_texto{
+    width: 190px;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .buscar:hover > .buscar_texto{
+    width: 300px;
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .buscar:hover > .buscar_texto{
+    width: 500px;
+  }
+}
+
+/*#btn {}*/
 
 .intro { /* Estilo para la sección de introducción */ 
   display: flex;
@@ -137,6 +156,43 @@ nav ul li:hover {
   margin: 20px;
 }
 
+label {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.caja {
+  margin:20px auto 40px auto;	
+  border:1px solid #d9d9d9;
+  height:30px;
+  overflow: hidden;
+  width: 230px;
+  position:relative;
+}
+select {
+  background: transparent;
+  border: none;
+  font-size: 18px;
+  height: 30px;
+  padding: 5px;
+  width: 250px;
+}
+select:focus{ outline: none;}
+
+.caja::after{
+  content:"\025be";
+  display:table-cell;
+  padding-top:7px;
+  text-align:center;
+  width:30px;
+  height:30px;
+  background-color:#d9d9d9;
+  position:absolute;
+  top:0;
+  right:0px;	
+  pointer-events: none;
+}
+
 .container {
   position: relative;
   display: inline-block;
@@ -181,6 +237,10 @@ font-size: 30px;
   padding: 10px;
   font-size: 18px;
   text-align: center;
+}
+
+.detalles1 {
+  font-size: 24px;
 }
 
 #facebook {
