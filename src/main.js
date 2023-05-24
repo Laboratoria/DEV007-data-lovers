@@ -13,7 +13,7 @@ const listaPeliculas = data.films;
 function movie(id, titulo, imagenPoster) { // La funcion 'movie' recibe 3 parámetros: id, título e imagen. Esta función genera un string en HTML 
   const poster = `<div class="container">
     <img class="img-normalizada" id="${id}" src="${imagenPoster}" alt="poster"> 
-    <div class="overlay" onclick="window.location.href='castleInTheSky.html'">
+    <div class="overlay" onclick="window.location.href='${titulo}.html'">
     <p>${titulo}</p>
     </div>
     </div>`; //Usamos "${}" para que se agregue el dato(valor) que corresponda en cada caso.
