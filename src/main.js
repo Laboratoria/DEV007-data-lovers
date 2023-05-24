@@ -11,7 +11,7 @@ const contenidoCard = document.querySelector(".adentro");
 
 document.getElementById("pokedexBtn").onclick = function () {      //funcion del botón pokedex//
   document.getElementById("homePageStart").style.display = "none";
-  document.getElementById("contenido").style.display = "flex";
+  document.getElementById("listaPokemon").style.display = "flex";
 };
 
 document.getElementById("resumeBtn").onclick = function () {      //funcion del botón pokeresumen//
@@ -21,7 +21,7 @@ document.getElementById("resumeBtn").onclick = function () {      //funcion del 
 
 document.getElementById("pokedexResumePageBtn").onclick = function () {    //funcion del boton pokedex en la resumePage
   document.getElementById("resumePageStart").style.display = "none";
-  document.getElementById("contenido").style.display = "flex";
+  document.getElementById("listaPokemon").style.display = "flex";
 };
 
 
@@ -50,7 +50,7 @@ data.pokemon.forEach((pokemones) => {
                <input type="texto" class="input" placeholder="${pokemones.size.height}"><br>
                <label for="input-peso" class="label">PESO</label>
                <input type="texto" class="input" placeholder="${pokemones.size.weight}">
-                 <div class = "resistencia"
+                 <div class = "resistencia">
                    <p>${pokemones.resistant}</p>
                  </div>
               </div>
