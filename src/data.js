@@ -26,29 +26,30 @@ export function filtrarAtletasPorDeporte (athletes , deporte){
 
 
 
+export function ordenarAtletas(atletas, orderType) { //la lista de atletas a ordenar y el tipo de ordenamiento como parametro
+  const atletasOrdenados = Array.from(atletas); //se crea una copia de la lista de atletas para no modificar la original
+  atletasOrdenados.sort((a, b) => { 
+    const valueA = a.name.toUpperCase();
+    const valueB = b.name.toUpperCase();
 
-
-
-
-export const sortData = (data, sortOrden) => {
-  if (sortOrden === 'ASC') {
-    data.sort((a, b) => {
-      if (a.name > b.name) {
-        return 1
-      } else if (a.name < b.name) {
-        return -1
+    if (orderType === 'ZA') {
+      if (valueA > valueB) {
+        return -1;
+      } else if (valueA < valueB) {
+        return 1;
+      } else {
+        return 0;
       }
-      return 0
-    })
-  } else {
-    data.sort((a, b) => {
-      if (a.name > b.name) {
-        return -1
-      } else if (a.name < b.name) {
-        return 1
+    } else {
+      if (valueA < valueB) {
+        return -1;
+      } else if (valueA > valueB) {
+        return 1;
+      } else {
+        return 0;
       }
-      return 0
-    })
-  }
-  return data
+    }
+  });
+
+  return atletasOrdenados;
 }
