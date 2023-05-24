@@ -154,23 +154,31 @@ button#pokedexBtn{   /* estilo button pokedex */
 
 /*ESTILOS POKEDEX*/
 
+
+.pageListaPoke {
+  flex-direction: column;
+  background-image: url("./img/fondolista.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
 .card-imag {
     width: 100%;          /*ancho de la imagen*/
     height: 120px;
-    
     background-color: rgb(219, 215, 215);
-    border-radius: 10px;
-    
+    border-radius: 10px;   
 }
 
-
-
-.contenidoCard {
+.bottomPokedex {
+  display: flex;
+  flex-direction: row;
   justify-content: center;
-  background-image: url(img/fondolista.png);
-  background-position: center;
-  background-size: cover; 
-  background-repeat: no-repeat;
   width: 100vw;
   height: 100vh;
   align-items: center;
@@ -181,13 +189,13 @@ button#pokedexBtn{   /* estilo button pokedex */
   grid-template-columns: 20% 20% 20% 20%;
   background-color: white;
   width: 80%;                            /*ancho del contenedor blanco*/
-  height: 80vh;
+  height: 73vh;
   overflow-y: scroll;
   justify-content: center;
   gap: 25px;                             /*separar las cartas*/
   border-radius: 20px;
   border: 9px solid rgb(1, 1, 240);
-  
+
 }
 
 .mostrar {
@@ -249,51 +257,48 @@ button#pokedexBtn{   /* estilo button pokedex */
   background-color: red;
 }
 
-.headerPokedex img{
-  width: 25%;
-  height: 10vw;
-  margin-top: -1%;
-  margin-left: 2%;
-
+.loguitoPokedex{
+  width: 20%;
+  height: 7vw;
+  margin-top: 0%;
+  margin-left: 0%;
 }
 
+.miniPokebola {
+  width: 8%;                       /*ancgo de la img pokebola*/
+  height: 4vw;
+  margin-top: 2%;                  /*mover hacia arriba o abajo*/
+  margin-left: -1%;
+}
 
 .buscar {
-  /*width: 100%;*/
-  /*min-height: 100vh;*/
   padding: 1%;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: red;    /* fondo de prueba borrar/no funciona si se borra el width y min-height*/
-  
+  margin-left: 2%;                 /*para mover el contenedor del buscador hacia la izquierda*/
 }
+
 .search-bar {
-/*width: 100%;*/
-/*max-width: 700px;*/
 background: white;          /*color de fondo del "contenedor" del input y el boton*/
 display: flex;
 align-items: center;
 border-radius: 60px;
 padding: 2px 8px;           /* largo y ancho del contenedor*/
-
 }
-/*.search-button img{
-  width: 3em;
-  height: 3em;
-}*/
+
 .search-bar input{
   background: transparent;
   flex: 0.3;                    /*ancho del input hacia la derecha*/
-  /*border: 0;*/
+  border: 0;                    /*quitarle el borde al input*/
   outline: none;
   padding: 3px 1px;              /*largo y ancho del input*/
-  font-size: 15px;                  /*tamaño del imput*/
+  font-size: 12px;                  /*tamaño del imput*/
   color: #5d5c64;                 /*color de letra del imput al escribir*/
 }
 .search-bar button img{
-width: 20px;                       /*ancho de la img del boton*/
-height: 20px;
+width: 15px;                       /*ancho de la img del boton*/
+height: 15px;
 }
 ::placeholder{
   color: #a9a8c0;             /*color letra del placeholder*/
@@ -302,11 +307,13 @@ height: 20px;
 .search-bar button{
   border: 0;                        /*quitarle el borde*/
   border-radius: 50%;
-  width: 40px;                      /*ancho del boton*/
-  height: 40px;
+  width: 23px;                      /*ancho del boton*/
+  height: 23px;
   background: #58629b;           /*fondo del boton*/
   cursor: pointer;
 }
 /*.pageListaPoke img{                   
   margin: 3% 10% 8%;                 /*tamaño de las img*/
 /*}*/
+
+
