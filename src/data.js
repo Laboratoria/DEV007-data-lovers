@@ -1,26 +1,54 @@
-import athletes from "./data/athletes/athletes";
+export function filtrarPaises (data){
+    const paisesUnicos = new Set()
+    data.athletes.forEach(i => {
+      paisesUnicos.add(i.team)
+    }) 
+    return paisesUnicos
+}
 
-export { dataAthletesFilter }
-const dataAthletesFilterSport = () => {
-return propiedad= dataAthletesFilter
-};
+export function filtrarDeportes (data){
+    const deportesUnicos = new Set()
+    data.athletes.forEach(i => {
+    deportesUnicos.add(i.sport)
+  }) 
+  return deportesUnicos
+}
 
-const dataAthletesFilterTeam = () => {
-return propiedad = dataAthletesFilter
-};
+export function filtrarAtletasPorPais (athletes , pais) {
+    const atletasFiltrados = athletes.filter(atleta => atleta.team === pais);
+    return atletasFiltrados 
+}
 
-const dataAthletesFilterMedal= () => {
-return propiedad= dataAthletesFilter
-};
-export let filterSport= (data, sport)
-  const deportes= data.filter(deportes=>deportes.sport===deporte)
+export function filtrarAtletasPorDeporte (athletes , deporte){
+    const atletasFiltradosPorDeporte = athletes.filter(atleta => atleta.sport === deporte);
+    return atletasFiltradosPorDeporte
+}
 
-{
-  return deportes
-};
-export let filterAthletesPorDeporte =(athletes, sport)
-const atletasFiltrados = athletes.filter(atleta => atleta.sport === deporte)
-{
-  return atletasFiltrados
-};
 
+
+
+
+
+
+export const sortData = (data, sortOrden) => {
+  if (sortOrden === 'ASC') {
+    data.sort((a, b) => {
+      if (a.name > b.name) {
+        return 1
+      } else if (a.name < b.name) {
+        return -1
+      }
+      return 0
+    })
+  } else {
+    data.sort((a, b) => {
+      if (a.name > b.name) {
+        return -1
+      } else if (a.name < b.name) {
+        return 1
+      }
+      return 0
+    })
+  }
+  return data
+}
