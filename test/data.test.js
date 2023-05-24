@@ -1,2 +1,2 @@
-import * as data from '../src/data';
+//import * as data from '../src/data';
 
