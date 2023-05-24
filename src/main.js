@@ -19,11 +19,15 @@ document.getElementById("resumeBtn").onclick = function () {      //funcion del 
   document.getElementById("resumePageStart").style.display = "block";
 };
 
-document.getElementById("pokedexResumePageBtn").onclick = function () {    //funcion del boton pokedex en la resumePage
+document.getElementById("pokedexResumePageBtn").onclick = function () {    //funcion del boton pokedex en la resumePage//
   document.getElementById("resumePageStart").style.display = "none";
   document.getElementById("listaPokemon").style.display = "flex";
 };
 
+document.getElementById("pokedexHomePageBtn").onclick = function () {    //funcion del boton Inicio en la pokedex//
+  document.getElementById("listaPokemon").style.display = "none";
+  document.getElementById("homePageStart").style.display = "flex";
+};
 
 data.pokemon.forEach((pokemones) => {   
   contenidoCard.innerHTML += `
