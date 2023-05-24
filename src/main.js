@@ -1,10 +1,10 @@
 //import { example } from './data.js';
 // import data from './data/lol/lol.js';
 import data from './data/pokemon/pokemon.js';
-// import data from './data/rickandmorty/rickandmorty.js';
+//import {ordenarPokemones} from './data.js';
 
 //console.log(data.pokemon);
-
+//const pokemon= data.pokemon;
 const contenidoCard = document.querySelector(".adentro");
 
 
@@ -24,7 +24,7 @@ document.getElementById("pokedexResumePageBtn").onclick = function () {    //fun
   document.getElementById("listaPokemon").style.display = "flex";
 };
 
-
+//function crearTarjetas(data) {
 data.pokemon.forEach((pokemones) => {   
   contenidoCard.innerHTML += `
     <button class= "mostrar">  
@@ -58,3 +58,23 @@ data.pokemon.forEach((pokemones) => {
       </div>
     </button>`;
 })
+//}
+
+//crearTarjetas(pokemon)
+
+//const selectElement = document.getElementById("select-ordenar");
+//const menuOrdenador = document.getElementById("ordenador");
+
+//selectElement.addEventListener("change", function() {
+//const selectedOption = selectElement.value;
+  
+//ordenarPokemones(selectedOption);
+
+//menuOrdenador.innerHTML = "";
+
+//data.pokemon.forEach(function(pokemon) {  
+//const pokemonName= document.createElement("p");
+//pokemonName.textContent = pokemon.name;
+//menuOrdenador.appendChild(pokemonName);
+//})
+//})
