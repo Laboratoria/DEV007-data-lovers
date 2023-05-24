@@ -326,10 +326,10 @@ height: 15px;
   border: 2px solid black;
   border-radius: 60px;
   position: absolute;
-  right: 2%;
+  right: 7%;
 }
 
-select{
+#filterSelect{
   width: 10%;
   height: 4vh;
   font-family: revert;
@@ -337,5 +337,16 @@ select{
   border-radius: 60px;
   position: absolute;
   top: 6%;
-  left: 75%;
+  left: 67%;
+}
+
+#select-ordenar{
+  width: 10%;
+  height: 4vh;
+  font-family: revert;
+  font-size: large;
+  border-radius: 60px;
+  position: absolute;
+  top: 6%;
+  left: 50%;
 }
