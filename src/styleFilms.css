@@ -176,6 +176,11 @@ nav ul li:hover {
 .datos {
   margin-left: 70px;
 }
+.botonRegresar {
+  margin-left: 1100px;
+  margin-bottom: 30px;
+  height: 100px;
+}
 
 .footer {
   width: 100%;

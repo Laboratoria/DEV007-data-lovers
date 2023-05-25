@@ -56,9 +56,9 @@ personajes.innerHTML = listaPeliculas[0].people[7].name;
 
 /////////////////////////////////////////// DIRECTOR Y PRODUCTORES
 
-var director = document.getElementById('director'); 
+let director = document.getElementById('director'); 
 director.innerHTML = listaPeliculas[0].director; 
 
-var producer = document.getElementById('producer'); 
+let producer = document.getElementById('producer'); 
 producer.innerHTML = listaPeliculas[0].producer;  
 

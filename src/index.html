@@ -12,7 +12,9 @@
 
 <body>
   <header> <!-- Sección de encabezado/barra de navegación  -->
-    <img src="./images-data/titulo.png" href="" alt="Studio Ghibli movies" class="tituloStudioGhibliMovies">
+    <a href="index.html">
+      <img src="./images-data/titulo.png" href="" alt="Studio Ghibli movies" class="tituloStudioGhibliMovies">
+    </a>
     <nav class="navegacion">
       <ul>
         <li><a href="#inicio">Página de inicio</a></li>
@@ -56,11 +58,12 @@
   </div>
 
   <div class="producciones" id="producciones"> <!-- Sección de producciones/películas -->
-      <br>
+    <br>
     <h1>Producciones</h1>
     <h3>Haz clic en cada una de las portadas y revive la magia de estas maravillosas animaciones</h3>
     <br>
-    <label class="ordenarPor" for="">Ordenar por:</label><!-- label permite dar un título o descripción a un campo de formulario -->
+    <label class="ordenarPor" for="">Ordenar
+      por:</label><!-- label permite dar un título o descripción a un campo de formulario -->
     <!-- agregamos lista despegable para ordenar de A-Z y Z-A, por Año y por puntaje -->
     <select id="ordenar" class="caja">
       <option value="az">Título de A a Z</option>
@@ -70,7 +73,7 @@
     </select>
     <br>
     <br>
-  
+
     <!-- Creamos el div "escenario" para guardar todas las peliculas -->
     <div id="escenario">
     </div>
@@ -81,9 +84,10 @@
     <br>
   </div>
 
-  <div class="mas-detalles"><!-- Sección de más detalles, donde agregamos los enlaces a las redes sociales -->
+  <div id="detalles" class="mas-detalles">
+    <!-- Sección de más detalles, donde agregamos los enlaces a las redes sociales -->
     <br>
-    <p id="detalles" class="detalles1"> Sigue las redes sociales oficiales para no perderte ninguna novedad. </p>
+    <p class="detalles1"> Sigue las redes sociales oficiales para no perderte ninguna novedad. </p>
     <br>
     <img onclick="window.location.href='https://www.facebook.com/GhibliUSA'" src="./images-data/facebook.png"
       alt="facebook" id="facebook">
