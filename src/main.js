@@ -30,11 +30,10 @@ const contenedor = document.getElementById('contenedor')
 const contenedorAtletasPorPais = document.getElementById ('contenedorAtletasPorPais')
 const contenedorAtletasPorDeporte = document.getElementById ('contenedorAtletasPorDeporte')
 
-
-
+//------------------------------------------------------------------------------------------------------------------------------
 //filtrar por PAISES
 function mostrarPaises () {
-  const paisesUnicos= filtrarPaises (data) 
+  const paisesUnicos= filtrarPaises (data) //llamar a la funcion del data.js
 
   paisesUnicos.forEach(equipo => {
     contenedorPaises.innerHTML +=  `<div class="cartasPaises">
@@ -50,6 +49,7 @@ botonPrincipalPaises.addEventListener('click', () => {
   contenedor.innerHTML = '';
   contenedorAtletasPorDeporte.innerHTML ='';
   contenedorAtletasPorPais.innerHTML ='';
+  contenedorPaises.innerHTML ='';
   mostrarPaises()
 
 // funcionalidad para cada boton por PAIS 
@@ -64,59 +64,53 @@ botonPrincipalPaises.addEventListener('click', () => {
 })
 
 
-//funcion para filtrar atletas por PAIS
+// Función para filtrar atletas por PAIS y ordenar A-Z / Z-A
 function mostrarAtletasPorPais(pais) {
-const atletasFiltrados = filtrarAtletasPorPais (athletes,pais);
+  const atletasFiltrados = filtrarAtletasPorPais(athletes, pais);
 
-contenedorPaises.innerHTML = ""; // Limpiar los botones de los paises antes de agregar los atletas filtrados
-contenedorAtletasPorPais.innerHTML = ""; //para que no se vayan agregando abajo los atletas filtrados con anterioridad
+  contenedorPaises.innerHTML = ""; // Limpiar los botones de los paises antes de agregar los atletas filtrados
 
-//generar dinamicamente el select de orden 
-contenedorAtletasPorPais.innerHTML +=  
-`<select id="ordenAtletasPais">
-<option disabled selected value="">Ordenar</option>
-<option value="AZ">A-Z</option>
-<option value="ZA">Z-A</option>
-</select>`
+  // Generar dinámicamente el select para ordenar A-Z / Z-A 
+  contenedorAtletasPorPais.innerHTML += `
+    <select id="ordenAtletasPais">
+      <option disabled selected value="">Ordenar</option>
+      <option value="AZ">A-Z</option>
+      <option value="ZA">Z-A</option>
+    </select>`;
 
-//Generar dinamicamente las tarjetas de cada atleta sin ordenar 
-atletasFiltrados.forEach(atleta => {
-  contenedorAtletasPorPais.innerHTML +=  `<div class= datosAtletas >
-                                          <p><strong>Name:</strong> ${atleta.name}</p>
-                                          <p><strong>Sport:</strong> ${atleta.sport}</p>
-                                          <p><strong>Team:</strong> ${atleta.team}</p>
-                                          <p><strong>Medal:</strong> ${atleta.medal}</p>
-                                          </div>`;
-});
+  // Generar dinámicamente las tarjetas de cada atleta sin ordenar
+  atletasFiltrados.forEach(atleta => {
+    contenedorAtletasPorPais.innerHTML += `
+      <div class="datosAtletas">
+        <p><strong>Name:</strong> ${atleta.name}</p>
+        <p><strong>Sport:</strong> ${atleta.sport}</p>
+        <p><strong>Team:</strong> ${atleta.team}</p>
+        <p><strong>Medal:</strong> ${atleta.medal}</p>
+      </div>`;
+  });
 
-const ordenAtletasPaisSelect = document.getElementById ('ordenAtletasPais'); //llamar el select 
-  ordenAtletasPaisSelect.addEventListener ('change', () => { //agregar el evento cuando cambia de a-z a z-a
-    const ordenType = ordenAtletasPaisSelect.value;
-    const atletasOrdenados = ordenarAtletas (atletasFiltrados, ordenType);
+  contenedorAtletasPorPais.addEventListener('change', event => {
+    if (event.target.id === 'ordenAtletasPais') {
+      const ordenType = event.target.value;
+      const atletasOrdenados = ordenarAtletas(atletasFiltrados, ordenType);
 
-  contenedorAtletasPorPais.innerHTML =''; //para que no se vayan agregando abajo de los ya ordenados
+      const tarjetasAtletas = contenedorAtletasPorPais.querySelectorAll('.datosAtletas');
+      tarjetasAtletas.forEach(tarjeta => {
+        tarjeta.remove(); // Eliminar las tarjetas existentes
+      });
 
-  //generar dinamicamente el select de nuevo para que no deje de aparecer 
-contenedorAtletasPorPais.innerHTML +=  
-`<select id="ordenAtletasPais">
-<option disabled selected value="">Ordenar</option>
-<option value="AZ">A-Z</option>
-<option value="ZA">Z-A</option>
-</select>`
-
-//generar dinamicamente la tarjeta pero ya con orden 
-  atletasOrdenados.forEach(atleta => {
-    contenedorAtletasPorPais.innerHTML +=  
-                                          `<div class= datosAtletas >
-                                          <p><strong>Name:</strong> ${atleta.name}</p>
-                                          <p><strong>Sport:</strong> ${atleta.sport}</p>
-                                          <p><strong>Team:</strong> ${atleta.team}</p>
-                                          <p><strong>Medal:</strong> ${atleta.medal}</p>
-                                          </div>`
-});
-
-  })
-
+      // Generar dinámicamente las nuevas tarjetas ordenadas
+      atletasOrdenados.forEach(atleta => {
+        contenedorAtletasPorPais.innerHTML += `
+          <div class="datosAtletas">
+            <p><strong>Name:</strong> ${atleta.name}</p>
+            <p><strong>Sport:</strong> ${atleta.sport}</p>
+            <p><strong>Team:</strong> ${atleta.team}</p>
+            <p><strong>Medal:</strong> ${atleta.medal}</p>
+          </div>`;
+      });
+    }
+  });
 }
 
 
@@ -125,10 +119,8 @@ contenedorAtletasPorPais.innerHTML +=
 
 
 
+
 //--------------------------------------------------------------------------------------------------------------------------------------------------
-
-
-
 //filtrar por DEPORTES
 function mostrarDeportes () {
   const deportesUnicos = filtrarDeportes (data)
@@ -148,6 +140,7 @@ botonPrincipalDeportes.addEventListener('click', () => {
   contenedor.innerHTML = '';
   contenedorAtletasPorPais. innerHTML ='';
   contenedorAtletasPorDeporte.innerHTML ='';
+  contenedorDeportes.innerHTML = '';
   mostrarDeportes()
 
   //funcionalidad por cada boton por DEPORTE
@@ -161,12 +154,11 @@ botonPrincipalDeportes.addEventListener('click', () => {
   }
 })
 
-//funcion para filtrar atletas por DEPORTE
+//funcion para filtrar atletas por DEPORTE 
 function mostrarAtletasPorDeporte(deporte) {
    const atletasFiltradosPorDeporte = filtrarAtletasPorDeporte (athletes,deporte)
 
   contenedorDeportes.innerHTML = ""; // Limpiar el contenido existente antes de agregar los atletas filtrados
-  contenedorAtletasPorDeporte.innerHTML = "";
 
 //generar dinamicamente las tarjetas de cada atleta 
 atletasFiltradosPorDeporte.forEach(atleta => {
@@ -179,5 +171,4 @@ atletasFiltradosPorDeporte.forEach(atleta => {
 });
 
 }
-
 
