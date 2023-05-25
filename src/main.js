@@ -10,6 +10,7 @@ function mostrarAtletas () {
   const contenedor = document.getElementById('contenedor')
 
   athletes.forEach(i => {
+
     contenedor.innerHTML += `<div class= datosAtletas>
                            <p>Name: ${i.name}</p>
                            <p>Sport: ${i.sport}</p>
