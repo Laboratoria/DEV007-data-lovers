@@ -1,49 +1,78 @@
- main {
-   background-image: url('https://nicasnews.com/wp-content/uploads/2016/08/20160805-3.jpg');
-   background-repeat: no-repeat;
-   background-size: contain;
-   background-position: bottom;
-   background-attachment: fixed;
+main {
+  background-image: url('https://nicasnews.com/wp-content/uploads/2016/08/20160805-3.jpg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: bottom;
+  background-attachment: fixed;
   }
 
 .clase-barrasuperior {
- width: 95%;
- height: 98px;
- left: 0px;
- top: 52px;
- background: #2a9141;
- border-radius: 10px;
- display: flex;
- justify-content: space-between;
- align-items: center;
- margin-top: 2%;
- margin-left: 3%;
- margin-bottom: 5%;
- margin-right: 3%;
- padding-right: 30px;
+  width: 95%;
+  height: 98px;
+  left: 0px;
+  top: 52px;
+  background: #2a9141;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2%;
+  margin-left: 3%;
+  margin-bottom: 5%;
+  margin-right: 3%;
+  padding-right: 30px;
 }
 .img-aros {
- margin-left: 20px;
- mix-blend-mode: hard-light;
- filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  margin-left: 20px;
+  mix-blend-mode: hard-light;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 .textoRio {
- color: #F4F1E8;
- font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
- font-size: 40px;
- left: 20px;
+  color: #F4F1E8;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 250%;
 }
 .caja-botones {
- padding-left: 60px;
+  padding-left: 60px;
+  display: flex;
+}
+
+/* boton inicio*/
+.clase-botonInicio {
+  margin-right: 4%;
+  width: 180px;
+  height: 43px;
+  top: 82px;
+  font-size: x-large;
+  background: #fff;
+  border-radius: 10px;
+}
+
+.clase-botonInicio::after {
+  content: "";
+  width: 400px;
+  height: 400px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.clase-botonInicio:hover {
+  transform: traslate(0, -6px);
+  box-shadow: 10px -10px 25px 0 rgba(241, 237, 9, 0.731),
+    10px -10px 25px 0 rgba(231, 217, 10, 0.815);
+}
+
+.clase-botonInicio:hover::after {
+  transform: rotate(150deg);
+
 }
 
 /*boton principal deportes */
 .clase-botondeportes {
-    margin-right: 20px;
+    margin-right: 2%;
     width: 180px;
     height: 43px;
-    left: 850px;
-    top: 82px;
     font-size: x-large;
     background: #fff;
     border-radius: 10px;
@@ -53,7 +82,6 @@
     content: "";
     width: 400px;
     height: 400px;
- 
     top: 0;
     left: 0;
 }
@@ -70,11 +98,9 @@
 
  /*boton principal pais */
 .clase-botonpais {
-    margin-left: 20px;
+    margin-left: 2%;
     width: 180px;
     height: 43px;
-    left: 1102px;
-    top: 82px;
     font-size: x-large;
     background: #fff;
     border-radius: 10px;
@@ -84,7 +110,6 @@
     content: "";
     width: 400px;
     height: 400px;
-    position: absolute;
     top: 0;
     left: 0;
 }
@@ -103,45 +128,44 @@
 
 /* imagen grande y parrafo*/
 .contenidoGeneral {
-   display: flex;
-   flex-direction: row;
-
+  display: flex;
+  flex-direction:row;
 }
 
 .cuarentaDeportes {
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   align-items: center;
-   align-content: center;
-   margin-left: 10%;
-   margin-right: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin-left: 10%;
+  margin-right: 5%;
 
 }
 
 .img-rio2016 {
-   margin-left: 18%;
-   width: 270px;
-   left: 1050px;
-   top: 200px;
- }
+  margin-left: 18%;
+  width: 270px;
+  left: 1050px;
+  top: 200px;
+}
 
 .parrafo {
-   display: inline-block;
-   width: 470px;
-   height: 348px;
-   left: calc(45% - 370px/2 + 432px);
-   top: 300px;
-   font-style: normal;
-   font-weight: 800;
-   font-size: 24px;
-   line-height: 29px;
-   text-align: justify;
-   color: #000000;
+  display: inline-block;
+  width: 470px;
+  height: 348px;
+  left: calc(45% - 370px/2 + 432px);
+  top: 300px;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: justify;
+  color: #000000;
 }
 
 .datosAtletas {
-  height: 10%;
+  height: 14%;
   width: 14%;
   display: inline-block;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -151,7 +175,7 @@
   border-radius: 10px;
   margin: 2%;
   margin-left: 7%;
-  background-color: rgba(162, 207, 192, 0.5);
+  background-color: rgba(214, 219, 187, 0.5);
 }
 
 .cartasDeportes {
@@ -168,7 +192,7 @@
 
 
 select{
-  margin-left: 75%;
+  margin-left: 65%;
   width: 15%;
   height: 20%;
   font-size: x-large;
@@ -176,5 +200,4 @@ select{
   border-radius: 10px;
   border: 5% solid;
   border-color: #2a9144;
-
 }

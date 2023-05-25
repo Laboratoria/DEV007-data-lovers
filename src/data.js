@@ -25,31 +25,16 @@ export function filtrarAtletasPorDeporte (athletes , deporte){
 }
 
 
-
-export function ordenarAtletas(atletas, orderType) { //la lista de atletas a ordenar y el tipo de ordenamiento como parametro
-  const atletasOrdenados = Array.from(atletas); //se crea una copia de la lista de atletas para no modificar la original
-  atletasOrdenados.sort((a, b) => { 
-    const valueA = a.name.toUpperCase();
-    const valueB = b.name.toUpperCase();
-
-    if (orderType === 'ZA') {
-      if (valueA > valueB) {
-        return -1;
-      } else if (valueA < valueB) {
-        return 1;
-      } else {
-        return 0;
-      }
+export function ordenarAtletas(atletas, ordenSeleccionado) {
+  const atletasOrdenados = atletas.slice(); // Crear una copia de la lista de atletas con .slice
+  atletasOrdenados.sort((a, b) => { //con .sort vamos a ordenar todo lo que este dentre de los {}
+    const nombreA = a.name.toLowerCase(); //asegurarnos que la comparacion sea insensible a mayusculas y minusculas
+    const nombreB = b.name.toLowerCase();
+    if (ordenSeleccionado === 'AZ') {    //decimos como se deben comparar los nombres con el if con .localCompare
+      return nombreA.localeCompare(nombreB); // Ordenar de A-Z
     } else {
-      if (valueA < valueB) {
-        return -1;
-      } else if (valueA > valueB) {
-        return 1;
-      } else {
-        return 0;
-      }
+      return nombreB.localeCompare(nombreA); // Ordenar de Z-A
     }
   });
-
   return atletasOrdenados;
 }
