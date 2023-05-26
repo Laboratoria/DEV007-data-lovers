@@ -30,6 +30,8 @@ document.getElementById("pokedexHomePageBtn").onclick = function () {    //funci
   document.getElementById("homePageStart").style.display = "flex";
 };
 
+
+
 data.pokemon.forEach((pokemones) => {   
   contenidoCard.innerHTML += `
     <button class= "mostrar">  
@@ -83,3 +85,27 @@ data.pokemon.forEach((pokemones) => {
 //menuOrdenador.appendChild(pokemonName);
 //})
 //})
+
+import { filterByType, displayFilteredData } from './data.js';
+
+document.getElementById("filterSelect").addEventListener("change", function () {
+  const filterValue = this.value;
+  let filteredData;
+
+  if (filterValue === "water") {
+    
+    filteredData = filterByType(data.pokemon, "water");
+  } else if (filterValue === "fire") {
+    
+    filteredData = filterByType(data.pokemon, "fire");
+  } else if (filterValue === "bug") {
+    
+    filteredData = filterByType(data.pokemon, "bug");
+  } else {
+
+    filteredData = data.pokemon; // Mostrar todos los pokemon
+  }
+
+  // Lógica para mostrar los resultados filtrados en la interfaz
+  displayFilteredData(filteredData);
+});
