@@ -1,11 +1,10 @@
 body {
     background:linear-gradient(to right,white 0%, white 25%,black 25%, black 28%, rgb(251, 59, 59) 28%, rgb(251, 59, 59) 100%) ;
     font-family: monospace; 
-    }
+}
 
 .contenedor{
-   display: flex; 
-   
+   display: flex;   
 }
 
 .buscador {
@@ -28,7 +27,6 @@ body {
  flex-wrap: wrap;
  width: 100%;
   height: auto; 
-
 }
 
 .targets {
@@ -52,10 +50,4 @@ body {
     padding-top: 40px;
     padding-left: 25px;
     padding-right: 25px;
-
- 
-
-
-
-
 }
