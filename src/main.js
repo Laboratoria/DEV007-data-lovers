@@ -29,7 +29,13 @@ document.getElementById("pokedexHomePageBtn").onclick = function () {    //funci
   document.getElementById("listaPokemon").style.display = "none";
   document.getElementById("homePageStart").style.display = "flex";
 };
+<<<<<<< HEAD
 //function crearTarjetas(data) {
+=======
+
+
+
+>>>>>>> 73b71f20ab4d8dc0b6e1871cdef035f37ea1d1b0
 data.pokemon.forEach((pokemones) => {   
   contenidoCard.innerHTML += `
     <button class= "mostrar">  
@@ -70,6 +76,7 @@ data.pokemon.forEach((pokemones) => {
 
 
 
+<<<<<<< HEAD
 // Obtener el elemento select del usuario
 const selectElement = document.getElementById("select-ordenar");
 const pokemonContainer = document.getElementById("ordenador");
@@ -85,3 +92,37 @@ selectElement.addEventListener("change", function() {
     //pokemonContainer.appendChild(pokemonName);
   //});
 });
+=======
+//menuOrdenador.innerHTML = "";
+
+//data.pokemon.forEach(function(pokemon) {  
+//const pokemonName= document.createElement("p");
+//pokemonName.textContent = pokemon.name;
+//menuOrdenador.appendChild(pokemonName);
+//})
+//})
+
+import { filterByType, displayFilteredData } from './data.js';
+
+document.getElementById("filterSelect").addEventListener("change", function () {
+  const filterValue = this.value;
+  let filteredData;
+
+  if (filterValue === "water") {
+    
+    filteredData = filterByType(data.pokemon, "water");
+  } else if (filterValue === "fire") {
+    
+    filteredData = filterByType(data.pokemon, "fire");
+  } else if (filterValue === "bug") {
+    
+    filteredData = filterByType(data.pokemon, "bug");
+  } else {
+
+    filteredData = data.pokemon; // Mostrar todos los pokemon
+  }
+
+  // Lógica para mostrar los resultados filtrados en la interfaz
+  displayFilteredData(filteredData);
+});
+>>>>>>> 73b71f20ab4d8dc0b6e1871cdef035f37ea1d1b0
