@@ -32,15 +32,29 @@ const contenedorAtletasPorPais = document.getElementById ('contenedorAtletasPorP
 const contenedorAtletasPorDeporte = document.getElementById ('contenedorAtletasPorDeporte')
 
 botonInicio.addEventListener('click', () => {
-  // Limpiar todos los contenedores y reiniciar su contenido
+  // Limpiar todos los contenedores 
   contenedorPaises.innerHTML = '';
   contenedorDeportes.innerHTML = '';
   contenedorAtletasPorDeporte.innerHTML = '';
   contenedorAtletasPorPais.innerHTML = '';
 
-  contenidoGeneral.innerHTML = '<div id="contenidoGeneral"></div>';
+  // Generar el contenido del div contenidoGeneral para poderlo mostrar cuando hagan click en inicio
+  const contenidoDiv = 
+  `<div id="contenidoGeneral" class="contenidoGeneral">
+      <div class="cuarentaDeportes">
+          <img alt="img-principal" class="imagen-principal" src="https://trello.com/1/cards/64544665b229eb83c9d3507f/attachments/64544665b229eb83c9d350a1/previews/64544666b229eb83c9d350ad/download/image.png">
+      </div>
+      <div class="imagen-parrafo">
+        <span class="parrafo">
+          <img alt="img-rio2016" class="img-rio2016" src="https://th.bing.com/th/id/R.070262561158e9c72ff2fa7b0da265b6?rik=QSD7%2byGLzBy%2bdg&riu=http%3a%2f%2fhotsport.rs%2fwp-content%2fuploads%2f2014%2f12%2fRio-2016.jpg&ehk=CoF5O%2bUvhcWVD2Sd6L%2bXrcsCtn1SPt6eIV%2byV4CjuYQ%3d&risl=&pid=ImgRaw&r=0">
+          <br>
+          Los Juegos Olímpicos de Río de Janeiro 2016 fueron un evento deportivo global celebrado en Brasil del 5 al 21 de agosto de 2016, en el que participaron más de 11.000 atletas de 206 países compitiendo en 42 deportes y 306 eventos. Fueron recordados por su compromiso con la sostenibilidad y la inclusión social, y por la aparición de nuevos talentos y momentos memorables.
+        </span>
+      </div>
+  </div>`;
 
-
+  // Insertar el contenido generado en el div contenidoGeneral
+  contenidoGeneral.innerHTML = contenidoDiv;
 });
 
 //------------------------------------------------------------------------------------------------------------------------------
