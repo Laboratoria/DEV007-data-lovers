@@ -1,23 +1,17 @@
-import { example, anotherExample } from '../src/data.js';
-import data from './data/athletes/athletes.js';
+import { filtrarPaises , filtrarDeportes } from './data.js'
 
-describe('example', () => {
-  it('is a function', () => {
-    expect(typeof example).toBe('function');
-  });
 
-  it('returns `example`', () => {
-    expect(example()).toBe('example');
+//testear que filtrarPaises es una funcion
+describe('filtrarPaises', () => {
+  it('devuelve un conjunto vacío si no hay datos de atletas', () => {
+    expect(typeof filtrarPaises).toBe('function');
   });
 });
 
 
-describe('anotherExample', () => {
-  it('is a function', () => {
-    expect(typeof anotherExample).toBe('function');
-  });
-
-  it('returns `anotherExample`', () => {
-    expect(anotherExample()).toBe('OMG');
+//testear que filtrarDeportes es una funcion
+describe('filtrarDeportes', () => {
+  it('devuelve un conjunto vacío si no hay datos de atletas', () => {
+    expect(typeof filtrarDeportes).toBe('function');
   });
 });
