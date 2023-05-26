@@ -1,23 +1,21 @@
 // estas funciones son de ejemplo
 
-//import pokemon from "./data/pokemon/pokemon";
-
+import data from "./data/pokemon/pokemon.js";
 //export const example = () => {
 //return 'example';
 //};
 
-//export function ordenarPokemones (data, order) {
-//const ordenandoPokemon= data.sort(function(a, b) {
-//const nameA = a.name.toUpperCase();
-//const nameB = b.name.toUpperCase();
-//if (order === "upward") {
-//if (nameA < nameB) return -1;
-//if (nameA > nameB) return 1;
-//} else if (order === "falling") {
-//if (nameA > nameB) return -1;
-//if (nameA < nameB) return 1;
-//}
-//return 0;
-//});
+
+//Función para ordenar el array de objetos de pokémon
+export function ordenarPokemones(order) {  
+  if (order === "asc") { // ascendente
+    return data.pokemon.sort((a, b) => a.name.localeCompare(b.name))
+  } else if (order === "desc") { // descendente
+    return data.pokemon.sort((a, b) => -1 * a.name.localeCompare(b.name))
+      
+  }
+}
+
   
-//}
+  
+

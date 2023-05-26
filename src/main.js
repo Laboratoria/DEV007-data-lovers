@@ -1,7 +1,7 @@
 //import { example } from './data.js';
 // import data from './data/lol/lol.js';
 import data from './data/pokemon/pokemon.js';
-//import {ordenarPokemones} from './data.js';
+import {ordenarPokemones} from './data.js';
 
 //console.log(data.pokemon);
 //const pokemon= data.pokemon;
@@ -24,12 +24,12 @@ document.getElementById("pokedexResumePageBtn").onclick = function () {    //fun
   document.getElementById("listaPokemon").style.display = "flex";
 };
 
-//function crearTarjetas(data) {//
+
 document.getElementById("pokedexHomePageBtn").onclick = function () {    //funcion del boton Inicio en la pokedex//
   document.getElementById("listaPokemon").style.display = "none";
   document.getElementById("homePageStart").style.display = "flex";
 };
-
+//function crearTarjetas(data) {
 data.pokemon.forEach((pokemones) => {   
   contenidoCard.innerHTML += `
     <button class= "mostrar">  
@@ -50,13 +50,14 @@ data.pokemon.forEach((pokemones) => {
               </div>
         </div>
           <div class= "card__side card__side--back">
-             <div class= "card__body">
-               <label for="input-altura" class="label">ALTURA</label>
-               <input type="texto" class="input" placeholder="${pokemones.size.height}"><br>
-               <label for="input-peso" class="label">PESO</label>
-               <input type="texto" class="input" placeholder="${pokemones.size.weight}">
+             <div class= "card__body">            
+               <p class= "height">ALTURA: ${pokemones.size.height}</p>             
+               <p class= "weight">PESO: ${pokemones.size.weight}</p>
                  <div class = "resistencia">
-                   <p>${pokemones.resistant}</p>
+                   <p>RESISTENCIA:</p>
+                   <p class= "parrafo">${pokemones.resistant[0]} , ${pokemones.resistant[1]}</p>
+                   <p class= "parrafo">${pokemones.resistant[2]} , ${pokemones.resistant[3]}</p>
+                   <p class= "parrafo">${pokemones.resistant[4]}</p>
                  </div>
               </div>
           </div>      
@@ -67,19 +68,20 @@ data.pokemon.forEach((pokemones) => {
 
 //crearTarjetas(pokemon)
 
-//const selectElement = document.getElementById("select-ordenar");
-//const menuOrdenador = document.getElementById("ordenador");
 
-//selectElement.addEventListener("change", function() {
-//const selectedOption = selectElement.value;
-  
-//ordenarPokemones(selectedOption);
 
-//menuOrdenador.innerHTML = "";
-
-//data.pokemon.forEach(function(pokemon) {  
-//const pokemonName= document.createElement("p");
-//pokemonName.textContent = pokemon.name;
-//menuOrdenador.appendChild(pokemonName);
-//})
-//})
+// Obtener el elemento select del usuario
+const selectElement = document.getElementById("select-ordenar");
+const pokemonContainer = document.getElementById("ordenador");
+// Escuchar el evento change del select
+selectElement.addEventListener("change", function() {
+  const selectedOption = selectElement.value;
+  //console.log(selectedOption);// 
+  console.log(ordenarPokemones(selectedOption));
+  pokemonContainer.innerHTML = "";
+  //data.pokemon.forEach(function(pokemon) {
+    
+    //pokemonName.textContent = pokemon.name;
+    //pokemonContainer.appendChild(pokemonName);
+  //});
+});
