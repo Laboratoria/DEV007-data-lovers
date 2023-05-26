@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+  <link rel="stylesheet" href="styleFilms.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bubbler+One&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header> <!-- Sección de encabezado/barra de navegación  -->
+    <a href="index.html">
+      <img src="./images-data/titulo.png" href="" alt="Studio Ghibli movies" class="tituloStudioGhibliMovies">
+    </a>
+    <nav>
+      <ul>
+        <li><a href="index.html#inicio">Página de inicio</a></li>
+        <li><a href="index.html#producciones">Producciones</a></li>
+        <li><a href="index.html#detalles">Más detalles</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div id="backgroundCastleInTheSky"> <!-- Sección de la película -->
+
+    <h1 id="tituloPelicula" class="tituloPelicula"></h1>
+
+    <div class="posterDescripcion"> <!-- Inyectamos poster y descripción  -->
+      <img id="posterCastleInTheSky" src="" alt="">
+      <p id="descripcion" class="descripcion"></p>
+    </div>
+    <div class="unaLinea">
+      <h3 class="subtitulo arreglarMargen">Fecha de lanzamiento:</h3>
+      <p id="fechaDeLanzamiento" class="fechaLanzamiento arreglarMargen"></p>
+    </div>
+    <div class="unaLinea">
+      <h3 class="subtitulo arreglarMargen">Puntaje:</h3>
+      <p id="score" class="fechaLanzamiento arreglarMargen"></p>
+    </div>
+
+    <h3 class="subtitulo">Personajes principales:</h3>
+    <div class="personajes">
+      <div class="tarjeta">
+        <img src="" class="personajesPrincipales" id="sosuke" alt="">
+        <h4 class="nombrePersonaje" id="nombreSosuke"></h4>
+      </div>
+      <div class="espacioPersonajes"></div>
+      <div class="tarjeta">
+        <img src="" class="personajesPrincipales" id="brunhilde" alt="">
+        <h4 class="nombrePersonaje" id="nombreBrunhilde"></h4>
+      </div>
+      <div class="espacioPersonajes"></div>
+      <div class="tarjeta">
+        <img src="" class="personajesPrincipales" id="fujimoto" alt="">
+        <h4 class="nombrePersonaje" id="nombreFujimoto"></h4>
+      </div>
+      <div class="espacioPersonajes"></div>
+      <div class="tarjeta">
+        <img src="" class="personajesPrincipales" id="granmammare" alt="">
+        <h4 class="nombrePersonaje" id="nombreGranmammare"></h4>
+      </div>
+      <div class="espacioPersonajes"></div>
+      <div class="tarjeta">
+        <img src="" class="personajesPrincipales" id="lisa" alt="">
+        <h4 class="nombrePersonaje" id="nombreLisa"></h4>
+      </div>
+    </div>
+
+    <h3 class="subtitulo">Directores y productores:</h3>
+    <div class="personajes">
+      <div class="tarjeta">
+        <img src="./images-data/hayao-miyazaki.png" class="personajesPrincipales" alt="">
+        <h4 class="nombrePersonaje" id="director"></h4>
+        <p class="texto">Director</p>
+      </div>
+      <div class="espacioPersonajes"></div>
+      <div class="tarjeta">
+        <img src="./images-data/Toshio-Suzuki.jpg" class="personajesPrincipales" alt="">
+        <h4 class="nombrePersonaje" id="producer"></h4>
+        <p class="texto">Productor</p>
+      </div>
+      <div class="espacioPersonajes"></div>
+    </div>
+
+    <h3 class="subtitulo">Datos curiosos/premiaciones:</h3>
+    <p class="datos">datos</p>
+    <a href="index.html#producciones">
+      <img src="./images-data/Botón Regresar.png" alt="Regresar" class="botonRegresar">
+    </a>
+  </div>
+
+  <footer class="footer">
+    <p>«Dime, ¿cuáles son los límites? Los límites son tres: el cielo, la imaginación y tú misma.»</P>
+    <img src="./images-data/totoroazul.png" alt="">
+    <br>
+    <br>
+  </footer>
+  <script src="Ponyo on the Cliff by the Sea.js" type="module"></script>
+
+</body>
+
+
+</html>
