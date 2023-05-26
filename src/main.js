@@ -74,7 +74,7 @@ botonPrincipalPaises.addEventListener('click', () => {
   contenidoGeneral.innerHTML = '';
   contenedorDeportes.innerHTML = '';
   contenedor.innerHTML = '';
-  contenedorAtletasPorDeporte.innerHTML =''; //para que los atletas no se dupliquen abajo de los botones de los paises
+  contenedorAtletasPorDeporte.innerHTML =''; //para que los atletas no se dupliquen abajo de los botones de los deportes
   contenedorAtletasPorPais.innerHTML =''; //para que los atletas no se dupliquen abajo de los botones de los paises
   contenedorPaises.innerHTML =''; // para que los paises no se esten duplicando abajo los mismos botones de los paises 
   mostrarPaises()
