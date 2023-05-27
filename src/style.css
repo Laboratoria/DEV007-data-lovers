@@ -4,7 +4,7 @@ main {
   background-size: contain;
   background-position: bottom;
   background-attachment: fixed;
-  }
+}
 
 .clase-barrasuperior {
   width: 95%;
@@ -22,16 +22,19 @@ main {
   margin-right: 3%;
   padding-right: 30px;
 }
+
 .img-aros {
   margin-left: 20px;
   mix-blend-mode: hard-light;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
+
 .textoRio {
   color: #F4F1E8;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-size: 250%;
 }
+
 .caja-botones {
   padding-left: 60px;
   display: flex;
@@ -70,58 +73,58 @@ main {
 
 /*boton principal deportes */
 .clase-botondeportes {
-    margin-right: 2%;
-    width: 180px;
-    height: 43px;
-    font-size: x-large;
-    background: #fff;
-    border-radius: 10px;
+  margin-right: 2%;
+  width: 180px;
+  height: 43px;
+  font-size: x-large;
+  background: #fff;
+  border-radius: 10px;
 }
 
 .clase-botondeportes::after {
-    content: "";
-    width: 400px;
-    height: 400px;
-    top: 0;
-    left: 0;
+  content: "";
+  width: 400px;
+  height: 400px;
+  top: 0;
+  left: 0;
 }
 
 .clase-botondeportes:hover {
-    transform: traslate(0, -6px);
-    box-shadow: 10px -10px 25px 0 rgba(241, 237, 9, 0.731),
-      10px -10px 25px 0 rgba(231, 217, 10, 0.815);
+  transform: traslate(0, -6px);
+  box-shadow: 10px -10px 25px 0 rgba(241, 237, 9, 0.731),
+    10px -10px 25px 0 rgba(231, 217, 10, 0.815);
 }
 
 .clase-botondeportes:hoverafter {
-    transform: rotate(150deg);
+  transform: rotate(150deg);
 }
 
- /*boton principal pais */
+/*boton principal pais */
 .clase-botonpais {
-    margin-left: 2%;
-    width: 180px;
-    height: 43px;
-    font-size: x-large;
-    background: #fff;
-    border-radius: 10px;
+  margin-left: 2%;
+  width: 180px;
+  height: 43px;
+  font-size: x-large;
+  background: #fff;
+  border-radius: 10px;
 }
 
 .clase-botonpais::after {
-    content: "";
-    width: 400px;
-    height: 400px;
-    top: 0;
-    left: 0;
+  content: "";
+  width: 400px;
+  height: 400px;
+  top: 0;
+  left: 0;
 }
 
 .clase-botonpais:hover {
-    transform: traslate(0, -6px);
-    box-shadow: 10px -10px 25px 0 rgba(241, 237, 9, 0.731),
-      10px -10px 25px 0 rgba(231, 217, 10, 0.815);
+  transform: traslate(0, -6px);
+  box-shadow: 10px -10px 25px 0 rgba(241, 237, 9, 0.731),
+    10px -10px 25px 0 rgba(231, 217, 10, 0.815);
 }
 
 .clase-botonpais:hover::after {
-    transform: rotate(150deg);
+  transform: rotate(150deg);
 
 }
 
@@ -129,7 +132,7 @@ main {
 /* imagen grande y parrafo*/
 .contenidoGeneral {
   display: flex;
-  flex-direction:row;
+  flex-direction: row;
 }
 
 .cuarentaDeportes {
@@ -191,7 +194,7 @@ main {
 }
 
 
-select{
+select {
   margin-left: 65%;
   width: 15%;
   height: 20%;
