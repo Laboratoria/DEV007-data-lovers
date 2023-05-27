@@ -100,7 +100,7 @@ function mostrarAtletasPorPais(pais) {
   // Generar dinámicamente el select para ordenar A-Z / Z-A 
   contenedorAtletasPorPais.innerHTML +=
     `<select id="ordenAtletasPais">
-      <option disabled selected value="">Ordenar</option>
+      <option disabled selected value="">Sort</option>
       <option value="AZ">A-Z</option>
       <option value="ZA">Z-A</option>
   </select>`;
@@ -191,7 +191,7 @@ function mostrarAtletasPorDeporte(deporte) {
   // Generar dinámicamente el select para ordenar A-Z / Z-A 
   contenedorAtletasPorDeporte.innerHTML +=
     `<select id="ordenAtletasDeportes">
-      <option disabled selected value="">Ordenar</option>
+      <option disabled selected value="">Sort</option>
       <option value="AZ">A-Z</option>
       <option value="ZA">Z-A</option>
   </select>`;
