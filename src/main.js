@@ -1,4 +1,4 @@
-import { example } from './data.js';
+import { example, ordenarPeliculasAZ } from './data.js';
 // import data from './data/lol/lol.js';
 // import data from './data/pokemon/pokemon.js';
 // import data from './data/rickandmorty/rickandmorty.js';
@@ -39,15 +39,26 @@ ordenarPor.addEventListener('change', function () { // el 'change' se pone por d
   escenario.innerHTML = ''; // y tercero, limpia el escenario para que se pueda actualizar el nuevo contenido dinámico.
   //y ahora ordena la lista de películas dependiendo de lo que se seleccione:
   if (valor === 'az') {
-    listaPeliculas.sort(function (a, b) { //.sort organiza los elementos del arreglo según el valor.
-      if (a.title > b.title) { // el 'title' lo tomo de la data
-        return 1;
-      }
-      if (a.title < b.title) {
-        return -1;
-      }
-      return 0;
-    });
+    // ordenarPeliculasAZ (listaPeliculas)
+
+    const peliculasOrdenadasAZ = ordenarPeliculasAZ (data)
+    console.log (peliculasOrdenadasAZ)
+    escenario.innerHTML = ''; // y tercero, limpia el escenario para que se pueda actualizar el nuevo contenido dinámico.
+    let posters = []; 
+    for (const pelicula of peliculasOrdenadasAZ) { // Esta listaPeliculas ya viene ordenada según lo seleccionado en el ordenar por 
+        posters.push(movie(pelicula.id, pelicula.title, pelicula.poster)); // se agrega el poster a la página  
+    }
+    escenario.innerHTML = posters.join(''); // se agrega la lista de posters al escenario
+return
+    // listaPeliculas.sort(function (a, b) { //.sort organiza los elementos del arreglo según el valor.
+    //   if (a.title > b.title) { // el 'title' lo tomo de la data
+    //     return 1;
+    //   }
+    //   if (a.title < b.title) {
+    //     return -1;
+    //   }
+    //   return 0;
+    // });
   } else if (valor === 'za') {
     listaPeliculas.sort(function (a, b) {
       if (a.title < b.title  ) { // el 'title' lo tomo de la data

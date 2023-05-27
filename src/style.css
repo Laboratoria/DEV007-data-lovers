@@ -147,7 +147,15 @@ nav ul li:hover {
   text-align: center;
   font-family: 'Bubbler One', sans-serif;
 }
-
+.ordenarPor {
+font-size: 17px;
+}
+#ordenar {
+  width: 150px;
+  background-color: #cdd4d6;
+  font-size: 16px;
+  font-family: Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 .img-normalizada {
   width: 250px;
   height: 340px;
