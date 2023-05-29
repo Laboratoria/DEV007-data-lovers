@@ -49,8 +49,10 @@ botonInicio.addEventListener('click', () => {
         <span class="parrafo">
           <img alt="img-rio2016" class="img-rio2016" src="https://th.bing.com/th/id/R.070262561158e9c72ff2fa7b0da265b6?rik=QSD7%2byGLzBy%2bdg&riu=http%3a%2f%2fhotsport.rs%2fwp-content%2fuploads%2f2014%2f12%2fRio-2016.jpg&ehk=CoF5O%2bUvhcWVD2Sd6L%2bXrcsCtn1SPt6eIV%2byV4CjuYQ%3d&risl=&pid=ImgRaw&r=0">
           <br>
-          Los Juegos Olímpicos de Río de Janeiro 2016 fueron un evento deportivo global celebrado en Brasil del 5 al 21 de agosto de 2016, en el que participaron más de 11.000 atletas de 206 países compitiendo en 42 deportes y 306 eventos. Fueron recordados por su compromiso con la sostenibilidad y la inclusión social, y por la aparición de nuevos talentos y momentos memorables.
-        </span>
+          The 2016 Rio de Janeiro Olympic Games were a global sporting event held in Brazil of
+          August 2016, in which more than 11,000 athletes from 206 countries participated, competing in 42 sports and 306
+          events. They were remembered for their commitment to sustainability and social inclusion, and for the appearance
+          ofnew talents and memorable moments.</span>
       </div>
   </div>`;
 
@@ -109,11 +111,11 @@ function mostrarAtletasPorPais(pais) {
   atletasFiltrados.forEach(atleta => {
     contenedorAtletasPorPais.innerHTML +=
       `<div class="datosAtletas">
-      <p><strong>Name:</strong> ${atleta.name}</p>
-      <p><strong>Sport:</strong> ${atleta.sport}</p>
-      <p><strong>Team:</strong> ${atleta.team}</p>
-      <p><strong>Age:</strong> ${atleta.age}</p>
-      <p><strong>Medal:</strong> ${atleta.medal}</p>
+      <p><strong>👤Name:</strong> ${atleta.name}</p>
+      <p><strong>🤸Sport:</strong> ${atleta.sport}</p>
+      <p><strong>🌍Team:</strong> ${atleta.team}</p>
+      <p><strong>⌛Age:</strong> ${atleta.age}</p>
+      <p><strong>🏅Medal:</strong> ${atleta.medal}</p>
     </div>`;
   });
 
@@ -131,11 +133,11 @@ function mostrarAtletasPorPais(pais) {
       atletasOrdenados.forEach(atleta => {
         contenedorAtletasPorPais.innerHTML +=
           `<div class="datosAtletas">
-          <p><strong>Name:</strong> ${atleta.name}</p>
-          <p><strong>Sport:</strong> ${atleta.sport}</p>
-          <p><strong>Team:</strong> ${atleta.team}</p>
-          <p><strong>Age:</strong> ${atleta.age}</p>
-          <p><strong>Medal:</strong> ${atleta.medal}</p>
+          <p><strong>👤Name:</strong> ${atleta.name}</p>
+          <p><strong>🤸Sport:</strong> ${atleta.sport}</p>
+          <p><strong>🌍Team:</strong> ${atleta.team}</p>
+          <p><strong>⌛Age:</strong> ${atleta.age}</p>
+          <p><strong>🏅Medal:</strong> ${atleta.medal}</p>
         </div>`;
       });
     }
@@ -200,11 +202,11 @@ function mostrarAtletasPorDeporte(deporte) {
   atletasFiltradosPorDeporte.forEach(atleta => {
     contenedorAtletasPorDeporte.innerHTML +=
       `<div class= datosAtletas >
-      <p><strong>Name:</strong> ${atleta.name}</p>
-      <p><strong>Sport:</strong> ${atleta.sport}</p>
-      <p><strong>Team:</strong> ${atleta.team}</p>
-      <p><strong>Age:</strong> ${atleta.age}</p>
-      <p><strong>Medal:</strong> ${atleta.medal}</p>
+      <p><strong>👤Name:</strong> ${atleta.name}</p>
+      <p><strong>🤸Sport:</strong> ${atleta.sport}</p>
+      <p><strong>🌍Team:</strong> ${atleta.team}</p>
+      <p><strong>⌛Age:</strong> ${atleta.age}</p>
+      <p><strong>🏅Medal:</strong> ${atleta.medal}</p>
     </div>`;
   });
 
@@ -222,11 +224,11 @@ function mostrarAtletasPorDeporte(deporte) {
       atletasOrdenadosPorDeporte.forEach(atleta => {
         contenedorAtletasPorDeporte.innerHTML +=
           `<div class= datosAtletas >
-          <p><strong>Name:</strong> ${atleta.name}</p>
-          <p><strong>Sport:</strong> ${atleta.sport}</p>
-          <p><strong>Team:</strong> ${atleta.team}</p>
-          <p><strong>Age:</strong> ${atleta.age}</p>
-          <p><strong>Medal:</strong> ${atleta.medal}</p>
+          <p><strong>👤Name:</strong> ${atleta.name}</p>
+          <p><strong>🤸Sport:</strong> ${atleta.sport}</p>
+          <p><strong>🌍Team:</strong> ${atleta.team}</p>
+          <p><strong>⌛Age:</strong> ${atleta.age}</p>
+          <p><strong>🏅Medal:</strong> ${atleta.medal}</p>
         </div>`;
       });
     }
