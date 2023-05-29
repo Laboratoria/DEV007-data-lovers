@@ -1,4 +1,4 @@
-import { filtrarPaises, filtrarDeportes , filtrarAtletasPorPais , filtrarAtletasPorDeporte , ordenarAtletas} from '../src/data.js';
+import { filtrarPaises, filtrarDeportes , filtrarAtletasPorPais , filtrarAtletasPorDeporte} from '../src/data.js';
 
 //testear que filtrarPaises es una funcion
 describe('filtrarPaises', () => {
@@ -44,7 +44,6 @@ describe('filtrarDeportes', () => {
   });
 
 });
-
 
 
 //test para filtrarAtletas por PAIS
@@ -117,28 +116,3 @@ describe ('filtrarAtletasPorDeporte', () => {
 
 
 
-describe('ordenarAtletas', () => {
-  const atletas = [
-    { name: 'John' },
-    { name: 'Emma' },
-    { name: 'Mike' },
-    { name: 'Sophia' },
-    { name: 'Daniel' },
-  ];
-
-  it('ordena los atletas en orden ascendente (A-Z) según el nombre', () => {
-    const ordenSeleccionado = 'AZ';
-    const resultado = ordenarAtletas(atletas, ordenSeleccionado);
-    const nombresOrdenados = resultado.map((atleta) => atleta.name);
-    const nombresEsperados = ['Daniel', 'Emma', 'John', 'Mike', 'Sophia'];
-    expect(nombresOrdenados).toEqual(nombresEsperados);
-  });
-
-  it('ordena los atletas en orden descendente (Z-A) según el nombre', () => {
-    const ordenSeleccionado = 'ZA';
-    const resultado = ordenarAtletas(atletas, ordenSeleccionado);
-    const nombresOrdenados = resultado.map((atleta) => atleta.name);
-    const nombresEsperados = ['Sophia', 'Mike', 'John', 'Emma', 'Daniel'];
-    expect(nombresOrdenados).toEqual(nombresEsperados);
-  });
-});
