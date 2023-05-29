@@ -1,9 +1,15 @@
+.flex-container {
+  display: flex;
+
+}
+
 main {
   background-image: url('https://nicasnews.com/wp-content/uploads/2016/08/20160805-3.jpg');
   background-repeat: no-repeat;
   background-size: contain;
   background-position: bottom;
   background-attachment: fixed;
+  cursor: url("https://cur.cursors-4u.net/sports/images5/spo406.gif"), url("https://cur.cursors-4u.net/sports/images4/spo394.gif"), auto;
 }
 
 .clase-barrasuperior {
@@ -49,6 +55,8 @@ main {
   font-size: x-large;
   background: #fff;
   border-radius: 10px;
+  cursor: url("https://cur.cursors-4u.net/sports/images5/spo406.gif"), url("https://cur.cursors-4u.net/sports/images4/spo394.gif"), auto;
+
 }
 
 .clase-botonInicio::after {
@@ -61,7 +69,7 @@ main {
 }
 
 .clase-botonInicio:hover {
-  transform: traslate(0, -6px);
+  transform: translate(0, -6px);
   box-shadow: 10px -10px 25px 0 rgba(241, 237, 9, 0.731),
     10px -10px 25px 0 rgba(231, 217, 10, 0.815);
 }
@@ -79,6 +87,7 @@ main {
   font-size: x-large;
   background: #fff;
   border-radius: 10px;
+  cursor: url("https://cur.cursors-4u.net/sports/images5/spo406.gif"), url("https://cur.cursors-4u.net/sports/images4/spo394.gif"), auto;
 }
 
 .clase-botondeportes::after {
@@ -90,7 +99,7 @@ main {
 }
 
 .clase-botondeportes:hover {
-  transform: traslate(0, -6px);
+  transform: translate(0, -6px);
   box-shadow: 10px -10px 25px 0 rgba(241, 237, 9, 0.731),
     10px -10px 25px 0 rgba(231, 217, 10, 0.815);
 }
@@ -107,7 +116,9 @@ main {
   font-size: x-large;
   background: #fff;
   border-radius: 10px;
+  cursor: url("https://cur.cursors-4u.net/sports/images5/spo406.gif"), url("https://cur.cursors-4u.net/sports/images4/spo394.gif"), auto;
 }
+
 
 .clase-botonpais::after {
   content: "";
@@ -118,7 +129,7 @@ main {
 }
 
 .clase-botonpais:hover {
-  transform: traslate(0, -6px);
+  transform: translate(0, -6px);
   box-shadow: 10px -10px 25px 0 rgba(241, 237, 9, 0.731),
     10px -10px 25px 0 rgba(231, 217, 10, 0.815);
 }
@@ -143,7 +154,7 @@ main {
   align-content: center;
   margin-left: 10%;
   margin-right: 5%;
-
+  cursor: url("https://cur.cursors-4u.net/sports/images5/spo406.gif"), url("https://cur.cursors-4u.net/sports/images4/spo394.gif"), auto;
 }
 
 .img-rio2016 {
@@ -174,12 +185,22 @@ main {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-size: 120%;
   border: 5px solid;
-  border-color: rgba(15, 182, 132, 0.945);
+  border-color: rgba(38, 235, 81, 0.945);
   border-radius: 10px;
   margin: 2%;
   margin-left: 7%;
-  background-color: rgba(214, 219, 187, 0.5);
+  background-color: #fff;
+  cursor: url("https://cur.cursors-4u.net/sports/images5/spo406.gif"), url("https://cur.cursors-4u.net/sports/images4/spo394.gif"), auto;
 }
+
+.datosAtletas:hover {
+  transform: translate(0, -6px);
+  box-shadow: 10px -10px 25px 0 rgba(219, 243, 4, 0.795),
+    10px -10px 25px 0 #fff;
+
+}
+
+
 
 .cartasDeportes {
   display: inline-block;

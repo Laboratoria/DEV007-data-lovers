@@ -8,6 +8,7 @@ export function filtrarPaises (data) {
 
 export function filtrarDeportes (data) {
   const deportesUnicos = new Set()
+
   data.athletes.forEach(i => {
     deportesUnicos.add(i.sport)
   })
@@ -29,7 +30,7 @@ export function filtrarAtletasPorDeporte (athletes, deporte) {
 export function ordenarAtletas (atletas, ordenSeleccionado) {
   const atletasOrdenados = atletas.slice() // Crear una copia de la lista de atletas con .slice
   atletasOrdenados.sort((a, b) => {
-    //con .sort vamos a ordenar todo lo que este dentre de los {}
+    //con .sort vamos a ordenar todo lo que este dentro de los {}
     const nombreA = a.name.toLowerCase() //asegurarnos que la comparacion sea insensible a mayusculas y minusculas
     const nombreB = b.name.toLowerCase()
     if (ordenSeleccionado === 'AZ') {
