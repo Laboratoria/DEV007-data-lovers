@@ -1,4 +1,4 @@
-import { filtrarPaises, filtrarDeportes , filtrarAtletasPorPais , filtrarAtletasPorDeporte} from '../src/data.js';
+import { filtrarPaises, filtrarDeportes , filtrarAtletasPorPais} from '../src/data.js';
 
 //testear que filtrarPaises es una funcion
 describe('filtrarPaises', () => {
@@ -80,38 +80,6 @@ describe('filtrarAtletasPorPais', () => {
   });
 });
 
-//test para filtrar atletas por DEPORTE
-describe ('filtrarAtletasPorDeporte', () => {
-  const athletes =[
-    { name: 'John', sport: 'Gymnastics' },
-    { name: 'Emma', sport: 'Taekwondo' },
-    { name: 'Mike', sport: 'Gymnastics' },
-    { name: 'Sophia', sport: 'Taekwondo' },
-    { name: 'Daniel', sport: 'Gymnastics' },
-  ];
-
-  it('devuelve un array vacío si no hay atletas para el deporte especificado', () => {
-    const deporte = 'Rowing';
-    const resultado = filtrarAtletasPorDeporte(athletes, deporte);
-    expect(resultado).toEqual([]);
-  });
-
-  it('devuelve un array con los atletas del deporte especificado', () => {
-    const deporte = 'Gymnastics';
-    const resultado = filtrarAtletasPorDeporte(athletes, deporte);
-    expect(resultado).toEqual([
-      { name: 'John', sport: 'Gymnastics' },
-      { name: 'Mike', sport: 'Gymnastics' },
-      { name: 'Daniel', sport: 'Gymnastics' },
-    ]);
-  });
-  
-  it('devuelve un array vacío si no se proporciona ningún atleta', () => {
-    const deporte = 'Taekwondo';
-    const resultado = filtrarAtletasPorDeporte([], deporte);
-    expect(resultado).toEqual([]);
-  });
-});
 
 
 

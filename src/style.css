@@ -4,7 +4,7 @@ main {
   background-size: contain;
   background-position: bottom;
   background-attachment: fixed;
-  }
+}
 
 .clase-barrasuperior {
   width: 100%;
@@ -17,15 +17,18 @@ main {
   margin-top: 2%;
   margin-bottom: 5%;
 }
+
 .img-aros {
   margin-left: 20px;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
+
 .textoRio {
   color: #F4F1E8;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-size: 250%;
 }
+
 .caja-botones {
   display: flex;
   justify-content:space-evenly;
@@ -63,15 +66,15 @@ main {
 
 /*boton principal deportes */
 .clase-botondeportes {
-    margin-right: 4%;
-    width: 180px;
-    height: 43px;
-    font-size: x-large;
-    background: #fff;
-    border-radius: 10px;
-    overflow: hidden; /* Oculta el contenido que desborda el botón */
-    white-space: nowrap; /* Evita el salto de línea del texto */
-    text-overflow: ellipsis; /* Muestra puntos suspensivos (...) cuando el texto desborda */
+  margin-right: 4%;
+  width: 180px;
+  height: 43px;
+  font-size: x-large;
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden; /* Oculta el contenido que desborda el botón */
+  white-space: nowrap; /* Evita el salto de línea del texto */
+  text-overflow: ellipsis; /* Muestra puntos suspensivos (...) cuando el texto desborda */
 }
 .clase-botondeportes:hover {
   overflow: visible; /* Muestra el contenido completo al hacer hover en el botón */
@@ -79,11 +82,11 @@ main {
 }
 
 .clase-botondeportes::after {
-    content: "";
-    width: 400px;
-    height: 400px;
-    top: 0;
-    left: 0;
+  content: "";
+  width: 400px;
+  height: 400px;
+  top: 0;
+  left: 0;
 }
 
 .clase-botondeportes:hover {
@@ -96,7 +99,7 @@ main {
     transform: rotate(150deg);
 }
 
- /*boton principal pais */
+/*boton principal pais */
 .clase-botonpais {
     width: 180px;
     height: 43px;
@@ -113,21 +116,21 @@ main {
 }
 
 .clase-botonpais::after {
-    content: "";
-    width: 400px;
-    height: 400px;
-    top: 0;
-    left: 0;
+  content: "";
+  width: 400px;
+  height: 400px;
+  top: 0;
+  left: 0;
 }
 
 .clase-botonpais:hover {
     transform: translate(0, -6px);
-    box-shadow: 10px -10px 25px 0 rgba(241, 17, 9, 0.731),
-      10px -10px 25px 0 rgba(241, 17, 9, 0.731);
+    box-shadow: 10px -10px 25px 0 rgba(241, 237, 9, 0.731),
+    10px -10px 25px 0 rgba(231, 217, 10, 0.815);
 }
 
 .clase-botonpais:hover::after {
-    transform: rotate(150deg);
+  transform: rotate(150deg);
 
 }
 
@@ -135,7 +138,7 @@ main {
 /* imagen grande y parrafo*/
 .contenidoGeneral {
   display: flex;
-  flex-direction:row;
+  flex-direction: row;
 }
 
 .cuarentaDeportes {
@@ -182,6 +185,12 @@ main {
   background-color: rgba(214, 219, 187, 0.5);
 }
 
+.datosAtletas:hover {
+  transform: translate(0, -6px);
+  box-shadow: 10px -10px 25px 0 rgba(219, 243, 4, 0.795),
+    10px -10px 25px 0 #fff;
+}
+
 .cartasDeportes {
   display: inline-block;
   margin: 2%;
@@ -195,7 +204,7 @@ main {
 }
 
 
-select{
+select {
   margin-left: 65%;
   width: 15%;
   height: 20%;
