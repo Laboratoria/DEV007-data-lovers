@@ -1,0 +1,152 @@
+header{
+    height: 5rem;
+    display: inline-flex;
+    width: auto;
+}
+.tarot{
+    width: 50px;
+    height: 50px;
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+    display: flex;
+
+}
+.header_buttons{
+   display: inline-block;
+   border-style: solid;
+   border-color: #550303;
+   background-color: whitesmoke;
+   border-radius: 1rem;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+   color: #550303;
+   border-width: 2px;
+width: max-content;
+margin-right: 2rem;
+padding: 5px 15px 5px 15px;
+}
+.header_buttons:hover{
+    color: goldenrod;
+}
+header .header_search{
+    display:inline-block;
+    width: 300px;
+    height: 20px;
+    border: none;
+    outline: none;
+    margin-top: 1rem;
+    margin-left: 15rem;
+    border-radius: 2rem;
+}
+header .header_search:hover{
+    box-shadow: 0 1px 7px 0px #120230;
+}
+header .header_search_go{
+    height: 36px;
+    background-color:aliceblue;
+    border: 0 5px 0 0;
+    border-color:#0e0224;
+    font-size: 14px;
+    color:#550303;
+    border-radius: 6px;
+    padding: 0 15px;
+    margin-right: 15px;
+}
+header .header_search_go:hover{
+    box-shadow: 0 1px 10px 0px #0e0224;
+}
+
+
+img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    object-position: bottom;
+  }
+
+  body{
+    background-color: #0F2E5C;
+  }
+
+.buttonSearch{
+    border-style: solid;
+    border-color: #550303;
+    background-color: whitesmoke;
+    border-radius: 2em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #550303;
+    border-style:solid;
+    padding: 0.2em;
+    font-size: large;
+    margin-left: 39%;
+
+}
+
+.containerBody{
+    color: whitesmoke;
+    display: flex;
+    max-width: 2000px;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    min-height:auto;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.card{
+    border-color:#F7C9B4;
+    border-style: solid;
+    border-width: 5px;
+    margin-left:50px;
+    text-align: center;
+    padding: 0px;
+    border-radius: 5px;
+    width: 600px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding-bottom: 20px;
+    box-sizing: content-box;
+}
+
+.descriptionContentCard{
+    margin:20px;
+
+}
+
+.linkEachContentCard{
+    font-size: large;
+    font-weight: bolder;
+    background-color: #F7C9B4;
+    color:#0F2E5C;
+    border-radius: 2px;
+    padding: 4px;
+}
+.gallery{
+    height:200px;
+    width: 900px;
+    background-image: url("images/all-cards.jpg");
+    text-align: center;
+    margin-left: 800px;
+}
+
+
+.titleGallery{
+    color:#0F2E5C;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size:xx-large;
+    text-align:end;
+    padding-top: 110px;
+    padding-right: 30px;
+}
+
+a{
+    text-decoration: none;
+}
+
+footer{
+    color: whitesmoke;
+    text-align: center;
+}
+
+a{
+    color:whitesmoke;
+}
