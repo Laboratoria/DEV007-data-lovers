@@ -1,6 +1,6 @@
 # Data Lovers
 
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=900&size=39&pause=1000&color=07D51D&background=FFF6F700&width=435&lines=Olympic+Games+Rio+2016;Por+Ana++Vargas;+y+Cynthia+Re%C3%A1tegui)](https://git.io/typing-svg)
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=900&size=27&pause=1000&color=07D51D&background=FFF6F700&width=435&lines=Olympic+Games+Rio+2016;Por+Ana++Vargas;+y+Cynthia+Re%C3%A1tegui)](https://git.io/typing-svg)
 ![Imagen text](https://cadenaser00.epimg.net/emisora/imagenes/2016/08/08/radio_san_sebastian/1470651198_373661_1470651626_noticia_normal.jpg)
 
 ## Índice
