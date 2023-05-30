@@ -6,7 +6,7 @@ body{
 
  /*ESTILOS HOMEPAGE*/
 
-.homePage {  /* estilo class homepage */
+.homePage { 
   display: flex;
   flex-direction: column;
   background-image: url("./img/backgroundhomepage.JPG");
@@ -50,8 +50,7 @@ body{
   object-fit: cover;
 }
 
-
-.buttons{   /* estilo de los buttons homepage */
+.buttons{ 
   display: flex;
   flex-direction: column;
   gap: 35px;
@@ -75,7 +74,6 @@ button#resumeBtn{  /* estilo button resumen */
   font-family: revert;
   color: black;
 }
-
 
 button#pokedexBtn{   /* estilo button pokedex */
   height: 30%;
@@ -125,7 +123,6 @@ button#pokedexBtn{   /* estilo button pokedex */
   height: 10vw;
   margin-top: -1%;
   margin-left: 2%;
-
 }
 
 #pokedexResumePageBtn{
@@ -152,8 +149,8 @@ button#pokedexBtn{   /* estilo button pokedex */
   border-radius: 25px;
 }
 
-/*ESTILOS POKEDEX*/
 
+/*ESTILOS POKEDEX*/
 
 .pageListaPoke {
   flex-direction: column;
@@ -184,18 +181,27 @@ button#pokedexBtn{   /* estilo button pokedex */
   align-items: center;
 }
 
-.adentro{                               /*contenedor de las cartas*/
-  display: grid;
-  grid-template-columns: 20% 20% 20% 20%;
+.data{     
+  display: flex;
+  flex-direction: column;
+  align-items: center;                          
   background-color: white;
   width: 80%;                            /*ancho del contenedor blanco*/
   height: 73vh;
   overflow-y: scroll;
   justify-content: center;
-  gap: 25px;                             /*separar las cartas*/
   border-radius: 20px;
   border: 9px solid rgb(1, 1, 240);
+}
 
+.adentro{                               /*contenedor de las cartas*/
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20%;
+  width: 100%;                            /*ancho del contenedor blanco*/
+  height: 73vh;
+  overflow-y: scroll;
+  justify-content: center;
+  gap: 25px;                             /*separar las cartas*/
 }
 
 .mostrar {
@@ -207,7 +213,6 @@ button#pokedexBtn{   /* estilo button pokedex */
   border-radius: 10px;
   align-items: center;
   cursor: pointer;
-  
 }
 
 .card__inner {                   /* para hacer que gire las cards*/
@@ -215,11 +220,12 @@ button#pokedexBtn{   /* estilo button pokedex */
   height: 100%;
   transform-style: preserve-3d;
   transition: transform 0.5s;
-  
 }
+
 .mostrar:hover .card__inner {       /* para hacer que gire las cards*/
   transform: rotateY(-180deg);
 }
+
 .card__side {                       /* para hacer que gire las cards*/
   position: absolute;
   inset: 0;
@@ -228,6 +234,7 @@ button#pokedexBtn{   /* estilo button pokedex */
   backface-visibility: hidden;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
 }
+
 .card__side--back {                    /* para hacer que gire las cards*/
   transform: rotateY(180deg);
   background:rgb(25, 26, 25);
@@ -250,7 +257,7 @@ button#pokedexBtn{   /* estilo button pokedex */
 }
 
 .miniPokebola {
-  width: 8%;                       /*ancgo de la img pokebola*/
+  width: 8%;                       /*ancho de la img pokebola*/
   height: 4vw;
   margin-top: 2%;                  /*mover hacia arriba o abajo*/
   margin-left: -1%;
@@ -281,10 +288,12 @@ padding: 2px 8px;           /* largo y ancho del contenedor*/
   font-size: 12px;                  /*tamaño del imput*/
   color: #5d5c64;                 /*color de letra del imput al escribir*/
 }
+
 .search-bar button img{
   width: 15px;                       /*ancho de la img del boton*/
   height: 15px;
 }
+
 ::placeholder{
   color: #a9a8c0;             /*color letra del placeholder*/
 }
