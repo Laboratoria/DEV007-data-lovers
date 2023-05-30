@@ -1,23 +1,32 @@
-import { example, anotherExample } from '../src/data.js';
+
+import { ordenarPokemones } from '../src/data.js';
+//import data from '../src/data/pokemon/pokemon.js';
 
 
-describe('example', () => {
-  it('is a function', () => {
-    expect(typeof example).toBe('function');
+
+
+describe('ordenarPokemones', () => {
+  
+  it('deberia ser una funcion', () => {
+    expect(typeof ordenarPokemones).toBe('function'); 
+  });
+  
+  it('ordena a los pokemones en ascendente', () => {
+    const tesOrdeN = ordenarPokemones("asc")
+    expect(tesOrdeN[0].name).toBe("abra");
   });
 
-  it('returns `example`', () => {
-    expect(example()).toBe('example');
+});
+
+describe('ordenarPokemones2', () => {
+  it('ordena a los pokemones en descendente', () => {
+    const testDescendente = ordenarPokemones("desc")
+    expect(testDescendente[0].name).toBe("zubat");
   });
 });
 
 
-describe('anotherExample', () => {
-  it('is a function', () => {
-    expect(typeof anotherExample).toBe('function');
-  });
 
-  it('returns `anotherExample`', () => {
-    expect(anotherExample()).toBe('OMG');
-  });
-});
+
+
+  
