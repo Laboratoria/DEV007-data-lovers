@@ -13,4 +13,29 @@ export const filterDataByType= (data, condition) =>{
   console.log(pokemonesFiltrados)
   return pokemonesFiltrados;
   }
-  
+
+ export const sortData=(data,sortOrder) => {
+  const ordenarAsc=data.sort((a,b) => { 
+  let name1= a.name.toLowerCase()
+  let name2= b.name.tolowerCase()
+    if (sortOrder=== "asc") {
+
+      if(name1<name2){
+
+        return -1;
+        }
+    }
+    
+    if (sortOrder=== "desc") {
+
+       if(name1>name2){
+
+    return -1 ;
+
+    }
+  }
+   return 0;
+  })
+ }
+
+ console.log(data.sort((a,b)))

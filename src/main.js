@@ -6,7 +6,7 @@
 // console.log(example, data);
 
 import data from './data/pokemon/pokemon.js';
-import {filterDataByType} from "./data.js"
+import {filterDataByType, sortData} from "./data.js"
 
 //console.log(data);
 let allPokemons =data.pokemon;
