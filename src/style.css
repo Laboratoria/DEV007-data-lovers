@@ -135,8 +135,8 @@ button#pokedexBtn{   /* estilo button pokedex */
   align-self: center;
   font-family: revert;
   font-size: xx-large;
-  border: 2px solid black;
-  border-radius: 50px;
+  border-color: white;
+  border-radius: 60px;
 }
 
 .bottomResumePage{
@@ -234,17 +234,6 @@ button#pokedexBtn{   /* estilo button pokedex */
   color: rgb(228, 228, 44);
 }
 
-/*.resistencia {
-  
-  /*flex-direction:column;
-  justify-content: center;
-  background-color: rgb(218, 186, 8);
-  display: flex;
-  flex-wrap: wrap;
-  width: 60%;
-  font-size: small;*/
-/*}*/
-
 .headerPokedex {
   display: flex;
   flex-direction: row;
@@ -332,7 +321,7 @@ padding: 2px 8px;           /* largo y ancho del contenedor*/
   position: absolute;
   top: 7.5%;
   left: 65%;
-  color: rgb(61, 60, 60);
+  color: rgb(170, 163, 163);
   cursor: pointer;
 }
 

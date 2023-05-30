@@ -52,10 +52,10 @@
         <img src="./imagenes/pokedexx.png" alt="logoPokedex" class="loguitoPokedex">
         <img src="./imagenes/pokebolita.png" alt="logoPokebolita" class="miniPokebola">
         <div class="buscar"  id="pagePokedex">
-          <form class="search-bar">
-            <input type="text" placeholder="Nombre del Pokemon" required autocomplete="off">        
+          <div class="search-bar">
+            <input type="text" id="busquedaPokemon" placeholder="Nombre del Pokemon" required autocomplete="off">        
             <button type="submit" class="search-button"><img src="./imagenes/lupita2.png" alt=""></button>
-          </form>
+          </div>
         </div>
         <div class="menu-ordenador" id="ordenador">
           <select id="select-ordenar">
@@ -81,7 +81,11 @@
       </div>
       
       <div class="bottomPokedex">
-        <div class="adentro"></div>
+          
+        <div class="adentro">
+          <p id="notFound" style="display: none;"></p>
+        </div>
+        </div>
       </div>
     </div>
   </body>

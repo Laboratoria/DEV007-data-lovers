@@ -3,6 +3,7 @@
 import data from './data/pokemon/pokemon.js';
 import {ordenarPokemones} from './data.js';
 import { filterByType, displayFilteredData } from './data.js';
+import { findByName } from './data.js';
 //console.log(data.pokemon);
 //const pokemon= data.pokemon;
 const contenidoCard = document.querySelector(".adentro");
@@ -81,7 +82,6 @@ selectElement.addEventListener("change", function() {
   const selectedOption = selectElement.value;
   //console.log(selectedOption);// 
   const sortedData = ordenarPokemones(selectedOption);
-  pokemonContainer.innerHTML = "";
   displayFilteredData(sortedData)
  
 });
@@ -106,4 +106,23 @@ document.getElementById("filterSelect").addEventListener("change", function () {
 
   // Lógica para mostrar los resultados filtrados en la interfaz
   displayFilteredData(filteredData);
+});
+
+
+document.getElementById("busquedaPokemon").addEventListener ("keyup", function () {
+  const foundName = this.value;
+  const foundPokemon = findByName(data.pokemon, foundName);
+
+  if(foundPokemon.length !== 0){
+
+    displayFilteredData (foundPokemon);
+
+  }else{
+
+    const errorContainer = document.getElementById("notFound");
+    errorContainer.textContent = "Pokémon no encontrado. Inténtalo de nuevo.";
+
+
+  }
+
 });
