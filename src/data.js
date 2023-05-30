@@ -60,8 +60,9 @@ export function displayFilteredData(filteredData) {
   });
 }
 
+//funcion para el buscador
 export function findByName(pokemonData, name){
-    return pokemonData.filter((pokemon) => pokemon.name.toLowerCase().includes(name.toLowerCase()))
-    //return pokemonData.find(pokemon => pokemon.name.toLowerCase() === name.toLowerCase());
+  return pokemonData.filter((pokemon) => pokemon.name.toLowerCase().includes(name.toLowerCase()))
+  //return pokemonData.find(pokemon => pokemon.name.toLowerCase() === name.toLowerCase());
 }
 
