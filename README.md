@@ -68,7 +68,9 @@ _Para qué_. Para acceder de manera fácil y sencilla a la información.
 
 Durante tu trabajo desarrollamos un prototipo a lapiz y papel para distribuir los requerimientos que se necesitarían cumplir en el proyecto final.
 
-![Imagen text](prototipo de baja fidelidad.png)
+![image](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjqT_hrlCZqOXBDAqw1AllnMa89dko1MX8ERI1rdKqVj2EigJSquHQNJg8_FsiND95wmTMzV_c40jHEXsDTwL6BRmRPhoDQpeo4IZcxn262zOzZgqcwH6DwIp1LW9zFS2_BGowL-tdAOveZ7vXnWFGxhsM4GSYbU2gl5G5hY118FhF95-YjClBvvIDi/s1237/b14f96ea-0468-41f2-847b-2d70bc9875a2.jpg)
+
+
 
 ### Prototipo de alta fidelidad
 
@@ -89,7 +91,7 @@ Los testeos de usabilidad fueron indispensables en el desarrollo del proyecto, p
 usabilidad**
 
 1.  teniamos problemas con la eleccion del uso de set dentro de js, lo cual fue un problema y fue resuelto
-2.  Problemas con los test al implementarlos ya que no tuvimos en cuelta el uso de mayusculas
+2.  Problemas con los test al implementarlos ya que no tuvimos en cuenta el uso de mayusculas
 
 ## Checklist
 
