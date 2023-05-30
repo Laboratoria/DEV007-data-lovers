@@ -1,4 +1,3 @@
-// estas funciones son de ejemplo
 
 import data from "./data/pokemon/pokemon.js";
 //export const example = () => {
@@ -15,14 +14,13 @@ export function ordenarPokemones(order) {
       
   }
 }
-
+//Función para filtrar pokémon por tipo
 export function filterByType(pokemonData, type) {
-// Filtrar por tipo
   return pokemonData.filter(pokemon => pokemon.type.includes(type));
 }
   
 export function displayFilteredData(filteredData) {
-  console.log(filteredData);
+  //console.log(filteredData);//
   const contenidoCard = document.querySelector(".adentro");
   contenidoCard.innerHTML = ""; // Limpiar contenido existente
   
@@ -59,4 +57,11 @@ export function displayFilteredData(filteredData) {
         </div>
         </button>`;
   });
+}
+
+
+//buscador
+export function searchImput(data, value) {
+  const buscador = data.filter(el =>el.name.toLowerCase().includes(value.toLowerCase()));
+  return buscador;
 }
