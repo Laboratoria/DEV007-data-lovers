@@ -75,7 +75,7 @@ selectElement.addEventListener("change", function() {
  
 });
 
-
+//funcionalidad del filtrado
 document.getElementById("filterSelect").addEventListener("change", function () {
   const filterValue = this.value;
   let filteredData;
@@ -98,7 +98,7 @@ document.getElementById("filterSelect").addEventListener("change", function () {
   displayFilteredData(filteredData);
 });
 
-
+//funcionalidad del buscador
 document.getElementById("busquedaPokemon").addEventListener ("keyup", function () {
   const foundName = this.value;
   const foundPokemon = findByName(data.pokemon, foundName);
