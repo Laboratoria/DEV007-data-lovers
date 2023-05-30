@@ -135,8 +135,8 @@ button#pokedexBtn{   /* estilo button pokedex */
   align-self: center;
   font-family: revert;
   font-size: xx-large;
-  border: 2px solid black;
-  border-radius: 50px;
+  border-color: white;
+  border-radius: 60px;
 }
 
 .bottomResumePage{
