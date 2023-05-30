@@ -4,7 +4,6 @@ main {
   background-size: contain;
   background-position: bottom;
   background-attachment: fixed;
-  
 }
 
 .clase-barrasuperior {
@@ -32,7 +31,7 @@ main {
 
 .caja-botones {
   display: flex;
-  justify-content:space-evenly;
+  justify-content: space-evenly;
 }
 
 /* boton inicio*/
@@ -45,7 +44,8 @@ main {
   background: #fff;
   border-radius: 10px;
   cursor: url("https://cur.cursors-4u.net/sports/images5/spo406.gif"), url("https://cur.cursors-4u.net/sports/images4/spo394.gif"), auto;
-  
+
+
 }
 
 .clase-botonInicio::after {
@@ -75,7 +75,19 @@ main {
   font-size: x-large;
   background: #fff;
   border-radius: 10px;
-  cursor: url("https://cur.cursors-4u.net/sports/images5/spo406.gif"), url("https://cur.cursors-4u.net/sports/images4/spo394.gif"), auto;
+  overflow: hidden;
+  /* Oculta el contenido que desborda el botón */
+  white-space: nowrap;
+  /* Evita el salto de línea del texto */
+  text-overflow: ellipsis;
+  /* Muestra puntos suspensivos (...) cuando el texto desborda */
+}
+
+.clase-botondeportes:hover {
+  overflow: visible;
+  /* Muestra el contenido completo al hacer hover en el botón */
+  white-space: normal;
+  /* Permite que el texto se ajuste automáticamente al tamaño del botón */
 }
 
 .clase-botondeportes::after {
@@ -87,23 +99,37 @@ main {
 }
 
 .clase-botondeportes:hover {
-    transform: translate(0, -6px);
-    box-shadow: 10px -10px 25px 0 rgba(241, 237, 9, 0.731),
-      10px -10px 25px 0 rgba(231, 217, 10, 0.815);
+  transform: translate(0, -6px);
+  box-shadow: 10px -10px 25px 0 rgba(241, 237, 9, 0.731),
+    10px -10px 25px 0 rgba(231, 217, 10, 0.815);
 }
 
 .clase-botondeportes:hover::after {
-    transform: rotate(150deg);
+  transform: rotate(150deg);
 }
 
 /*boton principal pais */
 .clase-botonpais {
-    width: 180px;
-    height: 43px;
-    font-size: x-large;
-    background: #fff;
-    border-radius: 10px;
-    cursor: url("https://cur.cursors-4u.net/sports/images5/spo406.gif"), url("https://cur.cursors-4u.net/sports/images4/spo394.gif"), auto;
+  width: 180px;
+  height: 43px;
+  font-size: x-large;
+  background: #fff;
+  border-radius: 10px;
+  cursor: url("https://cur.cursors-4u.net/sports/images5/spo406.gif"), url("https://cur.cursors-4u.net/sports/images4/spo394.gif"), auto;
+overflow: hidden;
+  /* Oculta el contenido que desborda el botón */
+  white-space: nowrap;
+  /* Evita el salto de línea del texto */
+  text-overflow: ellipsis;
+  /* Muestra puntos suspensivos (...) cuando el texto desborda */
+}
+
+.clase-botonpais:hover {
+  overflow: visible;
+  /* Muestra el contenido completo al hacer hover en el botón */
+  white-space: normal;
+  /* Permite que el texto se ajuste automáticamente al tamaño del botón */
+
 }
 
 .clase-botonpais::after {
@@ -115,8 +141,8 @@ main {
 }
 
 .clase-botonpais:hover {
-    transform: translate(0, -6px);
-    box-shadow: 10px -10px 25px 0 rgba(241, 237, 9, 0.731),
+  transform: translate(0, -6px);
+  box-shadow: 10px -10px 25px 0 rgba(241, 237, 9, 0.731),
     10px -10px 25px 0 rgba(231, 217, 10, 0.815);
 }
 
@@ -140,7 +166,7 @@ main {
   align-content: center;
   margin-left: 10%;
   margin-right: 5%;
-  cursor: url("https://cur.cursors-4u.net/sports/images5/spo406.gif"), url("https://cur.cursors-4u.net/sports/images4/spo394.gif"), auto;
+
 }
 
 .img-rio2016 {
@@ -173,8 +199,7 @@ main {
   border-radius: 10px;
   margin: 2%;
   margin-left: 7%;
-  background-color: #fff;
-  cursor: url("https://cur.cursors-4u.net/sports/images5/spo406.gif"), url("https://cur.cursors-4u.net/sports/images4/spo394.gif"), auto;
+  background-color: rgba(214, 219, 187, 0.5);
 }
 
 .datosAtletas:hover {
@@ -216,17 +241,22 @@ select {
     flex-direction: column;
     height: auto;
     width: 100%;
-    justify-content: center; /* Centrar verticalmente */
-    align-items: center; /* Centrar horizontalmente */
+    justify-content: center;
+    /* Centrar verticalmente */
+    align-items: center;
+    /* Centrar horizontalmente */
   }
+
   .img-aros {
     margin-bottom: 2%;
   }
+
   .textoRio {
     color: #F4F1E8;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 150%;
   }
+
   .caja-botones {
     flex-direction: column;
   }
@@ -234,18 +264,18 @@ select {
   .clase-botonInicio {
     margin-bottom: 5%;
   }
-  
-  .clase-botondeportes{
+
+  .clase-botondeportes {
     margin-bottom: 5%;
   }
 
-  .clase-botonpais{
+  .clase-botonpais {
     margin-bottom: 5%;
   }
 
   .contenidoGeneral {
     display: flex;
-    flex-direction:column-reverse;
+    flex-direction: column-reverse;
   }
 
   .imagen-principal {
@@ -255,28 +285,29 @@ select {
   .img-rio2016 {
     margin-left: 12%;
   }
+
   .parrafo {
     max-width: 100%;
     font-size: medium;
-}
+  }
 
-.datosAtletas {
-  display: block;
-  width: auto;
-}
+  .datosAtletas {
+    display: block;
+    width: auto;
+  }
 
-.cartasDeportes{
-  display: flex;
-  justify-content: center;
-}
+  .cartasDeportes {
+    display: flex;
+    justify-content: center;
+  }
 
-.cartasPaises{
-  display: flex;
-  justify-content: center;
-}
+  .cartasPaises {
+    display: flex;
+    justify-content: center;
+  }
 
-select{
-  width: auto;
-  font-size: medium;
-}
+  select {
+    width: auto;
+    font-size: medium;
+  }
 }

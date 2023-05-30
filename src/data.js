@@ -1,33 +1,32 @@
 export function filtrarPaises(data) {
-  const paisesUnicos = [];
-  data.athletes.forEach((i) => {
-    if (!paisesUnicos.includes(i.team)) {
-      paisesUnicos.push(i.team);
+  const paisesUnicos =[]
+  data.athletes.forEach (i =>{
+    if (!paisesUnicos.includes(i.team)){
+      paisesUnicos.push(i.team)
     }
-  });
-  return paisesUnicos;
+  })
+  return paisesUnicos
 }
 
+
 export function filtrarDeportes(data) {
-  const deportesUnicos = [];
-  data.athletes.forEach((i) => {
+  const deportesUnicos = []
+  data.athletes.forEach(i => {
     if (!deportesUnicos.includes(i.sport)) {
-      deportesUnicos.push(i.sport);
+      deportesUnicos.push(i.sport)
     }
-  });
-  return deportesUnicos;
+  })
+  return deportesUnicos
 }
 
 export function filtrarAtletasPorPais(athletes, pais) {
-  const atletasFiltrados = athletes.filter((atleta) => atleta.team === pais);
-  return atletasFiltrados;
+  const atletasFiltrados = athletes.filter(atleta => atleta.team === pais);
+  return atletasFiltrados
 }
 
 export function filtrarAtletasPorDeporte(athletes, deporte) {
-  const atletasFiltradosPorDeporte = athletes.filter(
-    (atleta) => atleta.sport === deporte
-  );
-  return atletasFiltradosPorDeporte;
+  const atletasFiltradosPorDeporte = athletes.filter(atleta => atleta.sport === deporte);
+  return atletasFiltradosPorDeporte
 }
 
 export function ordenarAtletas(atletas, ordenSeleccionado) {

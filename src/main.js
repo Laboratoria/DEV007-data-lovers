@@ -10,7 +10,7 @@ import {
 //constante que almacena la data
 const athletes = data.athletes;
 
-/*/funcion para mostrar  toda toda la data
+/*//funcion para mostrar  toda toda la data
 function mostrarAtletas() {
   const contenedor = document.getElementById('contenedor')
 
@@ -23,8 +23,7 @@ function mostrarAtletas() {
                            <p>Medal: ${i.medal}</p>
                            </div>`
   })
-}
-*/
+}*/
 
 //traer a los botones principales y contenedores vacios
 const botonInicio = document.getElementById("botonInicio");
