@@ -1,26 +1,22 @@
 
 import data from "./data/pokemon/pokemon.js";
-//export const example = () => {
-//return 'example';
-//};
-
 
 //Función para ordenar el array de objetos de pokémon
 export function ordenarPokemones(order) {  
   if (order === "asc") { // ascendente
     return data.pokemon.sort((a, b) => a.name.localeCompare(b.name))
   } else if (order === "desc") { // descendente
-    return data.pokemon.sort((a, b) => -1 * a.name.localeCompare(b.name))
-      
+    return data.pokemon.sort((a, b) => -1 * a.name.localeCompare(b.name))    
   }
 }
+
+
 //Función para filtrar pokémon por tipo
 export function filterByType(pokemonData, type) {
   return pokemonData.filter(pokemon => pokemon.type.includes(type));
 }
   
 export function displayFilteredData(filteredData) {
-  //console.log(filteredData);//
   const contenidoCard = document.querySelector(".adentro");
   contenidoCard.innerHTML = ""; // Limpiar contenido existente
   
@@ -62,6 +58,5 @@ export function displayFilteredData(filteredData) {
 
 export function findByName(pokemonData, name){
     return pokemonData.filter((pokemon) => pokemon.name.toLowerCase().includes(name.toLowerCase()))
-    //return pokemonData.find(pokemon => pokemon.name.toLowerCase() === name.toLowerCase());
 }
 

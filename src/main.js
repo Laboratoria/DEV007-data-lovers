@@ -1,15 +1,9 @@
-//import { example } from './data.js';
-// import data from './data/lol/lol.js';
 import data from './data/pokemon/pokemon.js';
 import {ordenarPokemones} from './data.js';
 import { filterByType, displayFilteredData } from './data.js';
 import { findByName } from './data.js';
 
-
-
 const contenidoCard = document.querySelector(".adentro");
-
-
 
 document.getElementById("pokedexBtn").onclick = function () {      //funcion del botón pokedex//
   document.getElementById("homePageStart").style.display = "none";
@@ -31,7 +25,6 @@ document.getElementById("pokedexHomePageBtn").onclick = function () {    //funci
   document.getElementById("listaPokemon").style.display = "none";
   document.getElementById("homePageStart").style.display = "flex";
 };
-
 
 
 data.pokemon.forEach((pokemones) => {   
@@ -70,14 +63,12 @@ data.pokemon.forEach((pokemones) => {
 })
 
 
-
 // Obtener el elemento select del usuario
 const selectElement = document.getElementById("select-ordenar");
 
 // Escuchar el evento change del select
 selectElement.addEventListener("change", function() {
   const selectedOption = selectElement.value;
-  //console.log(selectedOption);// 
   const sortedData = ordenarPokemones(selectedOption);
   
   displayFilteredData(sortedData)
@@ -111,17 +102,14 @@ document.getElementById("filterSelect").addEventListener("change", function () {
 document.getElementById("busquedaPokemon").addEventListener ("keyup", function () {
   const foundName = this.value;
   const foundPokemon = findByName(data.pokemon, foundName);
-
-  if(foundPokemon.length !== 0){
-
-    displayFilteredData (foundPokemon);
-
-  }else{
-
-    const errorContainer = document.getElementById("notFound");
+  const errorContainer = document.getElementById("notFound");
+  console.log(foundPokemon);
+  contenidoCard.style.display = "grid"
+  errorContainer.style.display = "none";
+  displayFilteredData (foundPokemon);
+  if(foundPokemon.length === 0){
+    errorContainer.style.display = "block";
     errorContainer.textContent = "Pokémon no encontrado. Inténtalo de nuevo.";
-
-
+    contenidoCard.style.display = "none"
   }
-
-});
+})
