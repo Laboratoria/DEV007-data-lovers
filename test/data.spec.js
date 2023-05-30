@@ -1,43 +1,128 @@
-import { filtrarPaises, filtrarDeportes , filtrarAtletasPorPais , filtrarAtletasPorDeporte , ordenarAtletas, sortData} from '../src/data.js';
+import {
+  filtrarPaises,
+  filtrarDeportes,
+  filtrarAtletasPorPais,
+  ordenarAtletas,
+} from "../src/data.js";
 
 //testear que filtrarPaises es una funcion
-describe('filtrarPaises', () => {
-  it('devuelve un conjunto vacío si no hay datos de atletas', () => {
-    expect(typeof filtrarPaises).toBe('function');
+describe("filtrarPaises", () => {
+  it("devuelve un conjunto vacío si no hay datos de atletas", () => {
+    expect(typeof filtrarPaises).toBe("function");
+  });
+
+  it("devuelve un conjunto de países únicos", () => {
+    const data = {
+      athletes: [
+        { team: "USA" },
+        { team: "USA" },
+        { team: "Canada" },
+        { team: "Australia" },
+        { team: "Canada" },
+      ],
+    };
+    const resultado = filtrarPaises(data);
+    expect(resultado).toEqual(["USA", "Canada", "Australia"]);
   });
 });
-//test A - Z
-test('Debería ser una función')
-describe('Aplicación de tests para función ordenarAtletas', (atletas, ordenSeleccionado) => {
-  it('El return de la función ordenarAtletas es de tipo: Objeto', () => {
-    expect(typeof sortData(ordenarAtletas, 'ASC')).toBe('object')
-  })
-describe('Aplicación de tests para función sortData', () => {
-  it('El return de la función sortData es de tipo: Objeto', () => {
-    expect(typeof sortData(testData, 'ASC')).toBe('object');
+
+//testear que filtrarDeportes es una funcion
+describe("filtrarDeportes", () => {
+  it("devuelve un conjunto vacío si no hay datos de atletas", () => {
+    expect(typeof filtrarDeportes).toBe("function");
   });
-}));
-import { filterCoaches, findCDP } from '../src/data.js';
-import data from './../src/data/dev007/dev007.js'
 
+  it("devuelve un conjunto de deportes únicos", () => {
+    const data = {
+      athletes: [
+        { sport: "Gymnastics" },
+        { sport: "Gymnastics" },
+        { sport: "Basketball" },
+        { sport: "Taekwondo" },
+        { sport: "Basketball" },
+      ],
+    };
+    const resultado = filtrarDeportes(data);
+    expect(resultado).toEqual(["Gymnastics", "Basketball", "Taekwondo"]);
+  });
+});
 
-describe('filtrarPaises', () => {
-  test('Debería ser una función.', () => {
-    expect(typeof filtrarPaises).toBe('function');
-    
-  })
+//test para filtrarAtletas por PAIS
+describe("filtrarAtletasPorPais", () => {
+  const athletes = [
+    { name: "John", team: "USA" },
+    { name: "Emma", team: "Canada" },
+    { name: "Mike", team: "USA" },
+    { name: "Sophia", team: "Canada" },
+    { name: "Daniel", team: "USA" },
+  ];
 
-  it('Filtra y devuelve a los paises.', () => {
-    expect(filtrarPaises(data.athletes)).toEqual
-  })
+  it("devuelve un array vacío si no hay atletas para el país especificado", () => {
+    const pais = "Australia";
+    const resultado = filtrarAtletasPorPais(athletes, pais);
+    expect(resultado).toEqual([]);
+  });
 
-  it('Deberían ser ', () => {
-    expect(filterCoaches(data.personas)).toHaveLength(3)
-  })
-})
+  it("devuelve un array con los atletas del país especificado", () => {
+    const pais = "USA";
+    const resultado = filtrarAtletasPorPais(athletes, pais);
+    expect(resultado).toEqual([
+      { name: "John", team: "USA" },
+      { name: "Mike", team: "USA" },
+      { name: "Daniel", team: "USA" },
+    ]);
+  });
 
-describe('findCDP', () => {
-  it('Debería devolverme a la CDP (Nicoooooooooooooooooooooooooooooooooooo :)).', () => {
-    expect(findCDP(data.personas)).toHaveProperty('nombre', 'Nico');
-  })
-})
+  it("devuelve un array vacío si no se proporciona ningún atleta", () => {
+    const pais = "Canada";
+    const resultado = filtrarAtletasPorPais([], pais);
+    expect(resultado).toEqual([]);
+  });
+});
+
+describe("ordenarAtletas", () => {
+  it("Es una función", () => {
+    expect(typeof ordenarAtletas).toBe("function");
+  });
+
+  it("Debería retornar Data de forma descendente", () => {
+    const arrayDisordered = [
+      { name: "Zhang Fengliu" },
+      { name: "Cbrayl Hsnov" },
+      { name: "Abdul-Rashid Bulayevich Sadulayev" },
+      { name: "Albert Saritov" },
+    ];
+    const arrayAscendancy = [
+      { name: "Abdul-Rashid Bulayevich Sadulayev" },
+      { name: "Albert Saritov" },
+      { name: "Cbrayl Hsnov" },
+      { name: "Zhang Fengliu" },
+    ];
+    expect(ordenarAtletas(arrayDisordered, 'AZ')).toEqual(arrayAscendancy);
+  });
+});
+
+it("Debería retornar Data de forma descendente", () => {
+  const arrayDisordered = [
+    { name: "Abdul-Rashid Bulayevich Sadulayev" },
+    { name: "Zhang Fengliu" },
+    { name: "Cbrayl Hsnov" },
+    { name: "Albert Saritov" },
+  ];
+  const arrayDescendant = [
+    { name: "Zhang Fengliu" },
+    { name: "Cbrayl Hsnov" },
+    { name: "Albert Saritov" },
+    { name: "Abdul-Rashid Bulayevich Sadulayev" },
+  ];
+  expect(ordenarAtletas(arrayDisordered, -1)).toEqual(arrayDescendant);
+});
+it("Debería retornar Data de forma descendente", () => {
+  const arrayDescendant = [
+    { name: "Zhang Fengliu" },
+    { name: "Cbrayl Hsnov" },
+    { name: "Albert Saritov" },
+    { name: "Abdul-Rashid Bulayevich Sadulayev" },
+  ];
+  expect(ordenarAtletas(arrayDescendant)).toEqual(arrayDescendant);
+});
