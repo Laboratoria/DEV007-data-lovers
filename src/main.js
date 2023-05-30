@@ -3,8 +3,9 @@
 import data from './data/pokemon/pokemon.js';
 import {ordenarPokemones} from './data.js';
 import { filterByType, displayFilteredData } from './data.js';
-//console.log(data.pokemon);
-//const pokemon= data.pokemon;
+import {searchImput} from './data.js';
+
+
 const contenidoCard = document.querySelector(".adentro");
 
 
@@ -29,7 +30,6 @@ document.getElementById("pokedexHomePageBtn").onclick = function () {    //funci
   document.getElementById("listaPokemon").style.display = "none";
   document.getElementById("homePageStart").style.display = "flex";
 };
-//function crearTarjetas(data) {
 
 
 
@@ -67,24 +67,22 @@ data.pokemon.forEach((pokemones) => {
       </div>
     </button>`;
 })
-//}//
-
-//crearTarjetas(pokemon)
 
 
 
 // Obtener el elemento select del usuario
 const selectElement = document.getElementById("select-ordenar");
-const pokemonContainer = document.getElementById("ordenador");
+
 // Escuchar el evento change del select
 selectElement.addEventListener("change", function() {
   const selectedOption = selectElement.value;
   //console.log(selectedOption);// 
   const sortedData = ordenarPokemones(selectedOption);
-  pokemonContainer.innerHTML = "";
+  
   displayFilteredData(sortedData)
  
 });
+
 
 document.getElementById("filterSelect").addEventListener("change", function () {
   const filterValue = this.value;
@@ -107,3 +105,11 @@ document.getElementById("filterSelect").addEventListener("change", function () {
   // Lógica para mostrar los resultados filtrados en la interfaz
   displayFilteredData(filteredData);
 });
+
+const busquemos = document.getElementById("buscaremos");
+busquemos.addEventListener("keyup", (e) => {
+  const {value} = e.target;
+  const fullBuscar = searchImput(data, value);
+  displayFilteredData(fullBuscar)
+
+})
