@@ -51,10 +51,10 @@ nav ul li:hover {
 }
 
 /* ///////////////////////////FONDO DE LA PAGINA */
-#backgroundCastleInTheSky {
+#background {
   /* Estilo para la sección de la película */
-  background-image: url("https://www.ghibli.jp/gallery/laputa036.jpg");
-  background-size: cover;
+  background-image: url("images-data/Background.png");
+  background-size:cover;
   background-position: center;
   padding: 10px;
   max-width: 100%;
@@ -69,17 +69,20 @@ nav ul li:hover {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(174, 168, 168, 0.6);
+  background: rgba(225, 214, 214, 0.6);
   z-index: -1;
 }
 
 /* ///////////////////////////TEXTOS */
-.tituloPelicula {
+#tituloPelicula {
   font-family: 'Bubbler One', sans-serif;
   margin-left: 70px;
   margin-top: 67px;
 }
-
+.tituloPelicula {
+  font-family: 'Bubbler One', sans-serif;
+  margin-left: 70px;
+}
 .subtitulo {
   font-family: 'Bubbler One', sans-serif;
   margin-left: 70px;
@@ -97,13 +100,23 @@ nav ul li:hover {
 #posterCastleInTheSky {
   margin-left: 70px;
   margin-top: 5px;
+  height: 350px;
+  width: 300px;
 }
 
 .descripcion {
-  margin-left: 40px;
-  margin-right: 70px;
+  margin-left: 30px;
+  border-right: black solid 2px;
+  padding: 30px;
   font-size: 20px;
   text-align: justify;
+  display: block;
+  }
+.descripcionEspañol {
+  margin-right: 40px;
+  font-size: 20px;
+  text-align: justify;
+  padding: 30px;
 }
 
 /* ///////////////////////////FECHA */
@@ -173,15 +186,22 @@ nav ul li:hover {
 #producer {
   margin-bottom: 0px;
 }
+/* /////////////////////////////DATOS CURIOSOS */
+.seccionDatosCuriosos {
+}
 .datos {
   margin-left: 70px;
+  text-align: justify;
+  margin-right: 70px;
 }
 .botonRegresar {
-  margin-left: 1100px;
+  margin-left: 80%;
   margin-bottom: 30px;
+  position: relative;
   height: 100px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  border-radius: 70px;
 }
-
 .footer {
   width: 100%;
   background-color: #cdd4d6;

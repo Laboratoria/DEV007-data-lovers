@@ -21,3 +21,4 @@ export function ordenarPeliculasAZ (data){
   return dataCopy
   }
 
+console.log (anotherExample ())
