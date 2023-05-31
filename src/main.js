@@ -1,6 +1,6 @@
 import data from './data/pokemon/pokemon.js';
 import {ordenarPokemones} from './data.js';
-import { filterByType, displayFilteredData } from './data.js';
+import { filterByType} from './data.js';
 import { findByName } from './data.js';
 
 const contenidoCard = document.querySelector(".adentro");
@@ -62,7 +62,46 @@ data.pokemon.forEach((pokemones) => {
     </button>`;
 })
 
-
+function displayFilteredData(filteredData) {
+  const contenidoCard = document.querySelector(".adentro");
+  contenidoCard.innerHTML = ""; // Limpiar contenido existente
+  
+  filteredData.forEach(pokemones => {
+    contenidoCard.innerHTML += `
+    <button class= "mostrar">  
+    <div class= "card__inner">
+      <div class= "card__side card__side--front"> 
+        <div class="card-imag">
+          <img src="${pokemones.img}" class= "imagen" alt="">
+        </div>
+            <div class= "card-contenido">
+             <p class="numeroPokemon" >${pokemones.num}</p>
+             <h3>${pokemones.name}</h3>
+              <div class="poder">
+               <p>tipo: ${pokemones.type}</p>
+                <div class= "generacion">
+                  <p>${pokemones.generation.num} - ${pokemones.generation.name}</p>        
+                </div>
+              </div>
+            </div>
+      </div>
+        <div class= "card__side card__side--back">
+           <div class= "card__body">            
+             <p class= "height">ALTURA: ${pokemones.size.height}</p>             
+             <p class= "weight">PESO: ${pokemones.size.weight}</p>
+               <div class = "resistencia">
+                 <p>RESISTENCIA:</p>
+                 <p class= "parrafo">${pokemones.resistant[0]} , ${pokemones.resistant[1]}</p>
+                 <p class= "parrafo">${pokemones.resistant[2]} , ${pokemones.resistant[3]}</p>
+                 <p class= "parrafo">${pokemones.resistant[4]}</p>
+               </div>
+            </div>
+        </div>      
+    </div>
+  </button>`;
+  });
+}
+ 
 // Obtener el elemento select del usuario
 const selectElement = document.getElementById("select-ordenar");
 
@@ -88,15 +127,24 @@ document.getElementById("filterSelect").addEventListener("change", function () {
     filteredData = filterByType(data.pokemon, "fire");
   } else if (filterValue === "bug") {
     
-    filteredData = filterByType(data.pokemon, "bug");
-  } else {
+    filteredData = filterByType(data.pokemon, "bug"); 
+
+  }else if (filterValue === "electric") {
+    
+    filteredData = filterByType(data.pokemon, "electric"); 
+  
+  }else if (filterValue === "grass") {
+    
+    filteredData = filterByType(data.pokemon, "grass"); 
+  
+  }else {
 
     filteredData = data.pokemon; // Mostrar todos los pokemon
   }
-
   // Lógica para mostrar los resultados filtrados en la interfaz
   displayFilteredData(filteredData);
 });
+
 
 //funcionalidad del buscador
 document.getElementById("busquedaPokemon").addEventListener ("keyup", function () {
