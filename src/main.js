@@ -151,7 +151,7 @@ document.getElementById("busquedaPokemon").addEventListener ("keyup", function (
   const foundName = this.value;
   const foundPokemon = findByName(data.pokemon, foundName);
   const errorContainer = document.getElementById("notFound");
-  console.log(foundPokemon);
+  //console.log(foundPokemon);
   contenidoCard.style.display = "grid"
   errorContainer.style.display = "none";
   displayFilteredData (foundPokemon);
