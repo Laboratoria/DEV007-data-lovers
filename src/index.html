@@ -49,35 +49,37 @@
 
     <div class="pageListaPoke" id="listaPokemon" style="display: none;">
       <div class="headerPokedex">
-        <img src="./imagenes/pokedexx.png" alt="logoPokedex" class="loguitoPokedex">
-        <img src="./imagenes/pokebolita.png" alt="logoPokebolita" class="miniPokebola">
-        <div class="buscar"  id="pagePokedex">
+        <div class="leftHeader">
+          <img src="./imagenes/pokedexx.png" alt="logoPokedex" class="loguitoPokedex">
+          <img src="./imagenes/pokebolita.png" alt="logoPokebolita" class="miniPokebola">
+        </div>
+        <div class="rightHeader">
           <div class="search-bar">
-            <input type="text" id="busquedaPokemon" placeholder="Nombre del Pokemon" required autocomplete="off">        
-            <button type="submit" class="search-button"><img src="./imagenes/lupita2.png" alt=""></button>
+            <input type="text" id="busquedaPokemon" placeholder="Nombre del Pokemon" required autocomplete="off">
+            <input type="image" src="./imagenes/lupita2.png" class="imagenBuscar">
           </div>
-        </div>
-        <div class="menu-ordenador" id="ordenador">
-          <select id="select-ordenar">
-            <option disabled selected>Ordenar por</option>
-            <option value="asc" class="ordenar">Ascendente</option>
-            <option value="desc" class="ordenar">Descendente</option>
-          </select>
-        </div>
-
-        <div class="filterSelect">
-          <select id="filterSelect">
-            <option disabled selected>Filtrar por</option>
-            <option value="water">Agua</option>
-            <option value="fire">Fuego</option>
-            <option value="bug">Insecto</option>
-            <option value="electric">Eléctricos</option>
-          </select>
-        </div>  
-        <button type="button" id="pokedexHomePageBtn">
-          INICIO
-        </button>
-  
+           <div class="menu-ordenador" id="ordenador">
+             <select id="select-ordenar">
+               <option hidden selected>Ordenar por</option>
+               <option value="asc" class="ordenar">Ascendente</option>
+               <option value="desc" class="ordenar">Descendente</option>
+              </select>
+            </div>
+            
+            <div class="filterSelect">
+              <select id="filterSelect">
+                <option hidden selected>Filtrar por</option>
+                <option value="water">Agua</option>
+                <option value="fire">Fuego</option>
+                <option value="bug">Insecto</option>
+                <option value="electric">Eléctricos</option>
+                <option value="grass">Césped</option>
+              </select>
+            </div>  
+            <button type="button" id="pokedexHomePageBtn">
+              INICIO
+            </button>
+          </div>
       </div>
       
       <div class="bottomPokedex">
