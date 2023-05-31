@@ -82,7 +82,10 @@ nav ul li:hover {
   border-radius: 110px;
 
 }
-
+/* La clase filter me va a permitir discriminar los resultados que no coincidan con lo que se está buscando */
+.filter {
+  display: none;
+}
 /*/////////////////////////RESPONSIVO///////////////////////////////*/
 @media screen and (min-width:480px) {
   .buscar:hover>.buscar_texto {

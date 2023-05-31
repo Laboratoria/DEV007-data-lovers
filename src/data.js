@@ -7,6 +7,15 @@ export const example = () => {
 export const anotherExample = () => {
   return 'OMG';
 };
+
+///////////////////////////////////////////////////////////////BARRA DE BUSQUEDA
+
+
+
+
+
+
+
 export function ordenarPeliculasAZ (data){
   const dataCopy = data.films.slice()
   dataCopy.sort(function (a, b) { //.sort organiza los elementos del arreglo según el valor.

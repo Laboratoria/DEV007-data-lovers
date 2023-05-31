@@ -1,13 +1,41 @@
 import { example, ordenarPeliculasAZ } from './data.js';
-// import data from './data/lol/lol.js';
-// import data from './data/pokemon/pokemon.js';
-// import data from './data/rickandmorty/rickandmorty.js';
-
-//console.log(example, data);
 
 // traemos la data y la guardamos en una variable
 import data from './data/ghibli/ghibli.js';
 const listaPeliculas = data.films;
+
+// BARRA DE BUSQUEDA
+const boton = document.getElementById('searchButton')
+boton.addEventListener('click', function () {
+  const arrayFilms = data['films'] //
+  const arrayFiltrado = arrayFilms.filter(a => a.title.toLowerCase().includes(searchInput.value)) // 
+  let arrayTitulos = arrayFiltrado.map(a => a.title)
+  escenario.innerHTML = arrayTitulos;
+  let elementoHTMLEnString = `<h1> ${arrayTitulos} </h1>`
+  escenario.innerHTML = elementoHTMLEnString;
+
+  // Ahora se hace una nueva lista de posters ordenada segun lo indicado en el ordenar por:
+  let posters = [];
+  for (const pelicula of arrayFiltrado) { // Esta listaPeliculas ya viene ordenada según lo seleccionado en el ordenar por 
+    posters.push(movie(pelicula.id, pelicula.title, pelicula.poster)); // se agrega el poster a la página  
+  }
+  escenario.innerHTML = posters.join(''); // se agrega la lista de posters al escenario
+
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 // Ahora con JS tomamos la data y la mostramos en HTML:
 function movie(id, titulo, imagenPoster) { // La funcion 'movie' recibe 3 parámetros: id, título e imagen. Esta función genera un string en HTML 
@@ -21,7 +49,7 @@ function movie(id, titulo, imagenPoster) { // La funcion 'movie' recibe 3 parám
 }
 const posters = []; // aquí vamos a crear una lista para los posters
 for (const pelicula of listaPeliculas) { // recorremos la lista de películas y por cada película creamos un poster
-// ahora agregamos cada poster a la lista de posters
+  // ahora agregamos cada poster a la lista de posters
   posters.push(movie(pelicula.id, pelicula.title, pelicula.poster)); // el .push agrega uno o más elementos al final de un array existente 
 }
 
@@ -41,15 +69,15 @@ ordenarPor.addEventListener('change', function () { // el 'change' se pone por d
   if (valor === 'az') {
     // ordenarPeliculasAZ (listaPeliculas)
 
-    const peliculasOrdenadasAZ = ordenarPeliculasAZ (data)
-    console.log (peliculasOrdenadasAZ)
+    const peliculasOrdenadasAZ = ordenarPeliculasAZ(data)
+    console.log(peliculasOrdenadasAZ)
     escenario.innerHTML = ''; // y tercero, limpia el escenario para que se pueda actualizar el nuevo contenido dinámico.
-    let posters = []; 
+    let posters = [];
     for (const pelicula of peliculasOrdenadasAZ) { // Esta listaPeliculas ya viene ordenada según lo seleccionado en el ordenar por 
-        posters.push(movie(pelicula.id, pelicula.title, pelicula.poster)); // se agrega el poster a la página  
+      posters.push(movie(pelicula.id, pelicula.title, pelicula.poster)); // se agrega el poster a la página  
     }
     escenario.innerHTML = posters.join(''); // se agrega la lista de posters al escenario
-return
+    return
     // listaPeliculas.sort(function (a, b) { //.sort organiza los elementos del arreglo según el valor.
     //   if (a.title > b.title) { // el 'title' lo tomo de la data
     //     return 1;
@@ -61,10 +89,10 @@ return
     // });
   } else if (valor === 'za') {
     listaPeliculas.sort(function (a, b) {
-      if (a.title < b.title  ) { // el 'title' lo tomo de la data
+      if (a.title < b.title) { // el 'title' lo tomo de la data
         return 1;
       }
-      if (a.title > b.title  ) {
+      if (a.title > b.title) {
         return -1;
       }
       return 0;
@@ -80,7 +108,7 @@ return
       }
       return 0;
     });
-        
+
   }
   else if (valor === 'puntaje') {
     listaPeliculas.sort(function (a, b) {
@@ -92,35 +120,36 @@ return
       }
       return 0;
     });
-    }
-// Ahora se hace una nueva lista de posters ordenada segun lo indicado en el ordenar por:
-    let posters = []; 
-    for (const pelicula of listaPeliculas) { // Esta listaPeliculas ya viene ordenada según lo seleccionado en el ordenar por 
-        posters.push(movie(pelicula.id, pelicula.title, pelicula.poster)); // se agrega el poster a la página  
-    }
-    escenario.innerHTML = posters.join(''); // se agrega la lista de posters al escenario
+  }
+  // Ahora se hace una nueva lista de posters ordenada segun lo indicado en el ordenar por:
+  let posters = [];
+  for (const pelicula of listaPeliculas) { // Esta listaPeliculas ya viene ordenada según lo seleccionado en el ordenar por 
+    posters.push(movie(pelicula.id, pelicula.title, pelicula.poster)); // se agrega el poster a la página  
+  }
+  escenario.innerHTML = posters.join(''); // se agrega la lista de posters al escenario
 }
 );
 
 ///////////////// Para que funcione el Buscar: ///////////////////////
-let searchInput = document.getElementById("searchInput");
-let searchButton = document.getElementById("searchButton");
-let searchResult = document.getElementById("searchResult");
+// let searchInput = document.getElementById("searchInput");
+// let searchButton = document.getElementById("searchButton");
+// let searchResult = document.getElementById("searchResult");
 
 
-//funciones
-searchButton.addEventListener("click", function(){
-  let result = filterData(Ghibli.films, searchInput.value)
+// //funciones
+// searchButton.addEventListener("click", function(){
+//   let result = filterData(Ghibli.films, searchInput.value)
 
-    let data = result.map(imagen => {
-    return `<img class="img-normalizada" id="${imagen.id}" src="${imagen.poster}" alt="">`
-    })
-    searchResult.innerHTML = data;
-})
+//     let data = result.map(imagen => {
+//     return `<img class="img-normalizada" id="${imagen.id}" src="${imagen.poster}" alt="">`
+//     })
+//     searchResult.innerHTML = data;
+// })
 
-function filterData(data, condition){
-  let filtrado = data.filter(function(f){
-    return f.title.toLowerCase().includes(condition.toLowerCase())
-  })
-  return filtrado;
-};
+// function filterData(data, condition){
+//   let filtrado = data.filter(function(f){
+//     return f.title.toLowerCase().includes(condition.toLowerCase())
+//   })
+//   return filtrado;
+// };
+
