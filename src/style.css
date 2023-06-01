@@ -295,6 +295,7 @@ select:focus {
   text-align: center;
   font-size: 18px;
   padding-top: 2%;
+  font-style: italic;
 }
 .jiji{
   height: 100px;
