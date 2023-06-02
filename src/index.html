@@ -4,9 +4,53 @@
     <meta charset="utf-8">
     <title>Data Lovers</title>
     <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
-  <body>
+
+  <header>
+      <img class="primera" src="https://cdn.worldvectorlogo.com/logos/pokemon-23.svg">
+      <img class= "segunda" src="img/pikachu.png">/
+      
+    </header>
+    <div class="search">
+      <form>
+        <input type="text" id="searchbox" name="name" placeholder="Busca tu pokémon">
+        <button class= "filter"id="btnfilter">SEARCH</button>
+        
+      </form>
+    </div>
+    
+    <body>
+      <div class="containerglobal">
+
+        <div class = "contenedorleft">
+        <div class = "resultado" id="resultado"></div> 
+        <div class = "pokedata" id="contenedor"></div>
+        <br>
+        <br>
+
+        <div class = "contenedorbotones">
+          <button class ="boton1" id="Boton1">ABOUT</button>
+          <button class ="boton2" id="Boton2">EVOLUTION</button>
+          <button class ="boton3" id="Boton3">ATTACK</button>
+          <button class ="boton4" id="Boton4">STATS</button>
+    
+          </div>
+    
+    
+        </div>
+        </div>
+
+      <div class="contenedorright">
+        <div class="pokedex">
+          </p>
+        </div>
+      </div>
+
+      
     <div id="root"></div>
     <script src="main.js" type="module"></script>
+    <script>PerfectScrollbar</script>
   </body>
+  <footer>Creado por Lina y Vero</footer>
 </html>
