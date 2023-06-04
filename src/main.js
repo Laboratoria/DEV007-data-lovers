@@ -25,7 +25,7 @@ function mostrarAtletas() {
   })
 }*/
 
-//traer a los botones principales y contenedores vacios
+//traer a los botones principales y contenedores vacios (llamados al dom)
 const botonInicio = document.getElementById("botonInicio");
 const botonPrincipalDeportes = document.getElementById("botonDeportes");
 const botonPrincipalPaises = document.getElementById("botonPais");
@@ -39,7 +39,7 @@ const contenedorAtletasPorPais = document.getElementById(
 const contenedorAtletasPorDeporte = document.getElementById(
   "contenedorAtletasPorDeporte"
 );
-
+//advenerlistener escucha el evento clikc
 botonInicio.addEventListener("click", () => {
   // Limpiar todos los contenedores
   contenedorPaises.innerHTML = "";
@@ -72,6 +72,8 @@ botonInicio.addEventListener("click", () => {
 function mostrarPaises() {
   const paisesUnicos = filtrarPaises(data); //llamar a la funcion del data.js
 
+  //va a entrar a cada indice del objeto data para imprimir cada pais/equipo
+  //delegacion de eventos, segun el ansestro (boton principal asi no creo muchos botones)
   paisesUnicos.forEach((equipo) => {
     contenedorPaises.innerHTML += `<div class="cartasPaises">
     <button class="clase-botonpais" data-pais="${equipo}">${equipo}</button>
@@ -94,7 +96,9 @@ botonPrincipalPaises.addEventListener("click", () => {
   for (let i = 0; i < botonesPais.length; i++) {
     botonesPais[i].addEventListener("click", function (e) {
       const pais = e.target.getAttribute("data-pais"); //obtener el pais cuando le hacen click
-
+      //e.target es un comando que se refiere al elemento que esta emintiendo un eveto,   
+      //E.target es útil para conocer el origen del evento y para manejar eventos delegados
+      //accede al atributo
       mostrarAtletasPorPais(pais); //pasar pais como argumento en la llamada a la funcion
     });
   }
@@ -106,7 +110,7 @@ function mostrarAtletasPorPais(pais) {
 
   contenedorPaises.innerHTML = ""; // Limpiar los botones de los paises antes de agregar los atletas filtrados
 
-  // Generar dinámicamente el select para ordenar A-Z / Z-A
+  // Generar dinámicamente el select para ordenar A-Z / Z-A uso de template string
   contenedorAtletasPorPais.innerHTML += `<select id="ordenAtletasPais">
       <option disabled selected value="">Sort</option>
       <option value="AZ">A-Z</option>
@@ -124,6 +128,8 @@ function mostrarAtletasPorPais(pais) {
     </div>`;
   });
 
+
+  // El evento change se activa cuando el elemento finaliza un cambio.orden Az /zA
   contenedorAtletasPorPais.addEventListener("change", (event) => {
     //agregar evento del cambio al contenedor ( cuando alguien cambia algo dentro del contenedor se ejecutara {})
     if (event.target.id === "ordenAtletasPais") {
@@ -137,7 +143,7 @@ function mostrarAtletasPorPais(pais) {
         tarjeta.remove(); // Eliminar las tarjetas existentes, para que no se vayan acumulando al cambiar el orden
       });
 
-      // Generar dinámicamente las nuevas tarjetas ordenadas y agregarlas al contenedor
+      // Generar dinámicamente las nuevas tarjetas ordenadas y agregarlas al contenedor en orden seleccionado
       atletasOrdenados.forEach((atleta) => {
         contenedorAtletasPorPais.innerHTML += `<div class="datosAtletas">
           <p><strong>👤Name:</strong> ${atleta.name}</p>
