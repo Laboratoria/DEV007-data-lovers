@@ -6,8 +6,7 @@
 import data from './data/ghibli/ghibli.js';
 const listaPeliculas = data.films;
 
-import { example, ordenarPeliculasAZ, ordenarPeliculasZA, ordenarPeliculasAño, ordenarPeliculasPuntaje} from './data.js';
-import { example2,  } from './data.js';
+import {ordenarPeliculasAZ, ordenarPeliculasZA, ordenarPeliculasAño, ordenarPeliculasPuntaje, calcularPeliculas} from './data.js';
 
 ////////////////////////////////////////////////////////////////////////////-----
 // Con JS tomamos la data y la mostramos en HTML:
@@ -18,7 +17,7 @@ function movie(id, titulo, imagenPoster) { // La funcion 'movie' recibe 3 parám
     <p>${titulo}</p>
     </div>
     </div>`; //Usamos "${}" para que se agregue el dato(valor) que corresponda en cada caso.
-    return poster; // Y finalmente tenemos en pantalla la imagen del poster con el título de la película. 
+  return poster; // Y finalmente tenemos en pantalla la imagen del poster con el título de la película. 
 }
 
 const posters = []; // lista para los posters
@@ -28,20 +27,20 @@ for (const pelicula of listaPeliculas) { // recorre la lista de películas y por
 }
 
 //  lista de posters al div escenario
-const escenario = document.getElementById('escenario'); 
+const escenario = document.getElementById('escenario');
 escenario.innerHTML = posters.join(''); // se agrega la lista de posters al escenario
 
 /////////////////////////////////////////////////////// ORDENAR POR
 const ordenarPor = document.getElementById('ordenar');
 ordenarPor.addEventListener('change', function () { // el 'change' se pone por defecto para la lista despegable 
-    const valor = ordenar.value; // primero escucha si es az, za, año o puntaje del html 
-    const escenario = document.getElementById('escenario'); // segundo, obtiene el id 'escenario' que encuentra en el html
-    escenario.innerHTML = ''; // y tercero, limpia el escenario para que se pueda actualizar el nuevo contenido dinámico.
-    //y ahora ordena la lista de películas dependiendo de lo que se seleccione:
-    let posters = []
-    if (valor === 'az') {
-      const peliculasOrdenadasAZ = ordenarPeliculasAZ(data)
-      console.log(peliculasOrdenadasAZ)
+  const valor = ordenarPor.value; // primero escucha si es az, za, año o puntaje del html 
+  const escenario = document.getElementById('escenario'); // segundo, obtiene el id 'escenario' que encuentra en el html
+  escenario.innerHTML = ''; // y tercero, limpia el escenario para que se pueda actualizar el nuevo contenido dinámico.
+  //y ahora ordena la lista de películas dependiendo de lo que se seleccione:
+  const posters = []
+  if (valor === 'az') {
+    const peliculasOrdenadasAZ = ordenarPeliculasAZ(data)
+    // console.log(peliculasOrdenadasAZ)
     // escenario.innerHTML = ''; // y tercero, limpia el escenario para que se pueda actualizar el nuevo contenido dinámico.
     // let posters = [];
     for (const pelicula of peliculasOrdenadasAZ) { // Esta listaPeliculas ya viene ordenada según lo seleccionado en el ordenar por 
@@ -60,7 +59,7 @@ ordenarPor.addEventListener('change', function () { // el 'change' se pone por d
     // });
   } else if (valor === 'za') {
     const peliculasOrdenadasZA = ordenarPeliculasZA(data)
-    console.log(peliculasOrdenadasZA)
+    // console.log(peliculasOrdenadasZA)
     // escenario.innerHTML = '';
     // let posters = [];
     for (const pelicula of peliculasOrdenadasZA) {
@@ -77,9 +76,9 @@ ordenarPor.addEventListener('change', function () { // el 'change' se pone por d
     //   }
     //   return 0;
     // });
-  }  else if (valor === 'año') {
+  } else if (valor === 'año') {
     const peliculasOrdenadasAño = ordenarPeliculasAño(data)
-    console.log(peliculasOrdenadasAño)
+    // console.log(peliculasOrdenadasAño)
     // escenario.innerHTML = '';
     // let posters = [];
     for (const pelicula of peliculasOrdenadasAño) {
@@ -92,14 +91,14 @@ ordenarPor.addEventListener('change', function () { // el 'change' se pone por d
     //     return 1;
     //   }
     //   if (a.release_date < b.release_date) {
-      //     return -1;
-      //   }
-      //   return 0;
-      // });
+    //     return -1;
+    //   }
+    //   return 0;
+    // });
 
-  }  else if (valor === 'puntaje') {
-    const peliculasOrdenadasPuntaje = ordenarPeliculasPuntaje(data) 
-    console.log(peliculasOrdenadasPuntaje)
+  } else if (valor === 'puntaje') {
+    const peliculasOrdenadasPuntaje = ordenarPeliculasPuntaje(data)
+    // console.log(peliculasOrdenadasPuntaje)
     // escenario.innerHTML = '';
     // let posters = [];
     for (const pelicula of peliculasOrdenadasPuntaje) {
@@ -108,7 +107,7 @@ ordenarPor.addEventListener('change', function () { // el 'change' se pone por d
     escenario.innerHTML = posters.join('');
     // return
     // listaPeliculas.sort(function (a, b) {
-      //   if (a.rt_score > b.rt_score) { // el 'rt_score' lo tomo de la data
+    //   if (a.rt_score > b.rt_score) { // el 'rt_score' lo tomo de la data
     //     return 1;
     //   }
     //   if (a.rt_score < b.rt_score) {
@@ -116,29 +115,30 @@ ordenarPor.addEventListener('change', function () { // el 'change' se pone por d
     //   }
     //   return 0;
     // });
-  }  
-  // Ahora se hace una nueva lista de posters ordenada segun lo indicado en el ordenar por:
-  for (const pelicula of listaPeliculas) { // Esta listaPeliculas ya viene ordenada según lo seleccionado en el ordenar por 
-    posters.push(movie(pelicula.id, pelicula.title, pelicula.poster)); // se agrega el poster a la página  
   }
-  escenario.innerHTML = posters.join(''); // se agrega la lista de posters al escenario
 }
 );
+// escenario.innerHTML = posters.join(''); // se agrega la lista de posters al escenario
 
 /////////////////////////////////////////////////////// BARRA DE BUSQUEDA
 const boton = document.getElementById('searchButton')
+const searchInput = document.getElementById('searchInput')
 boton.addEventListener('click', function () {
   const arrayFilms = data['films'] //
   const arrayFiltrado = arrayFilms.filter(a => a.title.toLowerCase().includes(searchInput.value)) // 
-  let arrayTitulos = arrayFiltrado.map(a => a.title)
+  const arrayTitulos = arrayFiltrado.map(a => a.title)
   escenario.innerHTML = arrayTitulos;
-  let elementoHTMLEnString = `<h1> ${arrayTitulos} </h1>`
+  const elementoHTMLEnString = `<h1> ${arrayTitulos} </h1>`
   escenario.innerHTML = elementoHTMLEnString;
 
-    let posters = [];
-  for (const pelicula of arrayFiltrado) {  
+  const posters = [];
+  for (const pelicula of arrayFiltrado) {
     posters.push(movie(pelicula.id, pelicula.title, pelicula.poster)); // se agrega el poster a la página  
   }
   escenario.innerHTML = posters.join(''); // se agrega la lista de posters al escenario
 
 })
+
+///////////
+const calculo = document.getElementById('calculo')
+calculo.innerHTML = calcularPeliculas (data)

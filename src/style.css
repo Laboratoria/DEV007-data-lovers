@@ -52,10 +52,12 @@ nav ul li:hover {
   width: 100%;
 }
 
+.cabezote {}
+
 #barra-de-busqueda {
   position: absolute;
-  top: 550px;
-  display: block;
+  top: 67%;
+  display: inline-block; 
   width: 100%;
   display: flex;
   justify-content: center;
@@ -63,9 +65,7 @@ nav ul li:hover {
 }
 
 #barra-de-busqueda input {
-  width: 800px;
-  margin: auto;
-  /* Para que la barra de búsqueda se centre la convertimos en un bloque */
+  width: 700px;
   padding: 20px;
   font-size: 18px;
   border-radius: 110px;
@@ -83,10 +83,12 @@ nav ul li:hover {
   border-radius: 110px;
 
 }
+
 /* La clase filter me va a permitir discriminar los resultados que no coincidan con lo que se está buscando */
 .filter {
   display: none;
 }
+
 /*/////////////////////////RESPONSIVO///////////////////////////////*/
 @media screen and (min-width:480px) {
   .buscar:hover>.buscar_texto {
@@ -298,6 +300,7 @@ select:focus {
   padding-top: 2%;
   font-style: italic;
 }
-.jiji{
+
+.jiji {
   height: 100px;
 }

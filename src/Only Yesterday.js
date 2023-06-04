@@ -1,6 +1,6 @@
 // traemos la data y la guardamos en una variable
 import data from './data/ghibli/ghibli.js';
-var listaPeliculas = data.films;
+const listaPeliculas = data.films;
 
 /////////////////////////////////////////// TITULO
 
@@ -29,31 +29,31 @@ puntaje.innerHTML = listaPeliculas[4].rt_score;
 
 /////////////////////////////////////////// PERSONAJES
 
-var personajes = document.getElementById('taeko'); 
+let personajes = document.getElementById('taeko'); 
 personajes.src = listaPeliculas[4].people[0].img; 
-var personajes = document.getElementById('nombreTaeko'); 
+personajes = document.getElementById('nombreTaeko'); 
 personajes.innerHTML = listaPeliculas[4].people[0].name;
    
-var personajes = document.getElementById('toshio'); 
+personajes = document.getElementById('toshio'); 
 personajes.src = listaPeliculas[4].people[1].img; 
-var personajes = document.getElementById('nombreToshio'); 
+personajes = document.getElementById('nombreToshio'); 
 personajes.innerHTML = listaPeliculas[4].people[1].name;
 
-var personajes = document.getElementById('nanako'); 
+personajes = document.getElementById('nanako'); 
 personajes.src = listaPeliculas[4].people[5].img; 
-var personajes = document.getElementById('nombreNanako'); 
+personajes = document.getElementById('nombreNanako'); 
 personajes.innerHTML = listaPeliculas[4].people[5].name;
 
-var personajes = document.getElementById('yaeko'); 
+personajes = document.getElementById('yaeko'); 
 personajes.src = listaPeliculas[4].people[6].img; 
-var personajes = document.getElementById('nombreYaeko'); 
+personajes = document.getElementById('nombreYaeko'); 
 personajes.innerHTML = listaPeliculas[4].people[6].name;
 
 /////////////////////////////////////////// DIRECTOR Y PRODUCTORES
 
-let director = document.getElementById('director'); 
+const director = document.getElementById('director'); 
 director.innerHTML = listaPeliculas[4].director; 
 
-let producer = document.getElementById('producer'); 
+const producer = document.getElementById('producer'); 
 producer.innerHTML = listaPeliculas[4].producer;  
 

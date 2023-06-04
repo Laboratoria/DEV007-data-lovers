@@ -1,6 +1,6 @@
 // traemos la data y la guardamos en una variable
 import data from './data/ghibli/ghibli.js';
-var listaPeliculas = data.films;
+const listaPeliculas = data.films;
 
 /////////////////////////////////////////// TITULO
 
@@ -29,24 +29,24 @@ puntaje.innerHTML = listaPeliculas[2].rt_score;
 
 /////////////////////////////////////////// PERSONAJES
 
-var personajes = document.getElementById('kiki'); 
+let personajes = document.getElementById('kiki'); 
 personajes.src = listaPeliculas[2].people[0].img; 
-var personajes = document.getElementById('nombreKiki'); 
+personajes = document.getElementById('nombreKiki'); 
 personajes.innerHTML = listaPeliculas[2].people[0].name;
    
-var personajes = document.getElementById('jiji'); 
+personajes = document.getElementById('jiji'); 
 personajes.src = listaPeliculas[2].people[1].img; 
-var personajes = document.getElementById('nombreJiji'); 
+personajes = document.getElementById('nombreJiji'); 
 personajes.innerHTML = listaPeliculas[2].people[1].name;
 
-var personajes = document.getElementById('tombo'); 
+personajes = document.getElementById('tombo'); 
 personajes.src = listaPeliculas[2].people[3].img; 
-var personajes = document.getElementById('nombreTombo'); 
+personajes = document.getElementById('nombreTombo'); 
 personajes.innerHTML = listaPeliculas[2].people[3].name;
 
 /////////////////////////////////////////// DIRECTOR Y PRODUCTORES
 
-let director = document.getElementById('director'); 
+const director = document.getElementById('director'); 
 director.innerHTML = listaPeliculas[2].director; 
 
 
