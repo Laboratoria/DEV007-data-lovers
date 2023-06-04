@@ -1,6 +1,6 @@
 // traemos la data y la guardamos en una variable
 import data from './data/ghibli/ghibli.js';
-var listaPeliculas = data.films;
+const listaPeliculas = data.films;
 
 /////////////////////////////////////////// TITULO
 
@@ -29,41 +29,41 @@ puntaje.innerHTML = listaPeliculas[12].rt_score;
 
 /////////////////////////////////////////// PERSONAJES
 
-var personajes = document.getElementById('howl'); 
+let personajes = document.getElementById('howl'); 
 personajes.src = listaPeliculas[12].people[0].img; 
-var personajes = document.getElementById('nombreHowl'); 
+personajes = document.getElementById('nombreHowl'); 
 personajes.innerHTML = listaPeliculas[12].people[0].name;
    
-var personajes = document.getElementById('sophie'); 
+personajes = document.getElementById('sophie'); 
 personajes.src = listaPeliculas[12].people[1].img; 
-var personajes = document.getElementById('nombreSophie'); 
+personajes = document.getElementById('nombreSophie'); 
 personajes.innerHTML = listaPeliculas[12].people[1].name;
 
-var personajes = document.getElementById('calcifer'); 
+personajes = document.getElementById('calcifer'); 
 personajes.src = listaPeliculas[12].people[3].img; 
-var personajes = document.getElementById('nombreCalcifer'); 
+personajes = document.getElementById('nombreCalcifer'); 
 personajes.innerHTML = listaPeliculas[12].people[3].name;
 
-var personajes = document.getElementById('prince'); 
+personajes = document.getElementById('prince'); 
 personajes.src = listaPeliculas[12].people[5].img; 
-var personajes = document.getElementById('nombrePrince'); 
+personajes = document.getElementById('nombrePrince'); 
 personajes.innerHTML = listaPeliculas[12].people[5].name;
 
-var personajes = document.getElementById('madame'); 
+personajes = document.getElementById('madame'); 
 personajes.src = listaPeliculas[12].people[6].img; 
-var personajes = document.getElementById('nombreMadame'); 
+personajes = document.getElementById('nombreMadame'); 
 personajes.innerHTML = listaPeliculas[12].people[6].name;
 
-var personajes = document.getElementById('heen'); 
+personajes = document.getElementById('heen'); 
 personajes.src = listaPeliculas[12].people[7].img; 
-var personajes = document.getElementById('nombreHeen'); 
+personajes = document.getElementById('nombreHeen'); 
 personajes.innerHTML = listaPeliculas[12].people[7].name;
 
 /////////////////////////////////////////// DIRECTOR Y PRODUCTORES
 
-let director = document.getElementById('director'); 
+const director = document.getElementById('director'); 
 director.innerHTML = listaPeliculas[12].director; 
 
-let producer = document.getElementById('producer'); 
+const producer = document.getElementById('producer'); 
 producer.innerHTML = listaPeliculas[12].producer;  
 

@@ -1,6 +1,6 @@
 // traemos la data y la guardamos en una variable
 import data from './data/ghibli/ghibli.js';
-var listaPeliculas = data.films;
+const listaPeliculas = data.films;
 
 /////////////////////////////////////////// TITULO
 
@@ -29,33 +29,33 @@ puntaje.innerHTML = listaPeliculas[13].rt_score;
 
 /////////////////////////////////////////// PERSONAJES
 
-var personajes = document.getElementById('ged'); 
+let personajes = document.getElementById('ged'); 
 personajes.src = listaPeliculas[13].people[0].img; 
-var personajes = document.getElementById('nombreGed'); 
+personajes = document.getElementById('nombreGed'); 
 personajes.innerHTML = listaPeliculas[13].people[0].name;
    
-var personajes = document.getElementById('arren'); 
+personajes = document.getElementById('arren'); 
 personajes.src = listaPeliculas[13].people[1].img; 
-var personajes = document.getElementById('nombreArren'); 
+personajes = document.getElementById('nombreArren'); 
 personajes.innerHTML = listaPeliculas[13].people[1].name;
 
-var personajes = document.getElementById('therru'); 
+personajes = document.getElementById('therru'); 
 personajes.src = listaPeliculas[13].people[2].img; 
-var personajes = document.getElementById('nombreTherru'); 
+personajes = document.getElementById('nombreTherru'); 
 personajes.innerHTML = listaPeliculas[13].people[2].name;
 
-var personajes = document.getElementById('cob'); 
+personajes = document.getElementById('cob'); 
 personajes.src = listaPeliculas[13].people[5].img; 
-var personajes = document.getElementById('nombreCob'); 
+personajes = document.getElementById('nombreCob'); 
 personajes.innerHTML = listaPeliculas[13].people[5].name;
 
 
 
 /////////////////////////////////////////// DIRECTOR Y PRODUCTORES
 
-let director = document.getElementById('director'); 
+const director = document.getElementById('director'); 
 director.innerHTML = listaPeliculas[13].director; 
 
-let producer = document.getElementById('producer'); 
+const producer = document.getElementById('producer'); 
 producer.innerHTML = listaPeliculas[13].producer;  
 

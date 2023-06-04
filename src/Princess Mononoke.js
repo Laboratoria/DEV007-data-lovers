@@ -1,6 +1,6 @@
 // traemos la data y la guardamos en una variable
 import data from './data/ghibli/ghibli.js';
-var listaPeliculas = data.films;
+const listaPeliculas = data.films;
 
 /////////////////////////////////////////// TITULO
 
@@ -29,41 +29,41 @@ puntaje.innerHTML = listaPeliculas[8].rt_score;
 
 /////////////////////////////////////////// PERSONAJES
 
-var personajes = document.getElementById('ashitaka'); 
+let personajes = document.getElementById('ashitaka'); 
 personajes.src = listaPeliculas[8].people[0].img; 
-var personajes = document.getElementById('nombreAshitaka'); 
+personajes = document.getElementById('nombreAshitaka'); 
 personajes.innerHTML = listaPeliculas[8].people[0].name;
    
-var personajes = document.getElementById('san'); 
+personajes = document.getElementById('san'); 
 personajes.src = listaPeliculas[8].people[1].img; 
-var personajes = document.getElementById('nombreSan'); 
+personajes = document.getElementById('nombreSan'); 
 personajes.innerHTML = listaPeliculas[8].people[1].name;
 
-var personajes = document.getElementById('eboshi'); 
+personajes = document.getElementById('eboshi'); 
 personajes.src = listaPeliculas[8].people[2].img; 
-var personajes = document.getElementById('nombreEboshi'); 
+personajes = document.getElementById('nombreEboshi'); 
 personajes.innerHTML = listaPeliculas[8].people[2].name;
 
-var personajes = document.getElementById('yakul'); 
+personajes = document.getElementById('yakul'); 
 personajes.src = listaPeliculas[8].people[7].img; 
-var personajes = document.getElementById('nombreYakul'); 
+personajes = document.getElementById('nombreYakul'); 
 personajes.innerHTML = listaPeliculas[8].people[7].name;
 
-var personajes = document.getElementById('shishigami'); 
+personajes = document.getElementById('shishigami'); 
 personajes.src = listaPeliculas[8].people[8].img; 
-var personajes = document.getElementById('nombreShishigami'); 
+personajes = document.getElementById('nombreShishigami'); 
 personajes.innerHTML = listaPeliculas[8].people[8].name;
 
-var personajes = document.getElementById('moro'); 
+personajes = document.getElementById('moro'); 
 personajes.src = listaPeliculas[8].people[9].img; 
-var personajes = document.getElementById('nombreMoro'); 
+personajes = document.getElementById('nombreMoro'); 
 personajes.innerHTML = listaPeliculas[8].people[9].name;
 
 /////////////////////////////////////////// DIRECTOR Y PRODUCTORES
 
-let director = document.getElementById('director'); 
+const director = document.getElementById('director'); 
 director.innerHTML = listaPeliculas[8].director; 
 
-let producer = document.getElementById('producer'); 
+const producer = document.getElementById('producer'); 
 producer.innerHTML = listaPeliculas[8].producer;  
 
