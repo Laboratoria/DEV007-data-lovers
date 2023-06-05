@@ -353,7 +353,7 @@ export default {
     },
     {
       "id": "ea660b10-85c4-4ae3-8a5f-41cea3648e3e",
-      "title": "Kiki's Delivery Service",
+      "title": "Kikis Delivery Service",
       "description": "A young witch, on her mandatory year of independent life, finds fitting into a new community difficult while she supports herself by running an air courier service.",
       "director": "Hayao Miyazaki",
       "producer": "Hayao Miyazaki",
@@ -1466,7 +1466,7 @@ export default {
     },
     {
       "id": "cd3d059c-09f4-4ff3-8d63-bc765a5184fa",
-      "title": "Howl's Moving Castle",
+      "title": "Howls Moving Castle",
       "description": "When Sophie, a shy young woman, is cursed with an old body by a spiteful witch, her only chance of breaking the spell lies with a self-indulgent yet insecure young wizard and his companions in his legged, walking home.",
       "director": "Hayao Miyazaki",
       "producer": "Toshio Suzuki",
