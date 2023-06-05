@@ -2,10 +2,10 @@ export default {
   "pokemon": [{
     "num": "001",
     "name": "bulbasaur",
-    "generation": {
-      "num": "generation i",
-      "name": "kanto"
-    },
+    "generation": [
+      "kanto"
+    ],
+
     "about": "Bulbasaur can be seen napping in bright sunlight. There is a seed on its back. By soaking up the sun's rays, the seed grows progressively larger.",
     "img": "https://www.serebii.net/pokemongo/pokemon/001.png",
     "size": {
@@ -23,11 +23,11 @@ export default {
     },
     "spawn-chance": "0.69",
     "stats": {
-      "base-attack": "118",
-      "base-defense": "111",
-      "base-stamina": "128",
-      "max-cp": "1115",
-      "max-hp": "113"
+      "attack": "118",
+      "defense": "111",
+      "stamina": "128",
+      "cp": "1115",
+      "hp": "113"
     },
     "resistant": [
       "water",
@@ -100,10 +100,9 @@ export default {
   {
     "num": "002",
     "name": "ivysaur",
-    "generation": {
-      "num": "generation i",
-      "name": "kanto"
-    },
+    "generation": [
+      "kanto"
+    ],
     "about": "There is a bud on this Pokémon's back. To support its weight, Ivysaur's legs and trunk grow thick and strong. If it starts spending more time lying in the sunlight, it's a sign that the bud will bloom into a large flower soon.",
     "img": "https://www.serebii.net/pokemongo/pokemon/002.png",
     "size": {
@@ -121,11 +120,11 @@ export default {
     },
     "spawn-chance": "0.042",
     "stats": {
-      "base-attack": "151",
-      "base-defense": "143",
-      "base-stamina": "155",
-      "max-cp": "1699",
-      "max-hp": "134"
+      "attack": "151",
+      "defense": "143",
+      "stamina": "155",
+      "cp": "1699",
+      "hp": "134"
     },
     "resistant": [
       "water",
@@ -198,10 +197,9 @@ export default {
   {
     "num": "003",
     "name": "venusaur",
-    "generation": {
-      "num": "generation i",
-      "name": "kanto"
-    },
+    "generation": [
+      "kanto"
+    ],
     "about": "There is a large flower on Venusaur's back. The flower is said to take on vivid colors if it gets plenty of nutrition and sunlight. The flower's aroma soothes the emotions of people.",
     "img": "https://www.serebii.net/pokemongo/pokemon/003.png",
     "size": {
@@ -219,11 +217,11 @@ export default {
     },
     "spawn-chance": "0.017",
     "stats": {
-      "base-attack": "198",
-      "base-defense": "189",
-      "base-stamina": "190",
-      "max-cp": "2720",
-      "max-hp": "162"
+      "attack": "198",
+      "defense": "189",
+      "stamina": "190",
+      "cp": "2720",
+      "hp": "162"
     },
     "resistant": [
       "water",
@@ -296,10 +294,9 @@ export default {
   {
     "num": "004",
     "name": "charmander",
-    "generation": {
-      "num": "generation i",
-      "name": "kanto"
-    },
+    "generation": [
+      "kanto"
+    ],
     "about": "The flame that burns at the tip of its tail is an indication of its emotions. The flame wavers when Charmander is enjoying itself. If the Pokémon becomes enraged, the flame burns fiercely.",
     "img": "https://www.serebii.net/pokemongo/pokemon/004.png",
     "size": {
@@ -316,11 +313,11 @@ export default {
     },
     "spawn-chance": "0.253",
     "stats": {
-      "base-attack": "116",
-      "base-defense": "93",
-      "base-stamina": "118",
-      "max-cp": "980",
-      "max-hp": "105"
+      "attack": "116",
+      "defense": "93",
+      "stamina": "118",
+      "cp": "980",
+      "hp": "105"
     },
     "resistant": [
       "fire",
@@ -392,10 +389,9 @@ export default {
   {
     "num": "005",
     "name": "charmeleon",
-    "generation": {
-      "num": "generation i",
-      "name": "kanto"
-    },
+    "generation": [
+      "kanto"
+    ],
     "about": "Charmeleon mercilessly destroys its foes using its sharp claws. If it encounters a strong foe, it turns aggressive. In this excited state, the flame at the tip of its tail flares with a bluish white color.",
     "img": "https://www.serebii.net/pokemongo/pokemon/005.png",
     "size": {
@@ -412,11 +408,11 @@ export default {
     },
     "spawn-chance": "0.012",
     "stats": {
-      "base-attack": "158",
-      "base-defense": "126",
-      "base-stamina": "151",
-      "max-cp": "1653",
-      "max-hp": "131"
+      "attack": "158",
+      "defense": "126",
+      "stamina": "151",
+      "cp": "1653",
+      "hp": "131"
     },
     "resistant": [
       "fire",
@@ -495,10 +491,9 @@ export default {
   {
     "num": "006",
     "name": "charizard",
-    "generation": {
-      "num": "generation i",
-      "name": "kanto"
-    },
+    "generation": [
+      "kanto"
+    ],
     "about": "Charizard flies around the sky in search of powerful opponents. It breathes fire of such great heat that it melts anything. However, it never turns its fiery breath on any opponent weaker than itself.",
     "img": "https://www.serebii.net/pokemongo/pokemon/006.png",
     "size": {
@@ -516,11 +511,11 @@ export default {
     },
     "spawn-chance": "0.0031",
     "stats": {
-      "base-attack": "223",
-      "base-defense": "173",
-      "base-stamina": "186",
-      "max-cp": "2889",
-      "max-hp": "158"
+      "attack": "223",
+      "defense": "173",
+      "stamina": "186",
+      "cp": "2889",
+      "hp": "158"
     },
     "resistant": [
       "fire",
@@ -613,10 +608,9 @@ export default {
   {
     "num": "007",
     "name": "squirtle",
-    "generation": {
-      "num": "generation i",
-      "name": "kanto"
-    },
+    "generation": [
+      "kanto"
+    ],
     "about": "Squirtle's shell is not merely used for protection. The shell's rounded shape and the grooves on its surface help minimize resistance in water, enabling this Pokémon to swim at high speeds.",
     "img": "https://www.serebii.net/pokemongo/pokemon/007.png",
     "size": {
@@ -633,11 +627,11 @@ export default {
     },
     "spawn-chance": "0.58",
     "stats": {
-      "base-attack": "94",
-      "base-defense": "121",
-      "base-stamina": "127",
-      "max-cp": "946",
-      "max-hp": "112"
+      "attack": "94",
+      "defense": "121",
+      "stamina": "127",
+      "cp": "946",
+      "hp": "112"
     },
     "resistant": [
       "fire",
@@ -707,10 +701,9 @@ export default {
   {
     "num": "008",
     "name": "wartortle",
-    "generation": {
-      "num": "generation i",
-      "name": "kanto"
-    },
+    "generation": [
+      "kanto"
+    ],
     "about": "Its tail is large and covered with a rich, thick fur. The tail becomes increasingly deeper in color as Wartortle ages. The scratches on its shell are evidence of this Pokémon's toughness as a battler.",
     "img": "https://www.serebii.net/pokemongo/pokemon/008.png",
     "size": {
@@ -727,11 +720,11 @@ export default {
     },
     "spawn-chance": "0.034",
     "stats": {
-      "base-attack": "126",
-      "base-defense": "155",
-      "base-stamina": "153",
-      "max-cp": "1488",
-      "max-hp": "132"
+      "attack": "126",
+      "defense": "155",
+      "stamina": "153",
+      "cp": "1488",
+      "hp": "132"
     },
     "resistant": [
       "fire",
@@ -801,10 +794,9 @@ export default {
   {
     "num": "009",
     "name": "blastoise",
-    "generation": {
-      "num": "generation i",
-      "name": "kanto"
-    },
+    "generation": [
+      "kanto"
+    ],
     "about": "Blastoise has water spouts that protrude from its shell. The water spouts are very accurate. They can shoot bullets of water with enough accuracy to strike empty cans from a distance of over 160 feet.",
     "img": "https://www.serebii.net/pokemongo/pokemon/009.png",
     "size": {
@@ -821,11 +813,11 @@ export default {
     },
     "spawn-chance": "0.0067",
     "stats": {
-      "base-attack": "171",
-      "base-defense": "207",
-      "base-stamina": "188",
-      "max-cp": "2466",
-      "max-hp": "160"
+      "attack": "171",
+      "defense": "207",
+      "stamina": "188",
+      "cp": "2466",
+      "hp": "160"
     },
     "resistant": [
       "fire",
@@ -895,10 +887,9 @@ export default {
   {
     "num": "010",
     "name": "caterpie",
-    "generation": {
-      "num": "generation i",
-      "name": "kanto"
-    },
+    "generation": [
+      "kanto"
+    ],
     "about": "Caterpie has a voracious appetite. It can devour leaves bigger than its body right before your eyes. From its antenna, this Pokémon releases a terrifically strong odor.",
     "img": "https://www.serebii.net/pokemongo/pokemon/010.png",
     "size": {
@@ -915,11 +906,11 @@ export default {
     },
     "spawn-chance": "3.032",
     "stats": {
-      "base-attack": "55",
-      "base-defense": "55",
-      "base-stamina": "128",
-      "max-cp": "437",
-      "max-hp": "113"
+      "attack": "55",
+      "defense": "55",
+      "stamina": "128",
+      "cp": "437",
+      "hp": "113"
     },
     "resistant": [
       "grass",
@@ -974,10 +965,9 @@ export default {
   {
     "num": "011",
     "name": "metapod",
-    "generation": {
-      "num": "generation i",
-      "name": "kanto"
-    },
+    "generation": [
+      "kanto"
+    ],
     "about": "The shell covering this Pokémon's body is as hard as an iron slab. Metapod does not move very much. It stays still because it is preparing its soft innards for evolution inside the hard shell.",
     "img": "https://www.serebii.net/pokemongo/pokemon/011.png",
     "size": {
@@ -994,11 +984,11 @@ export default {
     },
     "spawn-chance": "0.187",
     "stats": {
-      "base-attack": "45",
-      "base-defense": "80",
-      "base-stamina": "137",
-      "max-cp": "450",
-      "max-hp": "120"
+      "attack": "45",
+      "defense": "80",
+      "stamina": "137",
+      "cp": "450",
+      "hp": "120"
     },
     "resistant": [
       "grass",
@@ -1053,10 +1043,9 @@ export default {
   {
     "num": "012",
     "name": "butterfree",
-    "generation": {
-      "num": "generation i",
-      "name": "kanto"
-    },
+    "generation": [
+      "kanto"
+    ],
     "about": "Butterfree has a superior ability to search for delicious honey from flowers. It can even search out, extract, and carry honey from flowers that are blooming over six miles from its nest.",
     "img": "https://www.serebii.net/pokemongo/pokemon/012.png",
     "size": {
@@ -1074,11 +1063,11 @@ export default {
     },
     "spawn-chance": "0.022",
     "stats": {
-      "base-attack": "167",
-      "base-defense": "137",
-      "base-stamina": "155",
-      "max-cp": "1827",
-      "max-hp": "134"
+      "attack": "167",
+      "defense": "137",
+      "stamina": "155",
+      "cp": "1827",
+      "hp": "134"
     },
     "resistant": [
       "grass",
@@ -1158,10 +1147,9 @@ export default {
   {
     "num": "013",
     "name": "weedle",
-    "generation": {
-      "num": "generation i",
-      "name": "kanto"
-    },
+    "generation": [
+      "kanto"
+    ],
     "about": "Weedle has an extremely acute sense of smell. It is capable of distinguishing its favorite kinds of leaves from those it dislikes just by sniffing with its big red proboscis (nose).",
     "img": "https://www.serebii.net/pokemongo/pokemon/013.png",
     "size": {
@@ -1179,11 +1167,11 @@ export default {
     },
     "spawn-chance": "7.12",
     "stats": {
-      "base-attack": "63",
-      "base-defense": "50",
-      "base-stamina": "120",
-      "max-cp": "456",
-      "max-hp": "106"
+      "attack": "63",
+      "defense": "50",
+      "stamina": "120",
+      "cp": "456",
+      "hp": "106"
     },
     "resistant": [
       "grass",
@@ -1241,10 +1229,9 @@ export default {
   {
     "num": "014",
     "name": "kakuna",
-    "generation": {
-      "num": "generation i",
-      "name": "kanto"
-    },
+    "generation": [
+      "kanto"
+    ],
     "about": "Kakuna remains virtually immobile as it clings to a tree. However, on the inside, it is extremely busy as it prepares for its coming evolution. This is evident from how hot the shell becomes to the touch.",
     "img": "https://www.serebii.net/pokemongo/pokemon/014.png",
     "size": {
@@ -1262,11 +1249,11 @@ export default {
     },
     "spawn-chance": "0.44",
     "stats": {
-      "base-attack": "46",
-      "base-defense": "75",
-      "base-stamina": "128",
-      "max-cp": "432",
-      "max-hp": "113"
+      "attack": "46",
+      "defense": "75",
+      "stamina": "128",
+      "cp": "432",
+      "hp": "113"
     },
     "resistant": [
       "grass",
@@ -1324,10 +1311,9 @@ export default {
   {
     "num": "015",
     "name": "beedrill",
-    "generation": {
-      "num": "generation i",
-      "name": "kanto"
-    },
+    "generation": [
+      "kanto"
+    ],
     "about": "Beedrill is extremely territorial. No one should ever approach its nest-this is for their own safety. If angered, they will attack in a furious swarm.",
     "img": "https://www.serebii.net/pokemongo/pokemon/015.png",
     "size": {
@@ -1345,11 +1331,11 @@ export default {
     },
     "spawn-chance": "0.051",
     "stats": {
-      "base-attack": "169",
-      "base-defense": "130",
-      "base-stamina": "163",
-      "max-cp": "1846",
-      "max-hp": "140"
+      "attack": "169",
+      "defense": "130",
+      "stamina": "163",
+      "cp": "1846",
+      "hp": "140"
     },
     "resistant": [
       "grass",
@@ -1429,10 +1415,9 @@ export default {
   {
     "num": "016",
     "name": "pidgey",
-    "generation": {
-      "num": "generation i",
-      "name": "kanto"
-    },
+    "generation": [
+      "kanto"
+    ],
     "about": "Pidgey has an extremely sharp sense of direction. It is capable of unerringly returning home to its nest, however far it may be removed from its familiar surroundings.",
     "img": "https://www.serebii.net/pokemongo/pokemon/016.png",
     "size": {
@@ -1450,11 +1435,11 @@ export default {
     },
     "spawn-chance": "15.98",
     "stats": {
-      "base-attack": "85",
-      "base-defense": "73",
-      "base-stamina": "120",
-      "max-cp": "680",
-      "max-hp": "106"
+      "attack": "85",
+      "defense": "73",
+      "stamina": "120",
+      "cp": "680",
+      "hp": "106"
     },
     "resistant": [
       "grass",
@@ -1524,10 +1509,9 @@ export default {
   {
     "num": "017",
     "name": "pidgeotto",
-    "generation": {
-      "num": "generation i",
-      "name": "kanto"
-    },
+    "generation": [
+      "kanto"
+    ],
     "about": "Pidgeotto claims a large area as its own territory. This Pokémon flies around, patrolling its living space. If its territory is violated, it shows no mercy in thoroughly punishing the foe with its sharp claws.",
     "img": "https://www.serebii.net/pokemongo/pokemon/017.png",
     "size": {
@@ -1545,11 +1529,11 @@ export default {
     },
     "spawn-chance": "1.02",
     "stats": {
-      "base-attack": "117",
-      "base-defense": "105",
-      "base-stamina": "160",
-      "max-cp": "1194",
-      "max-hp": "138"
+      "attack": "117",
+      "defense": "105",
+      "stamina": "160",
+      "cp": "1194",
+      "hp": "138"
     },
     "resistant": [
       "grass",
@@ -1619,10 +1603,9 @@ export default {
   {
     "num": "018",
     "name": "pidgeot",
-    "generation": {
-      "num": "generation i",
-      "name": "kanto"
-    },
+    "generation": [
+      "kanto"
+    ],
     "about": "This Pokémon has a dazzling plumage of beautifullyglossy feathers. Many Trainers are captivated by thestriking beauty of the feathers on its head, compellingthem to choose Pidgeot as their Pokémon.",
     "img": "https://www.serebii.net/pokemongo/pokemon/018.png",
     "size": {
@@ -1640,11 +1623,11 @@ export default {
     },
     "spawn-chance": "0.13",
     "stats": {
-      "base-attack": "166",
-      "base-defense": "154",
-      "base-stamina": "195",
-      "max-cp": "2129",
-      "max-hp": "165"
+      "attack": "166",
+      "defense": "154",
+      "stamina": "195",
+      "cp": "2129",
+      "hp": "165"
     },
     "resistant": [
       "grass",
@@ -1728,10 +1711,9 @@ export default {
   {
     "num": "019",
     "name": "rattata",
-    "generation": {
-      "num": "generation i",
-      "name": "kanto"
-    },
+    "generation": [
+      "kanto"
+    ],
     "about": "Rattata is cautious in the extreme. Even while it is asleep, it constantly listens by moving its ears around. It is not picky about where it lives-it will make its nest anywhere.",
     "img": "https://www.serebii.net/pokemongo/pokemon/019.png",
     "size": {
@@ -1748,11 +1730,11 @@ export default {
     },
     "spawn-chance": "13.05",
     "stats": {
-      "base-attack": "103",
-      "base-defense": "70",
-      "base-stamina": "102",
-      "max-cp": "734",
-      "max-hp": "92"
+      "attack": "103",
+      "defense": "70",
+      "stamina": "102",
+      "cp": "734",
+      "hp": "92"
     },
     "resistant": [
       "ghost"
@@ -1813,10 +1795,9 @@ export default {
   {
     "num": "020",
     "name": "raticate",
-    "generation": {
-      "num": "generation i",
-      "name": "kanto"
-    },
+    "generation": [
+      "kanto"
+    ],
     "about": "Raticate's sturdy fangs grow steadily. To keep them ground down, it gnaws on rocks and logs. It may even chew on the walls of houses.",
     "img": "https://www.serebii.net/pokemongo/pokemon/020.png",
     "size": {
@@ -1833,11 +1814,11 @@ export default {
     },
     "spawn-chance": "0.41",
     "stats": {
-      "base-attack": "161",
-      "base-defense": "139",
-      "base-stamina": "146",
-      "max-cp": "1730",
-      "max-hp": "127"
+      "attack": "161",
+      "defense": "139",
+      "stamina": "146",
+      "cp": "1730",
+      "hp": "127"
     },
     "resistant": [
       "ghost"
@@ -1898,10 +1879,9 @@ export default {
   {
     "num": "021",
     "name": "spearow",
-    "generation": {
-      "num": "generation i",
-      "name": "kanto"
-    },
+    "generation": [
+      "kanto"
+    ],
     "about": "Spearow has a very loud cry that can be heard over half a mile away. If its high, keening cry is heard echoing all around, it is a sign that they are warning each other of danger.",
     "img": "https://www.serebii.net/pokemongo/pokemon/021.png",
     "size": {
@@ -1919,11 +1899,11 @@ export default {
     },
     "spawn-chance": "4.73",
     "stats": {
-      "base-attack": "112",
-      "base-defense": "60",
-      "base-stamina": "120",
-      "max-cp": "798",
-      "max-hp": "106"
+      "attack": "112",
+      "defense": "60",
+      "stamina": "120",
+      "cp": "798",
+      "hp": "106"
     },
     "resistant": [
       "grass",
@@ -1995,10 +1975,9 @@ export default {
   {
     "num": "022",
     "name": "fearow",
-    "generation": {
-      "num": "generation i",
-      "name": "kanto"
-    },
+    "generation": [
+      "kanto"
+    ],
     "about": "Fearow is recognized by its long neck and elongated beak. They are conveniently shaped for catching prey in soil or water. It deftly moves its long and skinny beak to pluck prey.",
     "img": "https://www.serebii.net/pokemongo/pokemon/022.png",
     "size": {
@@ -2016,11 +1995,11 @@ export default {
     },
     "spawn-chance": "0.15",
     "stats": {
-      "base-attack": "182",
-      "base-defense": "133",
-      "base-stamina": "163",
-      "max-cp": "1997",
-      "max-hp": "140"
+      "attack": "182",
+      "defense": "133",
+      "stamina": "163",
+      "cp": "1997",
+      "hp": "140"
     },
     "resistant": [
       "grass",
@@ -2092,10 +2071,9 @@ export default {
   {
     "num": "023",
     "name": "ekans",
-    "generation": {
-      "num": "generation i",
-      "name": "kanto"
-    },
+    "generation": [
+      "kanto"
+    ],
     "about": "Ekans curls itself up in a spiral while it rests. Assuming this position allows it to quickly respond to a threat from any direction with a glare from its upraised head.",
     "img": "https://www.serebii.net/pokemongo/pokemon/023.png",
     "size": {
@@ -2112,11 +2090,11 @@ export default {
     },
     "spawn-chance": "2.27",
     "stats": {
-      "base-attack": "110",
-      "base-defense": "97",
-      "base-stamina": "111",
-      "max-cp": "927",
-      "max-hp": "99"
+      "attack": "110",
+      "defense": "97",
+      "stamina": "111",
+      "cp": "927",
+      "hp": "99"
     },
     "resistant": [
       "grass",
@@ -2189,10 +2167,9 @@ export default {
   {
     "num": "024",
     "name": "arbok",
-    "generation": {
-      "num": "generation i",
-      "name": "kanto"
-    },
+    "generation": [
+      "kanto"
+    ],
     "about": "This Pokémon is terrifically strong in order to constrict things with its body. It can even flatten steel oil drums. Once Arbok wraps its body around its foe, escaping its crunching embrace is impossible.",
     "img": "https://www.serebii.net/pokemongo/pokemon/024.png",
     "size": {
@@ -2209,11 +2186,11 @@ export default {
     },
     "spawn-chance": "0.072",
     "stats": {
-      "base-attack": "167",
-      "base-defense": "153",
-      "base-stamina": "155",
-      "max-cp": "1921",
-      "max-hp": "134"
+      "attack": "167",
+      "defense": "153",
+      "stamina": "155",
+      "cp": "1921",
+      "hp": "134"
     },
     "resistant": [
       "grass",
@@ -2279,10 +2256,9 @@ export default {
   {
     "num": "025",
     "name": "pikachu",
-    "generation": {
-      "num": "generation i",
-      "name": "kanto"
-    },
+    "generation": [
+      "kanto"
+    ],
     "about": "Whenever Pikachu comes across something new, it blasts it with a jolt of electricity. If you come across a blackened berry, it's evidence that this Pokémon mistook the intensity of its charge.",
     "img": "https://www.serebii.net/pokemongo/pokemon/025.png",
     "size": {
@@ -2299,11 +2275,11 @@ export default {
     },
     "spawn-chance": "0.21",
     "stats": {
-      "base-attack": "112",
-      "base-defense": "96",
-      "base-stamina": "111",
-      "max-cp": "938",
-      "max-hp": "99"
+      "attack": "112",
+      "defense": "96",
+      "stamina": "111",
+      "cp": "938",
+      "hp": "99"
     },
     "resistant": [
       "electric",
@@ -2378,10 +2354,9 @@ export default {
   {
     "num": "026",
     "name": "raichu",
-    "generation": {
-      "num": "generation i",
-      "name": "kanto"
-    },
+    "generation": [
+      "kanto"
+    ],
     "about": "If the electrical sacs become excessively charged, Raichu plants its tail in the ground and discharges. Scorched patches of ground will be found near this Pokémon's nest.",
     "img": "https://www.serebii.net/pokemongo/pokemon/026.png",
     "size": {
@@ -2398,11 +2373,11 @@ export default {
     },
     "spawn-chance": "0.0076",
     "stats": {
-      "base-attack": "193",
-      "base-defense": "151",
-      "base-stamina": "155",
-      "max-cp": "2182",
-      "max-hp": "134"
+      "attack": "193",
+      "defense": "151",
+      "stamina": "155",
+      "cp": "2182",
+      "hp": "134"
     },
     "resistant": [
       "electric",
@@ -2484,10 +2459,9 @@ export default {
   {
     "num": "027",
     "name": "sandshrew",
-    "generation": {
-      "num": "generation i",
-      "name": "kanto"
-    },
+    "generation": [
+      "kanto"
+    ],
     "about": "Sandshrew's body is configured to absorb water without waste, enabling it to survive in an arid desert. This Pokémon curls up to protect itself from its enemies.",
     "img": "https://www.serebii.net/pokemongo/pokemon/027.png",
     "size": {
@@ -2504,11 +2478,11 @@ export default {
     },
     "spawn-chance": "1.11",
     "stats": {
-      "base-attack": "126",
-      "base-defense": "120",
-      "base-stamina": "137",
-      "max-cp": "1261",
-      "max-hp": "120"
+      "attack": "126",
+      "defense": "120",
+      "stamina": "137",
+      "cp": "1261",
+      "hp": "120"
     },
     "resistant": [
       "electric",
@@ -2580,10 +2554,9 @@ export default {
   {
     "num": "028",
     "name": "sandslash",
-    "generation": {
-      "num": "generation i",
-      "name": "kanto"
-    },
+    "generation": [
+      "kanto"
+    ],
     "about": "Sandslash's body is covered by tough spikes, which are hardened sections of its hide. Once a year, the old spikes fall out, to be replaced with new spikes that grow out from beneath the old ones.",
     "img": "https://www.serebii.net/pokemongo/pokemon/028.png",
     "size": {
@@ -2600,11 +2573,11 @@ export default {
     },
     "spawn-chance": "0.037",
     "stats": {
-      "base-attack": "182",
-      "base-defense": "175",
-      "base-stamina": "181",
-      "max-cp": "2374",
-      "max-hp": "154"
+      "attack": "182",
+      "defense": "175",
+      "stamina": "181",
+      "cp": "2374",
+      "hp": "154"
     },
     "resistant": [
       "electric",
@@ -2669,10 +2642,9 @@ export default {
   {
     "num": "029",
     "name": "nidoran ♀ (female)",
-    "generation": {
-      "num": "generation i",
-      "name": "kanto"
-    },
+    "generation": [
+      "kanto"
+    ],
     "about": "Nidoran ♀ has barbs that secrete a powerful poison. They are thought to have developed as protection for this small-bodied Pokémon. When enraged, it releases a horrible toxin from its horn.",
     "img": "https://www.serebii.net/pokemongo/pokemon/029.png",
     "size": {
@@ -2689,11 +2661,11 @@ export default {
     },
     "spawn-chance": "1.38",
     "stats": {
-      "base-attack": "86",
-      "base-defense": "89",
-      "base-stamina": "146",
-      "max-cp": "816",
-      "max-hp": "127"
+      "attack": "86",
+      "defense": "89",
+      "stamina": "146",
+      "cp": "816",
+      "hp": "127"
     },
     "resistant": [
       "grass",
@@ -2764,10 +2736,9 @@ export default {
   {
     "num": "030",
     "name": "nidorina",
-    "generation": {
-      "num": "generation i",
-      "name": "kanto"
-    },
+    "generation": [
+      "kanto"
+    ],
     "about": "When Nidorina are with their friends or family, they keep their barbs tucked away to prevent hurting each other. This Pokémon appears to become nervous if separated from the others.",
     "img": "https://www.serebii.net/pokemongo/pokemon/030.png",
     "size": {
@@ -2784,11 +2755,11 @@ export default {
     },
     "spawn-chance": "0.088",
     "stats": {
-      "base-attack": "117",
-      "base-defense": "120",
-      "base-stamina": "172",
-      "max-cp": "1309",
-      "max-hp": "147"
+      "attack": "117",
+      "defense": "120",
+      "stamina": "172",
+      "cp": "1309",
+      "hp": "147"
     },
     "resistant": [
       "grass",
@@ -2859,10 +2830,9 @@ export default {
   {
     "num": "031",
     "name": "nidoqueen",
-    "generation": {
-      "num": "generation i",
-      "name": "kanto"
-    },
+    "generation": [
+      "kanto"
+    ],
     "about": "Nidoqueen's body is encased in extremely hard scales. It is adept at sending foes flying with harsh tackles. This Pokémon is at its strongest when it is defending its young.",
     "img": "https://www.serebii.net/pokemongo/pokemon/031.png",
     "size": {
@@ -2880,11 +2850,11 @@ export default {
     },
     "spawn-chance": "0.012",
     "stats": {
-      "base-attack": "180",
-      "base-defense": "173",
-      "base-stamina": "207",
-      "max-cp": "2488",
-      "max-hp": "175"
+      "attack": "180",
+      "defense": "173",
+      "stamina": "207",
+      "cp": "2488",
+      "hp": "175"
     },
     "resistant": [
       "electric",
@@ -2957,10 +2927,9 @@ export default {
   {
     "num": "032",
     "name": "nidoran ♂ (male)",
-    "generation": {
-      "num": "generation i",
-      "name": "kanto"
-    },
+    "generation": [
+      "kanto"
+    ],
     "about": "Nidoran ♂ (Male) has developed muscles for moving its ears. Thanks to them, the ears can be freely moved in any direction. Even the slightest sound does not escape this Pokémon's notice.",
     "img": "https://www.serebii.net/pokemongo/pokemon/032.png",
     "size": {
@@ -2977,11 +2946,11 @@ export default {
     },
     "spawn-chance": "1.31",
     "stats": {
-      "base-attack": "105",
-      "base-defense": "76",
-      "base-stamina": "130",
-      "max-cp": "860",
-      "max-hp": "114"
+      "attack": "105",
+      "defense": "76",
+      "stamina": "130",
+      "cp": "860",
+      "hp": "114"
     },
     "resistant": [
       "grass",
@@ -3052,10 +3021,9 @@ export default {
   {
     "num": "033",
     "name": "nidorino",
-    "generation": {
-      "num": "generation i",
-      "name": "kanto"
-    },
+    "generation": [
+      "kanto"
+    ],
     "about": "Nidorino has a horn that is harder than a diamond. If it senses a hostile presence, all the barbs on its back bristle up at once, and it challenges the foe with all its might.",
     "img": "https://www.serebii.net/pokemongo/pokemon/033.png",
     "size": {
@@ -3072,11 +3040,11 @@ export default {
     },
     "spawn-chance": "0.083",
     "stats": {
-      "base-attack": "137",
-      "base-defense": "111",
-      "base-stamina": "156",
-      "max-cp": "1393",
-      "max-hp": "135"
+      "attack": "137",
+      "defense": "111",
+      "stamina": "156",
+      "cp": "1393",
+      "hp": "135"
     },
     "resistant": [
       "grass",
@@ -3147,10 +3115,9 @@ export default {
   {
     "num": "034",
     "name": "nidoking",
-    "generation": {
-      "num": "generation i",
-      "name": "kanto"
-    },
+    "generation": [
+      "kanto"
+    ],
     "about": "Nidoking's thick tail packs enormously destructive power. With one swing, it can topple a metal transmission tower. Once this Pokémon goes on a rampage, there is no stopping it.",
     "img": "https://www.serebii.net/pokemongo/pokemon/034.png",
     "size": {
@@ -3168,11 +3135,11 @@ export default {
     },
     "spawn-chance": "0.017",
     "stats": {
-      "base-attack": "204",
-      "base-defense": "156",
-      "base-stamina": "191",
-      "max-cp": "2567",
-      "max-hp": "162"
+      "attack": "204",
+      "defense": "156",
+      "stamina": "191",
+      "cp": "2567",
+      "hp": "162"
     },
     "resistant": [
       "electric",
@@ -3252,10 +3219,9 @@ export default {
   {
     "num": "035",
     "name": "clefairy",
-    "generation": {
-      "num": "generation i",
-      "name": "kanto"
-    },
+    "generation": [
+      "kanto"
+    ],
     "about": "On every night of a full moon, groups of this Pokémon come out to play. When dawn arrives, the tired Clefairy return to their quiet mountain retreats and go to sleep nestled up against each other.",
     "img": "https://www.serebii.net/pokemongo/pokemon/035.png",
     "size": {
@@ -3272,11 +3238,11 @@ export default {
     },
     "spawn-chance": "0.92",
     "stats": {
-      "base-attack": "107",
-      "base-defense": "108",
-      "base-stamina": "172",
-      "max-cp": "1155",
-      "max-hp": "147"
+      "attack": "107",
+      "defense": "108",
+      "stamina": "172",
+      "cp": "1155",
+      "hp": "147"
     },
     "resistant": [
       "fighting",
@@ -3345,10 +3311,9 @@ export default {
   {
     "num": "036",
     "name": "clefable",
-    "generation": {
-      "num": "generation i",
-      "name": "kanto"
-    },
+    "generation": [
+      "kanto"
+    ],
     "about": "Clefable moves by skipping lightly as if it were flying using its wings. Its bouncy step even lets it walk on water. It is known to take strolls on lakes on quiet, moonlit nights.",
     "img": "https://www.serebii.net/pokemongo/pokemon/036.png",
     "size": {
@@ -3365,11 +3330,11 @@ export default {
     },
     "spawn-chance": "0.012",
     "stats": {
-      "base-attack": "178",
-      "base-defense": "162",
-      "base-stamina": "216",
-      "max-cp": "2437",
-      "max-hp": "182"
+      "attack": "178",
+      "defense": "162",
+      "stamina": "216",
+      "cp": "2437",
+      "hp": "182"
     },
     "resistant": [
       "fighting",
@@ -3445,10 +3410,9 @@ export default {
   {
     "num": "037",
     "name": "vulpix",
-    "generation": {
-      "num": "generation i",
-      "name": "kanto"
-    },
+    "generation": [
+      "kanto"
+    ],
     "about": "At the time of its birth, Vulpix has one white tail. The tail separates into six if this Pokémon receives plenty of love from its trainer. The six tails become magnificently curled.",
     "img": "https://www.serebii.net/pokemongo/pokemon/037.png",
     "size": {
@@ -3465,11 +3429,11 @@ export default {
     },
     "spawn-chance": "0.22",
     "stats": {
-      "base-attack": "96",
-      "base-defense": "109",
-      "base-stamina": "116",
-      "max-cp": "883",
-      "max-hp": "103"
+      "attack": "96",
+      "defense": "109",
+      "stamina": "116",
+      "cp": "883",
+      "hp": "103"
     },
     "resistant": [
       "fire",
@@ -3536,10 +3500,9 @@ export default {
   {
     "num": "038",
     "name": "ninetales",
-    "generation": {
-      "num": "generation i",
-      "name": "kanto"
-    },
+    "generation": [
+      "kanto"
+    ],
     "about": "Ninetales casts a sinister light from its bright red eyes to gain total control over its foe's mind. This Pokémon is said to live for one thousand years.",
     "img": "https://www.serebii.net/pokemongo/pokemon/038.png",
     "size": {
@@ -3556,11 +3519,11 @@ export default {
     },
     "spawn-chance": "0.0077",
     "stats": {
-      "base-attack": "169",
-      "base-defense": "190",
-      "base-stamina": "177",
-      "max-cp": "2279",
-      "max-hp": "151"
+      "attack": "169",
+      "defense": "190",
+      "stamina": "177",
+      "cp": "2279",
+      "hp": "151"
     },
     "resistant": [
       "fire",
@@ -3648,10 +3611,9 @@ export default {
   {
     "num": "039",
     "name": "jigglypuff",
-    "generation": {
-      "num": "generation i",
-      "name": "kanto"
-    },
+    "generation": [
+      "kanto"
+    ],
     "about": "Jigglypuff's vocal cords can freely adjust the wavelength of its voice. This Pokémon uses this ability to sing at precisely the right wavelength to make its foes most drowsy.",
     "img": "https://www.serebii.net/pokemongo/pokemon/039.png",
     "size": {
@@ -3668,11 +3630,11 @@ export default {
     },
     "spawn-chance": "0.39",
     "stats": {
-      "base-attack": "80",
-      "base-defense": "41",
-      "base-stamina": "251",
-      "max-cp": "724",
-      "max-hp": "210"
+      "attack": "80",
+      "defense": "41",
+      "stamina": "251",
+      "cp": "724",
+      "hp": "210"
     },
     "resistant": [
       "bug",
@@ -3755,10 +3717,9 @@ export default {
   {
     "num": "040",
     "name": "wigglytuff",
-    "generation": {
-      "num": "generation i",
-      "name": "kanto"
-    },
+    "generation": [
+      "kanto"
+    ],
     "about": "Wigglytuff has large, saucerlike eyes. The surfaces of its eyes are always covered with a thin layer of tears. If any dust gets in this Pokémon's eyes, it is quickly washed away.",
     "img": "https://www.serebii.net/pokemongo/pokemon/040.png",
     "size": {
@@ -3775,11 +3736,11 @@ export default {
     },
     "spawn-chance": "0.018",
     "stats": {
-      "base-attack": "156",
-      "base-defense": "90",
-      "base-stamina": "295",
-      "max-cp": "1926",
-      "max-hp": "244"
+      "attack": "156",
+      "defense": "90",
+      "stamina": "295",
+      "cp": "1926",
+      "hp": "244"
     },
     "resistant": [
       "bug",
@@ -3848,10 +3809,9 @@ export default {
   {
     "num": "041",
     "name": "zubat",
-    "generation": {
-      "num": "generation i",
-      "name": "kanto"
-    },
+    "generation": [
+      "kanto"
+    ],
     "about": "Zubat remains quietly unmoving in a dark spot during the bright daylight hours. It does so because prolonged exposure to the sun causes its body to become slightly burned.",
     "img": "https://www.serebii.net/pokemongo/pokemon/041.png",
     "size": {
@@ -3869,11 +3829,11 @@ export default {
     },
     "spawn-chance": "6.52",
     "stats": {
-      "base-attack": "83",
-      "base-defense": "73",
-      "base-stamina": "120",
-      "max-cp": "667",
-      "max-hp": "106"
+      "attack": "83",
+      "defense": "73",
+      "stamina": "120",
+      "cp": "667",
+      "hp": "106"
     },
     "resistant": [
       "grass",
@@ -3953,10 +3913,9 @@ export default {
   {
     "num": "042",
     "name": "golbat",
-    "generation": {
-      "num": "generation i",
-      "name": "kanto"
-    },
+    "generation": [
+      "kanto"
+    ],
     "about": "Golbat loves to drink the blood of living things. It is particularly active in the pitch black of night. This Pokémon flits around in the night skies, seeking fresh blood.",
     "img": "https://www.serebii.net/pokemongo/pokemon/042.png",
     "size": {
@@ -3974,11 +3933,11 @@ export default {
     },
     "spawn-chance": "0.42",
     "stats": {
-      "base-attack": "161",
-      "base-defense": "150",
-      "base-stamina": "181",
-      "max-cp": "1976",
-      "max-hp": "154"
+      "attack": "161",
+      "defense": "150",
+      "stamina": "181",
+      "cp": "1976",
+      "hp": "154"
     },
     "resistant": [
       "grass",
@@ -4057,10 +4016,9 @@ export default {
   {
     "num": "043",
     "name": "oddish",
-    "generation": {
-      "num": "generation i",
-      "name": "kanto"
-    },
+    "generation": [
+      "kanto"
+    ],
     "about": "During the daytime, Oddish buries itself in soil to absorb nutrients from the ground using its entire body. The more fertile the soil, the glossier its leaves become.",
     "img": "https://www.serebii.net/pokemongo/pokemon/043.png",
     "size": {
@@ -4078,11 +4036,11 @@ export default {
     },
     "spawn-chance": "1.02",
     "stats": {
-      "base-attack": "131",
-      "base-defense": "112",
-      "base-stamina": "128",
-      "max-cp": "1228",
-      "max-hp": "113"
+      "attack": "131",
+      "defense": "112",
+      "stamina": "128",
+      "cp": "1228",
+      "hp": "113"
     },
     "resistant": [
       "water",
@@ -4166,10 +4124,9 @@ export default {
   {
     "num": "044",
     "name": "gloom",
-    "generation": {
-      "num": "generation i",
-      "name": "kanto"
-    },
+    "generation": [
+      "kanto"
+    ],
     "about": "Gloom releases a foul fragrance from the pistil of its flower. When faced with danger, the stench worsens. If this Pokémon is feeling calm and secure, it does not release its usual stinky aroma.",
     "img": "https://www.serebii.net/pokemongo/pokemon/044.png",
     "size": {
@@ -4187,11 +4144,11 @@ export default {
     },
     "spawn-chance": "0.064",
     "stats": {
-      "base-attack": "153",
-      "base-defense": "136",
-      "base-stamina": "155",
-      "max-cp": "1681",
-      "max-hp": "134"
+      "attack": "153",
+      "defense": "136",
+      "stamina": "155",
+      "cp": "1681",
+      "hp": "134"
     },
     "resistant": [
       "water",
@@ -4275,10 +4232,9 @@ export default {
   {
     "num": "045",
     "name": "vileplume",
-    "generation": {
-      "num": "generation i",
-      "name": "kanto"
-    },
+    "generation": [
+      "kanto"
+    ],
     "about": "Vileplume's toxic pollen triggers atrocious allergy attacks. That's why it is advisable never to approach any attractive flowers in a jungle, however pretty they may be.",
     "img": "https://www.serebii.net/pokemongo/pokemon/045.png",
     "size": {
@@ -4296,11 +4252,11 @@ export default {
     },
     "spawn-chance": "0.0097",
     "stats": {
-      "base-attack": "202",
-      "base-defense": "167",
-      "base-stamina": "181",
-      "max-cp": "2559",
-      "max-hp": "154"
+      "attack": "202",
+      "defense": "167",
+      "stamina": "181",
+      "cp": "2559",
+      "hp": "154"
     },
     "resistant": [
       "water",
@@ -4373,10 +4329,9 @@ export default {
   {
     "num": "046",
     "name": "paras",
-    "generation": {
-      "num": "generation i",
-      "name": "kanto"
-    },
+    "generation": [
+      "kanto"
+    ],
     "about": "Paras has parasitic mushrooms growing on its back called tochukaso. They grow large by drawing nutrients from this Bug Pokémon host. They are highly valued as a medicine for extending life.",
     "img": "https://www.serebii.net/pokemongo/pokemon/046.png",
     "size": {
@@ -4394,11 +4349,11 @@ export default {
     },
     "spawn-chance": "2.36",
     "stats": {
-      "base-attack": "121",
-      "base-defense": "99",
-      "base-stamina": "111",
-      "max-cp": "1018",
-      "max-hp": "99"
+      "attack": "121",
+      "defense": "99",
+      "stamina": "111",
+      "cp": "1018",
+      "hp": "99"
     },
     "resistant": [
       "water",
@@ -4468,10 +4423,9 @@ export default {
   {
     "num": "047",
     "name": "parasect",
-    "generation": {
-      "num": "generation i",
-      "name": "kanto"
-    },
+    "generation": [
+      "kanto"
+    ],
     "about": "Parasect is known to infest large trees en masse and drain nutrients from the lower trunk and roots. When an infested tree dies, they move onto another tree all at once.",
     "img": "https://www.serebii.net/pokemongo/pokemon/047.png",
     "size": {
@@ -4489,11 +4443,11 @@ export default {
     },
     "spawn-chance": "0.074",
     "stats": {
-      "base-attack": "165",
-      "base-defense": "146",
-      "base-stamina": "155",
-      "max-cp": "1859",
-      "max-hp": "134"
+      "attack": "165",
+      "defense": "146",
+      "stamina": "155",
+      "cp": "1859",
+      "hp": "134"
     },
     "resistant": [
       "water",
@@ -4570,10 +4524,9 @@ export default {
   {
     "num": "048",
     "name": "venonat",
-    "generation": {
-      "num": "generation i",
-      "name": "kanto"
-    },
+    "generation": [
+      "kanto"
+    ],
     "about": "Venonat is said to have evolved with a coat of thin, stiff hair that covers its entire body for protection. It possesses large eyes that never fail to spot even miniscule prey.",
     "img": "https://www.serebii.net/pokemongo/pokemon/048.png",
     "size": {
@@ -4591,11 +4544,11 @@ export default {
     },
     "spawn-chance": "2.28",
     "stats": {
-      "base-attack": "100",
-      "base-defense": "100",
-      "base-stamina": "155",
-      "max-cp": "1004",
-      "max-hp": "134"
+      "attack": "100",
+      "defense": "100",
+      "stamina": "155",
+      "cp": "1004",
+      "hp": "134"
     },
     "resistant": [
       "grass",
@@ -4663,10 +4616,9 @@ export default {
   {
     "num": "049",
     "name": "venomoth",
-    "generation": {
-      "num": "generation i",
-      "name": "kanto"
-    },
+    "generation": [
+      "kanto"
+    ],
     "about": "Venomoth is nocturnal-it is a Pokémon that only becomes active at night. Its favorite prey are small insects that gather around streetlights, attracted by the light in the darkness.",
     "img": "https://www.serebii.net/pokemongo/pokemon/049.png",
     "size": {
@@ -4684,11 +4636,11 @@ export default {
     },
     "spawn-chance": "0.072",
     "stats": {
-      "base-attack": "179",
-      "base-defense": "143",
-      "base-stamina": "172",
-      "max-cp": "2082",
-      "max-hp": "147"
+      "attack": "179",
+      "defense": "143",
+      "stamina": "172",
+      "cp": "2082",
+      "hp": "147"
     },
     "resistant": [
       "grass",
@@ -4770,10 +4722,9 @@ export default {
   {
     "num": "050",
     "name": "diglett",
-    "generation": {
-      "num": "generation i",
-      "name": "kanto"
-    },
+    "generation": [
+      "kanto"
+    ],
     "about": "Diglett are raised in most farms. The reason is simple-wherever this Pokémon burrows, the soil is left perfectly tilled for planting crops. This soil is made ideal for growing delicious vegetables.",
     "img": "https://www.serebii.net/pokemongo/pokemon/050.png",
     "size": {
@@ -4790,11 +4741,11 @@ export default {
     },
     "spawn-chance": "0.4",
     "stats": {
-      "base-attack": "109",
-      "base-defense": "78",
-      "base-stamina": "67",
-      "max-cp": "676",
-      "max-hp": "64"
+      "attack": "109",
+      "defense": "78",
+      "stamina": "67",
+      "cp": "676",
+      "hp": "64"
     },
     "resistant": [
       "electric",
@@ -4866,10 +4817,9 @@ export default {
   {
     "num": "051",
     "name": "dugtrio",
-    "generation": {
-      "num": "generation i",
-      "name": "kanto"
-    },
+    "generation": [
+      "kanto"
+    ],
     "about": "Dugtrio are actually triplets that emerged from one body. As a result, each triplet thinks exactly like the other two triplets. They work cooperatively to burrow endlessly.",
     "img": "https://www.serebii.net/pokemongo/pokemon/051.png",
     "size": {
@@ -4886,11 +4836,11 @@ export default {
     },
     "spawn-chance": "0.014",
     "stats": {
-      "base-attack": "167",
-      "base-defense": "134",
-      "base-stamina": "111",
-      "max-cp": "1557",
-      "max-hp": "99"
+      "attack": "167",
+      "defense": "134",
+      "stamina": "111",
+      "cp": "1557",
+      "hp": "99"
     },
     "resistant": [
       "electric",
@@ -4962,10 +4912,9 @@ export default {
   {
     "num": "052",
     "name": "meowth",
-    "generation": {
-      "num": "generation i",
-      "name": "kanto"
-    },
+    "generation": [
+      "kanto"
+    ],
     "about": "Meowth withdraws its sharp claws into its paws to slinkily sneak about without making any incriminating footsteps. For some reason, this Pokémon loves shiny coins that glitter with light.",
     "img": "https://www.serebii.net/pokemongo/pokemon/052.png",
     "size": {
@@ -4982,11 +4931,11 @@ export default {
     },
     "spawn-chance": "0.86",
     "stats": {
-      "base-attack": "92",
-      "base-defense": "78",
-      "base-stamina": "120",
-      "max-cp": "748",
-      "max-hp": "106"
+      "attack": "92",
+      "defense": "78",
+      "stamina": "120",
+      "cp": "748",
+      "hp": "106"
     },
     "resistant": [
       "ghost"
@@ -5054,10 +5003,9 @@ export default {
   {
     "num": "053",
     "name": "persian",
-    "generation": {
-      "num": "generation i",
-      "name": "kanto"
-    },
+    "generation": [
+      "kanto"
+    ],
     "about": "Persian has six bold whiskers that give it a look of toughness. The whiskers sense air movements to determine what is in the Pokémon's surrounding vicinity. It becomes docile if grabbed by the whiskers.",
     "img": "https://www.serebii.net/pokemongo/pokemon/053.png",
     "size": {
@@ -5074,11 +5022,11 @@ export default {
     },
     "spawn-chance": "0.022",
     "stats": {
-      "base-attack": "150",
-      "base-defense": "136",
-      "base-stamina": "163",
-      "max-cp": "1689",
-      "max-hp": "140"
+      "attack": "150",
+      "defense": "136",
+      "stamina": "163",
+      "cp": "1689",
+      "hp": "140"
     },
     "resistant": [
       "ghost"
@@ -5146,10 +5094,9 @@ export default {
   {
     "num": "054",
     "name": "psyduck",
-    "generation": {
-      "num": "generation i",
-      "name": "kanto"
-    },
+    "generation": [
+      "kanto"
+    ],
     "about": "Psyduck uses a mysterious power. When it does so, this Pokémon generates brain waves that are supposedly only seen in sleepers. This discovery spurred controversy among scholars.",
     "img": "https://www.serebii.net/pokemongo/pokemon/054.png",
     "size": {
@@ -5166,11 +5113,11 @@ export default {
     },
     "spawn-chance": "2.54",
     "stats": {
-      "base-attack": "122",
-      "base-defense": "95",
-      "base-stamina": "137",
-      "max-cp": "1106",
-      "max-hp": "120"
+      "attack": "122",
+      "defense": "95",
+      "stamina": "137",
+      "cp": "1106",
+      "hp": "120"
     },
     "resistant": [
       "fire",
@@ -5235,10 +5182,9 @@ export default {
   {
     "num": "055",
     "name": "golduck",
-    "generation": {
-      "num": "generation i",
-      "name": "kanto"
-    },
+    "generation": [
+      "kanto"
+    ],
     "about": "The webbed flippers on its forelegs and hind legs and the streamlined body of Golduck give it frightening speed. The Pokémon is definitely much faster than even the most athletic swimmer.",
     "img": "https://www.serebii.net/pokemongo/pokemon/055.png",
     "size": {
@@ -5255,11 +5201,11 @@ export default {
     },
     "spawn-chance": "0.087",
     "stats": {
-      "base-attack": "191",
-      "base-defense": "162",
-      "base-stamina": "190",
-      "max-cp": "2450",
-      "max-hp": "162"
+      "attack": "191",
+      "defense": "162",
+      "stamina": "190",
+      "cp": "2450",
+      "hp": "162"
     },
     "resistant": [
       "fire",
@@ -5324,10 +5270,9 @@ export default {
   {
     "num": "056",
     "name": "mankey",
-    "generation": {
-      "num": "generation i",
-      "name": "kanto"
-    },
+    "generation": [
+      "kanto"
+    ],
     "about": "When Mankey starts shaking and its nasal breathing turns rough, it's a sure sign that it is becoming angry. However, because it goes into a towering rage almost instantly, it is impossible for anyone to flee its wrath.",
     "img": "https://www.serebii.net/pokemongo/pokemon/056.png",
     "size": {
@@ -5344,11 +5289,11 @@ export default {
     },
     "spawn-chance": "0.92",
     "stats": {
-      "base-attack": "148",
-      "base-defense": "82",
-      "base-stamina": "120",
-      "max-cp": "1164",
-      "max-hp": "106"
+      "attack": "148",
+      "defense": "82",
+      "stamina": "120",
+      "cp": "1164",
+      "hp": "106"
     },
     "resistant": [
       "bug",
@@ -5413,10 +5358,9 @@ export default {
   {
     "num": "057",
     "name": "primeape",
-    "generation": {
-      "num": "generation i",
-      "name": "kanto"
-    },
+    "generation": [
+      "kanto"
+    ],
     "about": "When Primeape becomes furious, its blood circulation is boosted. In turn, its muscles are made even stronger. However, it also becomes much less intelligent at the same time.",
     "img": "https://www.serebii.net/pokemongo/pokemon/057.png",
     "size": {
@@ -5433,11 +5377,11 @@ export default {
     },
     "spawn-chance": "0.031",
     "stats": {
-      "base-attack": "207",
-      "base-defense": "138",
-      "base-stamina": "163",
-      "max-cp": "2288",
-      "max-hp": "140"
+      "attack": "207",
+      "defense": "138",
+      "stamina": "163",
+      "cp": "2288",
+      "hp": "140"
     },
     "resistant": [
       "bug",
@@ -5516,10 +5460,9 @@ export default {
   {
     "num": "058",
     "name": "growlithe",
-    "generation": {
-      "num": "generation i",
-      "name": "kanto"
-    },
+    "generation": [
+      "kanto"
+    ],
     "about": "Growlithe has a superb sense of smell. Once it smells anything, this Pokémon won't forget the scent, no matter what. It uses its advanced olfactory sense to determine the emotions of other living things.",
     "img": "https://www.serebii.net/pokemongo/pokemon/058.png",
     "size": {
@@ -5536,11 +5479,11 @@ export default {
     },
     "spawn-chance": "0.92",
     "stats": {
-      "base-attack": "136",
-      "base-defense": "93",
-      "base-stamina": "146",
-      "max-cp": "1243",
-      "max-hp": "127"
+      "attack": "136",
+      "defense": "93",
+      "stamina": "146",
+      "cp": "1243",
+      "hp": "127"
     },
     "resistant": [
       "fire",
@@ -5607,10 +5550,9 @@ export default {
   {
     "num": "059",
     "name": "arcanine",
-    "generation": {
-      "num": "generation i",
-      "name": "kanto"
-    },
+    "generation": [
+      "kanto"
+    ],
     "about": "Arcanine is known for its high speed. It is said to be capable of running over 6,200 miles in a single day and night. The fire that blazes wildly within this Pokémon's body is its source of power.",
     "img": "https://www.serebii.net/pokemongo/pokemon/059.png",
     "size": {
@@ -5627,11 +5569,11 @@ export default {
     },
     "spawn-chance": "0.017",
     "stats": {
-      "base-attack": "227",
-      "base-defense": "166",
-      "base-stamina": "207",
-      "max-cp": "3029",
-      "max-hp": "175"
+      "attack": "227",
+      "defense": "166",
+      "stamina": "207",
+      "cp": "3029",
+      "hp": "175"
     },
     "resistant": [
       "fire",
@@ -5719,10 +5661,9 @@ export default {
   {
     "num": "060",
     "name": "poliwag",
-    "generation": {
-      "num": "generation i",
-      "name": "kanto"
-    },
+    "generation": [
+      "kanto"
+    ],
     "about": "Poliwag has a very thin skin. It is possible to see the Pokémon's spiral innards right through the skin. Despite its thinness, however, the skin is also very flexible. Even sharp fangs bounce right off it.",
     "img": "https://www.serebii.net/pokemongo/pokemon/060.png",
     "size": {
@@ -5739,11 +5680,11 @@ export default {
     },
     "spawn-chance": "2.19",
     "stats": {
-      "base-attack": "101",
-      "base-defense": "82",
-      "base-stamina": "120",
-      "max-cp": "829",
-      "max-hp": "106"
+      "attack": "101",
+      "defense": "82",
+      "stamina": "120",
+      "cp": "829",
+      "hp": "106"
     },
     "resistant": [
       "fire",
@@ -5824,10 +5765,9 @@ export default {
   {
     "num": "061",
     "name": "poliwhirl",
-    "generation": {
-      "num": "generation i",
-      "name": "kanto"
-    },
+    "generation": [
+      "kanto"
+    ],
     "about": "The surface of Poliwhirl's body is always wet and slick with an oily fluid. Because of this greasy covering, it can easily slip and slide out of the clutches of any enemy in battle.",
     "img": "https://www.serebii.net/pokemongo/pokemon/061.png",
     "size": {
@@ -5844,11 +5784,11 @@ export default {
     },
     "spawn-chance": "0.13",
     "stats": {
-      "base-attack": "130",
-      "base-defense": "123",
-      "base-stamina": "163",
-      "max-cp": "1419",
-      "max-hp": "140"
+      "attack": "130",
+      "defense": "123",
+      "stamina": "163",
+      "cp": "1419",
+      "hp": "140"
     },
     "resistant": [
       "fire",
@@ -5936,10 +5876,9 @@ export default {
   {
     "num": "062",
     "name": "poliwrath",
-    "generation": {
-      "num": "generation i",
-      "name": "kanto"
-    },
+    "generation": [
+      "kanto"
+    ],
     "about": "Poliwrath's highly developed, brawny muscles never grow fatigued, however much it exercises. It is so tirelessly strong, this Pokémon can swim back and forth across the ocean without effort.",
     "img": "https://www.serebii.net/pokemongo/pokemon/062.png",
     "size": {
@@ -5957,11 +5896,11 @@ export default {
     },
     "spawn-chance": "0.011",
     "stats": {
-      "base-attack": "182",
-      "base-defense": "184",
-      "base-stamina": "207",
-      "max-cp": "2586",
-      "max-hp": "175"
+      "attack": "182",
+      "defense": "184",
+      "stamina": "207",
+      "cp": "2586",
+      "hp": "175"
     },
     "resistant": [
       "fire",
@@ -6049,10 +5988,9 @@ export default {
   {
     "num": "063",
     "name": "abra",
-    "generation": {
-      "num": "generation i",
-      "name": "kanto"
-    },
+    "generation": [
+      "kanto"
+    ],
     "about": "Abra sleeps for eighteen hours a day. However, it can sense the presence of foes even while it is sleeping. In such a situation, this Pokémon immediately teleports to safety.",
     "img": "https://www.serebii.net/pokemongo/pokemon/063.png",
     "size": {
@@ -6069,11 +6007,11 @@ export default {
     },
     "spawn-chance": "0.42",
     "stats": {
-      "base-attack": "195",
-      "base-defense": "82",
-      "base-stamina": "93",
-      "max-cp": "1342",
-      "max-hp": "85"
+      "attack": "195",
+      "defense": "82",
+      "stamina": "93",
+      "cp": "1342",
+      "hp": "85"
     },
     "resistant": [
       "fighting",
@@ -6142,10 +6080,9 @@ export default {
   {
     "num": "064",
     "name": "kadabra",
-    "generation": {
-      "num": "generation i",
-      "name": "kanto"
-    },
+    "generation": [
+      "kanto"
+    ],
     "about": "Kadabra emits a peculiar alpha wave if it develops a headache. Only those people with a particularly strong psyche can hope to become a trainer of this Pokémon.",
     "img": "https://www.serebii.net/pokemongo/pokemon/064.png",
     "size": {
@@ -6162,11 +6099,11 @@ export default {
     },
     "spawn-chance": "0.027",
     "stats": {
-      "base-attack": "232",
-      "base-defense": "117",
-      "base-stamina": "120",
-      "max-cp": "2059",
-      "max-hp": "106"
+      "attack": "232",
+      "defense": "117",
+      "stamina": "120",
+      "cp": "2059",
+      "hp": "106"
     },
     "resistant": [
       "fighting",
@@ -6235,10 +6172,9 @@ export default {
   {
     "num": "065",
     "name": "alakazam",
-    "generation": {
-      "num": "generation i",
-      "name": "kanto"
-    },
+    "generation": [
+      "kanto"
+    ],
     "about": "Alakazam's brain continually grows, making its head far too heavy to support with its neck. This Pokémon holds its head up using its psychokinetic power instead.",
     "img": "https://www.serebii.net/pokemongo/pokemon/065.png",
     "size": {
@@ -6255,11 +6191,11 @@ export default {
     },
     "spawn-chance": "0.0073",
     "stats": {
-      "base-attack": "271",
-      "base-defense": "167",
-      "base-stamina": "146",
-      "max-cp": "3057",
-      "max-hp": "127"
+      "attack": "271",
+      "defense": "167",
+      "stamina": "146",
+      "cp": "3057",
+      "hp": "127"
     },
     "resistant": [
       "fighting",
@@ -6342,10 +6278,9 @@ export default {
   {
     "num": "066",
     "name": "machop",
-    "generation": {
-      "num": "generation i",
-      "name": "kanto"
-    },
+    "generation": [
+      "kanto"
+    ],
     "about": "Machop's muscles are special-they never get sore no matter how much they are used in exercise. This Pokémon has sufficient power to hurl a hundred adult humans.",
     "img": "https://www.serebii.net/pokemongo/pokemon/066.png",
     "size": {
@@ -6362,11 +6297,11 @@ export default {
     },
     "spawn-chance": "0.49",
     "stats": {
-      "base-attack": "137",
-      "base-defense": "82",
-      "base-stamina": "172",
-      "max-cp": "1278",
-      "max-hp": "147"
+      "attack": "137",
+      "defense": "82",
+      "stamina": "172",
+      "cp": "1278",
+      "hp": "147"
     },
     "resistant": [
       "bug",
@@ -6443,10 +6378,9 @@ export default {
   {
     "num": "067",
     "name": "machoke",
-    "generation": {
-      "num": "generation i",
-      "name": "kanto"
-    },
+    "generation": [
+      "kanto"
+    ],
     "about": "Machoke's thoroughly toned muscles possess the hardness of steel. This Pokémon has so much strength, it can easily hold aloft a sumo wrestler on just one finger.",
     "img": "https://www.serebii.net/pokemongo/pokemon/067.png",
     "size": {
@@ -6463,11 +6397,11 @@ export default {
     },
     "spawn-chance": "0.034",
     "stats": {
-      "base-attack": "177",
-      "base-defense": "125",
-      "base-stamina": "190",
-      "max-cp": "2031",
-      "max-hp": "162"
+      "attack": "177",
+      "defense": "125",
+      "stamina": "190",
+      "cp": "2031",
+      "hp": "162"
     },
     "resistant": [
       "bug",
@@ -6544,10 +6478,9 @@ export default {
   {
     "num": "068",
     "name": "machamp",
-    "generation": {
-      "num": "generation i",
-      "name": "kanto"
-    },
+    "generation": [
+      "kanto"
+    ],
     "about": "Machamp has the power to hurl anything aside. However, trying to do any work requiring care and dexterity causes its arms to get tangled. This Pokémon tends to leap into action before it thinks.",
     "img": "https://www.serebii.net/pokemongo/pokemon/068.png",
     "size": {
@@ -6564,11 +6497,11 @@ export default {
     },
     "spawn-chance": "0.0068",
     "stats": {
-      "base-attack": "234",
-      "base-defense": "159",
-      "base-stamina": "207",
-      "max-cp": "3056",
-      "max-hp": "175"
+      "attack": "234",
+      "defense": "159",
+      "stamina": "207",
+      "cp": "3056",
+      "hp": "175"
     },
     "resistant": [
       "bug",
@@ -6666,10 +6599,9 @@ export default {
   {
     "num": "069",
     "name": "bellsprout",
-    "generation": {
-      "num": "generation i",
-      "name": "kanto"
-    },
+    "generation": [
+      "kanto"
+    ],
     "about": "Bellsprout's thin and flexible body lets it bend and sway to avoid any attack, however strong it may be. From its mouth, this Pokémon spits a corrosive fluid that melts even iron.",
     "img": "https://www.serebii.net/pokemongo/pokemon/069.png",
     "size": {
@@ -6687,11 +6619,11 @@ export default {
     },
     "spawn-chance": "1.15",
     "stats": {
-      "base-attack": "139",
-      "base-defense": "61",
-      "base-stamina": "137",
-      "max-cp": "1033",
-      "max-hp": "120"
+      "attack": "139",
+      "defense": "61",
+      "stamina": "137",
+      "cp": "1033",
+      "hp": "120"
     },
     "resistant": [
       "water",
@@ -6764,10 +6696,9 @@ export default {
   {
     "num": "070",
     "name": "weepinbell",
-    "generation": {
-      "num": "generation i",
-      "name": "kanto"
-    },
+    "generation": [
+      "kanto"
+    ],
     "about": "Weepinbell has a large hook on its rear end. At night, the Pokémon hooks on to a tree branch and goes to sleep. If it moves around in its sleep, it may wake up to find itself on the ground.",
     "img": "https://www.serebii.net/pokemongo/pokemon/070.png",
     "size": {
@@ -6785,11 +6716,11 @@ export default {
     },
     "spawn-chance": "0.072",
     "stats": {
-      "base-attack": "172",
-      "base-defense": "92",
-      "base-stamina": "163",
-      "max-cp": "1611",
-      "max-hp": "140"
+      "attack": "172",
+      "defense": "92",
+      "stamina": "163",
+      "cp": "1611",
+      "hp": "140"
     },
     "resistant": [
       "water",
@@ -6869,10 +6800,9 @@ export default {
   {
     "num": "071",
     "name": "victreebel",
-    "generation": {
-      "num": "generation i",
-      "name": "kanto"
-    },
+    "generation": [
+      "kanto"
+    ],
     "about": "Victreebel has a long vine that extends from its head. This vine is waved and flicked about as if it were an animal to attract prey. When an unsuspecting prey draws near, this Pokémon swallows it whole.",
     "img": "https://www.serebii.net/pokemongo/pokemon/071.png",
     "size": {
@@ -6890,11 +6820,11 @@ export default {
     },
     "spawn-chance": "0.0059",
     "stats": {
-      "base-attack": "207",
-      "base-defense": "135",
-      "base-stamina": "190",
-      "max-cp": "2431",
-      "max-hp": "162"
+      "attack": "207",
+      "defense": "135",
+      "stamina": "190",
+      "cp": "2431",
+      "hp": "162"
     },
     "resistant": [
       "water",
@@ -6967,10 +6897,9 @@ export default {
   {
     "num": "072",
     "name": "tentacool",
-    "generation": {
-      "num": "generation i",
-      "name": "kanto"
-    },
+    "generation": [
+      "kanto"
+    ],
     "about": "Tentacool's body is largely composed of water. If it is removed from the sea, it dries up like parchment. If this Pokémon happens to become dehydrated, put it back into the sea.",
     "img": "https://www.serebii.net/pokemongo/pokemon/072.png",
     "size": {
@@ -6988,11 +6917,11 @@ export default {
     },
     "spawn-chance": "0.81",
     "stats": {
-      "base-attack": "97",
-      "base-defense": "149",
-      "base-stamina": "120",
-      "max-cp": "1040",
-      "max-hp": "106"
+      "attack": "97",
+      "defense": "149",
+      "stamina": "120",
+      "cp": "1040",
+      "hp": "106"
     },
     "resistant": [
       "fire",
@@ -7059,10 +6988,9 @@ export default {
   {
     "num": "073",
     "name": "tentacruel",
-    "generation": {
-      "num": "generation i",
-      "name": "kanto"
-    },
+    "generation": [
+      "kanto"
+    ],
     "about": "Tentacruel has large red orbs on its head. The orbs glow before lashing the vicinity with a harsh ultrasonic blast. This Pokémon's outburst creates rough waves around it.",
     "img": "https://www.serebii.net/pokemongo/pokemon/073.png",
     "size": {
@@ -7080,11 +7008,11 @@ export default {
     },
     "spawn-chance": "0.082",
     "stats": {
-      "base-attack": "166",
-      "base-defense": "209",
-      "base-stamina": "190",
-      "max-cp": "2422",
-      "max-hp": "162"
+      "attack": "166",
+      "defense": "209",
+      "stamina": "190",
+      "cp": "2422",
+      "hp": "162"
     },
     "resistant": [
       "fire",
@@ -7151,10 +7079,9 @@ export default {
   {
     "num": "074",
     "name": "geodude",
-    "generation": {
-      "num": "generation i",
-      "name": "kanto"
-    },
+    "generation": [
+      "kanto"
+    ],
     "about": "The longer a Geodude lives, the more its edges are chipped and worn away, making it more rounded in appearance. However, this Pokémon's heart will remain hard, craggy, and rough always.",
     "img": "https://www.serebii.net/pokemongo/pokemon/074.png",
     "size": {
@@ -7172,11 +7099,11 @@ export default {
     },
     "spawn-chance": "1.19",
     "stats": {
-      "base-attack": "132",
-      "base-defense": "132",
-      "base-stamina": "120",
-      "max-cp": "1293",
-      "max-hp": "106"
+      "attack": "132",
+      "defense": "132",
+      "stamina": "120",
+      "cp": "1293",
+      "hp": "106"
     },
     "resistant": [
       "normal",
@@ -7251,10 +7178,9 @@ export default {
   {
     "num": "075",
     "name": "graveler",
-    "generation": {
-      "num": "generation i",
-      "name": "kanto"
-    },
+    "generation": [
+      "kanto"
+    ],
     "about": "Graveler grows by feeding on rocks. Apparently, it prefers to eat rocks that are covered in moss. This Pokémon eats its way through a ton of rocks on a daily basis.",
     "img": "https://www.serebii.net/pokemongo/pokemon/075.png",
     "size": {
@@ -7272,11 +7198,11 @@ export default {
     },
     "spawn-chance": "0.071",
     "stats": {
-      "base-attack": "164",
-      "base-defense": "164",
-      "base-stamina": "146",
-      "max-cp": "1897",
-      "max-hp": "127"
+      "attack": "164",
+      "defense": "164",
+      "stamina": "146",
+      "cp": "1897",
+      "hp": "127"
     },
     "resistant": [
       "normal",
@@ -7365,10 +7291,9 @@ export default {
   {
     "num": "076",
     "name": "golem",
-    "generation": {
-      "num": "generation i",
-      "name": "kanto"
-    },
+    "generation": [
+      "kanto"
+    ],
     "about": "Golem live up on mountains. If there is a large earthquake, these Pokémon will come rolling down off the mountains en masse to the foothills below.",
     "img": "https://www.serebii.net/pokemongo/pokemon/076.png",
     "size": {
@@ -7386,11 +7311,11 @@ export default {
     },
     "spawn-chance": "0.0047",
     "stats": {
-      "base-attack": "211",
-      "base-defense": "198",
-      "base-stamina": "190",
-      "max-cp": "2949",
-      "max-hp": "162"
+      "attack": "211",
+      "defense": "198",
+      "stamina": "190",
+      "cp": "2949",
+      "hp": "162"
     },
     "resistant": [
       "normal",
@@ -7479,10 +7404,9 @@ export default {
   {
     "num": "077",
     "name": "ponyta",
-    "generation": {
-      "num": "generation i",
-      "name": "kanto"
-    },
+    "generation": [
+      "kanto"
+    ],
     "about": "Ponyta is very weak at birth. It can barely stand up. This Pokémon becomes stronger by stumbling and falling to keep up with its parent.",
     "img": "https://www.serebii.net/pokemongo/pokemon/077.png",
     "size": {
@@ -7499,11 +7423,11 @@ export default {
     },
     "spawn-chance": "0.51",
     "stats": {
-      "base-attack": "170",
-      "base-defense": "127",
-      "base-stamina": "137",
-      "max-cp": "1697",
-      "max-hp": "120"
+      "attack": "170",
+      "defense": "127",
+      "stamina": "137",
+      "cp": "1697",
+      "hp": "120"
     },
     "resistant": [
       "fire",
@@ -7577,10 +7501,9 @@ export default {
   {
     "num": "078",
     "name": "rapidash",
-    "generation": {
-      "num": "generation i",
-      "name": "kanto"
-    },
+    "generation": [
+      "kanto"
+    ],
     "about": "Rapidash usually can be seen casually cantering in the fields and plains. However, when this Pokémon turns serious, its fiery manes flare and blaze as it gallops its way up to 150 mph.",
     "img": "https://www.serebii.net/pokemongo/pokemon/078.png",
     "size": {
@@ -7597,11 +7520,11 @@ export default {
     },
     "spawn-chance": "0.011",
     "stats": {
-      "base-attack": "207",
-      "base-defense": "162",
-      "base-stamina": "163",
-      "max-cp": "2461",
-      "max-hp": "140"
+      "attack": "207",
+      "defense": "162",
+      "stamina": "163",
+      "cp": "2461",
+      "hp": "140"
     },
     "resistant": [
       "fire",
@@ -7675,10 +7598,9 @@ export default {
   {
     "num": "079",
     "name": "slowpoke",
-    "generation": {
-      "num": "generation i",
-      "name": "kanto"
-    },
+    "generation": [
+      "kanto"
+    ],
     "about": "Slowpoke uses its tail to catch prey by dipping it in water at the side of a river. However, this Pokémon often forgets what it's doing and often spends entire days just loafing at water's edge.",
     "img": "https://www.serebii.net/pokemongo/pokemon/079.png",
     "size": {
@@ -7696,11 +7618,11 @@ export default {
     },
     "spawn-chance": "1.05",
     "stats": {
-      "base-attack": "109",
-      "base-defense": "98",
-      "base-stamina": "207",
-      "max-cp": "1226",
-      "max-hp": "175"
+      "attack": "109",
+      "defense": "98",
+      "stamina": "207",
+      "cp": "1226",
+      "hp": "175"
     },
     "resistant": [
       "fire",
@@ -7780,10 +7702,9 @@ export default {
   {
     "num": "080",
     "name": "slowbro",
-    "generation": {
-      "num": "generation i",
-      "name": "kanto"
-    },
+    "generation": [
+      "kanto"
+    ],
     "about": "Slowbro's tail has a Shellder firmly attached with a bite. As a result, the tail can't be used for fishing anymore. This causes Slowbro to grudgingly swim and catch prey instead.",
     "img": "https://www.serebii.net/pokemongo/pokemon/080.png",
     "size": {
@@ -7801,11 +7722,11 @@ export default {
     },
     "spawn-chance": "0.036",
     "stats": {
-      "base-attack": "177",
-      "base-defense": "180",
-      "base-stamina": "216",
-      "max-cp": "2545",
-      "max-hp": "182"
+      "attack": "177",
+      "defense": "180",
+      "stamina": "216",
+      "cp": "2545",
+      "hp": "182"
     },
     "resistant": [
       "fire",
@@ -7874,10 +7795,9 @@ export default {
   {
     "num": "081",
     "name": "magnemite",
-    "generation": {
-      "num": "generation i",
-      "name": "kanto"
-    },
+    "generation": [
+      "kanto"
+    ],
     "about": "Magnemite attaches itself to power lines to feed on electricity. If your house has a power outage, check your circuit breakers. You may find a large number of this Pokémon clinging to the breaker box.",
     "img": "https://www.serebii.net/pokemongo/pokemon/081.png",
     "size": {
@@ -7894,11 +7814,11 @@ export default {
     },
     "spawn-chance": "0.71",
     "stats": {
-      "base-attack": "165",
-      "base-defense": "121",
-      "base-stamina": "93",
-      "max-cp": "1362",
-      "max-hp": "85"
+      "attack": "165",
+      "defense": "121",
+      "stamina": "93",
+      "cp": "1362",
+      "hp": "85"
     },
     "resistant": [
       "normal",
@@ -7965,10 +7885,9 @@ export default {
   {
     "num": "082",
     "name": "magneton",
-    "generation": {
-      "num": "generation i",
-      "name": "kanto"
-    },
+    "generation": [
+      "kanto"
+    ],
     "about": "Magneton emits a powerful magnetic force that is fatal to mechanical devices. As a result, large cities sound sirens to warn citizens of large-scale outbreaks of this Pokémon.",
     "img": "https://www.serebii.net/pokemongo/pokemon/082.png",
     "size": {
@@ -7985,11 +7904,11 @@ export default {
     },
     "spawn-chance": "0.023",
     "stats": {
-      "base-attack": "223",
-      "base-defense": "169",
-      "base-stamina": "137",
-      "max-cp": "2485",
-      "max-hp": "120"
+      "attack": "223",
+      "defense": "169",
+      "stamina": "137",
+      "cp": "2485",
+      "hp": "120"
     },
     "resistant": [
       "normal",
@@ -8070,10 +7989,9 @@ export default {
   {
     "num": "083",
     "name": "farfetch'd",
-    "generation": {
-      "num": "generation i",
-      "name": "kanto"
-    },
+    "generation": [
+      "kanto"
+    ],
     "about": "Farfetch'd is always seen with a stalk from a plant of some sort. Apparently, there are good stalks and bad stalks. This Pokémon has been known to fight with others over stalks.",
     "img": "https://www.serebii.net/pokemongo/pokemon/083.png",
     "size": {
@@ -8092,11 +8010,11 @@ export default {
     },
     "spawn-chance": "0.0212",
     "stats": {
-      "base-attack": "124",
-      "base-defense": "115",
-      "base-stamina": "141",
-      "max-cp": "1236",
-      "max-hp": "123"
+      "attack": "124",
+      "defense": "115",
+      "stamina": "141",
+      "cp": "1236",
+      "hp": "123"
     },
     "resistant": [
       "grass",
@@ -8163,10 +8081,9 @@ export default {
   {
     "num": "084",
     "name": "doduo",
-    "generation": {
-      "num": "generation i",
-      "name": "kanto"
-    },
+    "generation": [
+      "kanto"
+    ],
     "about": "Doduo's two heads never sleep at the same time. Its two heads take turns sleeping, so one head can always keep watch for enemies while the other one sleeps.",
     "img": "https://www.serebii.net/pokemongo/pokemon/084.png",
     "size": {
@@ -8184,11 +8101,11 @@ export default {
     },
     "spawn-chance": "0.52",
     "stats": {
-      "base-attack": "158",
-      "base-defense": "83",
-      "base-stamina": "111",
-      "max-cp": "1200",
-      "max-hp": "99"
+      "attack": "158",
+      "defense": "83",
+      "stamina": "111",
+      "cp": "1200",
+      "hp": "99"
     },
     "resistant": [
       "grass",
@@ -8260,10 +8177,9 @@ export default {
   {
     "num": "085",
     "name": "dodrio",
-    "generation": {
-      "num": "generation i",
-      "name": "kanto"
-    },
+    "generation": [
+      "kanto"
+    ],
     "about": "Watch out if Dodrio's three heads are looking in three separate directions. It's a sure sign that it is on its guard. Don't go near this Pokémon if it's being wary-it may decide to peck you.",
     "img": "https://www.serebii.net/pokemongo/pokemon/085.png",
     "size": {
@@ -8281,11 +8197,11 @@ export default {
     },
     "spawn-chance": "0.22",
     "stats": {
-      "base-attack": "218",
-      "base-defense": "140",
-      "base-stamina": "155",
-      "max-cp": "2362",
-      "max-hp": "134"
+      "attack": "218",
+      "defense": "140",
+      "stamina": "155",
+      "cp": "2362",
+      "hp": "134"
     },
     "resistant": [
       "grass",
@@ -8357,10 +8273,9 @@ export default {
   {
     "num": "086",
     "name": "seel",
-    "generation": {
-      "num": "generation i",
-      "name": "kanto"
-    },
+    "generation": [
+      "kanto"
+    ],
     "about": "Seel hunts for prey in the frigid sea underneath sheets of ice. When it needs to breathe, it punches a hole through the ice with the sharply protruding section of its head.",
     "img": "https://www.serebii.net/pokemongo/pokemon/086.png",
     "size": {
@@ -8377,11 +8292,11 @@ export default {
     },
     "spawn-chance": "0.28",
     "stats": {
-      "base-attack": "85",
-      "base-defense": "121",
-      "base-stamina": "163",
-      "max-cp": "971",
-      "max-hp": "140"
+      "attack": "85",
+      "defense": "121",
+      "stamina": "163",
+      "cp": "971",
+      "hp": "140"
     },
     "resistant": [
       "fire",
@@ -8460,10 +8375,9 @@ export default {
   {
     "num": "087",
     "name": "dewgong",
-    "generation": {
-      "num": "generation i",
-      "name": "kanto"
-    },
+    "generation": [
+      "kanto"
+    ],
     "about": "Dewgong loves to snooze on bitterly cold ice. The sight of this Pokémon sleeping on a glacier was mistakenly thought to be a mermaid by a mariner long ago.",
     "img": "https://www.serebii.net/pokemongo/pokemon/087.png",
     "size": {
@@ -8481,11 +8395,11 @@ export default {
     },
     "spawn-chance": "0.013",
     "stats": {
-      "base-attack": "139",
-      "base-defense": "177",
-      "base-stamina": "207",
-      "max-cp": "1985",
-      "max-hp": "175"
+      "attack": "139",
+      "defense": "177",
+      "stamina": "207",
+      "cp": "1985",
+      "hp": "175"
     },
     "resistant": [
       "water",
@@ -8571,10 +8485,9 @@ export default {
   {
     "num": "088",
     "name": "grimer",
-    "generation": {
-      "num": "generation i",
-      "name": "kanto"
-    },
+    "generation": [
+      "kanto"
+    ],
     "about": "Grimer's sludgy and rubbery body can be forced through any opening, however small it may be. This Pokémon enters sewer pipes to drink filthy wastewater.",
     "img": "https://www.serebii.net/pokemongo/pokemon/088.png",
     "size": {
@@ -8591,11 +8504,11 @@ export default {
     },
     "spawn-chance": "0.052",
     "stats": {
-      "base-attack": "135",
-      "base-defense": "90",
-      "base-stamina": "190",
-      "max-cp": "1374",
-      "max-hp": "162"
+      "attack": "135",
+      "defense": "90",
+      "stamina": "190",
+      "cp": "1374",
+      "hp": "162"
     },
     "resistant": [
       "grass",
@@ -8668,10 +8581,9 @@ export default {
   {
     "num": "089",
     "name": "muk",
-    "generation": {
-      "num": "generation i",
-      "name": "kanto"
-    },
+    "generation": [
+      "kanto"
+    ],
     "about": "From Muk's body seeps a foul fluid that gives off a nose-bendingly horrible stench. Just one drop of this Pokémon's body fluid can turn a pool stagnant and rancid.",
     "img": "https://www.serebii.net/pokemongo/pokemon/089.png",
     "size": {
@@ -8688,11 +8600,11 @@ export default {
     },
     "spawn-chance": "0.0031",
     "stats": {
-      "base-attack": "190",
-      "base-defense": "172",
-      "base-stamina": "233",
-      "max-cp": "2757",
-      "max-hp": "195"
+      "attack": "190",
+      "defense": "172",
+      "stamina": "233",
+      "cp": "2757",
+      "hp": "195"
     },
     "resistant": [
       "grass",
@@ -8772,10 +8684,9 @@ export default {
   {
     "num": "090",
     "name": "shellder",
-    "generation": {
-      "num": "generation i",
-      "name": "kanto"
-    },
+    "generation": [
+      "kanto"
+    ],
     "about": "At night, this Pokémon uses its broad tongue to burrow a hole in the seafloor sand and then sleep in it. While it is sleeping, Shellder closes its shell, but leaves its tongue hanging out.",
     "img": "https://www.serebii.net/pokemongo/pokemon/090.png",
     "size": {
@@ -8792,11 +8703,11 @@ export default {
     },
     "spawn-chance": "0.52",
     "stats": {
-      "base-attack": "116",
-      "base-defense": "134",
-      "base-stamina": "102",
-      "max-cp": "1080",
-      "max-hp": "92"
+      "attack": "116",
+      "defense": "134",
+      "stamina": "102",
+      "cp": "1080",
+      "hp": "92"
     },
     "resistant": [
       "fire",
@@ -8861,10 +8772,9 @@ export default {
   {
     "num": "091",
     "name": "cloyster",
-    "generation": {
-      "num": "generation i",
-      "name": "kanto"
-    },
+    "generation": [
+      "kanto"
+    ],
     "about": "Cloyster is capable of swimming in the sea. It does so by swallowing water, then jetting it out toward the rear. This Pokémon shoots spikes from its shell using the same system.",
     "img": "https://www.serebii.net/pokemongo/pokemon/091.png",
     "size": {
@@ -8882,11 +8792,11 @@ export default {
     },
     "spawn-chance": "0.015",
     "stats": {
-      "base-attack": "186",
-      "base-defense": "256",
-      "base-stamina": "137",
-      "max-cp": "2547",
-      "max-hp": "120"
+      "attack": "186",
+      "defense": "256",
+      "stamina": "137",
+      "cp": "2547",
+      "hp": "120"
     },
     "resistant": [
       "water",
@@ -8965,10 +8875,9 @@ export default {
   {
     "num": "092",
     "name": "gastly",
-    "generation": {
-      "num": "generation i",
-      "name": "kanto"
-    },
+    "generation": [
+      "kanto"
+    ],
     "about": "Gastly is largely composed of gaseous matter. When exposed to a strong wind, the gaseous body quickly dwindles away. Groups of this Pokémon cluster under the eaves of houses to escape the ravages of wind.",
     "img": "https://www.serebii.net/pokemongo/pokemon/092.png",
     "size": {
@@ -8986,11 +8895,11 @@ export default {
     },
     "spawn-chance": "0.79",
     "stats": {
-      "base-attack": "186",
-      "base-defense": "67",
-      "base-stamina": "102",
-      "max-cp": "1229",
-      "max-hp": "92"
+      "attack": "186",
+      "defense": "67",
+      "stamina": "102",
+      "cp": "1229",
+      "hp": "92"
     },
     "resistant": [
       "normal",
@@ -9077,10 +8986,9 @@ export default {
   {
     "num": "093",
     "name": "haunter",
-    "generation": {
-      "num": "generation i",
-      "name": "kanto"
-    },
+    "generation": [
+      "kanto"
+    ],
     "about": "Haunter is a dangerous Pokémon. If one beckons you while floating in darkness, you must never approach it. This Pokémon will try to lick you with its tongue and steal your life away.",
     "img": "https://www.serebii.net/pokemongo/pokemon/093.png",
     "size": {
@@ -9098,11 +9006,11 @@ export default {
     },
     "spawn-chance": "0.052",
     "stats": {
-      "base-attack": "223",
-      "base-defense": "107",
-      "base-stamina": "128",
-      "max-cp": "1963",
-      "max-hp": "113"
+      "attack": "223",
+      "defense": "107",
+      "stamina": "128",
+      "cp": "1963",
+      "hp": "113"
     },
     "resistant": [
       "normal",
@@ -9189,10 +9097,9 @@ export default {
   {
     "num": "094",
     "name": "gengar",
-    "generation": {
-      "num": "generation i",
-      "name": "kanto"
-    },
+    "generation": [
+      "kanto"
+    ],
     "about": "Sometimes, on a dark night, your shadow thrown by a streetlight will suddenly and startlingly overtake you. It is actually a Gengar running past you, pretending to be your shadow.",
     "img": "https://www.serebii.net/pokemongo/pokemon/094.png",
     "size": {
@@ -9210,11 +9117,11 @@ export default {
     },
     "spawn-chance": "0.0067",
     "stats": {
-      "base-attack": "261",
-      "base-defense": "149",
-      "base-stamina": "155",
-      "max-cp": "2878",
-      "max-hp": "134"
+      "attack": "261",
+      "defense": "149",
+      "stamina": "155",
+      "cp": "2878",
+      "hp": "134"
     },
     "resistant": [
       "normal",
@@ -9308,10 +9215,9 @@ export default {
   {
     "num": "095",
     "name": "onix",
-    "generation": {
-      "num": "generation i",
-      "name": "kanto"
-    },
+    "generation": [
+      "kanto"
+    ],
     "about": "Onix has a magnet in its brain. It acts as a compass so that this Pokémon does not lose direction while it is tunneling. As it grows older, its body becomes increasingly rounder and smoother.",
     "img": "https://www.serebii.net/pokemongo/pokemon/095.png",
     "size": {
@@ -9329,11 +9235,11 @@ export default {
     },
     "spawn-chance": "0.1",
     "stats": {
-      "base-attack": "85",
-      "base-defense": "232",
-      "base-stamina": "111",
-      "max-cp": "1101",
-      "max-hp": "99"
+      "attack": "85",
+      "defense": "232",
+      "stamina": "111",
+      "cp": "1101",
+      "hp": "99"
     },
     "resistant": [
       "normal",
@@ -9421,10 +9327,9 @@ export default {
   {
     "num": "096",
     "name": "drowzee",
-    "generation": {
-      "num": "generation i",
-      "name": "kanto"
-    },
+    "generation": [
+      "kanto"
+    ],
     "about": "If your nose becomes itchy while you are sleeping, it's a sure sign that one of these Pokémon is standing above your pillow and trying to eat you dream through your nostrils.",
     "img": "https://www.serebii.net/pokemongo/pokemon/096.png",
     "size": {
@@ -9441,11 +9346,11 @@ export default {
     },
     "spawn-chance": "3.21",
     "stats": {
-      "base-attack": "89",
-      "base-defense": "136",
-      "base-stamina": "155",
-      "max-cp": "1040",
-      "max-hp": "134"
+      "attack": "89",
+      "defense": "136",
+      "stamina": "155",
+      "cp": "1040",
+      "hp": "134"
     },
     "resistant": [
       "fighting",
@@ -9509,10 +9414,9 @@ export default {
   {
     "num": "097",
     "name": "hypno",
-    "generation": {
-      "num": "generation i",
-      "name": "kanto"
-    },
+    "generation": [
+      "kanto"
+    ],
     "about": "Hypno holds a pendulum in its hand. The arcing movement and glitter of the pendulum lull the foe into a deep state of hypnosis. While this Pokémon searches for prey, it polishes the pendulum.",
     "img": "https://www.serebii.net/pokemongo/pokemon/097.png",
     "size": {
@@ -9529,11 +9433,11 @@ export default {
     },
     "spawn-chance": "0.1",
     "stats": {
-      "base-attack": "144",
-      "base-defense": "193",
-      "base-stamina": "198",
-      "max-cp": "2090",
-      "max-hp": "168"
+      "attack": "144",
+      "defense": "193",
+      "stamina": "198",
+      "cp": "2090",
+      "hp": "168"
     },
     "resistant": [
       "fighting",
@@ -9611,10 +9515,9 @@ export default {
   {
     "num": "098",
     "name": "krabby",
-    "generation": {
-      "num": "generation i",
-      "name": "kanto"
-    },
+    "generation": [
+      "kanto"
+    ],
     "about": "Krabby live on beaches, burrowed inside holes dug into the sand. On sandy beaches with little in the way of food, these Pokémon can be seen squabbling with each other over territory.",
     "img": "https://www.serebii.net/pokemongo/pokemon/098.png",
     "size": {
@@ -9631,11 +9534,11 @@ export default {
     },
     "spawn-chance": "2.12",
     "stats": {
-      "base-attack": "181",
-      "base-defense": "124",
-      "base-stamina": "102",
-      "max-cp": "1561",
-      "max-hp": "92"
+      "attack": "181",
+      "defense": "124",
+      "stamina": "102",
+      "cp": "1561",
+      "hp": "92"
     },
     "resistant": [
       "fire",
@@ -9700,10 +9603,9 @@ export default {
   {
     "num": "099",
     "name": "kingler",
-    "generation": {
-      "num": "generation i",
-      "name": "kanto"
-    },
+    "generation": [
+      "kanto"
+    ],
     "about": "Kingler has an enormous, oversized claw. It waves this huge claw in the air to communicate with others. However, because the claw is so heavy, the Pokémon quickly tires.",
     "img": "https://www.serebii.net/pokemongo/pokemon/099.png",
     "size": {
@@ -9720,11 +9622,11 @@ export default {
     },
     "spawn-chance": "0.062",
     "stats": {
-      "base-attack": "240",
-      "base-defense": "181",
-      "base-stamina": "146",
-      "max-cp": "2829",
-      "max-hp": "127"
+      "attack": "240",
+      "defense": "181",
+      "stamina": "146",
+      "cp": "2829",
+      "hp": "127"
     },
     "resistant": [
       "fire",
@@ -9796,10 +9698,9 @@ export default {
   {
     "num": "100",
     "name": "voltorb",
-    "generation": {
-      "num": "generation i",
-      "name": "kanto"
-    },
+    "generation": [
+      "kanto"
+    ],
     "about": "Voltorb was first sighted at a company that manufactures PokÃ© Balls. The link between that sighting and the fact that this Pokémon looks very similar to a PokÃ© Ball remains a mystery.",
     "img": "https://www.serebii.net/pokemongo/pokemon/100.png",
     "size": {
@@ -9816,11 +9717,11 @@ export default {
     },
     "spawn-chance": "0.65",
     "stats": {
-      "base-attack": "109",
-      "base-defense": "111",
-      "base-stamina": "120",
-      "max-cp": "1010",
-      "max-hp": "106"
+      "attack": "109",
+      "defense": "111",
+      "stamina": "120",
+      "cp": "1010",
+      "hp": "106"
     },
     "resistant": [
       "electric",
@@ -9890,10 +9791,9 @@ export default {
   {
     "num": "101",
     "name": "electrode",
-    "generation": {
-      "num": "generation i",
-      "name": "kanto"
-    },
+    "generation": [
+      "kanto"
+    ],
     "about": "Electrode eats electricity in the atmosphere. On days when lightning strikes, you can see this Pokémon exploding all over the place from eating too much electricity.",
     "img": "https://www.serebii.net/pokemongo/pokemon/101.png",
     "size": {
@@ -9910,11 +9810,11 @@ export default {
     },
     "spawn-chance": "0.02",
     "stats": {
-      "base-attack": "173",
-      "base-defense": "173",
-      "base-stamina": "155",
-      "max-cp": "2099",
-      "max-hp": "134"
+      "attack": "173",
+      "defense": "173",
+      "stamina": "155",
+      "cp": "2099",
+      "hp": "134"
     },
     "resistant": [
       "electric",
@@ -9984,10 +9884,9 @@ export default {
   {
     "num": "102",
     "name": "exeggcute",
-    "generation": {
-      "num": "generation i",
-      "name": "kanto"
-    },
+    "generation": [
+      "kanto"
+    ],
     "about": "This Pokémon consists of six eggs that form a closely knit cluster. The six eggs attract each other and spin around. When cracks increasingly appear on the eggs, Exeggcute is close to evolution.",
     "img": "https://www.serebii.net/pokemongo/pokemon/102.png",
     "size": {
@@ -10005,11 +9904,11 @@ export default {
     },
     "spawn-chance": "0.78",
     "stats": {
-      "base-attack": "107",
-      "base-defense": "125",
-      "base-stamina": "155",
-      "max-cp": "1175",
-      "max-hp": "134"
+      "attack": "107",
+      "defense": "125",
+      "stamina": "155",
+      "cp": "1175",
+      "hp": "134"
     },
     "resistant": [
       "water",
@@ -10080,10 +9979,9 @@ export default {
   {
     "num": "103",
     "name": "exeggutor",
-    "generation": {
-      "num": "generation i",
-      "name": "kanto"
-    },
+    "generation": [
+      "kanto"
+    ],
     "about": "Exeggutor originally came from the tropics. Its heads steadily grow larger from exposure to strong sunlight. It is said that when the heads fall off, they group together to form Exeggcute.",
     "img": "https://www.serebii.net/pokemongo/pokemon/103.png",
     "size": {
@@ -10101,11 +9999,11 @@ export default {
     },
     "spawn-chance": "0.014",
     "stats": {
-      "base-attack": "233",
-      "base-defense": "149",
-      "base-stamina": "216",
-      "max-cp": "3014",
-      "max-hp": "182"
+      "attack": "233",
+      "defense": "149",
+      "stamina": "216",
+      "cp": "3014",
+      "hp": "182"
     },
     "resistant": [
       "water",
@@ -10190,10 +10088,9 @@ export default {
   {
     "num": "104",
     "name": "cubone",
-    "generation": {
-      "num": "generation i",
-      "name": "kanto"
-    },
+    "generation": [
+      "kanto"
+    ],
     "about": "Cubone pines for the mother it will never see again. Seeing a likeness of its mother in the full moon, it cries. The stains on the skull the Pokémon wears are made by the tears it sheds.",
     "img": "https://www.serebii.net/pokemongo/pokemon/104.png",
     "size": {
@@ -10210,11 +10107,11 @@ export default {
     },
     "spawn-chance": "0.61",
     "stats": {
-      "base-attack": "90",
-      "base-defense": "144",
-      "base-stamina": "137",
-      "max-cp": "1019",
-      "max-hp": "120"
+      "attack": "90",
+      "defense": "144",
+      "stamina": "137",
+      "cp": "1019",
+      "hp": "120"
     },
     "resistant": [
       "electric",
@@ -10279,10 +10176,9 @@ export default {
   {
     "num": "105",
     "name": "marowak",
-    "generation": {
-      "num": "generation i",
-      "name": "kanto"
-    },
+    "generation": [
+      "kanto"
+    ],
     "about": "Marowak is the evolved form of a Cubone that has overcome its sadness at the loss of its mother and grown tough. This Pokémon's tempered and hardened spirit is not easily broken.",
     "img": "https://www.serebii.net/pokemongo/pokemon/105.png",
     "size": {
@@ -10299,11 +10195,11 @@ export default {
     },
     "spawn-chance": "0.02",
     "stats": {
-      "base-attack": "144",
-      "base-defense": "186",
-      "base-stamina": "155",
-      "max-cp": "1835",
-      "max-hp": "134"
+      "attack": "144",
+      "defense": "186",
+      "stamina": "155",
+      "cp": "1835",
+      "hp": "134"
     },
     "resistant": [
       "electric",
@@ -10368,10 +10264,9 @@ export default {
   {
     "num": "106",
     "name": "hitmonlee",
-    "generation": {
-      "num": "generation i",
-      "name": "kanto"
-    },
+    "generation": [
+      "kanto"
+    ],
     "about": "Hitmonlee's legs freely contract and stretch. Using these springlike legs, it bowls over foes with devastating kicks. After battle, it rubs down its legs and loosens the muscles to overcome fatigue.",
     "img": "https://www.serebii.net/pokemongo/pokemon/106.png",
     "size": {
@@ -10388,11 +10283,11 @@ export default {
     },
     "spawn-chance": "0.02",
     "stats": {
-      "base-attack": "224",
-      "base-defense": "181",
-      "base-stamina": "137",
-      "max-cp": "2576",
-      "max-hp": "120"
+      "attack": "224",
+      "defense": "181",
+      "stamina": "137",
+      "cp": "2576",
+      "hp": "120"
     },
     "resistant": [
       "bug",
@@ -10471,10 +10366,9 @@ export default {
   {
     "num": "107",
     "name": "hitmonchan",
-    "generation": {
-      "num": "generation i",
-      "name": "kanto"
-    },
+    "generation": [
+      "kanto"
+    ],
     "about": "Hitmonchan is said to possess the spirit of a boxer who had been working toward a world championship. This Pokémon has an indomitable spirit and will never give up in the face of adversity.",
     "img": "https://www.serebii.net/pokemongo/pokemon/107.png",
     "size": {
@@ -10491,11 +10385,11 @@ export default {
     },
     "spawn-chance": "0.022",
     "stats": {
-      "base-attack": "193",
-      "base-defense": "197",
-      "base-stamina": "137",
-      "max-cp": "2332",
-      "max-hp": "120"
+      "attack": "193",
+      "defense": "197",
+      "stamina": "137",
+      "cp": "2332",
+      "hp": "120"
     },
     "resistant": [
       "bug",
@@ -10581,10 +10475,9 @@ export default {
   {
     "num": "108",
     "name": "lickitung",
-    "generation": {
-      "num": "generation i",
-      "name": "kanto"
-    },
+    "generation": [
+      "kanto"
+    ],
     "about": "Whenever Lickitung comes across something new, it will unfailingly give it a lick. It does so because it memorizes things by texture and by taste. It is somewhat put off by sour things.",
     "img": "https://www.serebii.net/pokemongo/pokemon/108.png",
     "size": {
@@ -10601,11 +10494,11 @@ export default {
     },
     "spawn-chance": "0.011",
     "stats": {
-      "base-attack": "108",
-      "base-defense": "137",
-      "base-stamina": "207",
-      "max-cp": "1411",
-      "max-hp": "175"
+      "attack": "108",
+      "defense": "137",
+      "stamina": "207",
+      "cp": "1411",
+      "hp": "175"
     },
     "resistant": [
       "ghost"
@@ -10661,10 +10554,9 @@ export default {
   {
     "num": "109",
     "name": "koffing",
-    "generation": {
-      "num": "generation i",
-      "name": "kanto"
-    },
+    "generation": [
+      "kanto"
+    ],
     "about": "If Koffing becomes agitated, it raises the toxicity of its internal gases and then jets them out from all over its body. This Pokémon may also overinflate its round body, then explode.",
     "img": "https://www.serebii.net/pokemongo/pokemon/109.png",
     "size": {
@@ -10681,11 +10573,11 @@ export default {
     },
     "spawn-chance": "0.2",
     "stats": {
-      "base-attack": "119",
-      "base-defense": "141",
-      "base-stamina": "120",
-      "max-cp": "1214",
-      "max-hp": "106"
+      "attack": "119",
+      "defense": "141",
+      "stamina": "120",
+      "cp": "1214",
+      "hp": "106"
     },
     "resistant": [
       "grass",
@@ -10758,10 +10650,9 @@ export default {
   {
     "num": "110",
     "name": "weezing",
-    "generation": {
-      "num": "generation i",
-      "name": "kanto"
-    },
+    "generation": [
+      "kanto"
+    ],
     "about": "Weezing loves the gases given off by rotted kitchen garbage. This Pokémon will find a dirty, unkempt house and make it its home. At night, when the people in the house are asleep, it will go through the trash.",
     "img": "https://www.serebii.net/pokemongo/pokemon/110.png",
     "size": {
@@ -10778,11 +10669,11 @@ export default {
     },
     "spawn-chance": "0.016",
     "stats": {
-      "base-attack": "174",
-      "base-defense": "197",
-      "base-stamina": "163",
-      "max-cp": "2293",
-      "max-hp": "140"
+      "attack": "174",
+      "defense": "197",
+      "stamina": "163",
+      "cp": "2293",
+      "hp": "140"
     },
     "resistant": [
       "grass",
@@ -10855,10 +10746,9 @@ export default {
   {
     "num": "111",
     "name": "rhyhorn",
-    "generation": {
-      "num": "generation i",
-      "name": "kanto"
-    },
+    "generation": [
+      "kanto"
+    ],
     "about": "Rhyhorn runs in a straight line, smashing everything in its path. It is not bothered even if it rushes headlong into a block of steel. This Pokémon may feel some pain from the collision the next day, however.",
     "img": "https://www.serebii.net/pokemongo/pokemon/111.png",
     "size": {
@@ -10876,11 +10766,11 @@ export default {
     },
     "spawn-chance": "0.63",
     "stats": {
-      "base-attack": "140",
-      "base-defense": "127",
-      "base-stamina": "190",
-      "max-cp": "1651",
-      "max-hp": "162"
+      "attack": "140",
+      "defense": "127",
+      "stamina": "190",
+      "cp": "1651",
+      "hp": "162"
     },
     "resistant": [
       "normal",
@@ -10959,10 +10849,9 @@ export default {
   {
     "num": "112",
     "name": "rhydon",
-    "generation": {
-      "num": "generation i",
-      "name": "kanto"
-    },
+    "generation": [
+      "kanto"
+    ],
     "about": "Rhydon's horn can crush even uncut diamonds. One sweeping blow of its tail can topple a building. This Pokémon's hide is extremely tough. Even direct cannon hits don't leave a scratch.",
     "img": "https://www.serebii.net/pokemongo/pokemon/112.png",
     "size": {
@@ -10980,11 +10869,11 @@ export default {
     },
     "spawn-chance": "0.022",
     "stats": {
-      "base-attack": "222",
-      "base-defense": "171",
-      "base-stamina": "233",
-      "max-cp": "3179",
-      "max-hp": "195"
+      "attack": "222",
+      "defense": "171",
+      "stamina": "233",
+      "cp": "3179",
+      "hp": "195"
     },
     "resistant": [
       "normal",
@@ -11063,10 +10952,9 @@ export default {
   {
     "num": "113",
     "name": "chansey",
-    "generation": {
-      "num": "generation i",
-      "name": "kanto"
-    },
+    "generation": [
+      "kanto"
+    ],
     "about": "Chansey lays nutritionally excellent eggs on an everyday basis. The eggs are so delicious, they are easily and eagerly devoured by even those people who have lost their appetite.",
     "img": "https://www.serebii.net/pokemongo/pokemon/113.png",
     "size": {
@@ -11083,11 +10971,11 @@ export default {
     },
     "spawn-chance": "0.013",
     "stats": {
-      "base-attack": "60",
-      "base-defense": "128",
-      "base-stamina": "487",
-      "max-cp": "1255",
-      "max-hp": "396"
+      "attack": "60",
+      "defense": "128",
+      "stamina": "487",
+      "cp": "1255",
+      "hp": "396"
     },
     "resistant": [
       "ghost"
@@ -11159,10 +11047,9 @@ export default {
   {
     "num": "114",
     "name": "tangela",
-    "generation": {
-      "num": "generation i",
-      "name": "kanto"
-    },
+    "generation": [
+      "kanto"
+    ],
     "about": "Tangela's vines snap off easily if they are grabbed. This happens without pain, allowing it to make a quick getaway. The lost vines are replaced by newly grown vines the very next day.",
     "img": "https://www.serebii.net/pokemongo/pokemon/114.png",
     "size": {
@@ -11179,11 +11066,11 @@ export default {
     },
     "spawn-chance": "0.228",
     "stats": {
-      "base-attack": "183",
-      "base-defense": "169",
-      "base-stamina": "163",
-      "max-cp": "2238",
-      "max-hp": "140"
+      "attack": "183",
+      "defense": "169",
+      "stamina": "163",
+      "cp": "2238",
+      "hp": "140"
     },
     "resistant": [
       "water",
@@ -11253,10 +11140,9 @@ export default {
   {
     "num": "115",
     "name": "kangaskhan",
-    "generation": {
-      "num": "generation i",
-      "name": "kanto"
-    },
+    "generation": [
+      "kanto"
+    ],
     "about": "If you come across a young Kangaskhan playing by itself, you must never disturb it or attempt to catch it. The baby Pokémon's parent is sure to be in the area, and it will become violently enraged at you.",
     "img": "https://www.serebii.net/pokemongo/pokemon/115.png",
     "size": {
@@ -11274,11 +11160,11 @@ export default {
     },
     "spawn-chance": "0.0086",
     "stats": {
-      "base-attack": "181",
-      "base-defense": "165",
-      "base-stamina": "233",
-      "max-cp": "2586",
-      "max-hp": "195"
+      "attack": "181",
+      "defense": "165",
+      "stamina": "233",
+      "cp": "2586",
+      "hp": "195"
     },
     "resistant": [
       "ghost"
@@ -11348,10 +11234,9 @@ export default {
   {
     "num": "116",
     "name": "horsea",
-    "generation": {
-      "num": "generation i",
-      "name": "kanto"
-    },
+    "generation": [
+      "kanto"
+    ],
     "about": "Horsea eats small insects and moss off of rocks. If the ocean current turns fast, this Pokémon anchors itself by wrapping its tail around rocks or coral to prevent being washed away.",
     "img": "https://www.serebii.net/pokemongo/pokemon/116.png",
     "size": {
@@ -11368,11 +11253,11 @@ export default {
     },
     "spawn-chance": "1.13",
     "stats": {
-      "base-attack": "129",
-      "base-defense": "103",
-      "base-stamina": "102",
-      "max-cp": "1056",
-      "max-hp": "92"
+      "attack": "129",
+      "defense": "103",
+      "stamina": "102",
+      "cp": "1056",
+      "hp": "92"
     },
     "resistant": [
       "fire",
@@ -11446,10 +11331,9 @@ export default {
   {
     "num": "117",
     "name": "seadra",
-    "generation": {
-      "num": "generation i",
-      "name": "kanto"
-    },
+    "generation": [
+      "kanto"
+    ],
     "about": "Seadra sleeps after wriggling itself between the branches of coral. Those trying to harvest coral are occasionally stung by this Pokémon's poison barbs if they fail to notice it.",
     "img": "https://www.serebii.net/pokemongo/pokemon/117.png",
     "size": {
@@ -11466,11 +11350,11 @@ export default {
     },
     "spawn-chance": "0.034",
     "stats": {
-      "base-attack": "187",
-      "base-defense": "156",
-      "base-stamina": "146",
-      "max-cp": "2093",
-      "max-hp": "127"
+      "attack": "187",
+      "defense": "156",
+      "stamina": "146",
+      "cp": "2093",
+      "hp": "127"
     },
     "resistant": [
       "fire",
@@ -11551,10 +11435,9 @@ export default {
   {
     "num": "118",
     "name": "goldeen",
-    "generation": {
-      "num": "generation i",
-      "name": "kanto"
-    },
+    "generation": [
+      "kanto"
+    ],
     "about": "Goldeen is a very beautiful Pokémon with fins that billow elegantly in water. However, don't let your guard down around this Pokémon-it could ram you powerfully with its horn.",
     "img": "https://www.serebii.net/pokemongo/pokemon/118.png",
     "size": {
@@ -11571,11 +11454,11 @@ export default {
     },
     "spawn-chance": "2.18",
     "stats": {
-      "base-attack": "123",
-      "base-defense": "110",
-      "base-stamina": "128",
-      "max-cp": "1152",
-      "max-hp": "113"
+      "attack": "123",
+      "defense": "110",
+      "stamina": "128",
+      "cp": "1152",
+      "hp": "113"
     },
     "resistant": [
       "fire",
@@ -11640,10 +11523,9 @@ export default {
   {
     "num": "119",
     "name": "seaking",
-    "generation": {
-      "num": "generation i",
-      "name": "kanto"
-    },
+    "generation": [
+      "kanto"
+    ],
     "about": "In the autumn, Seaking males can be seen performing courtship dances in riverbeds to woo females. During this season, this Pokémon's body coloration is at its most beautiful.",
     "img": "https://www.serebii.net/pokemongo/pokemon/119.png",
     "size": {
@@ -11660,11 +11542,11 @@ export default {
     },
     "spawn-chance": "0.08",
     "stats": {
-      "base-attack": "175",
-      "base-defense": "147",
-      "base-stamina": "190",
-      "max-cp": "2162",
-      "max-hp": "162"
+      "attack": "175",
+      "defense": "147",
+      "stamina": "190",
+      "cp": "2162",
+      "hp": "162"
     },
     "resistant": [
       "fire",
@@ -11743,10 +11625,9 @@ export default {
   {
     "num": "120",
     "name": "staryu",
-    "generation": {
-      "num": "generation i",
-      "name": "kanto"
-    },
+    "generation": [
+      "kanto"
+    ],
     "about": "Staryu's center section has an organ called the core that shines bright red. If you go to a beach toward the end of summer, the glowing cores of these Pokémon look like the stars in the sky.",
     "img": "https://www.serebii.net/pokemongo/pokemon/120.png",
     "size": {
@@ -11763,11 +11644,11 @@ export default {
     },
     "spawn-chance": "1.95",
     "stats": {
-      "base-attack": "137",
-      "base-defense": "112",
-      "base-stamina": "102",
-      "max-cp": "1157",
-      "max-hp": "92"
+      "attack": "137",
+      "defense": "112",
+      "stamina": "102",
+      "cp": "1157",
+      "hp": "92"
     },
     "resistant": [
       "fire",
@@ -11839,10 +11720,9 @@ export default {
   {
     "num": "121",
     "name": "starmie",
-    "generation": {
-      "num": "generation i",
-      "name": "kanto"
-    },
+    "generation": [
+      "kanto"
+    ],
     "about": "Starmie's center section-the core-glows brightly in seven colors. Because of its luminous nature, this Pokémon has been given the nickname the gem of the sea.",
     "img": "https://www.serebii.net/pokemongo/pokemon/121.png",
     "size": {
@@ -11860,11 +11740,11 @@ export default {
     },
     "spawn-chance": "0.034",
     "stats": {
-      "base-attack": "210",
-      "base-defense": "184",
-      "base-stamina": "155",
-      "max-cp": "2584",
-      "max-hp": "134"
+      "attack": "210",
+      "defense": "184",
+      "stamina": "155",
+      "cp": "2584",
+      "hp": "134"
     },
     "resistant": [
       "fire",
@@ -11954,10 +11834,9 @@ export default {
   {
     "num": "122",
     "name": "mr. mime",
-    "generation": {
-      "num": "generation i",
-      "name": "kanto"
-    },
+    "generation": [
+      "kanto"
+    ],
     "about": "Mr. Mime is a master of pantomime. Its gestures and motions convince watchers that something unseeable actually exists. Once the watchers are convinced, the unseeable thing exists as if it were real.",
     "img": "https://www.serebii.net/pokemongo/pokemon/122.png",
     "size": {
@@ -11975,11 +11854,11 @@ export default {
     },
     "spawn-chance": "0.0031",
     "stats": {
-      "base-attack": "192",
-      "base-defense": "205",
-      "base-stamina": "120",
-      "max-cp": "2228",
-      "max-hp": "106"
+      "attack": "192",
+      "defense": "205",
+      "stamina": "120",
+      "cp": "2228",
+      "hp": "106"
     },
     "resistant": [
       "fighting",
@@ -12044,10 +11923,9 @@ export default {
   {
     "num": "123",
     "name": "scyther",
-    "generation": {
-      "num": "generation i",
-      "name": "kanto"
-    },
+    "generation": [
+      "kanto"
+    ],
     "about": "Scyther is blindingly fast. Its blazing speed enhances the effectiveness of the twin scythes on its forearms. This Pokémon's scythes are so effective, they can slice through thick logs in one wicked stroke.",
     "img": "https://www.serebii.net/pokemongo/pokemon/123.png",
     "size": {
@@ -12065,11 +11943,11 @@ export default {
     },
     "spawn-chance": "0.14",
     "stats": {
-      "base-attack": "218",
-      "base-defense": "170",
-      "base-stamina": "172",
-      "max-cp": "2706",
-      "max-hp": "147"
+      "attack": "218",
+      "defense": "170",
+      "stamina": "172",
+      "cp": "2706",
+      "hp": "147"
     },
     "resistant": [
       "grass",
@@ -12155,10 +12033,9 @@ export default {
   {
     "num": "124",
     "name": "jynx",
-    "generation": {
-      "num": "generation i",
-      "name": "kanto"
-    },
+    "generation": [
+      "kanto"
+    ],
     "about": "Jynx walks rhythmically, swaying and shaking its hips as if it were dancing. Its motions are so bouncingly alluring, people seeing it are compelled to shake their hips without giving any thought to what they are doing.",
     "img": "https://www.serebii.net/pokemongo/pokemon/124.png",
     "size": {
@@ -12176,11 +12053,11 @@ export default {
     },
     "spawn-chance": "0.35",
     "stats": {
-      "base-attack": "223",
-      "base-defense": "151",
-      "base-stamina": "163",
-      "max-cp": "2555",
-      "max-hp": "140"
+      "attack": "223",
+      "defense": "151",
+      "stamina": "163",
+      "cp": "2555",
+      "hp": "140"
     },
     "resistant": [
       "ice",
@@ -12261,10 +12138,9 @@ export default {
   {
     "num": "125",
     "name": "electabuzz",
-    "generation": {
-      "num": "generation i",
-      "name": "kanto"
-    },
+    "generation": [
+      "kanto"
+    ],
     "about": "When a storm arrives, gangs of this Pokémon compete with each other to scale heights that are likely to be stricken by lightning bolts. Some towns use Electabuzz in place of lightning rods.",
     "img": "https://www.serebii.net/pokemongo/pokemon/125.png",
     "size": {
@@ -12281,11 +12157,11 @@ export default {
     },
     "spawn-chance": "0.074",
     "stats": {
-      "base-attack": "198",
-      "base-defense": "158",
-      "base-stamina": "163",
-      "max-cp": "2334",
-      "max-hp": "140"
+      "attack": "198",
+      "defense": "158",
+      "stamina": "163",
+      "cp": "2334",
+      "hp": "140"
     },
     "resistant": [
       "electric",
@@ -12357,10 +12233,9 @@ export default {
   {
     "num": "126",
     "name": "magmar",
-    "generation": {
-      "num": "generation i",
-      "name": "kanto"
-    },
+    "generation": [
+      "kanto"
+    ],
     "about": "In battle, Magmar blows out intensely hot flames from all over its body to intimidate its opponent. This Pokémon's fiery bursts create heat waves that ignite grass and trees in its surroundings.",
     "img": "https://www.serebii.net/pokemongo/pokemon/126.png",
     "size": {
@@ -12377,11 +12252,11 @@ export default {
     },
     "spawn-chance": "0.1",
     "stats": {
-      "base-attack": "206",
-      "base-defense": "154",
-      "base-stamina": "163",
-      "max-cp": "2394",
-      "max-hp": "140"
+      "attack": "206",
+      "defense": "154",
+      "stamina": "163",
+      "cp": "2394",
+      "hp": "140"
     },
     "resistant": [
       "fire",
@@ -12457,10 +12332,9 @@ export default {
   {
     "num": "127",
     "name": "pinsir",
-    "generation": {
-      "num": "generation i",
-      "name": "kanto"
-    },
+    "generation": [
+      "kanto"
+    ],
     "about": "Pinsir is astoundingly strong. It can grip a foe weighing twice its weight in its horns and easily lift it. This Pokémon's movements turn sluggish in cold places.",
     "img": "https://www.serebii.net/pokemongo/pokemon/127.png",
     "size": {
@@ -12477,11 +12351,11 @@ export default {
     },
     "spawn-chance": "0.99",
     "stats": {
-      "base-attack": "238",
-      "base-defense": "182",
-      "base-stamina": "163",
-      "max-cp": "2959",
-      "max-hp": "140"
+      "attack": "238",
+      "defense": "182",
+      "stamina": "163",
+      "cp": "2959",
+      "hp": "140"
     },
     "resistant": [
       "grass",
@@ -12555,10 +12429,9 @@ export default {
   {
     "num": "128",
     "name": "tauros",
-    "generation": {
-      "num": "generation i",
-      "name": "kanto"
-    },
+    "generation": [
+      "kanto"
+    ],
     "about": "This Pokémon is not satisfied unless it is rampaging at all times. If there is no opponent for Tauros to battle, it will charge at thick trees and knock them down to calm itself.",
     "img": "https://www.serebii.net/pokemongo/pokemon/128.png",
     "size": {
@@ -12576,11 +12449,11 @@ export default {
     },
     "spawn-chance": "0.12",
     "stats": {
-      "base-attack": "198",
-      "base-defense": "183",
-      "base-stamina": "181",
-      "max-cp": "2620",
-      "max-hp": "154"
+      "attack": "198",
+      "defense": "183",
+      "stamina": "181",
+      "cp": "2620",
+      "hp": "154"
     },
     "resistant": [
       "ghost"
@@ -12636,10 +12509,9 @@ export default {
   {
     "num": "129",
     "name": "magikarp",
-    "generation": {
-      "num": "generation i",
-      "name": "kanto"
-    },
+    "generation": [
+      "kanto"
+    ],
     "about": "Magikarp is a pathetic excuse for a Pokémon that is only capable of flopping and splashing. This behavior prompted scientists to undertake research into it.",
     "img": "https://www.serebii.net/pokemongo/pokemon/129.png",
     "size": {
@@ -12656,11 +12528,11 @@ export default {
     },
     "spawn-chance": "4.78",
     "stats": {
-      "base-attack": "29",
-      "base-defense": "85",
-      "base-stamina": "85",
-      "max-cp": "274",
-      "max-hp": "79"
+      "attack": "29",
+      "defense": "85",
+      "stamina": "85",
+      "cp": "274",
+      "hp": "79"
     },
     "resistant": [
       "fire",
@@ -12702,10 +12574,9 @@ export default {
   {
     "num": "130",
     "name": "gyarados",
-    "generation": {
-      "num": "generation i",
-      "name": "kanto"
-    },
+    "generation": [
+      "kanto"
+    ],
     "about": "When Magikarp evolves into Gyarados, its brain cells undergo a structural transformation. It is said that this transformation is to blame for this Pokémon's wildly violent nature.",
     "img": "https://www.serebii.net/pokemongo/pokemon/130.png",
     "size": {
@@ -12723,11 +12594,11 @@ export default {
     },
     "spawn-chance": "0.0032",
     "stats": {
-      "base-attack": "237",
-      "base-defense": "186",
-      "base-stamina": "216",
-      "max-cp": "3391",
-      "max-hp": "182"
+      "attack": "237",
+      "defense": "186",
+      "stamina": "216",
+      "cp": "3391",
+      "hp": "182"
     },
     "resistant": [
       "fire",
@@ -12814,10 +12685,9 @@ export default {
   {
     "num": "131",
     "name": "lapras",
-    "generation": {
-      "num": "generation i",
-      "name": "kanto"
-    },
+    "generation": [
+      "kanto"
+    ],
     "about": "People have driven Lapras almost to the point of extinction. In the evenings, this Pokémon is said to sing plaintively as it seeks what few others of its kind still remain.",
     "img": "https://www.serebii.net/pokemongo/pokemon/131.png",
     "size": {
@@ -12835,11 +12705,11 @@ export default {
     },
     "spawn-chance": "0.006",
     "stats": {
-      "base-attack": "165",
-      "base-defense": "174",
-      "base-stamina": "277",
-      "max-cp": "2641",
-      "max-hp": "230"
+      "attack": "165",
+      "defense": "174",
+      "stamina": "277",
+      "cp": "2641",
+      "hp": "230"
     },
     "resistant": [
       "water",
@@ -12913,10 +12783,9 @@ export default {
   {
     "num": "132",
     "name": "ditto",
-    "generation": {
-      "num": "generation i",
-      "name": "kanto"
-    },
+    "generation": [
+      "kanto"
+    ],
     "about": "Ditto rearranges its cell structure to transform itself into other shapes. However, if it tries to transform itself into something by relying on its memory, this Pokémon manages to get details wrong.",
     "img": "https://www.serebii.net/pokemongo/pokemon/132.png",
     "size": {
@@ -12933,11 +12802,11 @@ export default {
     },
     "spawn-chance": "0",
     "stats": {
-      "base-attack": "91",
-      "base-defense": "91",
-      "base-stamina": "134",
-      "max-cp": "832",
-      "max-hp": "117"
+      "attack": "91",
+      "defense": "91",
+      "stamina": "134",
+      "cp": "832",
+      "hp": "117"
     },
     "resistant": [
       "ghost"
@@ -12970,10 +12839,9 @@ export default {
   {
     "num": "133",
     "name": "eevee",
-    "generation": {
-      "num": "generation i",
-      "name": "kanto"
-    },
+    "generation": [
+      "kanto"
+    ],
     "about": "Eevee has an unstable genetic makeup that suddenly mutates due to the environment in which it lives. Radiation from various stones causes this Pokémon to evolve.",
     "img": "https://www.serebii.net/pokemongo/pokemon/133.png",
     "size": {
@@ -12990,11 +12858,11 @@ export default {
     },
     "spawn-chance": "2.75",
     "stats": {
-      "base-attack": "104",
-      "base-defense": "114",
-      "base-stamina": "146",
-      "max-cp": "1071",
-      "max-hp": "127"
+      "attack": "104",
+      "defense": "114",
+      "stamina": "146",
+      "cp": "1071",
+      "hp": "127"
     },
     "resistant": [
       "ghost"
@@ -13087,10 +12955,9 @@ export default {
   {
     "num": "134",
     "name": "vaporeon",
-    "generation": {
-      "num": "generation i",
-      "name": "kanto"
-    },
+    "generation": [
+      "kanto"
+    ],
     "about": "Vaporeon underwent a spontaneous mutation and grew fins and gills that allow it to live underwater. This Pokémon has the ability to freely control water.",
     "img": "https://www.serebii.net/pokemongo/pokemon/134.png",
     "size": {
@@ -13107,11 +12974,11 @@ export default {
     },
     "spawn-chance": "0.014",
     "stats": {
-      "base-attack": "205",
-      "base-defense": "161",
-      "base-stamina": "277",
-      "max-cp": "3114",
-      "max-hp": "230"
+      "attack": "205",
+      "defense": "161",
+      "stamina": "277",
+      "cp": "3114",
+      "hp": "230"
     },
     "resistant": [
       "fire",
@@ -13168,10 +13035,9 @@ export default {
   {
     "num": "135",
     "name": "jolteon",
-    "generation": {
-      "num": "generation i",
-      "name": "kanto"
-    },
+    "generation": [
+      "kanto"
+    ],
     "about": "Jolteon's cells generate a low level of electricity. This power is amplified by the static electricity of its fur, enabling the Pokémon to drop thunderbolts. The bristling fur is made of electrically charged needles.",
     "img": "https://www.serebii.net/pokemongo/pokemon/135.png",
     "size": {
@@ -13188,11 +13054,11 @@ export default {
     },
     "spawn-chance": "0.012",
     "stats": {
-      "base-attack": "232",
-      "base-defense": "182",
-      "base-stamina": "163",
-      "max-cp": "2888",
-      "max-hp": "140"
+      "attack": "232",
+      "defense": "182",
+      "stamina": "163",
+      "cp": "2888",
+      "hp": "140"
     },
     "resistant": [
       "electric",
@@ -13255,10 +13121,9 @@ export default {
   {
     "num": "136",
     "name": "flareon",
-    "generation": {
-      "num": "generation i",
-      "name": "kanto"
-    },
+    "generation": [
+      "kanto"
+    ],
     "about": "Flareon's fluffy fur has a functional purpose-it releases heat into the air so that its body does not get excessively hot. This Pokémon's body temperature can rise to a maximum of 1,650 degrees Fahrenheit.",
     "img": "https://www.serebii.net/pokemongo/pokemon/136.png",
     "size": {
@@ -13275,11 +13140,11 @@ export default {
     },
     "spawn-chance": "0.017",
     "stats": {
-      "base-attack": "246",
-      "base-defense": "179",
-      "base-stamina": "163",
-      "max-cp": "3029",
-      "max-hp": "140"
+      "attack": "246",
+      "defense": "179",
+      "stamina": "163",
+      "cp": "3029",
+      "hp": "140"
     },
     "resistant": [
       "fire",
@@ -13353,10 +13218,9 @@ export default {
   {
     "num": "137",
     "name": "porygon",
-    "generation": {
-      "num": "generation i",
-      "name": "kanto"
-    },
+    "generation": [
+      "kanto"
+    ],
     "about": "Porygon is capable of reverting itself entirely back to program data and entering cyberspace. This Pokémon is copy-protected so it cannot be duplicated by copying.",
     "img": "https://www.serebii.net/pokemongo/pokemon/137.png",
     "size": {
@@ -13373,11 +13237,11 @@ export default {
     },
     "spawn-chance": "0.012",
     "stats": {
-      "base-attack": "153",
-      "base-defense": "136",
-      "base-stamina": "163",
-      "max-cp": "1720",
-      "max-hp": "140"
+      "attack": "153",
+      "defense": "136",
+      "stamina": "163",
+      "cp": "1720",
+      "hp": "140"
     },
     "resistant": [
       "ghost"
@@ -13493,10 +13357,9 @@ export default {
   {
     "num": "138",
     "name": "omanyte",
-    "generation": {
-      "num": "generation i",
-      "name": "kanto"
-    },
+    "generation": [
+      "kanto"
+    ],
     "about": "Omanyte is one of the ancient and long-since-extinct Pokémon that have been regenerated from fossils by people. If attacked by an enemy, it withdraws itself inside its hard shell.",
     "img": "https://www.serebii.net/pokemongo/pokemon/138.png",
     "size": {
@@ -13514,11 +13377,11 @@ export default {
     },
     "spawn-chance": "0.14",
     "stats": {
-      "base-attack": "155",
-      "base-defense": "153",
-      "base-stamina": "111",
-      "max-cp": "1544",
-      "max-hp": "99"
+      "attack": "155",
+      "defense": "153",
+      "stamina": "111",
+      "cp": "1544",
+      "hp": "99"
     },
     "resistant": [
       "normal",
@@ -13600,10 +13463,9 @@ export default {
   {
     "num": "139",
     "name": "omastar",
-    "generation": {
-      "num": "generation i",
-      "name": "kanto"
-    },
+    "generation": [
+      "kanto"
+    ],
     "about": "Omastar uses its tentacles to capture its prey. It is believed to have become extinct because its shell grew too large and heavy, causing its movements to become too slow and ponderous.",
     "img": "https://www.serebii.net/pokemongo/pokemon/139.png",
     "size": {
@@ -13621,11 +13483,11 @@ export default {
     },
     "spawn-chance": "0.0061",
     "stats": {
-      "base-attack": "207",
-      "base-defense": "201",
-      "base-stamina": "172",
-      "max-cp": "2786",
-      "max-hp": "147"
+      "attack": "207",
+      "defense": "201",
+      "stamina": "172",
+      "cp": "2786",
+      "hp": "147"
     },
     "resistant": [
       "normal",
@@ -13707,10 +13569,9 @@ export default {
   {
     "num": "140",
     "name": "kabuto",
-    "generation": {
-      "num": "generation i",
-      "name": "kanto"
-    },
+    "generation": [
+      "kanto"
+    ],
     "about": "Kabuto is a Pokémon that has been regenerated from a fossil. However, in extremely rare cases, living examples have been discovered. The Pokémon has not changed at all for 300 million years.",
     "img": "https://www.serebii.net/pokemongo/pokemon/140.png",
     "size": {
@@ -13728,11 +13589,11 @@ export default {
     },
     "spawn-chance": "0.1",
     "stats": {
-      "base-attack": "148",
-      "base-defense": "140",
-      "base-stamina": "102",
-      "max-cp": "1370",
-      "max-hp": "92"
+      "attack": "148",
+      "defense": "140",
+      "stamina": "102",
+      "cp": "1370",
+      "hp": "92"
     },
     "resistant": [
       "normal",
@@ -13800,10 +13661,9 @@ export default {
   {
     "num": "141",
     "name": "kabutops",
-    "generation": {
-      "num": "generation i",
-      "name": "kanto"
-    },
+    "generation": [
+      "kanto"
+    ],
     "about": "Kabutops swam underwater to hunt for its prey in ancient times. The Pokémon was apparently evolving from being a water-dweller to living on land as evident from the beginnings of change in its gills and legs.",
     "img": "https://www.serebii.net/pokemongo/pokemon/141.png",
     "size": {
@@ -13821,11 +13681,11 @@ export default {
     },
     "spawn-chance": "0.0032",
     "stats": {
-      "base-attack": "220",
-      "base-defense": "186",
-      "base-stamina": "155",
-      "max-cp": "2713",
-      "max-hp": "134"
+      "attack": "220",
+      "defense": "186",
+      "stamina": "155",
+      "cp": "2713",
+      "hp": "134"
     },
     "resistant": [
       "normal",
@@ -13900,10 +13760,9 @@ export default {
   {
     "num": "142",
     "name": "aerodactyl",
-    "generation": {
-      "num": "generation i",
-      "name": "kanto"
-    },
+    "generation": [
+      "kanto"
+    ],
     "about": "Aerodactyl is a Pokémon from the age of dinosaurs. It was regenerated from genetic material extracted from amber. It is imagined to have been the king of the skies in ancient times.",
     "img": "https://www.serebii.net/pokemongo/pokemon/142.png",
     "size": {
@@ -13921,11 +13780,11 @@ export default {
     },
     "spawn-chance": "0.018",
     "stats": {
-      "base-attack": "221",
-      "base-defense": "159",
-      "base-stamina": "190",
-      "max-cp": "2783",
-      "max-hp": "162"
+      "attack": "221",
+      "defense": "159",
+      "stamina": "190",
+      "cp": "2783",
+      "hp": "162"
     },
     "resistant": [
       "normal",
@@ -13989,10 +13848,9 @@ export default {
   {
     "num": "143",
     "name": "snorlax",
-    "generation": {
-      "num": "generation i",
-      "name": "kanto"
-    },
+    "generation": [
+      "kanto"
+    ],
     "about": "Snorlax's typical day consists of nothing more than eating and sleeping. It is such a docile Pokémon that there are children who use its expansive belly as a place to play.",
     "img": "https://www.serebii.net/pokemongo/pokemon/143.png",
     "size": {
@@ -14009,11 +13867,11 @@ export default {
     },
     "spawn-chance": "0.016",
     "stats": {
-      "base-attack": "190",
-      "base-defense": "169",
-      "base-stamina": "330",
-      "max-cp": "3225",
-      "max-hp": "272"
+      "attack": "190",
+      "defense": "169",
+      "stamina": "330",
+      "cp": "3225",
+      "hp": "272"
     },
     "resistant": [
       "ghost"
@@ -14081,10 +13939,9 @@ export default {
   {
     "num": "144",
     "name": "articuno",
-    "generation": {
-      "num": "generation i",
-      "name": "kanto"
-    },
+    "generation": [
+      "kanto"
+    ],
     "about": "Articuno is a legendary bird Pokémon that can control ice. The flapping of its wings chills the air. As a result, it is said that when this Pokémon flies, snow will fall.",
     "img": "https://www.serebii.net/pokemongo/pokemon/144.png",
     "size": {
@@ -14102,11 +13959,11 @@ export default {
     },
     "spawn-chance": "0",
     "stats": {
-      "base-attack": "192",
-      "base-defense": "236",
-      "base-stamina": "207",
-      "max-cp": "3051",
-      "max-hp": "175"
+      "attack": "192",
+      "defense": "236",
+      "stamina": "207",
+      "cp": "3051",
+      "hp": "175"
     },
     "resistant": [
       "grass",
@@ -14159,10 +14016,9 @@ export default {
   {
     "num": "145",
     "name": "zapdos",
-    "generation": {
-      "num": "generation i",
-      "name": "kanto"
-    },
+    "generation": [
+      "kanto"
+    ],
     "about": "Zapdos is a legendary bird Pokémon that has the ability to control electricity. It usually lives in thunderclouds. The Pokémon gains power if it is stricken by lightning bolts.",
     "img": "https://www.serebii.net/pokemongo/pokemon/145.png",
     "size": {
@@ -14180,11 +14036,11 @@ export default {
     },
     "spawn-chance": "0",
     "stats": {
-      "base-attack": "253",
-      "base-defense": "185",
-      "base-stamina": "207",
-      "max-cp": "3527",
-      "max-hp": "175"
+      "attack": "253",
+      "defense": "185",
+      "stamina": "207",
+      "cp": "3527",
+      "hp": "175"
     },
     "resistant": [
       "grass",
@@ -14245,10 +14101,9 @@ export default {
   {
     "num": "146",
     "name": "moltres",
-    "generation": {
-      "num": "generation i",
-      "name": "kanto"
-    },
+    "generation": [
+      "kanto"
+    ],
     "about": "Moltres is a legendary bird Pokémon that has the ability to control fire. If this Pokémon is injured, it is said to dip its body in the molten magma of a volcano to burn and heal itself.",
     "img": "https://www.serebii.net/pokemongo/pokemon/146.png",
     "size": {
@@ -14266,11 +14121,11 @@ export default {
     },
     "spawn-chance": "0",
     "stats": {
-      "base-attack": "251",
-      "base-defense": "181",
-      "base-stamina": "207",
-      "max-cp": "3465",
-      "max-hp": "175"
+      "attack": "251",
+      "defense": "181",
+      "stamina": "207",
+      "cp": "3465",
+      "hp": "175"
     },
     "resistant": [
       "fire",
@@ -14324,10 +14179,9 @@ export default {
   {
     "num": "147",
     "name": "dratini",
-    "generation": {
-      "num": "generation i",
-      "name": "kanto"
-    },
+    "generation": [
+      "kanto"
+    ],
     "about": "Dratini continually molts and sloughs off its old skin. It does so because the life energy within its body steadily builds to reach uncontrollable levels.",
     "img": "https://www.serebii.net/pokemongo/pokemon/147.png",
     "size": {
@@ -14344,11 +14198,11 @@ export default {
     },
     "spawn-chance": "0.3",
     "stats": {
-      "base-attack": "119",
-      "base-defense": "91",
-      "base-stamina": "121",
-      "max-cp": "1004",
-      "max-hp": "107"
+      "attack": "119",
+      "defense": "91",
+      "stamina": "121",
+      "cp": "1004",
+      "hp": "107"
     },
     "resistant": [
       "fire",
@@ -14419,10 +14273,9 @@ export default {
   {
     "num": "148",
     "name": "dragonair",
-    "generation": {
-      "num": "generation i",
-      "name": "kanto"
-    },
+    "generation": [
+      "kanto"
+    ],
     "about": "Dragonair stores an enormous amount of energy inside its body. It is said to alter weather conditions in its vicinity by discharging energy from its crystals on its neck and tail.",
     "img": "https://www.serebii.net/pokemongo/pokemon/148.png",
     "size": {
@@ -14439,11 +14292,11 @@ export default {
     },
     "spawn-chance": "0.02",
     "stats": {
-      "base-attack": "163",
-      "base-defense": "135",
-      "base-stamina": "156",
-      "max-cp": "1780",
-      "max-hp": "135"
+      "attack": "163",
+      "defense": "135",
+      "stamina": "156",
+      "cp": "1780",
+      "hp": "135"
     },
     "resistant": [
       "fire",
@@ -14514,10 +14367,9 @@ export default {
   {
     "num": "149",
     "name": "dragonite",
-    "generation": {
-      "num": "generation i",
-      "name": "kanto"
-    },
+    "generation": [
+      "kanto"
+    ],
     "about": "Dragonite is capable of circling the globe in just 16 hours. It is a kindhearted Pokémon that leads lost and foundering ships in a storm to the safety of land.",
     "img": "https://www.serebii.net/pokemongo/pokemon/149.png",
     "size": {
@@ -14535,11 +14387,11 @@ export default {
     },
     "spawn-chance": "0.0011",
     "stats": {
-      "base-attack": "263",
-      "base-defense": "198",
-      "base-stamina": "209",
-      "max-cp": "3792",
-      "max-hp": "177"
+      "attack": "263",
+      "defense": "198",
+      "stamina": "209",
+      "cp": "3792",
+      "hp": "177"
     },
     "resistant": [
       "fire",
@@ -14633,10 +14485,9 @@ export default {
   {
     "num": "150",
     "name": "mewtwo",
-    "generation": {
-      "num": "generation i",
-      "name": "kanto"
-    },
+    "generation": [
+      "kanto"
+    ],
     "about": "Mewtwo is a Pokémon that was created by genetic manipulation. However, even though the scientific power of humans created this Pokémon's body, they failed to endow Mewtwo with a compassionate heart",
     "img": "https://www.serebii.net/pokemongo/pokemon/150.png",
     "size": {
@@ -14653,11 +14504,11 @@ export default {
     },
     "spawn-chance": "0",
     "stats": {
-      "base-attack": "300",
-      "base-defense": "182",
-      "base-stamina": "214",
-      "max-cp": "4178",
-      "max-hp": "180"
+      "attack": "300",
+      "defense": "182",
+      "stamina": "214",
+      "cp": "4178",
+      "hp": "180"
     },
     "resistant": [
       "fighting",
@@ -14723,10 +14574,9 @@ export default {
   {
     "num": "151",
     "name": "mew",
-    "generation": {
-      "num": "generation i",
-      "name": "kanto"
-    },
+    "generation": [
+      "kanto"
+    ],
     "about": "Mew is said to possess the genetic composition of all Pokémon. It is capable of making itself invisible at will, so it entirely avoids notice even if it approaches people.",
     "img": "https://www.serebii.net/pokemongo/pokemon/151.png",
     "size": {
@@ -14743,11 +14593,11 @@ export default {
     },
     "spawn-chance": "0",
     "stats": {
-      "base-attack": "210",
-      "base-defense": "210",
-      "base-stamina": "225",
-      "max-cp": "3265",
-      "max-hp": "189"
+      "attack": "210",
+      "defense": "210",
+      "stamina": "225",
+      "cp": "3265",
+      "hp": "189"
     },
     "resistant": [
       "fighting",
@@ -14833,10 +14683,9 @@ export default {
   {
     "num": "152",
     "name": "chikorita",
-    "generation": {
-      "num": "generation ii",
-      "name": "johto"
-    },
+    "generation": [
+      "johto"
+    ],
     "about": "In battle, Chikorita waves its leaf around to keep the foe at bay. However, a sweet fragrance also wafts from the leaf, becalming the battling Pokémon and creating a cozy, friendly atmosphere all around.",
     "img": "https://www.serebii.net/pokemongo/pokemon/152.png",
     "size": {
@@ -14853,11 +14702,11 @@ export default {
     },
     "spawn-chance": null,
     "stats": {
-      "base-attack": "92",
-      "base-defense": "122",
-      "base-stamina": "128",
-      "max-cp": "935",
-      "max-hp": "113"
+      "attack": "92",
+      "defense": "122",
+      "stamina": "128",
+      "cp": "935",
+      "hp": "113"
     },
     "resistant": [
       "water",
@@ -14929,10 +14778,9 @@ export default {
   {
     "num": "153",
     "name": "bayleef",
-    "generation": {
-      "num": "generation ii",
-      "name": "johto"
-    },
+    "generation": [
+      "johto"
+    ],
     "about": "Bayleef's neck is ringed by curled-up leaves. Inside each tubular leaf is a small shoot of a tree. The fragrance of this shoot makes people peppy.",
     "img": "https://www.serebii.net/pokemongo/pokemon/153.png",
     "size": {
@@ -14949,11 +14797,11 @@ export default {
     },
     "spawn-chance": null,
     "stats": {
-      "base-attack": "122",
-      "base-defense": "155",
-      "base-stamina": "155",
-      "max-cp": "1454",
-      "max-hp": "134"
+      "attack": "122",
+      "defense": "155",
+      "stamina": "155",
+      "cp": "1454",
+      "hp": "134"
     },
     "resistant": [
       "water",
@@ -15025,10 +14873,9 @@ export default {
   {
     "num": "154",
     "name": "meganium",
-    "generation": {
-      "num": "generation ii",
-      "name": "johto"
-    },
+    "generation": [
+      "johto"
+    ],
     "about": "The fragrance of Meganium's flower soothes and calms emotions. In battle, this Pokémon gives off more of its becalming scent to blunt the foe's fighting spirit.",
     "img": "https://www.serebii.net/pokemongo/pokemon/154.png",
     "size": {
@@ -15045,11 +14892,11 @@ export default {
     },
     "spawn-chance": null,
     "stats": {
-      "base-attack": "168",
-      "base-defense": "202",
-      "base-stamina": "190",
-      "max-cp": "2410",
-      "max-hp": "162"
+      "attack": "168",
+      "defense": "202",
+      "stamina": "190",
+      "cp": "2410",
+      "hp": "162"
     },
     "resistant": [
       "water",
@@ -15121,10 +14968,9 @@ export default {
   {
     "num": "155",
     "name": "cyndaquil",
-    "generation": {
-      "num": "generation ii",
-      "name": "johto"
-    },
+    "generation": [
+      "johto"
+    ],
     "about": "Cyndaquil protects itself by flaring up the flames on its back. The flames are vigorous if the Pokémon is angry. However, if it is tired, the flames splutter fitfully with incomplete combustion.",
     "img": "https://www.serebii.net/pokemongo/pokemon/155.png",
     "size": {
@@ -15141,11 +14987,11 @@ export default {
     },
     "spawn-chance": null,
     "stats": {
-      "base-attack": "116",
-      "base-defense": "93",
-      "base-stamina": "118",
-      "max-cp": "980",
-      "max-hp": "105"
+      "attack": "116",
+      "defense": "93",
+      "stamina": "118",
+      "cp": "980",
+      "hp": "105"
     },
     "resistant": [
       "fire",
@@ -15217,10 +15063,9 @@ export default {
   {
     "num": "156",
     "name": "quilava",
-    "generation": {
-      "num": "generation ii",
-      "name": "johto"
-    },
+    "generation": [
+      "johto"
+    ],
     "about": "Quilava keeps its foes at bay with the intensity of its flames and gusts of superheated air. This Pokémon applies its outstanding nimbleness to dodge attacks even while scorching the foe with flames.",
     "img": "https://www.serebii.net/pokemongo/pokemon/156.png",
     "size": {
@@ -15237,11 +15082,11 @@ export default {
     },
     "spawn-chance": null,
     "stats": {
-      "base-attack": "158",
-      "base-defense": "126",
-      "base-stamina": "151",
-      "max-cp": "1653",
-      "max-hp": "131"
+      "attack": "158",
+      "defense": "126",
+      "stamina": "151",
+      "cp": "1653",
+      "hp": "131"
     },
     "resistant": [
       "fire",
@@ -15313,10 +15158,9 @@ export default {
   {
     "num": "157",
     "name": "typhlosion",
-    "generation": {
-      "num": "generation ii",
-      "name": "johto"
-    },
+    "generation": [
+      "johto"
+    ],
     "about": "Typhlosion obscures itself behind a shimmering heat haze that it creates using its intensely hot flames. This Pokémon creates blazing explosive blasts that burn everything to cinders.",
     "img": "https://www.serebii.net/pokemongo/pokemon/157.png",
     "size": {
@@ -15333,11 +15177,11 @@ export default {
     },
     "spawn-chance": null,
     "stats": {
-      "base-attack": "223",
-      "base-defense": "173",
-      "base-stamina": "186",
-      "max-cp": "2889",
-      "max-hp": "158"
+      "attack": "223",
+      "defense": "173",
+      "stamina": "186",
+      "cp": "2889",
+      "hp": "158"
     },
     "resistant": [
       "fire",
@@ -15409,10 +15253,9 @@ export default {
   {
     "num": "158",
     "name": "totodile",
-    "generation": {
-      "num": "generation ii",
-      "name": "johto"
-    },
+    "generation": [
+      "johto"
+    ],
     "about": "Despite the smallness of its body, Totodile's jaws are very powerful. While the Pokémon may think it is just playfully nipping, its bite has enough power to cause serious injury.",
     "img": "https://www.serebii.net/pokemongo/pokemon/158.png",
     "size": {
@@ -15429,11 +15272,11 @@ export default {
     },
     "spawn-chance": null,
     "stats": {
-      "base-attack": "117",
-      "base-defense": "109",
-      "base-stamina": "137",
-      "max-cp": "1131",
-      "max-hp": "120"
+      "attack": "117",
+      "defense": "109",
+      "stamina": "137",
+      "cp": "1131",
+      "hp": "120"
     },
     "resistant": [
       "fire",
@@ -15503,10 +15346,9 @@ export default {
   {
     "num": "159",
     "name": "croconaw",
-    "generation": {
-      "num": "generation ii",
-      "name": "johto"
-    },
+    "generation": [
+      "johto"
+    ],
     "about": "Once Croconaw has clamped its jaws on its foe, it will absolutely not let go. Because the tips of its fangs are forked back like barbed fishhooks, they become impossible to remove when they have sunk in.",
     "img": "https://www.serebii.net/pokemongo/pokemon/159.png",
     "size": {
@@ -15523,11 +15365,11 @@ export default {
     },
     "spawn-chance": null,
     "stats": {
-      "base-attack": "150",
-      "base-defense": "142",
-      "base-stamina": "163",
-      "max-cp": "1722",
-      "max-hp": "140"
+      "attack": "150",
+      "defense": "142",
+      "stamina": "163",
+      "cp": "1722",
+      "hp": "140"
     },
     "resistant": [
       "fire",
@@ -15597,10 +15439,9 @@ export default {
   {
     "num": "160",
     "name": "feraligatr",
-    "generation": {
-      "num": "generation ii",
-      "name": "johto"
-    },
+    "generation": [
+      "johto"
+    ],
     "about": "Feraligatr intimidates its foes by opening its huge mouth. In battle, it will kick the ground hard with its thick and powerful hind legs to charge at the foe at an incredible speed.",
     "img": "https://www.serebii.net/pokemongo/pokemon/160.png",
     "size": {
@@ -15617,11 +15458,11 @@ export default {
     },
     "spawn-chance": null,
     "stats": {
-      "base-attack": "205",
-      "base-defense": "188",
-      "base-stamina": "198",
-      "max-cp": "2857",
-      "max-hp": "168"
+      "attack": "205",
+      "defense": "188",
+      "stamina": "198",
+      "cp": "2857",
+      "hp": "168"
     },
     "resistant": [
       "fire",
@@ -15691,10 +15532,9 @@ export default {
   {
     "num": "161",
     "name": "sentret",
-    "generation": {
-      "num": "generation ii",
-      "name": "johto"
-    },
+    "generation": [
+      "johto"
+    ],
     "about": "When Sentret sleeps, it does so while another stands guard. The sentry wakes the others at the first sign of danger. When this Pokémon becomes separated from its pack, it becomes incapable of sleep due to fear.",
     "img": "https://www.serebii.net/pokemongo/pokemon/161.png",
     "size": {
@@ -15711,11 +15551,11 @@ export default {
     },
     "spawn-chance": null,
     "stats": {
-      "base-attack": "79",
-      "base-defense": "73",
-      "base-stamina": "111",
-      "max-cp": "618",
-      "max-hp": "99"
+      "attack": "79",
+      "defense": "73",
+      "stamina": "111",
+      "cp": "618",
+      "hp": "99"
     },
     "resistant": [
       "ghost"
@@ -15776,10 +15616,9 @@ export default {
   {
     "num": "162",
     "name": "furret",
-    "generation": {
-      "num": "generation ii",
-      "name": "johto"
-    },
+    "generation": [
+      "johto"
+    ],
     "about": "Furret has a very slim build. When under attack, it can slickly squirm through narrow spaces and get away. In spite of its short limbs, this Pokémon is very nimble and fleet.",
     "img": "https://www.serebii.net/pokemongo/pokemon/162.png",
     "size": {
@@ -15796,11 +15635,11 @@ export default {
     },
     "spawn-chance": null,
     "stats": {
-      "base-attack": "148",
-      "base-defense": "125",
-      "base-stamina": "198",
-      "max-cp": "1758",
-      "max-hp": "168"
+      "attack": "148",
+      "defense": "125",
+      "stamina": "198",
+      "cp": "1758",
+      "hp": "168"
     },
     "resistant": [
       "ghost"
@@ -15861,10 +15700,9 @@ export default {
   {
     "num": "163",
     "name": "hoothoot",
-    "generation": {
-      "num": "generation ii",
-      "name": "johto"
-    },
+    "generation": [
+      "johto"
+    ],
     "about": "Hoothoot has an internal organ that senses and tracks the earth's rotation. Using this special organ, this Pokémon begins hooting at precisely the same time every day.",
     "img": "https://www.serebii.net/pokemongo/pokemon/163.png",
     "size": {
@@ -15882,11 +15720,11 @@ export default {
     },
     "spawn-chance": null,
     "stats": {
-      "base-attack": "67",
-      "base-defense": "88",
-      "base-stamina": "155",
-      "max-cp": "677",
-      "max-hp": "134"
+      "attack": "67",
+      "defense": "88",
+      "stamina": "155",
+      "cp": "677",
+      "hp": "134"
     },
     "resistant": [
       "grass",
@@ -15937,10 +15775,9 @@ export default {
   {
     "num": "164",
     "name": "noctowl",
-    "generation": {
-      "num": "generation ii",
-      "name": "johto"
-    },
+    "generation": [
+      "johto"
+    ],
     "about": "Noctowl never fails at catching prey in darkness. This Pokémon owes its success to its superior vision that allows it to see in minimal light, and to its soft, supple wings that make no sound in flight.",
     "img": "https://www.serebii.net/pokemongo/pokemon/164.png",
     "size": {
@@ -15958,11 +15795,11 @@ export default {
     },
     "spawn-chance": null,
     "stats": {
-      "base-attack": "145",
-      "base-defense": "156",
-      "base-stamina": "225",
-      "max-cp": "2024",
-      "max-hp": "189"
+      "attack": "145",
+      "defense": "156",
+      "stamina": "225",
+      "cp": "2024",
+      "hp": "189"
     },
     "resistant": [
       "grass",
@@ -16028,10 +15865,9 @@ export default {
   {
     "num": "165",
     "name": "ledyba",
-    "generation": {
-      "num": "generation ii",
-      "name": "johto"
-    },
+    "generation": [
+      "johto"
+    ],
     "about": "Ledyba secretes an aromatic fluid from where its legs join its body. This fluid is used for communicating with others. This Pokémon conveys its feelings to others by altering the fluid's scent.",
     "img": "https://www.serebii.net/pokemongo/pokemon/165.png",
     "size": {
@@ -16049,11 +15885,11 @@ export default {
     },
     "spawn-chance": null,
     "stats": {
-      "base-attack": "72",
-      "base-defense": "118",
-      "base-stamina": "120",
-      "max-cp": "728",
-      "max-hp": "106"
+      "attack": "72",
+      "defense": "118",
+      "stamina": "120",
+      "cp": "728",
+      "hp": "106"
     },
     "resistant": [
       "grass",
@@ -16120,10 +15956,9 @@ export default {
   {
     "num": "166",
     "name": "ledian",
-    "generation": {
-      "num": "generation ii",
-      "name": "johto"
-    },
+    "generation": [
+      "johto"
+    ],
     "about": "It is said that in lands with clean air, where the stars fill the sky, there live Ledian in countless numbers. There is a good reason for this-the Pokémon uses the light of the stars as its energy.",
     "img": "https://www.serebii.net/pokemongo/pokemon/166.png",
     "size": {
@@ -16141,11 +15976,11 @@ export default {
     },
     "spawn-chance": null,
     "stats": {
-      "base-attack": "107",
-      "base-defense": "179",
-      "base-stamina": "146",
-      "max-cp": "1346",
-      "max-hp": "127"
+      "attack": "107",
+      "defense": "179",
+      "stamina": "146",
+      "cp": "1346",
+      "hp": "127"
     },
     "resistant": [
       "grass",
@@ -16212,10 +16047,9 @@ export default {
   {
     "num": "167",
     "name": "spinarak",
-    "generation": {
-      "num": "generation ii",
-      "name": "johto"
-    },
+    "generation": [
+      "johto"
+    ],
     "about": "The web spun by Spinarak can be considered its second nervous system. It is said that this Pokémon can determine what kind of prey is touching its web just by the tiny vibrations it feels through the web's strands.",
     "img": "https://www.serebii.net/pokemongo/pokemon/167.png",
     "size": {
@@ -16233,11 +16067,11 @@ export default {
     },
     "spawn-chance": null,
     "stats": {
-      "base-attack": "105",
-      "base-defense": "73",
-      "base-stamina": "120",
-      "max-cp": "816",
-      "max-hp": "106"
+      "attack": "105",
+      "defense": "73",
+      "stamina": "120",
+      "cp": "816",
+      "hp": "106"
     },
     "resistant": [
       "grass",
@@ -16305,10 +16139,9 @@ export default {
   {
     "num": "168",
     "name": "ariados",
-    "generation": {
-      "num": "generation ii",
-      "name": "johto"
-    },
+    "generation": [
+      "johto"
+    ],
     "about": "Ariados's feet are tipped with tiny hooked claws that enable it to scuttle on ceilings and vertical walls. This Pokémon constricts the foe with thin and strong silk webbing.",
     "img": "https://www.serebii.net/pokemongo/pokemon/168.png",
     "size": {
@@ -16326,11 +16159,11 @@ export default {
     },
     "spawn-chance": null,
     "stats": {
-      "base-attack": "161",
-      "base-defense": "124",
-      "base-stamina": "172",
-      "max-cp": "1772",
-      "max-hp": "147"
+      "attack": "161",
+      "defense": "124",
+      "stamina": "172",
+      "cp": "1772",
+      "hp": "147"
     },
     "resistant": [
       "grass",
@@ -16398,10 +16231,9 @@ export default {
   {
     "num": "169",
     "name": "crobat",
-    "generation": {
-      "num": "generation ii",
-      "name": "johto"
-    },
+    "generation": [
+      "johto"
+    ],
     "about": "If this Pokémon is flying by fluttering only a pair of wings on either the forelegs or hind legs, it's proof that Crobat has been flying a long distance. It switches the wings it uses if it is tired.",
     "img": "https://www.serebii.net/pokemongo/pokemon/169.png",
     "size": {
@@ -16419,11 +16251,11 @@ export default {
     },
     "spawn-chance": null,
     "stats": {
-      "base-attack": "194",
-      "base-defense": "178",
-      "base-stamina": "198",
-      "max-cp": "2646",
-      "max-hp": "168"
+      "attack": "194",
+      "defense": "178",
+      "stamina": "198",
+      "cp": "2646",
+      "hp": "168"
     },
     "resistant": [
       "grass",
@@ -16496,10 +16328,9 @@ export default {
   {
     "num": "170",
     "name": "chinchou",
-    "generation": {
-      "num": "generation ii",
-      "name": "johto"
-    },
+    "generation": [
+      "johto"
+    ],
     "about": "Chinchou lets loose positive and negative electrical charges from its two antennas to make its prey faint. This Pokémon flashes its electric lights to exchange signals with others.",
     "img": "https://www.serebii.net/pokemongo/pokemon/170.png",
     "size": {
@@ -16517,11 +16348,11 @@ export default {
     },
     "spawn-chance": null,
     "stats": {
-      "base-attack": "106",
-      "base-defense": "97",
-      "base-stamina": "181",
-      "max-cp": "1119",
-      "max-hp": "154"
+      "attack": "106",
+      "defense": "97",
+      "stamina": "181",
+      "cp": "1119",
+      "hp": "154"
     },
     "resistant": [
       "fire",
@@ -16587,10 +16418,9 @@ export default {
   {
     "num": "171",
     "name": "lanturn",
-    "generation": {
-      "num": "generation ii",
-      "name": "johto"
-    },
+    "generation": [
+      "johto"
+    ],
     "about": "Lanturn is nicknamed \"the deep-sea star for its illuminated antenna. This Pokémon produces light by causing a chemical reaction between bacteria and its bodily fluids inside the antenna.",
     "img": "https://www.serebii.net/pokemongo/pokemon/171.png",
     "size": {
@@ -16608,11 +16438,11 @@ export default {
     },
     "spawn-chance": null,
     "stats": {
-      "base-attack": "146",
-      "base-defense": "137",
-      "base-stamina": "268",
-      "max-cp": "2085",
-      "max-hp": "223"
+      "attack": "146",
+      "defense": "137",
+      "stamina": "268",
+      "cp": "2085",
+      "hp": "223"
     },
     "resistant": [
       "fire",
@@ -16678,10 +16508,9 @@ export default {
   {
     "num": "172",
     "name": "pichu",
-    "generation": {
-      "num": "generation ii",
-      "name": "johto"
-    },
+    "generation": [
+      "johto"
+    ],
     "about": "Pichu charges itself with electricity more easily on days with thunderclouds or when the air is very dry. You can hear the crackling of static electricity coming off this Pokémon.",
     "img": "https://www.serebii.net/pokemongo/pokemon/172.png",
     "size": {
@@ -16698,11 +16527,11 @@ export default {
     },
     "spawn-chance": "0",
     "stats": {
-      "base-attack": "77",
-      "base-defense": "53",
-      "base-stamina": "85",
-      "max-cp": "473",
-      "max-hp": "79"
+      "attack": "77",
+      "defense": "53",
+      "stamina": "85",
+      "cp": "473",
+      "hp": "79"
     },
     "resistant": [
       "electric",
@@ -16770,10 +16599,9 @@ export default {
   {
     "num": "173",
     "name": "cleffa",
-    "generation": {
-      "num": "generation ii",
-      "name": "johto"
-    },
+    "generation": [
+      "johto"
+    ],
     "about": "On nights with many shooting stars, Cleffa can be seen dancing in a ring. They dance through the night and stop only at the break of day, when these Pokémon quench their thirst with the morning dew.",
     "img": "https://www.serebii.net/pokemongo/pokemon/173.png",
     "size": {
@@ -16790,11 +16618,11 @@ export default {
     },
     "spawn-chance": "0",
     "stats": {
-      "base-attack": "75",
-      "base-defense": "79",
-      "base-stamina": "137",
-      "max-cp": "671",
-      "max-hp": "120"
+      "attack": "75",
+      "defense": "79",
+      "stamina": "137",
+      "cp": "671",
+      "hp": "120"
     },
     "resistant": [
       "fighting",
@@ -16878,10 +16706,9 @@ export default {
   {
     "num": "174",
     "name": "igglybuff",
-    "generation": {
-      "num": "generation ii",
-      "name": "johto"
-    },
+    "generation": [
+      "johto"
+    ],
     "about": "Igglybuff's vocal cords are not sufficiently developed. It would hurt its throat if it were to sing too much. This Pokémon gargles with freshwater from a clean stream.",
     "img": "https://www.serebii.net/pokemongo/pokemon/174.png",
     "size": {
@@ -16899,11 +16726,11 @@ export default {
     },
     "spawn-chance": "0",
     "stats": {
-      "base-attack": "69",
-      "base-defense": "32",
-      "base-stamina": "207",
-      "max-cp": "535",
-      "max-hp": "175"
+      "attack": "69",
+      "defense": "32",
+      "stamina": "207",
+      "cp": "535",
+      "hp": "175"
     },
     "resistant": [
       "bug",
@@ -16980,10 +16807,9 @@ export default {
   {
     "num": "175",
     "name": "togepi",
-    "generation": {
-      "num": "generation ii",
-      "name": "johto"
-    },
+    "generation": [
+      "johto"
+    ],
     "about": "As its energy, Togepi uses the positive emotions of compassion and pleasure exuded by people and Pokémon. This Pokémon stores up feelings of happiness inside its shell, then shares them with others.",
     "img": "https://www.serebii.net/pokemongo/pokemon/175.png",
     "size": {
@@ -17000,11 +16826,11 @@ export default {
     },
     "spawn-chance": "0",
     "stats": {
-      "base-attack": "67",
-      "base-defense": "116",
-      "base-stamina": "111",
-      "max-cp": "657",
-      "max-hp": "99"
+      "attack": "67",
+      "defense": "116",
+      "stamina": "111",
+      "cp": "657",
+      "hp": "99"
     },
     "resistant": [
       "fighting",
@@ -17085,10 +16911,9 @@ export default {
   {
     "num": "176",
     "name": "togetic",
-    "generation": {
-      "num": "generation ii",
-      "name": "johto"
-    },
+    "generation": [
+      "johto"
+    ],
     "about": "Togetic is said to be a Pokémon that brings good fortune. When the Pokémon spots someone who is pure of heart, it is said to appear and share its happiness with that person.",
     "img": "https://www.serebii.net/pokemongo/pokemon/176.png",
     "size": {
@@ -17106,11 +16931,11 @@ export default {
     },
     "spawn-chance": null,
     "stats": {
-      "base-attack": "139",
-      "base-defense": "181",
-      "base-stamina": "146",
-      "max-cp": "1708",
-      "max-hp": "127"
+      "attack": "139",
+      "defense": "181",
+      "stamina": "146",
+      "cp": "1708",
+      "hp": "127"
     },
     "resistant": [
       "grass",
@@ -17187,10 +17012,9 @@ export default {
   {
     "num": "177",
     "name": "natu",
-    "generation": {
-      "num": "generation ii",
-      "name": "johto"
-    },
+    "generation": [
+      "johto"
+    ],
     "about": "Natu cannot fly because its wings are not yet fully grown. If your eyes meet with this Pokémon's eyes, it will stare back intently at you. But if you move even slightly, it will hop away to safety.",
     "img": "https://www.serebii.net/pokemongo/pokemon/177.png",
     "size": {
@@ -17208,11 +17032,11 @@ export default {
     },
     "spawn-chance": null,
     "stats": {
-      "base-attack": "134",
-      "base-defense": "89",
-      "base-stamina": "120",
-      "max-cp": "1102",
-      "max-hp": "106"
+      "attack": "134",
+      "defense": "89",
+      "stamina": "120",
+      "cp": "1102",
+      "hp": "106"
     },
     "resistant": [
       "grass",
@@ -17279,10 +17103,9 @@ export default {
   {
     "num": "178",
     "name": "xatu",
-    "generation": {
-      "num": "generation ii",
-      "name": "johto"
-    },
+    "generation": [
+      "johto"
+    ],
     "about": "Xatu stands rooted and still in one spot all day long. People believe that this Pokémon does so out of fear of the terrible things it has foreseen in the future.",
     "img": "https://www.serebii.net/pokemongo/pokemon/178.png",
     "size": {
@@ -17300,11 +17123,11 @@ export default {
     },
     "spawn-chance": null,
     "stats": {
-      "base-attack": "192",
-      "base-defense": "146",
-      "base-stamina": "163",
-      "max-cp": "2188",
-      "max-hp": "140"
+      "attack": "192",
+      "defense": "146",
+      "stamina": "163",
+      "cp": "2188",
+      "hp": "140"
     },
     "resistant": [
       "grass",
@@ -17371,10 +17194,9 @@ export default {
   {
     "num": "179",
     "name": "mareep",
-    "generation": {
-      "num": "generation ii",
-      "name": "johto"
-    },
+    "generation": [
+      "johto"
+    ],
     "about": "Mareep's fluffy coat of wool rubs together and builds a static charge. The more static electricity is charged, the more brightly the lightbulb at the tip of its tail glows.",
     "img": "https://www.serebii.net/pokemongo/pokemon/179.png",
     "size": {
@@ -17391,11 +17213,11 @@ export default {
     },
     "spawn-chance": null,
     "stats": {
-      "base-attack": "114",
-      "base-defense": "79",
-      "base-stamina": "146",
-      "max-cp": "991",
-      "max-hp": "127"
+      "attack": "114",
+      "defense": "79",
+      "stamina": "146",
+      "cp": "991",
+      "hp": "127"
     },
     "resistant": [
       "electric",
@@ -17463,10 +17285,9 @@ export default {
   {
     "num": "180",
     "name": "flaaffy",
-    "generation": {
-      "num": "generation ii",
-      "name": "johto"
-    },
+    "generation": [
+      "johto"
+    ],
     "about": "Flaaffy's wool quality changes so that it can generate a high amount of static electricity with a small amount of wool. The bare and slick parts of its hide are shielded against electricity.",
     "img": "https://www.serebii.net/pokemongo/pokemon/180.png",
     "size": {
@@ -17483,11 +17304,11 @@ export default {
     },
     "spawn-chance": null,
     "stats": {
-      "base-attack": "145",
-      "base-defense": "109",
-      "base-stamina": "172",
-      "max-cp": "1521",
-      "max-hp": "147"
+      "attack": "145",
+      "defense": "109",
+      "stamina": "172",
+      "cp": "1521",
+      "hp": "147"
     },
     "resistant": [
       "electric",
@@ -17555,10 +17376,9 @@ export default {
   {
     "num": "181",
     "name": "ampharos",
-    "generation": {
-      "num": "generation ii",
-      "name": "johto"
-    },
+    "generation": [
+      "johto"
+    ],
     "about": "Ampharos gives off so much light that it can be seen even from space. People in the old days used the light of this Pokémon to send signals back and forth with others far away.",
     "img": "https://www.serebii.net/pokemongo/pokemon/181.png",
     "size": {
@@ -17575,11 +17395,11 @@ export default {
     },
     "spawn-chance": null,
     "stats": {
-      "base-attack": "211",
-      "base-defense": "169",
-      "base-stamina": "207",
-      "max-cp": "2852",
-      "max-hp": "175"
+      "attack": "211",
+      "defense": "169",
+      "stamina": "207",
+      "cp": "2852",
+      "hp": "175"
     },
     "resistant": [
       "electric",
@@ -17647,10 +17467,9 @@ export default {
   {
     "num": "182",
     "name": "bellossom",
-    "generation": {
-      "num": "generation ii",
-      "name": "johto"
-    },
+    "generation": [
+      "johto"
+    ],
     "about": "When Bellossom gets exposed to plenty of sunlight, the leaves ringing its body begin to spin around. This Pokémon's dancing is renowned in the southern lands.",
     "img": "https://www.serebii.net/pokemongo/pokemon/182.png",
     "size": {
@@ -17667,11 +17486,11 @@ export default {
     },
     "spawn-chance": null,
     "stats": {
-      "base-attack": "169",
-      "base-defense": "186",
-      "base-stamina": "181",
-      "max-cp": "2281",
-      "max-hp": "154"
+      "attack": "169",
+      "defense": "186",
+      "stamina": "181",
+      "cp": "2281",
+      "hp": "154"
     },
     "resistant": [
       "water",
@@ -17747,10 +17566,9 @@ export default {
   {
     "num": "183",
     "name": "marill",
-    "generation": {
-      "num": "generation ii",
-      "name": "johto"
-    },
+    "generation": [
+      "johto"
+    ],
     "about": "Marill's oil-filled tail acts much like a life preserver. If you see just its tail bobbing on the water's surface, it's a sure indication that this Pokémon is diving beneath the water to feed on aquatic plants.",
     "img": "https://www.serebii.net/pokemongo/pokemon/183.png",
     "size": {
@@ -17768,11 +17586,11 @@ export default {
     },
     "spawn-chance": null,
     "stats": {
-      "base-attack": "37",
-      "base-defense": "93",
-      "base-stamina": "172",
-      "max-cp": "461",
-      "max-hp": "147"
+      "attack": "37",
+      "defense": "93",
+      "stamina": "172",
+      "cp": "461",
+      "hp": "147"
     },
     "resistant": [
       "fire",
@@ -17844,10 +17662,9 @@ export default {
   {
     "num": "184",
     "name": "azumarill",
-    "generation": {
-      "num": "generation ii",
-      "name": "johto"
-    },
+    "generation": [
+      "johto"
+    ],
     "about": "Azumarill's long ears are indispensable sensors. By focusing its hearing, this Pokémon can identify what kinds of prey are around, even in rough and fast-running rivers.",
     "img": "https://www.serebii.net/pokemongo/pokemon/184.png",
     "size": {
@@ -17865,11 +17682,11 @@ export default {
     },
     "spawn-chance": null,
     "stats": {
-      "base-attack": "112",
-      "base-defense": "152",
-      "base-stamina": "225",
-      "max-cp": "1588",
-      "max-hp": "189"
+      "attack": "112",
+      "defense": "152",
+      "stamina": "225",
+      "cp": "1588",
+      "hp": "189"
     },
     "resistant": [
       "fire",
@@ -17941,10 +17758,9 @@ export default {
   {
     "num": "185",
     "name": "sudowoodo",
-    "generation": {
-      "num": "generation ii",
-      "name": "johto"
-    },
+    "generation": [
+      "johto"
+    ],
     "about": "Sudowoodo camouflages itself as a tree to avoid being attacked by enemies. However, because its hands remain green throughout the year, the Pokémon is easily identified as a fake during the winter.",
     "img": "https://www.serebii.net/pokemongo/pokemon/185.png",
     "size": {
@@ -17961,11 +17777,11 @@ export default {
     },
     "spawn-chance": null,
     "stats": {
-      "base-attack": "167",
-      "base-defense": "176",
-      "base-stamina": "172",
-      "max-cp": "2148",
-      "max-hp": "147"
+      "attack": "167",
+      "defense": "176",
+      "stamina": "172",
+      "cp": "2148",
+      "hp": "147"
     },
     "resistant": [
       "normal",
@@ -18032,10 +17848,9 @@ export default {
   {
     "num": "186",
     "name": "politoed",
-    "generation": {
-      "num": "generation ii",
-      "name": "johto"
-    },
+    "generation": [
+      "johto"
+    ],
     "about": "The curled hair on Politoed's head is proof of its status as a king. It is said that the longer and more curled the hair, the more respect this Pokémon earns from its peers.",
     "img": "https://www.serebii.net/pokemongo/pokemon/186.png",
     "size": {
@@ -18052,11 +17867,11 @@ export default {
     },
     "spawn-chance": null,
     "stats": {
-      "base-attack": "174",
-      "base-defense": "179",
-      "base-stamina": "207",
-      "max-cp": "2449",
-      "max-hp": "175"
+      "attack": "174",
+      "defense": "179",
+      "stamina": "207",
+      "cp": "2449",
+      "hp": "175"
     },
     "resistant": [
       "fire",
@@ -18130,10 +17945,9 @@ export default {
   {
     "num": "187",
     "name": "hoppip",
-    "generation": {
-      "num": "generation ii",
-      "name": "johto"
-    },
+    "generation": [
+      "johto"
+    ],
     "about": "This Pokémon drifts and floats with the wind. If it senses the approach of strong winds, Hoppip links its leaves with other Hoppip to prepare against being blown away.",
     "img": "https://www.serebii.net/pokemongo/pokemon/187.png",
     "size": {
@@ -18151,11 +17965,11 @@ export default {
     },
     "spawn-chance": null,
     "stats": {
-      "base-attack": "67",
-      "base-defense": "94",
-      "base-stamina": "111",
-      "max-cp": "600",
-      "max-hp": "99"
+      "attack": "67",
+      "defense": "94",
+      "stamina": "111",
+      "cp": "600",
+      "hp": "99"
     },
     "resistant": [
       "water",
@@ -18227,10 +18041,9 @@ export default {
   {
     "num": "188",
     "name": "skiploom",
-    "generation": {
-      "num": "generation ii",
-      "name": "johto"
-    },
+    "generation": [
+      "johto"
+    ],
     "about": "Skiploom's flower blossoms when the temperature rises above 64 degrees Fahrenheit. How much the flower opens depends on the temperature. For that reason, this Pokémon is sometimes used as a thermometer.",
     "img": "https://www.serebii.net/pokemongo/pokemon/188.png",
     "size": {
@@ -18248,11 +18061,11 @@ export default {
     },
     "spawn-chance": null,
     "stats": {
-      "base-attack": "91",
-      "base-defense": "120",
-      "base-stamina": "146",
-      "max-cp": "976",
-      "max-hp": "127"
+      "attack": "91",
+      "defense": "120",
+      "stamina": "146",
+      "cp": "976",
+      "hp": "127"
     },
     "resistant": [
       "water",
@@ -18324,10 +18137,9 @@ export default {
   {
     "num": "189",
     "name": "jumpluff",
-    "generation": {
-      "num": "generation ii",
-      "name": "johto"
-    },
+    "generation": [
+      "johto"
+    ],
     "about": "Jumpluff rides warm southern winds to cross the sea and fly to foreign lands. The Pokémon descends to the ground when it encounters cold air while it is floating.",
     "img": "https://www.serebii.net/pokemongo/pokemon/189.png",
     "size": {
@@ -18345,11 +18157,11 @@ export default {
     },
     "spawn-chance": null,
     "stats": {
-      "base-attack": "118",
-      "base-defense": "183",
-      "base-stamina": "181",
-      "max-cp": "1636",
-      "max-hp": "154"
+      "attack": "118",
+      "defense": "183",
+      "stamina": "181",
+      "cp": "1636",
+      "hp": "154"
     },
     "resistant": [
       "water",
@@ -18421,10 +18233,9 @@ export default {
   {
     "num": "190",
     "name": "aipom",
-    "generation": {
-      "num": "generation ii",
-      "name": "johto"
-    },
+    "generation": [
+      "johto"
+    ],
     "about": "Aipom's tail ends in a hand-like appendage that can be cleverly manipulated. However, because the Pokémon uses its tail so much, its real hands have become rather clumsy.",
     "img": "https://www.serebii.net/pokemongo/pokemon/190.png",
     "size": {
@@ -18441,11 +18252,11 @@ export default {
     },
     "spawn-chance": null,
     "stats": {
-      "base-attack": "136",
-      "base-defense": "112",
-      "base-stamina": "146",
-      "max-cp": "1348",
-      "max-hp": "127"
+      "attack": "136",
+      "defense": "112",
+      "stamina": "146",
+      "cp": "1348",
+      "hp": "127"
     },
     "resistant": [
       "ghost"
@@ -18501,10 +18312,9 @@ export default {
   {
     "num": "191",
     "name": "sunkern",
-    "generation": {
-      "num": "generation ii",
-      "name": "johto"
-    },
+    "generation": [
+      "johto"
+    ],
     "about": "Sunkern tries to move as little as it possibly can. It does so because it tries to conserve all the nutrients it has stored in its body for its evolution. It will not eat a thing, subsisting only on morning dew.",
     "img": "https://www.serebii.net/pokemongo/pokemon/191.png",
     "size": {
@@ -18521,11 +18331,11 @@ export default {
     },
     "spawn-chance": null,
     "stats": {
-      "base-attack": "55",
-      "base-defense": "55",
-      "base-stamina": "102",
-      "max-cp": "395",
-      "max-hp": "92"
+      "attack": "55",
+      "defense": "55",
+      "stamina": "102",
+      "cp": "395",
+      "hp": "92"
     },
     "resistant": [
       "water",
@@ -18596,10 +18406,9 @@ export default {
   {
     "num": "192",
     "name": "sunflora",
-    "generation": {
-      "num": "generation ii",
-      "name": "johto"
-    },
+    "generation": [
+      "johto"
+    ],
     "about": "Sunflora converts solar energy into nutrition. It moves around actively in the daytime when it is warm. It stops moving as soon as the sun goes down for the night.",
     "img": "https://www.serebii.net/pokemongo/pokemon/192.png",
     "size": {
@@ -18616,11 +18425,11 @@ export default {
     },
     "spawn-chance": null,
     "stats": {
-      "base-attack": "185",
-      "base-defense": "135",
-      "base-stamina": "181",
-      "max-cp": "2141",
-      "max-hp": "154"
+      "attack": "185",
+      "defense": "135",
+      "stamina": "181",
+      "cp": "2141",
+      "hp": "154"
     },
     "resistant": [
       "water",
@@ -18691,10 +18500,9 @@ export default {
   {
     "num": "193",
     "name": "yanma",
-    "generation": {
-      "num": "generation ii",
-      "name": "johto"
-    },
+    "generation": [
+      "johto"
+    ],
     "about": "Yanma is capable of seeing 360 degrees without having to move its eyes. It is a great flier that is adept at making sudden stops and turning midair. This Pokémon uses its flying ability to quickly chase down targeted prey.",
     "img": "https://www.serebii.net/pokemongo/pokemon/193.png",
     "size": {
@@ -18712,11 +18520,11 @@ export default {
     },
     "spawn-chance": null,
     "stats": {
-      "base-attack": "154",
-      "base-defense": "94",
-      "base-stamina": "163",
-      "max-cp": "1470",
-      "max-hp": "140"
+      "attack": "154",
+      "defense": "94",
+      "stamina": "163",
+      "cp": "1470",
+      "hp": "140"
     },
     "resistant": [
       "grass",
@@ -18778,10 +18586,9 @@ export default {
   {
     "num": "194",
     "name": "wooper",
-    "generation": {
-      "num": "generation ii",
-      "name": "johto"
-    },
+    "generation": [
+      "johto"
+    ],
     "about": "Wooper usually lives in water. However, it occasionally comes out onto land in search of food. On land, it coats its body with a gooey, toxic film.",
     "img": "https://www.serebii.net/pokemongo/pokemon/194.png",
     "size": {
@@ -18799,11 +18606,11 @@ export default {
     },
     "spawn-chance": null,
     "stats": {
-      "base-attack": "75",
-      "base-defense": "66",
-      "base-stamina": "146",
-      "max-cp": "641",
-      "max-hp": "127"
+      "attack": "75",
+      "defense": "66",
+      "stamina": "146",
+      "cp": "641",
+      "hp": "127"
     },
     "resistant": [
       "fire",
@@ -18867,10 +18674,9 @@ export default {
   {
     "num": "195",
     "name": "quagsire",
-    "generation": {
-      "num": "generation ii",
-      "name": "johto"
-    },
+    "generation": [
+      "johto"
+    ],
     "about": "Quagsire hunts for food by leaving its mouth wide open in water and waiting for its prey to blunder in unaware. Because the Pokémon does not move, it does not get very hungry.",
     "img": "https://www.serebii.net/pokemongo/pokemon/195.png",
     "size": {
@@ -18888,11 +18694,11 @@ export default {
     },
     "spawn-chance": null,
     "stats": {
-      "base-attack": "152",
-      "base-defense": "143",
-      "base-stamina": "216",
-      "max-cp": "1992",
-      "max-hp": "182"
+      "attack": "152",
+      "defense": "143",
+      "stamina": "216",
+      "cp": "1992",
+      "hp": "182"
     },
     "resistant": [
       "fire",
@@ -18956,10 +18762,9 @@ export default {
   {
     "num": "196",
     "name": "espeon",
-    "generation": {
-      "num": "generation ii",
-      "name": "johto"
-    },
+    "generation": [
+      "johto"
+    ],
     "about": "Espeon is extremely loyal to any Trainer it considers to be worthy. It is said that this Pokémon developed its precognitive powers to protect its Trainer from harm.",
     "img": "https://www.serebii.net/pokemongo/pokemon/196.png",
     "size": {
@@ -18976,11 +18781,11 @@ export default {
     },
     "spawn-chance": null,
     "stats": {
-      "base-attack": "261",
-      "base-defense": "175",
-      "base-stamina": "163",
-      "max-cp": "3170",
-      "max-hp": "140"
+      "attack": "261",
+      "defense": "175",
+      "stamina": "163",
+      "cp": "3170",
+      "hp": "140"
     },
     "resistant": [
       "fighting",
@@ -19044,10 +18849,9 @@ export default {
   {
     "num": "197",
     "name": "umbreon",
-    "generation": {
-      "num": "generation ii",
-      "name": "johto"
-    },
+    "generation": [
+      "johto"
+    ],
     "about": "Umbreon evolved as a result of exposure to the moon's waves. It hides silently in darkness and waits for its foes to make a move. The rings on its body glow when it leaps to attack.",
     "img": "https://www.serebii.net/pokemongo/pokemon/197.png",
     "size": {
@@ -19064,11 +18868,11 @@ export default {
     },
     "spawn-chance": null,
     "stats": {
-      "base-attack": "126",
-      "base-defense": "240",
-      "base-stamina": "216",
-      "max-cp": "2137",
-      "max-hp": "182"
+      "attack": "126",
+      "defense": "240",
+      "stamina": "216",
+      "cp": "2137",
+      "hp": "182"
     },
     "resistant": [
       "psychic",
@@ -19126,10 +18930,9 @@ export default {
   {
     "num": "198",
     "name": "murkrow",
-    "generation": {
-      "num": "generation ii",
-      "name": "johto"
-    },
+    "generation": [
+      "johto"
+    ],
     "about": "Murkrow was feared and loathed as the alleged bearer of ill fortune. This Pokémon shows strong interest in anything that sparkles or glitters. It will even try to steal rings from women.",
     "img": "https://www.serebii.net/pokemongo/pokemon/198.png",
     "size": {
@@ -19147,11 +18950,11 @@ export default {
     },
     "spawn-chance": null,
     "stats": {
-      "base-attack": "175",
-      "base-defense": "87",
-      "base-stamina": "155",
-      "max-cp": "1562",
-      "max-hp": "134"
+      "attack": "175",
+      "defense": "87",
+      "stamina": "155",
+      "cp": "1562",
+      "hp": "134"
     },
     "resistant": [
       "grass",
@@ -19223,10 +19026,9 @@ export default {
   {
     "num": "199",
     "name": "slowking",
-    "generation": {
-      "num": "generation ii",
-      "name": "johto"
-    },
+    "generation": [
+      "johto"
+    ],
     "about": "Slowking undertakes research every day in an effort to solve the mysteries of the world. However, this Pokémon apparently forgets everything it has learned if the Shellder on its head comes off.",
     "img": "https://www.serebii.net/pokemongo/pokemon/199.png",
     "size": {
@@ -19244,11 +19046,11 @@ export default {
     },
     "spawn-chance": null,
     "stats": {
-      "base-attack": "177",
-      "base-defense": "180",
-      "base-stamina": "216",
-      "max-cp": "2545",
-      "max-hp": "182"
+      "attack": "177",
+      "defense": "180",
+      "stamina": "216",
+      "cp": "2545",
+      "hp": "182"
     },
     "resistant": [
       "fire",
@@ -19320,10 +19122,9 @@ export default {
   {
     "num": "200",
     "name": "misdreavus",
-    "generation": {
-      "num": "generation ii",
-      "name": "johto"
-    },
+    "generation": [
+      "johto"
+    ],
     "about": "Misdreavus frightens people with a creepy, sobbing cry. The Pokémon apparently uses its red spheres to absorb the fearful feelings of foes and turn them into nutrition.",
     "img": "https://www.serebii.net/pokemongo/pokemon/200.png",
     "size": {
@@ -19340,11 +19141,11 @@ export default {
     },
     "spawn-chance": null,
     "stats": {
-      "base-attack": "167",
-      "base-defense": "154",
-      "base-stamina": "155",
-      "max-cp": "1926",
-      "max-hp": "134"
+      "attack": "167",
+      "defense": "154",
+      "stamina": "155",
+      "cp": "1926",
+      "hp": "134"
     },
     "resistant": [
       "normal",
@@ -19413,10 +19214,9 @@ export default {
   {
     "num": "201",
     "name": "unown",
-    "generation": {
-      "num": "generation ii",
-      "name": "johto"
-    },
+    "generation": [
+      "johto"
+    ],
     "about": "This Pokémon is shaped like ancient writing. It is a mystery as to which came first, the ancient writings or the various Unown. Research into this topic is ongoing but nothing is known.",
     "img": "https://www.serebii.net/pokemongo/pokemon/201.png",
     "size": {
@@ -19433,11 +19233,11 @@ export default {
     },
     "spawn-chance": null,
     "stats": {
-      "base-attack": "136",
-      "base-defense": "91",
-      "base-stamina": "134",
-      "max-cp": "1185",
-      "max-hp": "117"
+      "attack": "136",
+      "defense": "91",
+      "stamina": "134",
+      "cp": "1185",
+      "hp": "117"
     },
     "resistant": [
       "fighting",
@@ -19473,10 +19273,9 @@ export default {
   {
     "num": "202",
     "name": "wobbuffet",
-    "generation": {
-      "num": "generation ii",
-      "name": "johto"
-    },
+    "generation": [
+      "johto"
+    ],
     "about": "If two or more Wobbuffet meet, they will turn competitive and try to outdo each other's endurance. However, they may try to see which one can endure the longest without food. Trainers need to beware of this habit.",
     "img": "https://www.serebii.net/pokemongo/pokemon/202.png",
     "size": {
@@ -19493,11 +19292,11 @@ export default {
     },
     "spawn-chance": null,
     "stats": {
-      "base-attack": "60",
-      "base-defense": "106",
-      "base-stamina": "382",
-      "max-cp": "1026",
-      "max-hp": "313"
+      "attack": "60",
+      "defense": "106",
+      "stamina": "382",
+      "cp": "1026",
+      "hp": "313"
     },
     "resistant": [
       "fighting",
@@ -19546,10 +19345,9 @@ export default {
   {
     "num": "203",
     "name": "girafarig",
-    "generation": {
-      "num": "generation ii",
-      "name": "johto"
-    },
+    "generation": [
+      "johto"
+    ],
     "about": "Girafarig's rear head also has a brain, but it is small. The rear head attacks in response to smells and sounds. Approaching this Pokémon from behind can cause the rear head to suddenly lash out and bite.",
     "img": "https://www.serebii.net/pokemongo/pokemon/203.png",
     "size": {
@@ -19567,11 +19365,11 @@ export default {
     },
     "spawn-chance": null,
     "stats": {
-      "base-attack": "182",
-      "base-defense": "133",
-      "base-stamina": "172",
-      "max-cp": "2046",
-      "max-hp": "147"
+      "attack": "182",
+      "defense": "133",
+      "stamina": "172",
+      "cp": "2046",
+      "hp": "147"
     },
     "resistant": [
       "psychic"
@@ -19628,10 +19426,9 @@ export default {
   {
     "num": "204",
     "name": "pineco",
-    "generation": {
-      "num": "generation ii",
-      "name": "johto"
-    },
+    "generation": [
+      "johto"
+    ],
     "about": "Pineco hangs from a tree branch and patiently waits for prey to come along. If the Pokémon is disturbed while eating by someone shaking its tree, it drops down to the ground and explodes with no warning.",
     "img": "https://www.serebii.net/pokemongo/pokemon/204.png",
     "size": {
@@ -19648,11 +19445,11 @@ export default {
     },
     "spawn-chance": null,
     "stats": {
-      "base-attack": "108",
-      "base-defense": "122",
-      "base-stamina": "137",
-      "max-cp": "1108",
-      "max-hp": "120"
+      "attack": "108",
+      "defense": "122",
+      "stamina": "137",
+      "cp": "1108",
+      "hp": "120"
     },
     "resistant": [
       "grass",
@@ -19717,10 +19514,9 @@ export default {
   {
     "num": "205",
     "name": "forretress",
-    "generation": {
-      "num": "generation ii",
-      "name": "johto"
-    },
+    "generation": [
+      "johto"
+    ],
     "about": "Forretress conceals itself inside its hardened steel shell. The shell is opened when the Pokémon is catching prey, but it does so at such a quick pace that the shell's inside cannot be seen.",
     "img": "https://www.serebii.net/pokemongo/pokemon/205.png",
     "size": {
@@ -19738,11 +19534,11 @@ export default {
     },
     "spawn-chance": null,
     "stats": {
-      "base-attack": "161",
-      "base-defense": "205",
-      "base-stamina": "181",
-      "max-cp": "2282",
-      "max-hp": "154"
+      "attack": "161",
+      "defense": "205",
+      "stamina": "181",
+      "cp": "2282",
+      "hp": "154"
     },
     "resistant": [
       "normal",
@@ -19807,10 +19603,9 @@ export default {
   {
     "num": "206",
     "name": "dunsparce",
-    "generation": {
-      "num": "generation ii",
-      "name": "johto"
-    },
+    "generation": [
+      "johto"
+    ],
     "about": "Dunsparce has a drill for its tail. It uses this tail to burrow into the ground backward. This Pokémon is known to make its nest in complex shapes deep under the ground.",
     "img": "https://www.serebii.net/pokemongo/pokemon/206.png",
     "size": {
@@ -19827,11 +19622,11 @@ export default {
     },
     "spawn-chance": null,
     "stats": {
-      "base-attack": "131",
-      "base-defense": "128",
-      "base-stamina": "225",
-      "max-cp": "1689",
-      "max-hp": "189"
+      "attack": "131",
+      "defense": "128",
+      "stamina": "225",
+      "cp": "1689",
+      "hp": "189"
     },
     "resistant": [
       "ghost"
@@ -19887,10 +19682,9 @@ export default {
   {
     "num": "207",
     "name": "gligar",
-    "generation": {
-      "num": "generation ii",
-      "name": "johto"
-    },
+    "generation": [
+      "johto"
+    ],
     "about": "Gligar glides through the air without a sound as if it were sliding. This Pokémon hangs on to the face of its foe using its clawed hind legs and the large pincers on its forelegs, then injects the prey with its poison barb.",
     "img": "https://www.serebii.net/pokemongo/pokemon/207.png",
     "size": {
@@ -19908,11 +19702,11 @@ export default {
     },
     "spawn-chance": null,
     "stats": {
-      "base-attack": "143",
-      "base-defense": "184",
-      "base-stamina": "163",
-      "max-cp": "1857",
-      "max-hp": "140"
+      "attack": "143",
+      "defense": "184",
+      "stamina": "163",
+      "cp": "1857",
+      "hp": "140"
     },
     "resistant": [
       "fighting",
@@ -19981,10 +19775,9 @@ export default {
   {
     "num": "208",
     "name": "steelix",
-    "generation": {
-      "num": "generation ii",
-      "name": "johto"
-    },
+    "generation": [
+      "johto"
+    ],
     "about": "Steelix lives even further underground than Onix. This Pokémon is known to dig toward the earth's core. There are records of this Pokémon reaching a depth of over six-tenths of a mile underground.",
     "img": "https://www.serebii.net/pokemongo/pokemon/208.png",
     "size": {
@@ -20002,11 +19795,11 @@ export default {
     },
     "spawn-chance": null,
     "stats": {
-      "base-attack": "148",
-      "base-defense": "272",
-      "base-stamina": "181",
-      "max-cp": "2414",
-      "max-hp": "154"
+      "attack": "148",
+      "defense": "272",
+      "stamina": "181",
+      "cp": "2414",
+      "hp": "154"
     },
     "resistant": [
       "normal",
@@ -20078,10 +19871,9 @@ export default {
   {
     "num": "209",
     "name": "snubbull",
-    "generation": {
-      "num": "generation ii",
-      "name": "johto"
-    },
+    "generation": [
+      "johto"
+    ],
     "about": "By baring its fangs and making a scary face, Snubbull sends smaller Pokémon scurrying away in terror. However, this Pokémon seems a little sad at making its foes flee.",
     "img": "https://www.serebii.net/pokemongo/pokemon/209.png",
     "size": {
@@ -20098,11 +19890,11 @@ export default {
     },
     "spawn-chance": null,
     "stats": {
-      "base-attack": "137",
-      "base-defense": "85",
-      "base-stamina": "155",
-      "max-cp": "1237",
-      "max-hp": "134"
+      "attack": "137",
+      "defense": "85",
+      "stamina": "155",
+      "cp": "1237",
+      "hp": "134"
     },
     "resistant": [
       "fighting",
@@ -20167,10 +19959,9 @@ export default {
   {
     "num": "210",
     "name": "granbull",
-    "generation": {
-      "num": "generation ii",
-      "name": "johto"
-    },
+    "generation": [
+      "johto"
+    ],
     "about": "Granbull has a particularly well-developed lower jaw. The enormous fangs are heavy, causing the Pokémon to tip its head back for balance. Unless it is startled, it will not try to bite indiscriminately.",
     "img": "https://www.serebii.net/pokemongo/pokemon/210.png",
     "size": {
@@ -20187,11 +19978,11 @@ export default {
     },
     "spawn-chance": null,
     "stats": {
-      "base-attack": "212",
-      "base-defense": "131",
-      "base-stamina": "207",
-      "max-cp": "2552",
-      "max-hp": "175"
+      "attack": "212",
+      "defense": "131",
+      "stamina": "207",
+      "cp": "2552",
+      "hp": "175"
     },
     "resistant": [
       "fighting",
@@ -20256,10 +20047,9 @@ export default {
   {
     "num": "211",
     "name": "qwilfish",
-    "generation": {
-      "num": "generation ii",
-      "name": "johto"
-    },
+    "generation": [
+      "johto"
+    ],
     "about": "Qwilfish sucks in water, inflating itself. This Pokémon uses the pressure of the water it swallowed to shoot toxic quills all at once from all over its body. It finds swimming somewhat challenging.",
     "img": "https://www.serebii.net/pokemongo/pokemon/211.png",
     "size": {
@@ -20277,11 +20067,11 @@ export default {
     },
     "spawn-chance": null,
     "stats": {
-      "base-attack": "184",
-      "base-defense": "138",
-      "base-stamina": "163",
-      "max-cp": "2051",
-      "max-hp": "140"
+      "attack": "184",
+      "defense": "138",
+      "stamina": "163",
+      "cp": "2051",
+      "hp": "140"
     },
     "resistant": [
       "fire",
@@ -20343,10 +20133,9 @@ export default {
   {
     "num": "212",
     "name": "scizor",
-    "generation": {
-      "num": "generation ii",
-      "name": "johto"
-    },
+    "generation": [
+      "johto"
+    ],
     "about": "Scizor has a body with the hardness of steel. It is not easily fazed by ordinary sorts of attacks. This Pokémon flaps its wings to regulate its body temperature.",
     "img": "https://www.serebii.net/pokemongo/pokemon/212.png",
     "size": {
@@ -20364,11 +20153,11 @@ export default {
     },
     "spawn-chance": null,
     "stats": {
-      "base-attack": "236",
-      "base-defense": "181",
-      "base-stamina": "172",
-      "max-cp": "3001",
-      "max-hp": "147"
+      "attack": "236",
+      "defense": "181",
+      "stamina": "172",
+      "cp": "3001",
+      "hp": "147"
     },
     "resistant": [
       "normal",
@@ -20437,10 +20226,9 @@ export default {
   {
     "num": "213",
     "name": "shuckle",
-    "generation": {
-      "num": "generation ii",
-      "name": "johto"
-    },
+    "generation": [
+      "johto"
+    ],
     "about": "Shuckle quietly hides itself under rocks, keeping its body concealed inside its hard shell while eating berries it has stored away. The berries mix with its body fluids to become a juice.",
     "img": "https://www.serebii.net/pokemongo/pokemon/213.png",
     "size": {
@@ -20458,11 +20246,11 @@ export default {
     },
     "spawn-chance": null,
     "stats": {
-      "base-attack": "17",
-      "base-defense": "396",
-      "base-stamina": "85",
-      "max-cp": "405",
-      "max-hp": "79"
+      "attack": "17",
+      "defense": "396",
+      "stamina": "85",
+      "cp": "405",
+      "hp": "79"
     },
     "resistant": [
       "normal",
@@ -20521,10 +20309,9 @@ export default {
   {
     "num": "214",
     "name": "heracross",
-    "generation": {
-      "num": "generation ii",
-      "name": "johto"
-    },
+    "generation": [
+      "johto"
+    ],
     "about": "Heracross charges in a straight line at its foe, slips beneath the foe's grasp, and then scoops up and hurls the opponent with its mighty horn. This Pokémon even has enough power to topple a massive tree.",
     "img": "https://www.serebii.net/pokemongo/pokemon/214.png",
     "size": {
@@ -20542,11 +20329,11 @@ export default {
     },
     "spawn-chance": null,
     "stats": {
-      "base-attack": "234",
-      "base-defense": "179",
-      "base-stamina": "190",
-      "max-cp": "3101",
-      "max-hp": "162"
+      "attack": "234",
+      "defense": "179",
+      "stamina": "190",
+      "cp": "3101",
+      "hp": "162"
     },
     "resistant": [
       "grass",
@@ -20609,10 +20396,9 @@ export default {
   {
     "num": "215",
     "name": "sneasel",
-    "generation": {
-      "num": "generation ii",
-      "name": "johto"
-    },
+    "generation": [
+      "johto"
+    ],
     "about": "Sneasel scales trees by punching its hooked claws into the bark. This Pokémon seeks out unguarded nests and steals eggs for food while the parents are away.",
     "img": "https://www.serebii.net/pokemongo/pokemon/215.png",
     "size": {
@@ -20630,11 +20416,11 @@ export default {
     },
     "spawn-chance": null,
     "stats": {
-      "base-attack": "189",
-      "base-defense": "146",
-      "base-stamina": "146",
-      "max-cp": "2051",
-      "max-hp": "127"
+      "attack": "189",
+      "defense": "146",
+      "stamina": "146",
+      "cp": "2051",
+      "hp": "127"
     },
     "resistant": [
       "ice",
@@ -20705,10 +20491,9 @@ export default {
   {
     "num": "216",
     "name": "teddiursa",
-    "generation": {
-      "num": "generation ii",
-      "name": "johto"
-    },
+    "generation": [
+      "johto"
+    ],
     "about": "This Pokémon likes to lick its palms that are sweetened by being soaked in honey. Teddiursa concocts its own honey by blending fruits and pollen collected by Beedrill.",
     "img": "https://www.serebii.net/pokemongo/pokemon/216.png",
     "size": {
@@ -20725,11 +20510,11 @@ export default {
     },
     "spawn-chance": null,
     "stats": {
-      "base-attack": "142",
-      "base-defense": "93",
-      "base-stamina": "155",
-      "max-cp": "1328",
-      "max-hp": "134"
+      "attack": "142",
+      "defense": "93",
+      "stamina": "155",
+      "cp": "1328",
+      "hp": "134"
     },
     "resistant": [
       "ghost"
@@ -20790,10 +20575,9 @@ export default {
   {
     "num": "217",
     "name": "ursaring",
-    "generation": {
-      "num": "generation ii",
-      "name": "johto"
-    },
+    "generation": [
+      "johto"
+    ],
     "about": "In the forests inhabited by Ursaring, it is said that there are many streams and towering trees where they gather food. This Pokémon walks through its forest gathering food every day.",
     "img": "https://www.serebii.net/pokemongo/pokemon/217.png",
     "size": {
@@ -20810,11 +20594,11 @@ export default {
     },
     "spawn-chance": null,
     "stats": {
-      "base-attack": "236",
-      "base-defense": "144",
-      "base-stamina": "207",
-      "max-cp": "2945",
-      "max-hp": "175"
+      "attack": "236",
+      "defense": "144",
+      "stamina": "207",
+      "cp": "2945",
+      "hp": "175"
     },
     "resistant": [
       "ghost"
@@ -20875,10 +20659,9 @@ export default {
   {
     "num": "218",
     "name": "slugma",
-    "generation": {
-      "num": "generation ii",
-      "name": "johto"
-    },
+    "generation": [
+      "johto"
+    ],
     "about": "Molten magma courses throughout Slugma's circulatory system. If this Pokémon is chilled, the magma cools and hardens. Its body turns brittle and chunks fall off, reducing its size.",
     "img": "https://www.serebii.net/pokemongo/pokemon/218.png",
     "size": {
@@ -20895,11 +20678,11 @@ export default {
     },
     "spawn-chance": null,
     "stats": {
-      "base-attack": "118",
-      "base-defense": "71",
-      "base-stamina": "120",
-      "max-cp": "895",
-      "max-hp": "106"
+      "attack": "118",
+      "defense": "71",
+      "stamina": "120",
+      "cp": "895",
+      "hp": "106"
     },
     "resistant": [
       "fire",
@@ -20966,10 +20749,9 @@ export default {
   {
     "num": "219",
     "name": "magcargo",
-    "generation": {
-      "num": "generation ii",
-      "name": "johto"
-    },
+    "generation": [
+      "johto"
+    ],
     "about": "Magcargo's shell is actually its skin that hardened as a result of cooling. Its shell is very brittle and fragile-just touching it causes it to crumble apart. This Pokémon returns to its original size by dipping itself in magma.",
     "img": "https://www.serebii.net/pokemongo/pokemon/219.png",
     "size": {
@@ -20987,11 +20769,11 @@ export default {
     },
     "spawn-chance": null,
     "stats": {
-      "base-attack": "139",
-      "base-defense": "191",
-      "base-stamina": "137",
-      "max-cp": "1702",
-      "max-hp": "120"
+      "attack": "139",
+      "defense": "191",
+      "stamina": "137",
+      "cp": "1702",
+      "hp": "120"
     },
     "resistant": [
       "normal",
@@ -21059,10 +20841,9 @@ export default {
   {
     "num": "220",
     "name": "swinub",
-    "generation": {
-      "num": "generation ii",
-      "name": "johto"
-    },
+    "generation": [
+      "johto"
+    ],
     "about": "Swinub roots for food by rubbing its snout against the ground. Its favorite food is a mushroom that grows under the cover of dead grass. This Pokémon occasionally roots out hot springs.",
     "img": "https://www.serebii.net/pokemongo/pokemon/220.png",
     "size": {
@@ -21080,11 +20861,11 @@ export default {
     },
     "spawn-chance": null,
     "stats": {
-      "base-attack": "90",
-      "base-defense": "69",
-      "base-stamina": "137",
-      "max-cp": "741",
-      "max-hp": "120"
+      "attack": "90",
+      "defense": "69",
+      "stamina": "137",
+      "cp": "741",
+      "hp": "120"
     },
     "resistant": [
       "electric",
@@ -21149,10 +20930,9 @@ export default {
   {
     "num": "221",
     "name": "piloswine",
-    "generation": {
-      "num": "generation ii",
-      "name": "johto"
-    },
+    "generation": [
+      "johto"
+    ],
     "about": "Piloswine is covered by a thick coat of long hair that enables it to endure the freezing cold. This Pokémon uses its tusks to dig up food that has been buried under ice.",
     "img": "https://www.serebii.net/pokemongo/pokemon/221.png",
     "size": {
@@ -21170,11 +20950,11 @@ export default {
     },
     "spawn-chance": null,
     "stats": {
-      "base-attack": "181",
-      "base-defense": "138",
-      "base-stamina": "225",
-      "max-cp": "2345",
-      "max-hp": "189"
+      "attack": "181",
+      "defense": "138",
+      "stamina": "225",
+      "cp": "2345",
+      "hp": "189"
     },
     "resistant": [
       "electric",
@@ -21239,10 +21019,9 @@ export default {
   {
     "num": "222",
     "name": "corsola",
-    "generation": {
-      "num": "generation ii",
-      "name": "johto"
-    },
+    "generation": [
+      "johto"
+    ],
     "about": "Corsola's branches glitter very beautifully in seven colors when they catch sunlight. If any branch breaks off, this Pokémon grows it back in just one night.",
     "img": "https://www.serebii.net/pokemongo/pokemon/222.png",
     "size": {
@@ -21260,11 +21039,11 @@ export default {
     },
     "spawn-chance": null,
     "stats": {
-      "base-attack": "118",
-      "base-defense": "156",
-      "base-stamina": "146",
-      "max-cp": "1378",
-      "max-hp": "127"
+      "attack": "118",
+      "defense": "156",
+      "stamina": "146",
+      "cp": "1378",
+      "hp": "127"
     },
     "resistant": [
       "normal",
@@ -21327,10 +21106,9 @@ export default {
   {
     "num": "223",
     "name": "remoraid",
-    "generation": {
-      "num": "generation ii",
-      "name": "johto"
-    },
+    "generation": [
+      "johto"
+    ],
     "about": "Remoraid sucks in water, then expels it at high velocity using its abdominal muscles to shoot down flying prey. When evolution draws near, this Pokémon travels downstream from rivers.",
     "img": "https://www.serebii.net/pokemongo/pokemon/223.png",
     "size": {
@@ -21347,11 +21125,11 @@ export default {
     },
     "spawn-chance": null,
     "stats": {
-      "base-attack": "127",
-      "base-defense": "69",
-      "base-stamina": "111",
-      "max-cp": "912",
-      "max-hp": "99"
+      "attack": "127",
+      "defense": "69",
+      "stamina": "111",
+      "cp": "912",
+      "hp": "99"
     },
     "resistant": [
       "fire",
@@ -21416,10 +21194,9 @@ export default {
   {
     "num": "224",
     "name": "octillery",
-    "generation": {
-      "num": "generation ii",
-      "name": "johto"
-    },
+    "generation": [
+      "johto"
+    ],
     "about": "Octillery grabs onto its foe using its tentacles. This Pokémon tries to immobilize it before delivering the finishing blow. If the foe turns out to be too strong, Octillery spews ink to escape.",
     "img": "https://www.serebii.net/pokemongo/pokemon/224.png",
     "size": {
@@ -21436,11 +21213,11 @@ export default {
     },
     "spawn-chance": null,
     "stats": {
-      "base-attack": "197",
-      "base-defense": "141",
-      "base-stamina": "181",
-      "max-cp": "2315",
-      "max-hp": "154"
+      "attack": "197",
+      "defense": "141",
+      "stamina": "181",
+      "cp": "2315",
+      "hp": "154"
     },
     "resistant": [
       "fire",
@@ -21505,10 +21282,9 @@ export default {
   {
     "num": "225",
     "name": "delibird",
-    "generation": {
-      "num": "generation ii",
-      "name": "johto"
-    },
+    "generation": [
+      "johto"
+    ],
     "about": "Delibird carries its food bundled up in its tail. There once was a famous explorer who managed to reach the peak of the world's highest mountain, thanks to one of these Pokémon sharing its food.",
     "img": "https://www.serebii.net/pokemongo/pokemon/225.png",
     "size": {
@@ -21526,11 +21302,11 @@ export default {
     },
     "spawn-chance": null,
     "stats": {
-      "base-attack": "128",
-      "base-defense": "90",
-      "base-stamina": "128",
-      "max-cp": "1094",
-      "max-hp": "113"
+      "attack": "128",
+      "defense": "90",
+      "stamina": "128",
+      "cp": "1094",
+      "hp": "113"
     },
     "resistant": [
       "grass",
@@ -21591,10 +21367,9 @@ export default {
   {
     "num": "226",
     "name": "mantine",
-    "generation": {
-      "num": "generation ii",
-      "name": "johto"
-    },
+    "generation": [
+      "johto"
+    ],
     "about": "On sunny days, schools of Mantine can be seen elegantly leaping over the sea's waves. This Pokémon is not bothered by the Remoraid that hitches rides.",
     "img": "https://www.serebii.net/pokemongo/pokemon/226.png",
     "size": {
@@ -21612,11 +21387,11 @@ export default {
     },
     "spawn-chance": null,
     "stats": {
-      "base-attack": "148",
-      "base-defense": "226",
-      "base-stamina": "163",
-      "max-cp": "2108",
-      "max-hp": "140"
+      "attack": "148",
+      "defense": "226",
+      "stamina": "163",
+      "cp": "2108",
+      "hp": "140"
     },
     "resistant": [
       "fire",
@@ -21682,10 +21457,9 @@ export default {
   {
     "num": "227",
     "name": "skarmory",
-    "generation": {
-      "num": "generation ii",
-      "name": "johto"
-    },
+    "generation": [
+      "johto"
+    ],
     "about": "Skarmory is entirely encased in hard, protective armor. This Pokémon flies at close to 190 mph. It slashes foes with its wings that possess swordlike cutting edges.",
     "img": "https://www.serebii.net/pokemongo/pokemon/227.png",
     "size": {
@@ -21703,11 +21477,11 @@ export default {
     },
     "spawn-chance": null,
     "stats": {
-      "base-attack": "148",
-      "base-defense": "226",
-      "base-stamina": "163",
-      "max-cp": "2108",
-      "max-hp": "140"
+      "attack": "148",
+      "defense": "226",
+      "stamina": "163",
+      "cp": "2108",
+      "hp": "140"
     },
     "resistant": [
       "normal",
@@ -21768,10 +21542,9 @@ export default {
   {
     "num": "228",
     "name": "houndour",
-    "generation": {
-      "num": "generation ii",
-      "name": "johto"
-    },
+    "generation": [
+      "johto"
+    ],
     "about": "Houndour hunt as a coordinated pack. They communicate with each other using a variety of cries to corner their prey. This Pokémon's remarkable teamwork is unparalleled.",
     "img": "https://www.serebii.net/pokemongo/pokemon/228.png",
     "size": {
@@ -21789,11 +21562,11 @@ export default {
     },
     "spawn-chance": null,
     "stats": {
-      "base-attack": "152",
-      "base-defense": "83",
-      "base-stamina": "128",
-      "max-cp": "1234",
-      "max-hp": "113"
+      "attack": "152",
+      "defense": "83",
+      "stamina": "128",
+      "cp": "1234",
+      "hp": "113"
     },
     "resistant": [
       "fire",
@@ -21861,10 +21634,9 @@ export default {
   {
     "num": "229",
     "name": "houndoom",
-    "generation": {
-      "num": "generation ii",
-      "name": "johto"
-    },
+    "generation": [
+      "johto"
+    ],
     "about": "In a Houndoom pack, the one with its horns raked sharply toward the back serves a leadership role. These Pokémon choose their leader by fighting among themselves.",
     "img": "https://www.serebii.net/pokemongo/pokemon/229.png",
     "size": {
@@ -21882,11 +21654,11 @@ export default {
     },
     "spawn-chance": null,
     "stats": {
-      "base-attack": "224",
-      "base-defense": "144",
-      "base-stamina": "181",
-      "max-cp": "2635",
-      "max-hp": "154"
+      "attack": "224",
+      "defense": "144",
+      "stamina": "181",
+      "cp": "2635",
+      "hp": "154"
     },
     "resistant": [
       "fire",
@@ -21954,10 +21726,9 @@ export default {
   {
     "num": "230",
     "name": "kingdra",
-    "generation": {
-      "num": "generation ii",
-      "name": "johto"
-    },
+    "generation": [
+      "johto"
+    ],
     "about": "Kingdra lives at extreme ocean depths that are otherwise uninhabited. It has long been believed that the yawning of this Pokémon creates spiraling ocean currents.",
     "img": "https://www.serebii.net/pokemongo/pokemon/230.png",
     "size": {
@@ -21975,11 +21746,11 @@ export default {
     },
     "spawn-chance": null,
     "stats": {
-      "base-attack": "194",
-      "base-defense": "194",
-      "base-stamina": "181",
-      "max-cp": "2641",
-      "max-hp": "154"
+      "attack": "194",
+      "defense": "194",
+      "stamina": "181",
+      "cp": "2641",
+      "hp": "154"
     },
     "resistant": [
       "fire",
@@ -22052,10 +21823,9 @@ export default {
   {
     "num": "231",
     "name": "phanpy",
-    "generation": {
-      "num": "generation ii",
-      "name": "johto"
-    },
+    "generation": [
+      "johto"
+    ],
     "about": "For its nest, Phanpy digs a vertical pit in the ground at the edge of a river. It marks the area around its nest with its trunk to let the others know that the area has been claimed.",
     "img": "https://www.serebii.net/pokemongo/pokemon/231.png",
     "size": {
@@ -22072,11 +21842,11 @@ export default {
     },
     "spawn-chance": null,
     "stats": {
-      "base-attack": "107",
-      "base-defense": "98",
-      "base-stamina": "207",
-      "max-cp": "1206",
-      "max-hp": "175"
+      "attack": "107",
+      "defense": "98",
+      "stamina": "207",
+      "cp": "1206",
+      "hp": "175"
     },
     "resistant": [
       "electric",
@@ -22141,10 +21911,9 @@ export default {
   {
     "num": "232",
     "name": "donphan",
-    "generation": {
-      "num": "generation ii",
-      "name": "johto"
-    },
+    "generation": [
+      "johto"
+    ],
     "about": "Donphan's favorite attack is curling its body into a ball, then charging at its foe while rolling at high speed. Once it starts rolling, this Pokémon can't stop very easily.",
     "img": "https://www.serebii.net/pokemongo/pokemon/232.png",
     "size": {
@@ -22161,11 +21930,11 @@ export default {
     },
     "spawn-chance": null,
     "stats": {
-      "base-attack": "214",
-      "base-defense": "185",
-      "base-stamina": "207",
-      "max-cp": "3013",
-      "max-hp": "175"
+      "attack": "214",
+      "defense": "185",
+      "stamina": "207",
+      "cp": "3013",
+      "hp": "175"
     },
     "resistant": [
       "electric",
@@ -22230,10 +21999,9 @@ export default {
   {
     "num": "233",
     "name": "porygon2",
-    "generation": {
-      "num": "generation ii",
-      "name": "johto"
-    },
+    "generation": [
+      "johto"
+    ],
     "about": "Porygon2 was created by humans using the power of science. The man-made Pokémon has been endowed with artificial intelligence that enables it to learn new gestures and emotions on its own.",
     "img": "https://www.serebii.net/pokemongo/pokemon/233.png",
     "size": {
@@ -22250,11 +22018,11 @@ export default {
     },
     "spawn-chance": null,
     "stats": {
-      "base-attack": "198",
-      "base-defense": "180",
-      "base-stamina": "198",
-      "max-cp": "2711",
-      "max-hp": "168"
+      "attack": "198",
+      "defense": "180",
+      "stamina": "198",
+      "cp": "2711",
+      "hp": "168"
     },
     "resistant": [
       "ghost"
@@ -22328,10 +22096,9 @@ export default {
   {
     "num": "234",
     "name": "stantler",
-    "generation": {
-      "num": "generation ii",
-      "name": "johto"
-    },
+    "generation": [
+      "johto"
+    ],
     "about": "Stantler's magnificent antlers were traded at high prices as works of art. As a result, this Pokémon was hunted close to extinction by those who were after the priceless antlers.",
     "img": "https://www.serebii.net/pokemongo/pokemon/234.png",
     "size": {
@@ -22348,11 +22115,11 @@ export default {
     },
     "spawn-chance": null,
     "stats": {
-      "base-attack": "192",
-      "base-defense": "131",
-      "base-stamina": "177",
-      "max-cp": "2164",
-      "max-hp": "151"
+      "attack": "192",
+      "defense": "131",
+      "stamina": "177",
+      "cp": "2164",
+      "hp": "151"
     },
     "resistant": [
       "ghost"
@@ -22408,10 +22175,9 @@ export default {
   {
     "num": "235",
     "name": "smeargle",
-    "generation": {
-      "num": "generation ii",
-      "name": "johto"
-    },
+    "generation": [
+      "johto"
+    ],
     "about": "Smeargle marks the boundaries of its territory using a body fluid that leaks out from the tip of its tail. Over 5,000 different marks left by this Pokémon have been found.",
     "img": "https://www.serebii.net/pokemongo/pokemon/235.png",
     "size": {
@@ -22428,11 +22194,11 @@ export default {
     },
     "spawn-chance": null,
     "stats": {
-      "base-attack": "40",
-      "base-defense": "83",
-      "base-stamina": "146",
-      "max-cp": "431",
-      "max-hp": "127"
+      "attack": "40",
+      "defense": "83",
+      "stamina": "146",
+      "cp": "431",
+      "hp": "127"
     },
     "resistant": [
       "ghost"
@@ -22465,10 +22231,9 @@ export default {
   {
     "num": "236",
     "name": "tyrogue",
-    "generation": {
-      "num": "generation ii",
-      "name": "johto"
-    },
+    "generation": [
+      "johto"
+    ],
     "about": "Tyrogue becomes stressed out if it does not get to train every day. When raising this Pokémon, the Trainer must establish and uphold various training methods.",
     "img": "https://www.serebii.net/pokemongo/pokemon/236.png",
     "size": {
@@ -22485,11 +22250,11 @@ export default {
     },
     "spawn-chance": "0",
     "stats": {
-      "base-attack": "64",
-      "base-defense": "64",
-      "base-stamina": "111",
-      "max-cp": "492",
-      "max-hp": "99"
+      "attack": "64",
+      "defense": "64",
+      "stamina": "111",
+      "cp": "492",
+      "hp": "99"
     },
     "resistant": [
       "bug",
@@ -22566,10 +22331,9 @@ export default {
   {
     "num": "237",
     "name": "hitmontop",
-    "generation": {
-      "num": "generation ii",
-      "name": "johto"
-    },
+    "generation": [
+      "johto"
+    ],
     "about": "Hitmontop spins on its head at high speed, all the while delivering kicks. This technique is a remarkable mix of both offense and defense at the same time. The Pokémon travels faster spinning than it does walking.",
     "img": "https://www.serebii.net/pokemongo/pokemon/237.png",
     "size": {
@@ -22586,11 +22350,11 @@ export default {
     },
     "spawn-chance": null,
     "stats": {
-      "base-attack": "173",
-      "base-defense": "207",
-      "base-stamina": "137",
-      "max-cp": "2156",
-      "max-hp": "120"
+      "attack": "173",
+      "defense": "207",
+      "stamina": "137",
+      "cp": "2156",
+      "hp": "120"
     },
     "resistant": [
       "bug",
@@ -22655,10 +22419,9 @@ export default {
   {
     "num": "238",
     "name": "smoochum",
-    "generation": {
-      "num": "generation ii",
-      "name": "johto"
-    },
+    "generation": [
+      "johto"
+    ],
     "about": "Smoochum actively runs about, but also falls quite often. Whenever the chance arrives, it will look for its reflection to make sure its face hasn't become dirty.",
     "img": "https://www.serebii.net/pokemongo/pokemon/238.png",
     "size": {
@@ -22676,11 +22439,11 @@ export default {
     },
     "spawn-chance": "0",
     "stats": {
-      "base-attack": "153",
-      "base-defense": "91",
-      "base-stamina": "128",
-      "max-cp": "1291",
-      "max-hp": "113"
+      "attack": "153",
+      "defense": "91",
+      "stamina": "128",
+      "cp": "1291",
+      "hp": "113"
     },
     "resistant": [
       "ice",
@@ -22752,10 +22515,9 @@ export default {
   {
     "num": "239",
     "name": "elekid",
-    "generation": {
-      "num": "generation ii",
-      "name": "johto"
-    },
+    "generation": [
+      "johto"
+    ],
     "about": "Elekid stores electricity in its body. If it touches metal and accidentally discharges all its built-up electricity, this Pokémon begins swinging its arms in circles to recharge itself.",
     "img": "https://www.serebii.net/pokemongo/pokemon/239.png",
     "size": {
@@ -22772,11 +22534,11 @@ export default {
     },
     "spawn-chance": "0",
     "stats": {
-      "base-attack": "135",
-      "base-defense": "101",
-      "base-stamina": "128",
-      "max-cp": "1206",
-      "max-hp": "113"
+      "attack": "135",
+      "defense": "101",
+      "stamina": "128",
+      "cp": "1206",
+      "hp": "113"
     },
     "resistant": [
       "electric",
@@ -22855,10 +22617,9 @@ export default {
   {
     "num": "240",
     "name": "magby",
-    "generation": {
-      "num": "generation ii",
-      "name": "johto"
-    },
+    "generation": [
+      "johto"
+    ],
     "about": "Magby's state of health is determined by observing the fire it breathes. If the Pokémon is spouting yellow flames from its mouth, it is in good health. When it is fatigued, black smoke will be mixed in with the flames.",
     "img": "https://www.serebii.net/pokemongo/pokemon/240.png",
     "size": {
@@ -22875,11 +22636,11 @@ export default {
     },
     "spawn-chance": "0",
     "stats": {
-      "base-attack": "151",
-      "base-defense": "99",
-      "base-stamina": "128",
-      "max-cp": "1323",
-      "max-hp": "113"
+      "attack": "151",
+      "defense": "99",
+      "stamina": "128",
+      "cp": "1323",
+      "hp": "113"
     },
     "resistant": [
       "fire",
@@ -22962,10 +22723,9 @@ export default {
   {
     "num": "241",
     "name": "miltank",
-    "generation": {
-      "num": "generation ii",
-      "name": "johto"
-    },
+    "generation": [
+      "johto"
+    ],
     "about": "Miltank gives over five gallons of milk on a daily basis. Its sweet milk is enjoyed by children and grown-ups alike. People who can't drink milk turn it into yogurt and eat it instead.",
     "img": "https://www.serebii.net/pokemongo/pokemon/241.png",
     "size": {
@@ -22982,11 +22742,11 @@ export default {
     },
     "spawn-chance": null,
     "stats": {
-      "base-attack": "157",
-      "base-defense": "193",
-      "base-stamina": "216",
-      "max-cp": "2354",
-      "max-hp": "182"
+      "attack": "157",
+      "defense": "193",
+      "stamina": "216",
+      "cp": "2354",
+      "hp": "182"
     },
     "resistant": [
       "ghost"
@@ -23042,10 +22802,9 @@ export default {
   {
     "num": "242",
     "name": "blissey",
-    "generation": {
-      "num": "generation ii",
-      "name": "johto"
-    },
+    "generation": [
+      "johto"
+    ],
     "about": "Blissey senses sadness with its fluffy coat of fur. If it does so, this Pokémon will rush over to a sad person, no matter how far away, to share a Lucky Egg that brings a smile to any face.",
     "img": "https://www.serebii.net/pokemongo/pokemon/242.png",
     "size": {
@@ -23062,11 +22821,11 @@ export default {
     },
     "spawn-chance": null,
     "stats": {
-      "base-attack": "129",
-      "base-defense": "169",
-      "base-stamina": "496",
-      "max-cp": "2757",
-      "max-hp": "403"
+      "attack": "129",
+      "defense": "169",
+      "stamina": "496",
+      "cp": "2757",
+      "hp": "403"
     },
     "resistant": [
       "ghost"
@@ -23132,10 +22891,9 @@ export default {
   {
     "num": "243",
     "name": "raikou",
-    "generation": {
-      "num": "generation ii",
-      "name": "johto"
-    },
+    "generation": [
+      "johto"
+    ],
     "about": "Raikou embodies the speed of lightning. The roars of this Pokémon send shock waves shuddering through the air and shake the ground as if lightning bolts had come crashing down.",
     "img": "https://www.serebii.net/pokemongo/pokemon/243.png",
     "size": {
@@ -23152,11 +22910,11 @@ export default {
     },
     "spawn-chance": "0",
     "stats": {
-      "base-attack": "241",
-      "base-defense": "195",
-      "base-stamina": "207",
-      "max-cp": "3452",
-      "max-hp": "175"
+      "attack": "241",
+      "defense": "195",
+      "stamina": "207",
+      "cp": "3452",
+      "hp": "175"
     },
     "resistant": [
       "electric",
@@ -23214,10 +22972,9 @@ export default {
   {
     "num": "244",
     "name": "entei",
-    "generation": {
-      "num": "generation ii",
-      "name": "johto"
-    },
+    "generation": [
+      "johto"
+    ],
     "about": "Entei embodies the passion of magma. This Pokémon is thought to have been born in the eruption of a volcano. It sends up massive bursts of fire that utterly consume all that they touch.",
     "img": "https://www.serebii.net/pokemongo/pokemon/244.png",
     "size": {
@@ -23234,11 +22991,11 @@ export default {
     },
     "spawn-chance": "0",
     "stats": {
-      "base-attack": "235",
-      "base-defense": "171",
-      "base-stamina": "251",
-      "max-cp": "3473",
-      "max-hp": "210"
+      "attack": "235",
+      "defense": "171",
+      "stamina": "251",
+      "cp": "3473",
+      "hp": "210"
     },
     "resistant": [
       "fire",
@@ -23300,10 +23057,9 @@ export default {
   {
     "num": "245",
     "name": "suicune",
-    "generation": {
-      "num": "generation ii",
-      "name": "johto"
-    },
+    "generation": [
+      "johto"
+    ],
     "about": "Suicune embodies the compassion of a pure spring of water. It runs across the land with gracefulness. This Pokémon has the power to purify dirty water.",
     "img": "https://www.serebii.net/pokemongo/pokemon/245.png",
     "size": {
@@ -23320,11 +23076,11 @@ export default {
     },
     "spawn-chance": "0",
     "stats": {
-      "base-attack": "180",
-      "base-defense": "235",
-      "base-stamina": "225",
-      "max-cp": "2983",
-      "max-hp": "189"
+      "attack": "180",
+      "defense": "235",
+      "stamina": "225",
+      "cp": "2983",
+      "hp": "189"
     },
     "resistant": [
       "fire",
@@ -23384,10 +23140,9 @@ export default {
   {
     "num": "246",
     "name": "larvitar",
-    "generation": {
-      "num": "generation ii",
-      "name": "johto"
-    },
+    "generation": [
+      "johto"
+    ],
     "about": "Larvitar is born deep under the ground. To come up to the surface, this Pokémon must eat its way through the soil above. Until it does so, Larvitar cannot see its parents.",
     "img": "https://www.serebii.net/pokemongo/pokemon/246.png",
     "size": {
@@ -23405,11 +23160,11 @@ export default {
     },
     "spawn-chance": null,
     "stats": {
-      "base-attack": "115",
-      "base-defense": "93",
-      "base-stamina": "137",
-      "max-cp": "1040",
-      "max-hp": "120"
+      "attack": "115",
+      "defense": "93",
+      "stamina": "137",
+      "cp": "1040",
+      "hp": "120"
     },
     "resistant": [
       "electric",
@@ -23485,10 +23240,9 @@ export default {
   {
     "num": "247",
     "name": "pupitar",
-    "generation": {
-      "num": "generation ii",
-      "name": "johto"
-    },
+    "generation": [
+      "johto"
+    ],
     "about": "Pupitar creates a gas inside its body that it compresses and forcefully ejects to propel itself like a jet. The body is very durable—it avoids damage even if it hits solid steel.",
     "img": "https://www.serebii.net/pokemongo/pokemon/247.png",
     "size": {
@@ -23506,11 +23260,11 @@ export default {
     },
     "spawn-chance": null,
     "stats": {
-      "base-attack": "155",
-      "base-defense": "133",
-      "base-stamina": "172",
-      "max-cp": "1766",
-      "max-hp": "147"
+      "attack": "155",
+      "defense": "133",
+      "stamina": "172",
+      "cp": "1766",
+      "hp": "147"
     },
     "resistant": [
       "electric",
@@ -23586,10 +23340,9 @@ export default {
   {
     "num": "248",
     "name": "tyranitar",
-    "generation": {
-      "num": "generation ii",
-      "name": "johto"
-    },
+    "generation": [
+      "johto"
+    ],
     "about": "Tyranitar is so overwhelmingly powerful, it can bring down a whole mountain to make its nest. This Pokémon wanders about in mountains seeking new opponents to fight.",
     "img": "https://www.serebii.net/pokemongo/pokemon/248.png",
     "size": {
@@ -23607,11 +23360,11 @@ export default {
     },
     "spawn-chance": null,
     "stats": {
-      "base-attack": "251",
-      "base-defense": "207",
-      "base-stamina": "225",
-      "max-cp": "3834",
-      "max-hp": "189"
+      "attack": "251",
+      "defense": "207",
+      "stamina": "225",
+      "cp": "3834",
+      "hp": "189"
     },
     "resistant": [
       "psychic",
@@ -23689,10 +23442,9 @@ export default {
   {
     "num": "249",
     "name": "lugia",
-    "generation": {
-      "num": "generation ii",
-      "name": "johto"
-    },
+    "generation": [
+      "johto"
+    ],
     "about": "Lugia's wings pack devastating power-a light fluttering of its wings can blow apart regular houses. As a result, this Pokémon chooses to live out of sight deep under the sea.",
     "img": "https://www.serebii.net/pokemongo/pokemon/249.png",
     "size": {
@@ -23710,11 +23462,11 @@ export default {
     },
     "spawn-chance": "0",
     "stats": {
-      "base-attack": "193",
-      "base-defense": "310",
-      "base-stamina": "235",
-      "max-cp": "3703",
-      "max-hp": "197"
+      "attack": "193",
+      "defense": "310",
+      "stamina": "235",
+      "cp": "3703",
+      "hp": "197"
     },
     "resistant": [
       "grass",
@@ -23776,10 +23528,9 @@ export default {
   {
     "num": "250",
     "name": "ho-oh",
-    "generation": {
-      "num": "generation ii",
-      "name": "johto"
-    },
+    "generation": [
+      "johto"
+    ],
     "about": "Ho-Oh's feathers glow in seven colors depending on the angle at which they are struck by light. These feathers are said to bring happiness to the bearers. This Pokémon is said to live at the foot of a rainbow.",
     "img": "https://www.serebii.net/pokemongo/pokemon/250.png",
     "size": {
@@ -23797,11 +23548,11 @@ export default {
     },
     "spawn-chance": "0",
     "stats": {
-      "base-attack": "239",
-      "base-defense": "244",
-      "base-stamina": "214",
-      "max-cp": "3863",
-      "max-hp": "180"
+      "attack": "239",
+      "defense": "244",
+      "stamina": "214",
+      "cp": "3863",
+      "hp": "180"
     },
     "resistant": [
       "fighting",
@@ -23865,10 +23616,9 @@ export default {
   {
     "num": "251",
     "name": "celebi",
-    "generation": {
-      "num": "generation ii",
-      "name": "johto"
-    },
+    "generation": [
+      "johto"
+    ],
     "about": "This Pokémon came from the future by crossing over time. It is thought that so long as Celebi appears, a bright and shining future awaits us.",
     "img": "https://www.serebii.net/pokemongo/pokemon/251.png",
     "size": {
@@ -23886,11 +23636,11 @@ export default {
     },
     "spawn-chance": "0",
     "stats": {
-      "base-attack": "210",
-      "base-defense": "210",
-      "base-stamina": "225",
-      "max-cp": "3265",
-      "max-hp": "189"
+      "attack": "210",
+      "defense": "210",
+      "stamina": "225",
+      "cp": "3265",
+      "hp": "189"
     },
     "resistant": [
       "water",
