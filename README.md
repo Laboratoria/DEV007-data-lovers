@@ -176,6 +176,9 @@ Se diseñó y construyó una interfaz web centrada en el usuario siguiendo los p
 
 *******
                                                                                                                   
-`Herramienta utilizada durante el desarrollo del proyecto para la planeación y consecución de los objetivos:` [**Trello**](https://trello.com/b/ypuWZ1zT/data-lovers-proyecto-grupal/ "Trello")
+_Herramienta utilizada durante el desarrollo del proyecto para la planeación y consecución de los objetivos:_ [**Trello**](https://trello.com/b/ypuWZ1zT/data-lovers-proyecto-grupal/ "Trello")
                                                                                                                   
-                                                                                                                 
+
+`**Link del proyecto Data Lovers**` : <https://laurilugo.github.io/DEV007-data-lovers/src/index.html>
+                                        
+                                        
