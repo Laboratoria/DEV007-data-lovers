@@ -52,16 +52,28 @@ nav ul li:hover {
   width: 100%;
 }
 
-.cabezote {}
-
 #barra-de-busqueda {
   position: absolute;
-  top: 67%;
+  top: 80%;
   display: inline-block; 
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: ;
+}
+@media screen and (max-width: 480px) {
+  #barra-de-busqueda {
+    position: absolute;
+    top: 80%;
+    display: inline-block; 
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+ 
 }
 
 #barra-de-busqueda input {
@@ -112,12 +124,14 @@ nav ul li:hover {
 
 .intro {
   /* Estilo para la sección de introducción */
-  display: flex;
+  display:contents;
   align-items: center;
   /* Centra verticalmente */
   justify-content: center;
   /* Centra horizontalmente */
   height: 200px;
+  position: absolute;
+  
   /* Altura del contenedor */
   /* width: 60%;
   margin-left: 7%;
@@ -130,21 +144,36 @@ nav ul li:hover {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   text-align: center;
   display: inline-block;
-  width: 900px;
-  /* margin-left: 7%;
-  margin-bottom: 2%;
-  margin-top: 0; */
+  width: 70%;
+  /* position: relative; */
+  margin-left: 7%;
+  margin-bottom: 30px;
+  margin-top: 30px; 
+  align-items: center;
+  /* Centra verticalmente */
+  justify-content: center;
+  /* Centra horizontalmente */
 
 }
 
 .espacio {
   width: 30px;
+  display: inline-block;
+  align-items: center;
+  /* Centra verticalmente */
+  justify-content: center;
+  /* Centra horizontalmente */
 }
 
 .logo {
-  height: 200px;
-  /* margin-right: 7%;
-  margin-left: 5%; */
+  height: 170px;
+  display: inline-block;
+  align-items: center;
+  /* Centra verticalmente */
+  justify-content: center;
+  /* Centra horizontalmente */
+  position: absolute; 
+  margin-right: 7%;
 }
 
 .producciones {
